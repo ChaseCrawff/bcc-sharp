@@ -1,0 +1,485 @@
+{
+ "program": "export_taint.py",
+ "program_sha256": "8e28b4d88788d99c302b18f92e5cfb8a3e2968ab55abd6c5335ddd28bbfdb4d8",
+ "start": "2026-11-26T12:49:44-07:00",
+ "end": "2026-11-26T12:50:30-07:00",
+ "file": ".lake/exports/table.ndjson",
+ "bytes": 874780365,
+ "sha256": "12d95762c8c355948f429a6bcf879ccef51f90f6461d7d576b23fe5c8983ee39",
+ "inputs": {
+  "audit/table-names.txt": "b1babb1d2502f446bb4249d98193d2c418a20e8e2d843a6f3d936322c45fa348",
+  "audit/markers.json": "bc32c4db0ba03722549665b0c2d3389c3300508ae506fd5ea5f123896e649cc0"
+ },
+ "lines": 16293615,
+ "declarations": 86924,
+ "classes": [
+  "constants",
+  "lattice"
+ ],
+ "markers_found": {
+  "BccSharp.Coulomb.Constants.bcc_primitive_enclosed": true,
+  "BccSharp.Coulomb.Constants.fcc_primitive_enclosed": true,
+  "BccSharp.Coulomb.BravaisCover.localBalls": true,
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Tables.tables_valid": true,
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.grid_check": true,
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.forest_checked": true,
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.bccClosed": true,
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.fccClosed": true
+ },
+ "forward_references": 2852,
+ "forward_references_to_classed_declarations": [],
+ "unknown_expression_keys": {},
+ "constants_never_declared": [],
+ "requested": 130,
+ "not_in_export": [],
+ "free_of_all_classes": [
+  "BccSharp.Coulomb.periodicGreen_fourier_on_cell",
+  "BccSharp.Coulomb.periodicGreen_regular_limit",
+  "BccSharp.Coulomb.periodicGreen_screening_independent",
+  "BccSharp.Coulomb.ewaldRegularSelf_screening_independent",
+  "BccSharp.Coulomb.Full.greenPerParticle_screening",
+  "BccSharp.Coulomb.Full.ewald_energy",
+  "BccSharp.Coulomb.green_two_eq_energy",
+  "BccSharp.Coulomb.ScreenedSeries.h₂_screened",
+  "BccSharp.Coulomb.BravaisCover.oneSiteEnergy_from_normalized",
+  "BccSharp.Coulomb.greenPerParticle_repetition",
+  "BccSharp.Coulomb.DefectInvariance.energy_of_points_eq",
+  "BccSharp.Coulomb.DefectInvariance.energy_of_isometric",
+  "BccSharp.Coulomb.Full.energy_of_rigidImage",
+  "BccSharp.Coulomb.greenPerParticle_scale",
+  "BccSharp.Coulomb.Full.density_energy",
+  "BccSharp.Coulomb.SpecBridge.specDefect_one",
+  "BccSharp.Coulomb.DefectInvariance.cappedDefect_orthogonal_image",
+  "BccSharp.Coulomb.DefectInvariance.defect_of_isometric",
+  "BccSharp.Coulomb.Full.defect_of_rigidImage",
+  "BccSharp.Coulomb.DefectInvariance.defect_rebase",
+  "BccSharp.Coulomb.DefectInvariance.defect_wrap",
+  "BccSharp.Coulomb.DefectInvariance.defect_swap",
+  "BccSharp.Coulomb.DefectInvariance.siteDefect_second_site",
+  "BccSharp.Coulomb.DefectInvariance.siteDefect_of_mem",
+  "BccSharp.Coulomb.SpecBridge.spec_physical",
+  "BccSharp.Coulomb.DefectInvariance.repetition_siteDefect",
+  "BccSharp.Coulomb.SpecBridge.spec_dilated",
+  "BccSharp.Coulomb.DefectInvariance.defect_eq_min",
+  "BccSharp.Coulomb.SpecBridge.twoCoset_of_valid",
+  "BccSharp.Coulomb.SpecBridge.valid_of_twoCoset",
+  "BccSharp.Coulomb.SpecBridge.spec_translates",
+  "BccSharp.Coulomb.SpecBridge.isBCC_iff_physical",
+  "BccSharp.Coulomb.SpecBridge.isFCC_iff_physical",
+  "BccSharp.Coulomb.primitive_anchor_exists",
+  "BccSharp.Coulomb.GlobalInputs.bccValues_proof",
+  "BccSharp.Coulomb.GlobalInputs.fccValues_proof",
+  "BccSharp.Coulomb.GlobalInputs.fccSaturated_proof",
+  "BccSharp.Coulomb.GlobalInputs.register_proof",
+  "BccSharp.Coulomb.CompactCover.JLeaf.defect_le_regCost",
+  "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_regCost_cutoff",
+  "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_annulus",
+  "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_cutoff",
+  "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_far",
+  "BccSharp.Coulomb.CompactCover.Layered.defect_transport",
+  "BccSharp.Coulomb.CompactCover.Layered.defect_transport_cutoff",
+  "BccSharp.Coulomb.CompactCover.Layered.defect_transport_annulus",
+  "BccSharp.Coulomb.Montgomery.theorem1",
+  "BccSharp.Coulomb.Montgomery.jacobi_triple_product",
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.chart_energy_planar",
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.planarRegularized_ge_triangle",
+  "BccSharp.Coulomb.CompactCover.Layered.farTransportOk_sound",
+  "BccSharp.Coulomb.CompactCover.Layered.catalogueOk_sound",
+  "BccSharp.Coulomb.assemble",
+  "BccSharp.Coulomb.Full.StatementFull.physical"
+ ],
+ "by_class": {
+  "constants": [
+   "BccSharp.Coulomb.Constants.bcc_primitive_enclosed",
+   "BccSharp.Coulomb.Constants.fcc_primitive_enclosed",
+   "BccSharp.Coulomb.Constants.reference_bounds",
+   "BccSharp.Coulomb.Constants.reference_gap_checked",
+   "BccSharp.Coulomb.Full.gap_value",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_proved",
+   "BccSharp.Coulomb.BravaisCover.localBalls",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.bccClosed",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.fccClosed",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.strainAtlases_sharp",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_from_tangent_forest_atlases",
+   "BccSharp.Coulomb.GlobalInputs.compact_proof",
+   "BccSharp.Coulomb.GlobalInputs.separated_of_energy",
+   "BccSharp.Coulomb.Full.register_frame",
+   "BccSharp.Coulomb.GlobalInputs.globalAnalyticInputs",
+   "BccSharp.Coulomb.CompactCover.DirectFix.directFix_sound",
+   "BccSharp.Coulomb.CompactCover.EarlyReplay.initialWitnessCheckFix_sound",
+   "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithDirectSidecarFix_sound",
+   "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2Fix_sound",
+   "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2FixT_sound",
+   "BccSharp.Coulomb.CompactCover.OverlayPlanar.energy_fcc_lt_of_numeratorCheck",
+   "BccSharp.Coulomb.CompactCover.OverlayPlanar.overlayCheck_sound",
+   "BccSharp.Coulomb.CompactCover.OverlayPlanar.overlaySharpCheck_sound",
+   "BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.overlayFixCheck_sound",
+   "BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.checkWithOverlay_sound",
+   "BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheck_sound",
+   "BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix_sound",
+   "BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveCheck_sound",
+   "BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull_sound",
+   "BccSharp.Coulomb.CompactCover.AdaptiveOptical.gapSatOk_sound",
+   "BccSharp.Coulomb.CompactCover.Jensen.Fix.fLeafCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Stage5bPhase.stage5bPhaseCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage3Check_sound",
+   "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage5bHybridCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Stage5bOptical.stage5bOpticalCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage4stage5aCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage5aCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6Check_sound",
+   "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6DEval_sound",
+   "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6FullCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck_sound",
+   "BccSharp.Coulomb.CompactCover.JLeaf.jleaf_sound",
+   "BccSharp.Coulomb.CompactCover.JLeaf.fleaf_sound",
+   "BccSharp.Coulomb.CompactCover.JLeaf.Screened.jleaf_sound_screened",
+   "BccSharp.Coulomb.CompactCover.LeafFix.jleafFix_sound",
+   "BccSharp.Coulomb.CompactCover.LeafFix.dleafFix_sound",
+   "BccSharp.Coulomb.CompactCover.LeafFix.fleafFix_sound",
+   "BccSharp.Coulomb.CompactCover.LeafFix.certCheck_sound",
+   "BccSharp.Coulomb.CompactCover.LeafFix.lateCheck_sound",
+   "BccSharp.Coulomb.CompactCover.LeafFix.lateCheckFar_sound",
+   "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheck_sound",
+   "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCertOkFar_sound",
+   "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheckFar_sound",
+   "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckFar_sound",
+   "BccSharp.Coulomb.CompactCover.Layered.planarFibreCheckFar_sound",
+   "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckCat_sound",
+   "BccSharp.Coulomb.CompactCover.Layered.centeredCheck_sound",
+   "BccSharp.Coulomb.CompactCover.PlanarFibreTri.planarFibreTriCheck_sound",
+   "BccSharp.Coulomb.CompactCover.LatePackets.lateChecker_sound",
+   "BccSharp.Coulomb.BravaisCover.TangentE1.leafCheck_sound",
+   "BccSharp.Coulomb.BravaisCover.StrainTangent.zLeafCheck_sound",
+   "BccSharp.Coulomb.GlobalInputs.assemble_from_cover_corpus_cover",
+   "BccSharp.Coulomb.Full.statementFull_of_statement",
+   "BccSharp.Coulomb.Full.statementFull_iff",
+   "BccSharp.Coulomb.FinalAssembly.later_sound",
+   "BccSharp.Coulomb.FinalAssembly.prefix_sound",
+   "BccSharp.Coulomb.FinalAssembly.late_sound",
+   "BccSharp.Coulomb.FinalAssembly.mergedPending_sound",
+   "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay",
+   "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs",
+   "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay_merged",
+   "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs_merged"
+  ],
+  "lattice": [
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_proved",
+   "BccSharp.Coulomb.BravaisCover.localBalls",
+   "BccSharp.Coulomb.BravaisCover.TangentCover.Tables.tables_valid",
+   "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.grid_check",
+   "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.forest_checked",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.bccClosed",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.fccClosed",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.strainAtlases_sharp",
+   "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_from_tangent_forest_atlases",
+   "BccSharp.Coulomb.FinalAssembly.later_sound",
+   "BccSharp.Coulomb.FinalAssembly.prefix_sound",
+   "BccSharp.Coulomb.FinalAssembly.late_sound",
+   "BccSharp.Coulomb.FinalAssembly.mergedPending_sound",
+   "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay",
+   "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs",
+   "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay_merged",
+   "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs_merged"
+  ]
+ },
+ "result": {
+  "BccSharp.Coulomb.periodicGreen_fourier_on_cell": [],
+  "BccSharp.Coulomb.periodicGreen_regular_limit": [],
+  "BccSharp.Coulomb.periodicGreen_screening_independent": [],
+  "BccSharp.Coulomb.ewaldRegularSelf_screening_independent": [],
+  "BccSharp.Coulomb.Full.greenPerParticle_screening": [],
+  "BccSharp.Coulomb.Full.ewald_energy": [],
+  "BccSharp.Coulomb.green_two_eq_energy": [],
+  "BccSharp.Coulomb.ScreenedSeries.h₂_screened": [],
+  "BccSharp.Coulomb.BravaisCover.oneSiteEnergy_from_normalized": [],
+  "BccSharp.Coulomb.greenPerParticle_repetition": [],
+  "BccSharp.Coulomb.DefectInvariance.energy_of_points_eq": [],
+  "BccSharp.Coulomb.DefectInvariance.energy_of_isometric": [],
+  "BccSharp.Coulomb.Full.energy_of_rigidImage": [],
+  "BccSharp.Coulomb.greenPerParticle_scale": [],
+  "BccSharp.Coulomb.Full.density_energy": [],
+  "BccSharp.Coulomb.SpecBridge.specDefect_one": [],
+  "BccSharp.Coulomb.DefectInvariance.cappedDefect_orthogonal_image": [],
+  "BccSharp.Coulomb.DefectInvariance.defect_of_isometric": [],
+  "BccSharp.Coulomb.Full.defect_of_rigidImage": [],
+  "BccSharp.Coulomb.DefectInvariance.defect_rebase": [],
+  "BccSharp.Coulomb.DefectInvariance.defect_wrap": [],
+  "BccSharp.Coulomb.DefectInvariance.defect_swap": [],
+  "BccSharp.Coulomb.DefectInvariance.siteDefect_second_site": [],
+  "BccSharp.Coulomb.DefectInvariance.siteDefect_of_mem": [],
+  "BccSharp.Coulomb.SpecBridge.spec_physical": [],
+  "BccSharp.Coulomb.DefectInvariance.repetition_siteDefect": [],
+  "BccSharp.Coulomb.SpecBridge.spec_dilated": [],
+  "BccSharp.Coulomb.DefectInvariance.defect_eq_min": [],
+  "BccSharp.Coulomb.SpecBridge.twoCoset_of_valid": [],
+  "BccSharp.Coulomb.SpecBridge.valid_of_twoCoset": [],
+  "BccSharp.Coulomb.SpecBridge.spec_translates": [],
+  "BccSharp.Coulomb.SpecBridge.isBCC_iff_physical": [],
+  "BccSharp.Coulomb.SpecBridge.isFCC_iff_physical": [],
+  "BccSharp.Coulomb.Constants.bcc_primitive_enclosed": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.Constants.fcc_primitive_enclosed": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.Constants.reference_bounds": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.Constants.reference_gap_checked": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.Full.gap_value": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_proved": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.BravaisCover.localBalls": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Tables.tables_valid": [
+   "lattice"
+  ],
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.grid_check": [
+   "lattice"
+  ],
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.forest_checked": [
+   "lattice"
+  ],
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.bccClosed": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.fccClosed": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.strainAtlases_sharp": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_from_tangent_forest_atlases": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.primitive_anchor_exists": [],
+  "BccSharp.Coulomb.GlobalInputs.bccValues_proof": [],
+  "BccSharp.Coulomb.GlobalInputs.fccValues_proof": [],
+  "BccSharp.Coulomb.GlobalInputs.fccSaturated_proof": [],
+  "BccSharp.Coulomb.GlobalInputs.compact_proof": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.GlobalInputs.separated_of_energy": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.GlobalInputs.register_proof": [],
+  "BccSharp.Coulomb.Full.register_frame": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.GlobalInputs.globalAnalyticInputs": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.JLeaf.defect_le_regCost": [],
+  "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_regCost_cutoff": [],
+  "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_annulus": [],
+  "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_cutoff": [],
+  "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_far": [],
+  "BccSharp.Coulomb.CompactCover.Layered.defect_transport": [],
+  "BccSharp.Coulomb.CompactCover.Layered.defect_transport_cutoff": [],
+  "BccSharp.Coulomb.CompactCover.Layered.defect_transport_annulus": [],
+  "BccSharp.Coulomb.Montgomery.theorem1": [],
+  "BccSharp.Coulomb.Montgomery.jacobi_triple_product": [],
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.chart_energy_planar": [],
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.planarRegularized_ge_triangle": [],
+  "BccSharp.Coulomb.CompactCover.DirectFix.directFix_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.EarlyReplay.initialWitnessCheckFix_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithDirectSidecarFix_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2Fix_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2FixT_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.energy_fcc_lt_of_numeratorCheck": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.overlayCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.overlaySharpCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.overlayFixCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.checkWithOverlay_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.AdaptiveOptical.gapSatOk_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Jensen.Fix.fLeafCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage5bPhase.stage5bPhaseCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage3Check_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage5bHybridCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage5bOptical.stage5bOpticalCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage4stage5aCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage5aCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6Check_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6DEval_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6FullCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.JLeaf.jleaf_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.JLeaf.fleaf_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.JLeaf.Screened.jleaf_sound_screened": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.LeafFix.jleafFix_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.LeafFix.dleafFix_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.LeafFix.fleafFix_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.LeafFix.certCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.LeafFix.lateCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.LeafFix.lateCheckFar_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Layered.farTransportOk_sound": [],
+  "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCertOkFar_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheckFar_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckFar_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Layered.planarFibreCheckFar_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Layered.catalogueOk_sound": [],
+  "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckCat_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.Layered.centeredCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.PlanarFibreTri.planarFibreTriCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.CompactCover.LatePackets.lateChecker_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.BravaisCover.TangentE1.leafCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.BravaisCover.StrainTangent.zLeafCheck_sound": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.assemble": [],
+  "BccSharp.Coulomb.GlobalInputs.assemble_from_cover_corpus_cover": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.Full.statementFull_of_statement": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.Full.statementFull_iff": [
+   "constants"
+  ],
+  "BccSharp.Coulomb.Full.StatementFull.physical": [],
+  "BccSharp.Coulomb.FinalAssembly.later_sound": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.FinalAssembly.prefix_sound": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.FinalAssembly.late_sound": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.FinalAssembly.mergedPending_sound": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay_merged": [
+   "constants",
+   "lattice"
+  ],
+  "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs_merged": [
+   "constants",
+   "lattice"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "results_file": "records/replay/results.jsonl",
+ "scope_modules": 405,
+ "attempts": 405,
+ "modules_ok": 405,
+ "modules_ok_twice": 0,
+ "failed_attempts": [],
+ "missing": [],
+ "first_start": "2026-11-26T12:30:08-07:00",
+ "last_end": "2026-11-26T16:37:05-07:00",
+ "elapsed_s": 14817,
+ "sum_wall_s": 43441.4,
+ "sum_cpu_s": 43032.0,
+ "sum_cpu_hours": 11.95,
+ "sum_lean_cpu_sampled_s": 41902.3,
+ "max_lean_peak_ws_gib": 9.05,
+ "max_peak_commit_proc_gib": 14.29,
+ "max_peak_commit_job_gib": 15.21,
+ "module_of_max_ws": "BccSharp.Lattice.LocalBallsBccSlabBallDirect",
+ "module_of_max_commit": "BccSharp.Lattice.LocalBallsBccSlabBallDirect",
+ "max_committed_at_start_gib": 72.22,
+ "min_avail_at_start_mb": 17904,
+ "max_running_at_start": 3,
+ "by_library": {
+  "BccSharp": {
+   "modules": 405,
+   "wall_s": 43441.4,
+   "cpu_s": 43032.0,
+   "lines": 178127
+  }
+ }
+}

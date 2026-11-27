@@ -1,0 +1,43 @@
+\section{Proof of the Ewald representation}\label{app:ewald}
+
+We prove Proposition~\ref{prop:ewald}. Let $\Gamma$ be a lattice and $\eta>0$. For $x\in\R^3\setminus\Gamma$ put
+\begin{equation}\label{eq:Heta}
+  H_\eta(x):=\sum_{\gamma\in\Gamma}\frac{\erfc(\eta|x+\gamma|)}{|x+\gamma|}
+     +\frac{4\pi}{|\Gamma|}\sum_{q\in\Gamma^*\setminus\{0\}}\frac{e^{-|q|^2/4\eta^2}}{|q|^2}\,e^{iq\cdot x}-\frac{\pi}{\eta^2|\Gamma|}.
+\end{equation}
+Since $\erfc(t)\le e^{-t^2}$ and the number of lattice points in a ball of radius $\rho$ is $O(\rho^3)$, both series and all their
+termwise derivatives converge absolutely and uniformly on compact subsets of $\R^3\setminus\Gamma$. Hence $H_\eta$ is smooth there; it is
+real, even and $\Gamma$-periodic, and it is locally integrable because near $\gamma\in\Gamma$ its only singular term is bounded by
+$1/|x+\gamma|$.
+
+\emph{Fourier coefficients.} The function $\erf(\eta|x|)/|x|$ is the Newtonian potential of the Gaussian probability density
+$\eta^3\pi^{-3/2}e^{-\eta^2|x|^2}$, whose Fourier transform is $e^{-|q|^2/4\eta^2}$. Therefore
+\[
+  \int_{\R^3}\frac{\erfc(\eta|x|)}{|x|}\,e^{-iq\cdot x}\,dx=\frac{4\pi}{|q|^2}\bigl(1-e^{-|q|^2/4\eta^2}\bigr)\quad(q\ne0),\qquad
+  \int_{\R^3}\frac{\erfc(\eta|x|)}{|x|}\,dx=\frac\pi{\eta^2}.
+\]
+By Tonelli's theorem the first sum of \eqref{eq:Heta} is integrable over a cell and its Fourier coefficient at $q\in\Gamma^*$ is
+$|\Gamma|^{-1}$ times the corresponding integral over $\R^3$. The second sum is a uniformly convergent Fourier series. Adding the three
+terms, the coefficient of $H_\eta$ at $q\ne0$ is $4\pi/(|\Gamma||q|^2)$ and its mean is zero. These are the coefficients \eqref{eq:GF}, and
+an integrable periodic function is determined by its Fourier coefficients up to a null set. Hence $H_\eta=V_\Gamma$ almost everywhere.
+Since $H_\eta$ is continuous on $\R^3\setminus\Gamma$, it is the continuous representative of $V_\Gamma$ there, the one used in
+\eqref{eq:zeta} and \eqref{eq:edef}. In particular $H_\eta$ does not depend on $\eta>0$, and $V_\Gamma$ is smooth on
+$\R^3\setminus\Gamma$.
+
+\emph{The constant.} For $0<|x|$ small,
+\[
+  H_\eta(x)-\frac1{|x|}=\sum_{\gamma\ne0}\frac{\erfc(\eta|x+\gamma|)}{|x+\gamma|}-\frac{\erf(\eta|x|)}{|x|}
+   +\frac{4\pi}{|\Gamma|}\sum_{q\ne0}\frac{e^{-|q|^2/4\eta^2}}{|q|^2}\,e^{iq\cdot x}-\frac{\pi}{\eta^2|\Gamma|},
+\]
+and every term is continuous at $x=0$, with $\erf(\eta|x|)/|x|\to2\eta/\sqrt\pi$. Thus the limit \eqref{eq:zeta} exists and
+\begin{equation}\label{eq:zetaE}
+  \zeta_\Gamma=\sum_{\gamma\in\Gamma\setminus\{0\}}\frac{\erfc(\eta|\gamma|)}{|\gamma|}-\frac{2\eta}{\sqrt\pi}
+   +\frac{4\pi}{|\Gamma|}\sum_{q\in\Gamma^*\setminus\{0\}}\frac{e^{-|q|^2/4\eta^2}}{|q|^2}-\frac{\pi}{\eta^2|\Gamma|}.
+\end{equation}
+
+\emph{The energy.} Insert $V_\Gamma=H_\alpha$ and \eqref{eq:zetaE} with $\eta=\alpha$ into \eqref{eq:edef}. The lattice sums combine into
+the first term of \eqref{eq:ewald}. The Fourier sums combine into
+$\frac{4\pi}{|\Gamma|}\sum_{q\ne0}|q|^{-2}e^{-|q|^2/4\alpha^2}\bigl(\sum_{i<j}\cos q\cdot(x_i-x_j)+\frac N2\bigr)$, which is the second
+term because $|\sum_je^{iq\cdot x_j}|^2=N+2\sum_{i<j}\cos q\cdot(x_i-x_j)$. The constants give
+$-\frac{\pi}{\alpha^2|\Gamma|}\bigl(\binom N2+\frac N2\bigr)=-\frac{\pi N^2}{2\alpha^2|\Gamma|}$ and $-\frac N2\cdot\frac{2\alpha}{\sqrt\pi}$.
+\qed

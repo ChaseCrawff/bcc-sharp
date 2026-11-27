@@ -1,0 +1,14 @@
+{
+ "constants": [
+  "BccSharp.Coulomb.Constants.bcc_primitive_enclosed",
+  "BccSharp.Coulomb.Constants.fcc_primitive_enclosed"
+ ],
+ "lattice": [
+  "BccSharp.Coulomb.BravaisCover.localBalls",
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Tables.tables_valid",
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.grid_check",
+  "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.forest_checked",
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.bccClosed",
+  "BccSharp.Coulomb.BravaisCover.StrainAtlas.fccClosed"
+ ]
+}

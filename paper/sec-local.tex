@@ -1,0 +1,193 @@
+\section{Neighbourhoods of the cubic lattices}\label{sec:local}
+
+Near a point of $\Kbox_{\mathrm{red}}$ that represents $\ltwo\Bz$ or $\ltwo\Fz$ the deficit vanishes to second order, and no bound that
+treats the energy and the defect separately can succeed. In this section we prove the main inequality in explicit neighbourhoods of
+all such points, by a Taylor expansion with certified coefficients.
+
+Theorem~\ref{thm:local} is a result of its own: the proof of the main theorems uses neither it nor any other part of this section,
+because the cover of Section~\ref{sec:cover} treats these neighbourhoods by the anchor rules of Section~\ref{ssec:anchor}.
+
+\subsection{The fourteen two-site descriptions}\label{ssec:fourteen}
+
+Let $\Lambda_0\in\{\Bz,\Fz\}$ and let $\Lambda_0^\sharp=\{k:k\cdot b\in\Z\text{ for all }b\in\Lambda_0\}$. The sublattices of index two
+of $\Lambda_0$ are the sets $L_0(k)=\{b\in\Lambda_0:k\cdot b\in\Z\}$, where $k$ runs over the seven nonzero classes of
+$\frac12\Lambda_0^\sharp/\Lambda_0^\sharp$. Geometrically, $L_0(k)$ consists of every second lattice plane perpendicular to $k$. The
+point group of $\Lambda_0$, the $48$ signed permutation matrices, permutes these classes, with the following orbits.
+
+\begin{table}[h]
+\begin{tabular}{lllc}
+\toprule
+lattice & class of $k$ & planes & number\\
+\midrule
+$\Bz$ & $(\frac12,\frac12,0)$ & $\{110\}$ & 6\\
+$\Bz$ & $(1,0,0)$ & $\{100\}$ & 1\\
+$\Fz$ & $2^{2/3}(\frac14,\frac14,\frac14)$ & $\{111\}$ & 4\\
+$\Fz$ & $2^{2/3}(\frac12,0,0)$ & $\{100\}$ & 3\\
+\bottomrule
+\end{tabular}
+\caption{The sublattices of index two of the cubic lattices, up to symmetry. In the language of lattice dynamics the classes of $k$ are
+the points $N$ and $H$ of the Brillouin zone of the body-centred cubic lattice and the points $L$ and $X$ of that of the face-centred
+cubic lattice.}\label{tab:classes}
+\end{table}
+
+For instance $L_0=\Z^3$ for the class $(1,0,0)$ of $\Bz$: this is the familiar description of the body-centred cubic lattice as two
+interpenetrating simple cubic lattices. A triple $(\Lambda_0,L_0,w_0)$ with $w_0\in\Lambda_0\setminus L_0$ is called a
+\emph{two-site description} of $\Lambda_0$. Up to the choice of $w_0$ in its coset, which is immaterial below, there are fourteen
+two-site descriptions, in four classes.
+
+\subsection{Charts}\label{ssec:charts}
+
+Fix a two-site description $(\Lambda_0,L_0,w_0)$. For a traceless symmetric matrix $S$ with $I+S$ positive definite and $u\in\R^3$ let
+\begin{equation}\label{eq:chart}
+  C(S):=\det(I+S)^{-1/3}(I+S),\qquad A(S):=C(S)^{1/2},\qquad Y(S,u):=A(S)\bigl(L_0\cup(L_0+w_0+u)\bigr).
+\end{equation}
+Thus $S$ parametrizes the positive definite matrices $C$ of determinant one, with inverse $S=3C/\tr C-I$; $A(S)$ is the symmetric
+deformation with Gram matrix $C$; and $u$ is the displacement of the second sublattice in the undeformed frame. We use the Frobenius
+norm $\|S\|_\Fro$ on the five-dimensional space of traceless symmetric matrices, and for $r,\nu>0$ the ellipsoid
+\[
+  \mathcal E(r,\nu):=\bigl\{(S,u):\ \|S\|_\Fro^2+|u|^2/\nu^2\le r^2\bigr\}\subset\R^8 .
+\]
+
+\begin{lemma}[Chart coordinates of a configuration]\label{lem:membership}
+Let $B'$ be a basis matrix of $L_0$ and $f_0:=B'^{-1}w_0$. Let $Y=R\,\Z^3\cup(R\,\Z^3+Rf)$ be a normalized two-site configuration and
+$n\in\Z^3$. Put
+\[
+  C:=B'^{-\T}R^\T RB'^{-1},\qquad S:=\frac{3C}{\tr C}-I,\qquad u:=B'(f-f_0-n).
+\]
+Then $Y=Q\,Y(S,u)$ for some $Q\in\Or(3)$.
+\end{lemma}
+
+\begin{proof}
+$C$ is positive definite with $\det C=1$, so $C=C(S)$ and $RB'^{-1}=QA(S)$ with $Q$ orthogonal. Then $R\,\Z^3=QA(S)L_0$ and
+$Rf=QA(S)(w_0+u)+Rn$.
+\end{proof}
+
+A signed permutation matrix $O$ maps $(\Lambda_0,L_0,w_0)$ to another two-site description, and
+$Y_{OL_0,Ow_0}(OSO^\T,Ou)=O\,Y_{L_0,w_0}(S,u)$. The map $(S,u)\mapsto(OSO^\T,Ou)$ preserves each $\mathcal E(r,\nu)$. Hence a statement
+about $\Def$ on $\mathcal E(r,\nu)$ that holds for one description holds for all descriptions of its class.
+
+\subsection{The local inequality}
+
+\begin{theorem}[Local inequality]\label{thm:local}
+Let $(\Lambda_0,L_0,w_0)$ be any of the fourteen two-site descriptions of $\Bz$ and $\Fz$, and let $(r,\nu)$ be one of the two pairs
+listed for its class in Table~\ref{tab:atlas}. Then, with $\varepsilon_0>0$ from the table,
+\begin{equation}\label{eq:localineq}
+  \Def\bigl(\ltwo Y(S,u)\bigr)\ \ge\ \varepsilon_0\Bigl(\|S\|_\Fro^2+\frac{|u|^2}{\nu^2}\Bigr)\qquad\text{for all }(S,u)\in\mathcal E(r,\nu).
+\end{equation}
+In particular $\Def>0$ on $\mathcal E(r,\nu)\setminus\{0\}$.
+\end{theorem}
+
+Near a two-site description of $\Fz$ the defect is identically $1$ (see the proof), so that Theorem~\ref{thm:main} gives there
+only $e\ge\eF$, while \eqref{eq:localineq} bounds $e-\eF$ from below by an explicit positive definite quadratic form on an explicit
+neighbourhood. Near a description of $\Bz$, \eqref{eq:localineq} shows that the deficit itself, and not only the energy excess
+$e-\eB$, grows quadratically in the strain and the displacement.
+
+\begin{table}[h]
+\begin{tabular}{lllllll}
+\toprule
+class & $r$ & $\nu$ & $\lambda$ & $B_3$ & $B_4$ & $\varepsilon_0$\\
+\midrule
+$\Bz$, $\{110\}$ & $83/10000$ & $1/2$ & $0.0077506$ & $0.31143$ & $438.70$ & $3.125\times10^{-5}$\\
+                 & $63/10000$ & $2/3$ & $0.0094550$ & $0.52180$ & $827.44$ & $7.186\times10^{-5}$\\
+$\Bz$, $\{100\}$ & $23/1000$ & $1/8$ & $0.0094352$ & $0.12806$ & $79.971$ & $9.612\times10^{-6}$\\
+                 & $171/10000$ & $1/4$ & $0.0094423$ & $0.15673$ & $166.60$ & $1.140\times10^{-5}$\\
+$\Fz$, $\{111\}$ & $179/10000$ & $1/4$ & $0.0088264$ & $0.14248$ & $138.71$ & $1.117\times10^{-5}$\\
+                 & $81/5000$ & $1/3$ & $0.0103365$ & $0.17242$ & $212.81$ & $4.808\times10^{-5}$\\
+$\Fz$, $\{100\}$ & $11/500$ & $1/6$ & $0.0103365$ & $0.13167$ & $98.235$ & $2.906\times10^{-4}$\\
+                 & $187/10000$ & $1/4$ & $0.0103365$ & $0.15174$ & $157.20$ & $4.052\times10^{-5}$\\
+\bottomrule
+\end{tabular}
+\caption{The certified ellipsoids of Theorem~\ref{thm:local}. Here $\lambda$ is a lower bound for the least eigenvalue of the Hessian
+at the centre of the function $F$ of \eqref{eq:Fdef} in the coordinates $z=(S,u/\nu)$, $B_3$ and $B_4$ bound its third and fourth
+radial derivatives as in \eqref{eq:B3B4}, and $\varepsilon_0$ is the certified lower bound for
+$\frac\lambda2-B_3r-\frac1{24}B_4r^2$, computed from the unrounded enclosures. The displayed values of $\lambda$ and $\varepsilon_0$ are
+rounded down and those of $B_3$, $B_4$ up.}\label{tab:atlas}
+\end{table}
+
+The rest of this section is the proof. Fix a description and a pair $(r,\nu)$, write $s=\|S\|_\Fro$ and $z=(S,u/\nu)\in\R^8$, where
+$S$ is expressed in a Frobenius-orthonormal basis, and $e(z):=e(\ltwo Y(S,u))$.
+
+\emph{Criticality.} For every $S$ the configuration $Y(S,0)=A(S)\Lambda_0$ is a lattice, and the point reflection in the origin maps
+$Y(S,u)$ to $Y(S,-u)$, because $2w_0\in L_0$. Hence $e(S,u)=e(S,-u)$ and $\partial_ue(S,0)=0$. Let $B_\ast$ be a basis matrix of
+$2^{1/3}\Lambda_0$. Then $\ltwo A(S)\Lambda_0=\lone A(S)B_\ast\Z^3$ and $(A(S)B_\ast)^\T A(S)B_\ast=B_\ast^\T C(S)B_\ast$, so that
+$e(S,0)=(\Hone(B_\ast^\T C(S)B_\ast)-3)/(2\lone)$ by \eqref{eq:H1}; its differential at $S=0$ vanishes by the criticality shown in
+Section~\ref{ssec:strain}. Hence $\nabla e(0)=0$. Moreover $e(0)=\eB$ or $\eF$ by Lemma~\ref{lem:invariance}.
+
+\emph{The defect.} We use the elementary bounds $\|S\|_\op\le\sqrt{2/3}\,s$ and $|\det S|\le s^3/(3\sqrt6)$ for traceless symmetric
+$S$, and the identity $\det(I+S)=1-\frac12s^2+\det S$. For $s\le r$ put
+\[
+  d_-:=1-\tfrac12r^2-\tfrac{r^3}{3\sqrt6},\qquad \mu:=1-\sqrt{\tfrac23}\,r,\qquad \bar\mu:=d_-^{-1/3}\Bigl(1+\sqrt{\tfrac23}\,r\Bigr).
+\]
+Then $d_-\le\det(I+S)\le1$ and $\mu I\preceq C(S)\preceq\bar\mu I$, so the singular values of $A(S)$ lie in
+$[\sqrt\mu,\sqrt{\bar\mu}]$; also $|u|\le r\nu$. For $\Lambda_0=\Fz$ the certificate verifies
+$\sqrt{\bar\mu}\,(2^{1/3}+r\nu)\le\frac{51}{40}$, so $D\equiv1$ on $\mathcal E(r,\nu)$ by Lemma~\ref{lem:Dupper}(ii). For
+$\Lambda_0=\Bz$ it verifies $\sqrt{\bar\mu}\,(1+r\nu)<\frac{13}{10}$ and $\sqrt{2\mu}-\sqrt{\bar\mu}\,r\nu>\frac{13}{10}$, and
+Lemma~\ref{lem:Dupper}(i) with $(\sqrt c-1)^2=(c-1)^2/(1+\sqrt c)^2$ gives
+\[
+  D\le100\,\|C^{1/2}-I\|_\Fro^2+200\,u^\T Cu\le\frac{100}{(1+\sqrt\mu)^2}\,\|C-I\|_\Fro^2+200\,\bar\mu\,|u|^2 .
+\]
+Writing $C-I=\vartheta S+(\vartheta-1)I$ with $\vartheta=\det(I+S)^{-1/3}$, we have
+$\|C-I\|_\Fro^2=\vartheta^2s^2+3(\vartheta-1)^2$ and, by the mean value theorem,
+$0\le\vartheta-1\le\frac13d_-^{-4/3}(\frac12+\frac r{3\sqrt6})s^2$. Hence, on $\mathcal E(r,\nu)$,
+\begin{equation}\label{eq:Dquad}
+  D\le q_s\,s^2+q_u\,|u|^2,\qquad q_s:=\frac{100\,(d_-^{-2/3}+3b^2)}{(1+\sqrt\mu)^2},\quad q_u:=200\,\bar\mu,\quad
+  b:=\tfrac13d_-^{-4/3}\bigl(\tfrac12+\tfrac r{3\sqrt6}\bigr)r .
+\end{equation}
+
+\emph{The comparison function.} Let
+\begin{equation}\label{eq:Fdef}
+  F(z):=\begin{cases}e(z)-\eB-\gap\,\bigl(q_s\,s^2+q_u\,|u|^2\bigr),&\Lambda_0=\Bz,\\ e(z)-\eF,&\Lambda_0=\Fz .\end{cases}
+\end{equation}
+Then $\Def(\ltwo Y(S,u))\ge F(z)$ on $\mathcal E(r,\nu)$, by \eqref{eq:Dquad} in the first case and by $D\equiv1$ in the second, and
+$F(0)=0$, $\nabla F(0)=0$. The certificate provides three numbers $\lambda,B_3,B_4$ with
+\begin{equation}\label{eq:B3B4}
+  \nabla^2F(0)\succeq\lambda I,\qquad \Bigl|\frac{d^3}{dt^3}F(t\omega)\Big|_{t=0}\Bigr|\le6B_3,\qquad
+  \Bigl|\frac{d^4}{dt^4}F(t\omega)\Bigr|\le B_4
+\end{equation}
+for all unit vectors $\omega\in\R^8$ and all $|t|\le r$. Taylor's formula on the segment from $0$ to $z=t\omega$ gives
+\[
+  F(z)\ \ge\ \Bigl(\frac\lambda2-B_3r-\frac{B_4r^2}{24}\Bigr)|z|^2 ,
+\]
+which is \eqref{eq:localineq}. It remains to explain how \eqref{eq:B3B4} is certified; since the subtracted defect majorant is
+quadratic, $B_3$ and $B_4$ are bounds for the energy alone.
+
+\emph{The Hessian.} The energy is given by \eqref{eq:H2} with the three families of squared lengths
+\[
+  (B'm)^\T C\,(B'm),\qquad \bigl(B'(m+f_0)+u\bigr)^\T C\,\bigl(B'(m+f_0)+u\bigr),\qquad (B'^{-\T}m)^\T C^{-1}(B'^{-\T}m),
+\]
+and the phase $2\pi m\cdot f_0+2\pi(B'^{-\T}m)\cdot u$, where $C^{-1}=\det(I+S)^{-2/3}\adj(I+S)$. The terms with
+$\max_i|m_i|\le n_0=8$ are differentiated twice at $z=0$ in ball arithmetic, and the omitted terms are bounded by
+Lemma~\ref{lem:tails}. Reflecting the lower triangle gives a symmetric interval matrix $[H]$ containing $\nabla^2F(0)$.
+The program first checks that every pivot in the interval $LDL^\T$ factorization of $[H]$ is strictly positive.
+It then bisects $[0,2]$ at exact rational midpoints $t$ for $28$ steps. If every interval pivot of $[H]-tI$ is strictly
+positive, every enclosed Hessian has least eigenvalue greater than $t$, and $t$ becomes the new lower endpoint.
+Otherwise $t$ becomes the upper endpoint of the search. The final lower endpoint is the certified bound $\lambda$.
+
+\emph{The cubic term.} At a two-site description $f_0\in\frac12\Z^3$, so $\cos(2\pi m\cdot f_0)=\pm1$ and the homogeneous cubic part
+of the Taylor polynomial at $z=0$ of each term of \eqref{eq:H2} is an explicit polynomial in $(S,u)$ whose coefficients are values of
+$\Ga(a+j,\cdot)$, $j\le3$. The certificate sums these polynomials over $\max_i|m_i|\le n_0$ in ball arithmetic. If
+$P_3(z)=\sum_{|\beta|=3}c_\beta z^\beta$ is the result, then $|P_3(z)|\le B_{3,\Fro}|z|^3$ with
+$B_{3,\Fro}^2=\sum_\beta|c_\beta|^2/\binom3\beta$, the Frobenius norm of the symmetric coefficient tensor, and $B_3$ is $B_{3,\Fro}$ plus
+one sixth of the bound of Lemma~\ref{lem:tails} for the third radial derivative of the omitted terms.
+
+\emph{The quartic term.} Along a ray $t\mapsto(tH,tv)$ with $\|H\|_\Fro\le1$, $|v|\le\nu$, we have
+$\det(I+tH)=1-\frac12\|H\|_\Fro^2t^2+(\det H)\,t^3$, so the scalar factors $\det(I+tH)^{-1/3}$ and $\det(I+tH)^{-2/3}$ and their first
+four $t$-derivatives are enclosed, uniformly in $H$ and in $|t|\le r$, by univariate Taylor arithmetic with the interval parameters
+$\|H\|_\Fro^2\in[0,1]$ and $\det H\in[-\frac1{3\sqrt6},\frac1{3\sqrt6}]$. This gives bounds for the operator norms of the first four
+derivatives of $C$ and $C^{-1}$ along the ray, hence for the derivatives of each squared length $q$, together with the lower bounds
+$q\ge\mu(|B'(m+f_0)|-r\nu)^2$ for the cross-coset terms, where $|B'(m+f_0)|\ge\dist(w_0,L_0)>r\nu$, and their analogues for the other
+terms. The fourth derivative of $t\mapsto\Ga(a,\pi q(t))$ is then bounded by Fa\`a di Bruno's formula with absolute values,
+\begin{equation}\label{eq:faa4}
+  \pi^4\Ga_4q_1^4+6\pi^3\Ga_3q_1^2q_2+\pi^2\Ga_2\,(3q_2^2+4q_1q_3)+\pi\,\Ga_1q_4 ,
+\end{equation}
+where $q_j\ge|q^{(j)}|$ and $\Ga_j=\Ga(a+j,\pi q_-)$ with $q_-$ the lower bound for $q$; for the reciprocal sum it is combined by
+Leibniz's rule with the bounds $|\sin x|\le|x|$, $1-\cos x\le\frac12x^2$ for the phase factor. Summing over $\max_i|m_i|\le n_0$ and
+adding the tail bound of Lemma~\ref{lem:tails} gives $B_4$. This estimate uses absolute values termwise and is the reason why the
+certified ellipsoids are small.
+
+\begin{remark}\label{rem:optical}
+The Hessian at the centre splits into a $5\times5$ strain block, which is the same for all descriptions of a lattice and is governed
+by its two shear moduli, and a $3\times3$ block for $u$, which is the dynamical matrix of the lattice at the corresponding
+zone-boundary point (Table~\ref{tab:classes}). The positivity of the $3\times3$ blocks at the points $L$ and $X$ of the face-centred
+cubic lattice is part of the certificate; it is not a consequence of the stability of the body-centred cubic lattice.
+\end{remark}

@@ -1,0 +1,2188 @@
+ℹ [9085/9452] Replayed BccSharp.Cover.Round7Geometry
+info: BccSharp/Cover/Round7Geometry.lean:203:0: 'Round7Geometry.fixture_paths' depends on axioms: [propext]
+info: BccSharp/Cover/Round7Geometry.lean:204:0: 'Round7Geometry.missing_child_rejected' depends on axioms: [propext]
+info: BccSharp/Cover/Round7Geometry.lean:205:0: 'Round7Geometry.misaddressed_row_rejected' depends on axioms: [propext]
+info: BccSharp/Cover/Round7Geometry.lean:206:0: 'Round7Geometry.parent_addresses_distinct' does not depend on any axioms
+info: BccSharp/Cover/Round7Geometry.lean:207:0: 'Round7Geometry.source_order_checked' does not depend on any axioms
+info: BccSharp/Cover/Round7Geometry.lean:208:0: 'Round7Geometry.mem_both_on_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BccSharp/Cover/Round7Geometry.lean:209:0: 'Round7Geometry.round7_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9087/9452] Replayed BccSharp.TwoSite.Interface
+warning: BccSharp\TwoSite\Interface.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9088/9452] Replayed BccSharp.TwoSite.Physical
+warning: BccSharp/TwoSite/Physical.lean:121:52: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/Physical.lean:121:48: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/Physical.lean:121:52: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/Physical.lean:125:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/Physical.lean:125:66: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/Physical.lean:125:70: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: BccSharp/TwoSite/Physical.lean:138:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: BccSharp/TwoSite/Physical.lean:273:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/Physical.lean:273:18: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9090/9452] Replayed BccSharp.TwoSite.Bravais
+warning: BccSharp/TwoSite/Bravais.lean:46:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/Bravais.lean:46:55: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/Bravais.lean:123:58: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [oneSiteEnergy, greenPerParticle, greenCellEnergy]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9094/9452] Replayed BccSharp.Lattice.GeometricLeaves
+warning: BccSharp/Lattice/GeometricLeaves.lean:44:89: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/GeometricLeaves.lean:44:89: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9095/9452] Replayed BccSharp.TwoSite.Reference
+warning: BccSharp/TwoSite/Reference.lean:145:54: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/Reference.lean:151:54: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9096/9452] Replayed BccSharp.TwoSite.ReferenceKernels
+warning: BccSharp/TwoSite/ReferenceKernels.lean:52:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/ReferenceKernels.lean:52:28: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferenceKernels.lean:52:32: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9097/9452] Replayed BccSharp.TwoSite.Pi
+warning: BccSharp/TwoSite/Pi.lean:33:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/Pi.lean:33:50: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/Pi.lean:55:2: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [one_div, Real.arctan_zero]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9098/9452] Replayed BccSharp.TwoSite.ReferenceTails
+warning: BccSharp/TwoSite/ReferenceTails.lean:165:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/ReferenceTails.lean:191:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9099/9452] Replayed BccSharp.TwoSite.ReferencePacket
+warning: BccSharp/TwoSite/ReferencePacket.lean:153:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/ReferencePacket.lean:153:28: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePacket.lean:153:32: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePacket.lean:304:26: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: BccSharp/TwoSite/ReferencePacket.lean:307:26: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: BccSharp/TwoSite/ReferencePacket.lean:379:43: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9101/9452] Replayed BccSharp.TwoSite.PeriodRepetition
+warning: BccSharp/TwoSite/PeriodRepetition.lean:111:0: automatically included section variable(s) unused in theorem `BccSharp.Coulomb.phase_sum_trivial`:
+  [AddCommGroup G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9102/9452] Replayed BccSharp.TwoSite.ReciprocalRepetition
+warning: BccSharp/TwoSite/ReciprocalRepetition.lean:133:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/TwoSite/ReciprocalRepetition.lean:136:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/ReciprocalRepetition.lean:137:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: BccSharp/TwoSite/ReciprocalRepetition.lean:225:6: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/TwoSite/ReciprocalRepetition.lean:249:51: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9103/9452] Replayed BccSharp.TwoSite.PhysicalScale
+warning: BccSharp/TwoSite/PhysicalScale.lean:60:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/PhysicalScale.lean:67:36: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:71:34: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:67:32: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:67:36: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:71:30: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:71:34: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:80:36: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:80:32: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:80:36: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:101:67: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:101:63: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:101:67: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:113:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/PhysicalScale.lean:113:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/PhysicalScale.lean:120:45: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:120:41: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:120:45: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:134:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/PhysicalScale.lean:134:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/PhysicalScale.lean:140:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:140:28: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PhysicalScale.lean:140:32: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9104/9452] Replayed BccSharp.TwoSite.ReferencePhysical
+warning: BccSharp/TwoSite/ReferencePhysical.lean:46:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/ReferencePhysical.lean:60:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/ReferencePhysical.lean:69:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/ReferencePhysical.lean:69:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePhysical.lean:69:47: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePhysical.lean:121:43: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [greenPerParticle, greenCellEnergy, div_inv_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9105/9452] Replayed BccSharp.TwoSite.RepetitionVolume
+warning: BccSharp\TwoSite\RepetitionVolume.lean: imports `Mathlib.Algebra.Module.ZLattice.Covolume` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/TwoSite/RepetitionVolume.lean:53:42: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [castVec, e]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/TwoSite/RepetitionVolume.lean:106:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/RepetitionVolume.lean:107:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/RepetitionVolume.lean:108:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/RepetitionVolume.lean:109:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9106/9452] Replayed BccSharp.TwoSite.EwaldCellRepetition
+warning: BccSharp/TwoSite/EwaldCellRepetition.lean:208:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/EwaldCellRepetition.lean:215:26: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/EwaldCellRepetition.lean:208:67: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/EwaldCellRepetition.lean:208:71: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/EwaldCellRepetition.lean:215:22: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/EwaldCellRepetition.lean:215:26: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9107/9452] Replayed BccSharp.TwoSite.GeneralSummability
+warning: BccSharp/TwoSite/GeneralSummability.lean:71:5: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: BccSharp/TwoSite/GeneralSummability.lean:123:44: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: BccSharp/TwoSite/GeneralSummability.lean:159:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9108/9452] Replayed BccSharp.TwoSite.SeriesModes
+warning: BccSharp\TwoSite\SeriesModes.lean: imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/TwoSite/SeriesModes.lean:35:26: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:35:22: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:35:26: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:61:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:61:26: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:61:30: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:88:24: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/SeriesModes.lean:88:35: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/SeriesModes.lean:107:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/SeriesModes.lean:130:49: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/SeriesModes.lean:130:60: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/SeriesModes.lean:134:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/SeriesModes.lean:139:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/SeriesModes.lean:134:50: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:139:53: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:145:36: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: BccSharp/TwoSite/SeriesModes.lean:149:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:149:31: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:149:35: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:217:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:221:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/SeriesModes.lean:217:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:217:37: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/SeriesModes.lean:221:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9109/9452] Replayed BccSharp.TwoSite.PeriodFourier
+warning: BccSharp/TwoSite/PeriodFourier.lean:98:44: This simp argument is unused:
+  Complex.ofReal_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Ewald.dot, Pi.add_apply, add_mul, Finset.sum_add_distrib, Complex.ofReal_mul, Complex.ofReal_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:94:72: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:94:72: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:121:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:129:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:138:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:182:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:185:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/TwoSite/PeriodFourier.lean:190:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/PeriodFourier.lean:185:15: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [cellWave_zero, integral_const]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:220:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:271:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:361:15: This simp argument is unused:
+  castVec_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [dot, Pi.neg_apply, castVec, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:361:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:361:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:361:75: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PeriodFourier.lean:425:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9110/9452] Replayed BccSharp.TwoSite.ScreenedTransform
+warning: BccSharp\TwoSite\ScreenedTransform.lean: imports `Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/TwoSite/ScreenedTransform.lean:54:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:54:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:91:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:91:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:91:62: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:113:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:111:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:105:2: Unused tactic linter: `change
+  ((t ^ 2)⁻¹ : ℝ) • ((1 / (Real.pi * sq (t⁻¹ • u)) * (1 - Real.exp (-Ewald.beta * sq (t⁻¹ • u))) : ℝ) : ℂ) =
+    _` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:111:24: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:113:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:113:47: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:120:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ScreenedTransform.lean:120:22: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9111/9452] Replayed BccSharp.TwoSite.ScreeningDifference
+warning: BccSharp\TwoSite\ScreeningDifference.lean: imports `Mathlib.MeasureTheory.Integral.DominatedConvergence` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+info: BccSharp/TwoSite/ScreeningDifference.lean:98:51: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9112/9452] Replayed BccSharp.TwoSite.ScreeningIndependence
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:58:27: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:95:10: This simp argument is unused:
+  sq_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sq, Pi.neg_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:132:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:165:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:165:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:148:24: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:168:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:148:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:148:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:168:38: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:202:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:215:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:240:80: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:247:26: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:247:22: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ScreeningIndependence.lean:247:26: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9114/9452] Replayed BccSharp.TwoSite.ReferencePoints
+warning: BccSharp/TwoSite/ReferencePoints.lean:81:4: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:127:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:135:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:127:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:135:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:173:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:173:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:221:76: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:222:77: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:221:76: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:222:77: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/ReferencePoints.lean:271:43: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [greenPerParticle, greenCellEnergy]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9115/9452] Replayed BccSharp.Lattice.Energy
+warning: BccSharp/Lattice/Energy.lean:111:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/Energy.lean:111:18: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9117/9452] Replayed BccSharp.TwoSite.Coverage
+warning: BccSharp/TwoSite/Coverage.lean:26:73: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/TwoSite/Coverage.lean:26:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/Coverage.lean:26:73: Unused tactic linter: `tauto` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/Coverage.lean:62:24: This simp argument is unused:
+  max_le_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [intersection, le_min_iff] at h'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/TwoSite/Coverage.lean:62:36: This simp argument is unused:
+  le_min_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [intersection, max_le_iff] at h'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9119/9452] Replayed BccSharp.TwoSite.PrimitiveAnchor
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:42:4: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:53:96: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:54:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:55:96: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:56:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:53:96: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:54:6: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:54:16: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:55:96: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:56:6: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/TwoSite/PrimitiveAnchor.lean:56:16: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9124/9452] Replayed BccSharp.Cover.CoverReflection
+warning: BccSharp/Cover/CoverReflection.lean:165:2: Unused tactic linter: `change q.points = translate (v + t) (U.mulVec '' S)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9125/9452] Replayed BccSharp.Cover.CoverCorner
+warning: BccSharp/Cover/CoverCorner.lean:69:43: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/CoverCorner.lean:69:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9130/9452] Replayed BccSharp.Lattice.Polar
+warning: BccSharp\Lattice\Polar.lean: imports `Mathlib.Analysis.Matrix.Spectrum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/Lattice/Polar.lean:57:33: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/Polar.lean:58:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/Polar.lean:58:49: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/Polar.lean:73:60: This simp argument is unused:
+  Finset.sum_ite_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [e, sq, Pi.single_apply, ite_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/Polar.lean:78:46: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [e, Matrix.mulVec_diagonal, Pi.smul_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/Polar.lean:79:37: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [e, Matrix.mulVec_diagonal, Pi.smul_apply, smul_eq_mul, h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/Polar.lean:86:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/Polar.lean:86:16: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9131/9452] Replayed BccSharp.Lattice.Curvature
+warning: BccSharp\Lattice\Curvature.lean: imports `Mathlib.Analysis.Calculus.Deriv.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/Lattice/Curvature.lean:75:32: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/Curvature.lean:84:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/Curvature.lean:112:10: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.sum_ite_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/Curvature.lean:85:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/Curvature.lean:85:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9132/9452] Replayed BccSharp.Lattice.Escape
+warning: BccSharp/Lattice/Escape.lean:35:27: Unused tactic linter: `exact e` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/Escape.lean:150:27: Unused tactic linter: `exact e` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9133/9452] Replayed BccSharp.Lattice.E2Core
+warning: BccSharp/Lattice/E2Core.lean:124:53: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9134/9452] Replayed BccSharp.Lattice.StrainChart
+warning: BccSharp/Lattice/StrainChart.lean:68:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/StrainChart.lean:72:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/StrainChart.lean:68:67: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainChart.lean:68:71: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainChart.lean:72:67: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainChart.lean:72:71: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainChart.lean:91:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/StrainChart.lean:91:50: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9135/9452] Replayed BccSharp.Lattice.StrainMetric
+warning: BccSharp/Lattice/StrainMetric.lean:42:52: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/StrainMetric.lean:42:54: Variable name `j` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _j
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/StrainMetric.lean:54:39: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/StrainMetric.lean:171:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/StrainMetric.lean:171:30: Unused tactic linter: `rw [e', one_smul]` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9136/9452] Replayed BccSharp.Cover.CoverDirectSeries
+warning: BccSharp/Cover/CoverDirectSeries.lean:50:27: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/CoverDirectSeries.lean:179:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9139/9452] Replayed BccSharp.Cover.OverlayAxial
+warning: BccSharp\Cover\OverlayAxial.lean: imports `Mathlib.Topology.Algebra.InfiniteSum.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/Cover/OverlayAxial.lean:43:4: This simp argument is unused:
+  abs_of_nonneg minus
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [axialPair, sameMode, crossMode, Int.cast_add, Int.cast_neg, Int.cast_one, Int.cast_natCast, e,
+    abs_neg, abs_of_nonneg (by positivity : 0 ≤ (n : ℝ) + 1), abs_of_nonneg plus, abs_of_nonneg minus', neg_mul,
+    sub_eq_add_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9140/9452] Replayed BccSharp.Cover.CoverEarlyTransport
+warning: BccSharp/Cover/CoverEarlyTransport.lean:25:57: This simp argument is unused:
+  castVec
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [shiftCell, shiftAmount, shiftChart, sub_eq_add_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:25:65: This simp argument is unused:
+  sub_eq_add_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [shiftCell, shiftAmount, shiftChart, castVec]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:20: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:32: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:25:81: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:4: Unused tactic linter: `constructor` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:16: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:20: Unused tactic linter: `intro h` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:28: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:32: Unused tactic linter: `constructor` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:44: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverEarlyTransport.lean:26:48: Unused tactic linter: `linarith [h.1, h.2]` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9142/9452] Replayed BccSharp.Cover.OverlayPlanarAxialCheck
+info: BccSharp/Cover/OverlayPlanarAxialCheck.lean:87:19: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: BccSharp/Cover/OverlayPlanarAxialCheck.lean:73:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayPlanarAxialCheck.lean:73:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayPlanarAxialCheck.lean:87:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayPlanarAxialCheck.lean:73:39: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayPlanarAxialCheck.lean:73:53: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayPlanarAxialCheck.lean:87:15: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9145/9452] Replayed BccSharp.Lattice.HessianTail
+warning: BccSharp/Lattice/HessianTail.lean:38:81: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/HessianTail.lean:38:77: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/HessianTail.lean:38:81: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/HessianTail.lean:87:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/HessianTail.lean:87:27: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/HessianTail.lean:128:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/HessianTail.lean:128:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/HessianTail.lean:128:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/HessianTail.lean:128:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/HessianTail.lean:150:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/HessianTail.lean:150:22: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9146/9452] Replayed BccSharp.Cover.OverlayArea
+warning: BccSharp/Cover/OverlayArea.lean:110:24: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/OverlayArea.lean:127:22: `Nat.add_eq_zero` has been deprecated: Use `Nat.add_eq_zero_iff` instead
+
+Hint: Replace the deprecated name:
+  Nat.add_eq_zero_̲i̲f̲f̲
+warning: BccSharp/Cover/OverlayArea.lean:144:48: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayArea.lean:144:44: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayArea.lean:144:48: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayArea.lean:156:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9153/9452] Replayed BccSharp.TwoSite.MontgomeryDefs
+warning: BccSharp\TwoSite\MontgomeryDefs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9161/9452] Replayed BccSharp.Cover.OverlayPlanarPoisson
+warning: BccSharp/Cover/OverlayPlanarPoisson.lean:84:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayPlanarPoisson.lean:84:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: BccSharp/Cover/OverlayPlanarPoisson.lean:165:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: BccSharp/Cover/OverlayPlanarPoisson.lean:206:40: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayPlanarPoisson.lean:206:36: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayPlanarPoisson.lean:206:40: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayPlanarPoisson.lean:217:68: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayPlanarPoisson.lean:217:64: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayPlanarPoisson.lean:217:68: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9162/9452] Replayed BccSharp.Cover.OverlayHeatSplit
+warning: BccSharp/Cover/OverlayHeatSplit.lean:17:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayHeatSplit.lean:17:29: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayHeatSplit.lean:17:33: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayHeatSplit.lean:52:7: This simp argument is unused:
+  Matrix.mulVec
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [chartBasis, linearImage, castVec, planeIndex, planarNorm, layerX, layerY, axialHeight, cReal, sq,
+    dotProduct, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/OverlayHeatSplit.lean:124:105: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayHeatSplit.lean:124:105: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayHeatSplit.lean:168:35: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: BccSharp/Cover/OverlayHeatSplit.lean:235:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayHeatSplit.lean:235:29: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9163/9452] Replayed BccSharp.Cover.OverlayScalarHeat
+warning: BccSharp\Cover\OverlayScalarHeat.lean: imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/Cover/OverlayScalarHeat.lean:36:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:88:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:99:81: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:88:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:88:37: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:99:81: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:124:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:124:31: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:124:35: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:136:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:146:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:136:31: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:136:35: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:146:15: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:181:80: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:181:80: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:273:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:279:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:273:26: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayScalarHeat.lean:279:26: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9164/9452] Replayed BccSharp.Cover.OverlayEnergyHeat
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:27:24: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:28:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:37:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:26:12: Unused tactic linter: `exact e.symm` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:28:12: Unused tactic linter: `simpa only [enorm_eq_nnnorm, ofReal_norm] using e.symm` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:37:12: Unused tactic linter: `exact (ENNReal.ofReal_tsum_of_nonneg hs nn).symm` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: BccSharp/Cover/OverlayEnergyHeat.lean:74:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:73:2: Unused tactic linter: `congr 2` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:135:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:135:46: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:221:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:236:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:244:12: This simp argument is unused:
+  Real.volume_Ioc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [e, S]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:221:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:221:50: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:268:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayEnergyHeat.lean:268:31: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9165/9452] Replayed BccSharp.Cover.OverlayZeroMode
+warning: BccSharp\Cover\OverlayZeroMode.lean: imports `Mathlib.NumberTheory.ZetaValues` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/Cover/OverlayZeroMode.lean:27:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:28:84: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:27:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:28:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:29:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:29:98: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:27:27: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:27:31: Unused tactic linter: `norm_num [Polynomial.bernoulli_two]` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:27:67: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:27:71: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:28:27: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:28:31: Unused tactic linter: `norm_num [bernoulliFun, Polynomial.bernoulli_two]` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:28:80: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:28:84: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:29:27: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:29:98: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:83:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/OverlayZeroMode.lean:86:39: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:94:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:86:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:86:39: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:94:29: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:109:42: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/OverlayZeroMode.lean:116:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/OverlayZeroMode.lean:120:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:141:35: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:120:45: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:120:49: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:141:31: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayZeroMode.lean:141:35: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9166/9452] Replayed BccSharp.Cover.OverlayLayerIntegral
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:66:66: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:78:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:83:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:114:62: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:200:52: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:187:13: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:217:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:217:54: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:282:90: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:282:99: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: BccSharp/Cover/OverlayLayerIntegral.lean:282:38: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [signedHeat, layerOffset, true_and, Bool.false_eq_true, false_and, if_false, if_true, sameSpectral]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9167/9452] Replayed BccSharp.Cover.OverlayPhysicalIdentity
+warning: BccSharp/Cover/OverlayPhysicalIdentity.lean:36:84: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/OverlayPhysicalIdentity.lean:36:84: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9170/9452] Replayed BccSharp.Cover.AdaptiveLogTangent
+warning: BccSharp\Cover\AdaptiveLogTangent.lean: imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9171/9452] Replayed BccSharp.Cover.CoverExactRealGeometry
+warning: BccSharp/Cover/CoverExactRealGeometry.lean:90:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/CoverExactRealGeometry.lean:90:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/CoverExactRealGeometry.lean:90:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverExactRealGeometry.lean:90:56: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9172/9452] Replayed BccSharp.Cover.Stage2Geometry
+warning: BccSharp/Cover/Stage2Geometry.lean:28:91: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/Stage2Geometry.lean:29:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/Stage2Geometry.lean:28:91: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/Stage2Geometry.lean:29:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/Stage2Geometry.lean:38:90: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/Stage2Geometry.lean:38:90: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/Stage2Geometry.lean:65:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/Stage2Geometry.lean:79:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/Stage2Geometry.lean:65:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/Stage2Geometry.lean:79:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/Stage2Geometry.lean:248:70: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/Stage2Geometry.lean:248:70: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/Stage2Geometry.lean:294:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/Stage2Geometry.lean:294:46: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9173/9452] Replayed BccSharp.Cover.AdaptiveCorner
+warning: BccSharp/Cover/AdaptiveCorner.lean:417:20: This simp argument is unused:
+  p2
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [p4, p5, p6, p8, p9, p10, p12]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:417:36: This simp argument is unused:
+  p8
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [p2, p4, p5, p6, p9, p10, p12]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:417:40: This simp argument is unused:
+  p9
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [p2, p4, p5, p6, p8, p10, p12]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:417:44: This simp argument is unused:
+  p10
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [p2, p4, p5, p6, p8, p9, p12]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:417:88: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:417:84: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:417:88: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:429:28: This simp argument is unused:
+  p5
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [p2, p4, p6, p8, p9, p10, p12]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:429:32: This simp argument is unused:
+  p6
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [p2, p4, p5, p8, p9, p10, p12]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:429:49: This simp argument is unused:
+  p12
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [p2, p4, p5, p6, p8, p9, p10]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:429:84: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:429:84: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:453:77: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:453:77: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:485:41: This simp argument is unused:
+  Int.cast_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [cutVal, cutNum, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:487:75: This simp argument is unused:
+  Fin.zero_eta
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val, Fin.mk_one, Fin.reduceFinMk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:487:89: This simp argument is unused:
+  Fin.mk_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val, Fin.zero_eta, Fin.reduceFinMk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:488:6: This simp argument is unused:
+  Fin.reduceFinMk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val, Fin.zero_eta, Fin.mk_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:496:75: This simp argument is unused:
+  Fin.zero_eta
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val, Fin.mk_one, Fin.reduceFinMk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:496:89: This simp argument is unused:
+  Fin.mk_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val, Fin.zero_eta, Fin.reduceFinMk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:497:6: This simp argument is unused:
+  Fin.reduceFinMk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val, Fin.zero_eta, Fin.mk_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:573:31: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [IBox.lo, IBox.hi, Matrix.cons_val_one, Matrix.cons_val] at m5 m6 m7
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:573:53: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [IBox.lo, IBox.hi, Matrix.cons_val_zero, Matrix.cons_val] at m5 m6 m7
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:686:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:686:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:686:29: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:686:33: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:686:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:686:47: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/AdaptiveCorner.lean:768:44: Variable name `offs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _offs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9179/9452] Replayed BccSharp.Cover.JLeafChord
+warning: BccSharp/Cover/JLeafChord.lean:657:5: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Cover/JLeafChord.lean:657:20: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9180/9452] Replayed BccSharp.Cover.JLeafTerms
+warning: BccSharp/Cover/JLeafTerms.lean:151:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/JLeafTerms.lean:264:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [9181/9452] Replayed BccSharp.Cover.JLeafDefect
+warning: BccSharp/Cover/JLeafDefect.lean:545:58: Variable name `hv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9192/9452] Replayed BccSharp.Lattice.BccFrame
+warning: BccSharp/Lattice/BccFrame.lean:45:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/BccFrame.lean:45:61: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/BccFrame.lean:45:65: Unused tactic linter: `linarith` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/BccFrame.lean:56:73: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/BccFrame.lean:88:77: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/BccFrame.lean:88:77: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9193/9452] Replayed BccSharp.Lattice.StrainE2
+warning: BccSharp/Lattice/StrainE2.lean:47:66: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:47:80: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:47:62: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:47:66: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:47:76: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:47:80: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:59:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:59:76: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:59:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:59:62: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:59:72: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:59:76: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:175:27: Unused tactic linter: `exact e` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainE2.lean:233:27: Unused tactic linter: `exact e` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9195/9452] Replayed BccSharp.Lattice.CubicMoves
+warning: BccSharp/Lattice/CubicMoves.lean:43:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/CubicMoves.lean:43:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/CubicMoves.lean:43:47: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9196/9452] Replayed BccSharp.Lattice.CubicFold
+warning: BccSharp/Lattice/CubicFold.lean:30:17: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/CubicFold.lean:30:17: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/CubicFold.lean:102:42: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/CubicFold.lean:102:38: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/CubicFold.lean:102:42: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9197/9452] Replayed BccSharp.Lattice.StrainOrigin
+warning: BccSharp/Lattice/StrainOrigin.lean:47:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/StrainOrigin.lean:47:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9198/9452] Replayed BccSharp.Lattice.FccDefect
+warning: BccSharp/Lattice/FccDefect.lean:66:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: BccSharp/Lattice/FccDefect.lean:142:4: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9200/9452] Replayed BccSharp.Lattice.KzProjection
+warning: BccSharp/Lattice/KzProjection.lean:29:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/KzProjection.lean:29:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/KzProjection.lean:174:39: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [castVec, h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/KzProjection.lean:193:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/KzProjection.lean:193:38: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/KzProjection.lean:203:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/KzProjection.lean:203:41: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9202/9452] Replayed BccSharp.Lattice.KzBasis
+warning: BccSharp/Lattice/KzBasis.lean:61:100: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/KzBasis.lean:61:100: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/KzBasis.lean:78:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/KzBasis.lean:78:18: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9203/9452] Replayed BccSharp.Lattice.KzChart
+warning: BccSharp/Lattice/KzChart.lean:189:41: This simp argument is unused:
+  abs_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.det_mul, abs_mul, hL, hH, p.rotation_det_abs, one_mul, p.triangular_det,
+    abs_of_pos tpos] at e
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9205/9452] Replayed BccSharp.Lattice.FirstJet
+warning: BccSharp\Lattice\FirstJet.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9206/9452] Replayed BccSharp.Lattice.StrainFirstJet
+warning: BccSharp/Lattice/StrainFirstJet.lean:120:2: Unused tactic linter: `change _ = _` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/StrainFirstJet.lean:159:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Lattice/StrainFirstJet.lean:159:30: Unused tactic linter: `rw [e', one_smul]` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9207/9452] Replayed BccSharp.Lattice.CenteredStrain
+warning: BccSharp/Lattice/CenteredStrain.lean:107:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/CenteredStrain.lean:110:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/CenteredStrain.lean:115:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/CenteredStrain.lean:117:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/CenteredStrain.lean:285:27: Unused tactic linter: `exact e` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9208/9452] Replayed BccSharp.Lattice.FccStrain
+warning: BccSharp/Lattice/FccStrain.lean:39:58: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/FccStrain.lean:112:27: Unused tactic linter: `exact e` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9209/9452] Replayed BccSharp.Lattice.LdlCurvature
+warning: BccSharp/Lattice/LdlCurvature.lean:98:10: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.sum_ite_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/LdlCurvature.lean:91:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/LdlCurvature.lean:91:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9211/9452] Replayed BccSharp.Lattice.KzTransport
+warning: BccSharp/Lattice/KzTransport.lean:99:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/KzTransport.lean:99:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/KzTransport.lean:100:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/KzTransport.lean:100:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9219/9452] Replayed BccSharp.Cover.CoverEarlyMirror
+warning: BccSharp/Cover/CoverEarlyMirror.lean:24:11: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Held]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: BccSharp/Cover/CoverEarlyMirror.lean:35:12: This simp argument is unused:
+  held_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Held]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9220/9452] Replayed BccSharp.Cover.CoverNormalized
+warning: BccSharp/Cover/CoverNormalized.lean:65:78: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/CoverNormalized.lean:66:79: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/CoverNormalized.lean:65:78: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverNormalized.lean:66:79: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverNormalized.lean:126:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/CoverNormalized.lean:147:37: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/CoverNormalized.lean:161:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Cover/CoverNormalized.lean:126:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverNormalized.lean:126:37: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverNormalized.lean:147:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverNormalized.lean:147:37: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverNormalized.lean:161:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9224/9452] Replayed BccSharp.Lattice.LocalObjective
+warning: BccSharp/Lattice/LocalObjective.lean:46:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/LocalObjective.lean:51:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9225/9452] Replayed BccSharp.Lattice.LocalSeries
+warning: BccSharp\Lattice\LocalSeries.lean: imports `Mathlib.Analysis.Calculus.SmoothSeries` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/Lattice/LocalSeries.lean:50:34: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/LocalSeries.lean:80:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/LocalSeries.lean:80:66: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/LocalSeries.lean:154:39: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/LocalSeries.lean:164:22: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9226/9452] Replayed BccSharp.Lattice.SecondJet
+warning: BccSharp/Lattice/SecondJet.lean:236:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/SecondJet.lean:236:32: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/SecondJet.lean:246:68: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/SecondJet.lean:246:68: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9227/9452] Replayed BccSharp.Lattice.LocalMetricJet
+warning: BccSharp/Lattice/LocalMetricJet.lean:82:30: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:83:30: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:98:109: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/LocalMetricJet.lean:98:109: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/LocalMetricJet.lean:237:53: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:241:33: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:235:14: Unused tactic linter: `rw [s, one_smul]` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/LocalMetricJet.lean:340:44: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:365:16: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hd] at h
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: BccSharp/Lattice/LocalMetricJet.lean:361:97: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/LocalMetricJet.lean:376:6: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/LocalMetricJet.lean:457:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:458:44: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:460:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:464:44: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:467:44: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:477:41: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/LocalMetricJet.lean:482:39: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9228/9452] Replayed BccSharp.Lattice.LocalShell
+warning: BccSharp\Lattice\LocalShell.lean: imports `Mathlib.Topology.Algebra.InfiniteSum.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: BccSharp/Lattice/LocalShell.lean:122:45: Variable name `p₂` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _p₂
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/LocalShell.lean:146:43: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BccSharp/Lattice/LocalShell.lean:146:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/LocalShell.lean:152:5: Variable name `h₁` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h₁
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/LocalShell.lean:234:78: This simp argument is unused:
+  Int.natCast_natAbs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [castVec]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/LocalShell.lean:389:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9231/9452] Replayed BccSharp.Lattice.LocalDifferentiation
+warning: BccSharp/Lattice/LocalDifferentiation.lean:20:67: Variable name `hz` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hz
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/LocalDifferentiation.lean:163:47: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/LocalDifferentiation.lean:168:48: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/LocalDifferentiation.lean:325:22: This simp argument is unused:
+  mul_smul_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [CubicMove.act, smul_mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/LocalDifferentiation.lean:325:36: This simp argument is unused:
+  smul_mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [CubicMove.act, mul_smul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9232/9452] Replayed BccSharp.Lattice.FixedLocal
+warning: BccSharp/Lattice/FixedLocal.lean:385:2: exponent 7348 exceeds the threshold 256, exponentiation operation was not evaluated, use `set_option exponentiation.threshold <num>` to set a new threshold
+warning: BccSharp/Lattice/FixedLocal.lean:498:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/FixedLocal.lean:499:43: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: BccSharp/Lattice/FixedLocal.lean:501:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/FixedLocal.lean:513:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/FixedLocal.lean:596:16: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hd] at h
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: BccSharp/Lattice/FixedLocal.lean:592:6: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Lattice/FixedLocal.lean:607:6: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9234/9452] Replayed BccSharp.Lattice.FixedLocalBall
+warning: BccSharp/Lattice/FixedLocalBall.lean:174:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/FixedLocalBall.lean:245:68: Variable name `hz` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hz
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/FixedLocalBall.lean:367:47: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/FixedLocalBall.lean:372:48: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Lattice/FixedLocalBall.lean:531:22: This simp argument is unused:
+  mul_smul_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [CubicMove.act, smul_mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/FixedLocalBall.lean:531:36: This simp argument is unused:
+  smul_mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [CubicMove.act, mul_smul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BccSharp/Lattice/FixedLocalBall.lean:759:64: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/FixedLocalBall.lean:759:66: Variable name `j` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _j
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BccSharp/Lattice/FixedLocalBall.lean:817:50: Unused tactic linter: `push_cast at h ⊢` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9237/9452] Replayed BccSharp.Cover.CoverDirectMoment
+warning: BccSharp/Cover/CoverDirectMoment.lean:75:44: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BccSharp/Cover/CoverDirectMoment.lean:65:4: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverDirectMoment.lean:68:4: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverDirectMoment.lean:70:41: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverDirectMoment.lean:75:40: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BccSharp/Cover/CoverDirectMoment.lean:75:44: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9239/9452] Replayed BccSharp.Cover.Stage2Phase
+warning: BccSharp/Cover/Stage2Phase.lean:64:31: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: BccSharp/Cover/Stage2Phase.lean:197:35: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+All targets up-to-date (9452 jobs).

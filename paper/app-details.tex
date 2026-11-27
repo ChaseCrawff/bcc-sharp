@@ -1,0 +1,573 @@
+\section{Details of the anchor and planar bounds}\label{app:details}
+
+This appendix gives the complete statements, with all constants, of the bounds that Sections~\ref{ssec:planar}
+and~\ref{ssec:anchor} describe in outline: the energy gain \eqref{eq:pairs} on a shape box (Section~\ref{ssec:det-gain}), the growth
+of the defect (\ref{ssec:det-gamma}), the positivity tests (\ref{ssec:det-positive}), the planar expansion and the bound of
+Lemma~\ref{lem:planarrules}(ii) (\ref{ssec:det-fibre}), and the planar gain and the energy of an anchor (\ref{ssec:det-layer}).
+Throughout, $S\subset\R^5$ is a shape box with centre $\xi_{\mathrm c}$, $M=M(\xi)=R(\xi)^\T R(\xi)$, and
+$f_0\in\frac12\Z^3\setminus\Z^3$, $n\in\Z^3$, $\delta=f-f_0-n$, $h=R(\xi)\delta$ are as in Section~\ref{ssec:anchor}.
+A superscript $\pm$ denotes an upper or a lower bound that is valid on the whole box under consideration
+and is computed in ball arithmetic; in particular $h_-\le|h|\le h_+$. We write $X\!:\!Y:=\tr(XY)$ for symmetric matrices,
+$(x)_+:=\max\{x,0\}$, and $p\succ0$ if the first nonzero coordinate of an integer vector $p$ is positive. Sums
+$\sum_{k>N}k^je^{-ck^2}$ are evaluated by adding their first twenty-four terms and bounding the rest by Lemma~\ref{lem:geom}.
+
+\subsection{Uniform bounds for the energy-gain form}\label{ssec:det-gain}
+
+Fix $\alpha>0$. By \eqref{eq:Gdef} the kernels of \eqref{eq:screened} satisfy
+\begin{equation}\label{eq:det-kernels}
+  F_{\mathrm r}^{(k)}(q)=(-\pi)^k\alpha^{2k+1}\,\Ga\bigl(\tfrac12+k,\pi\alpha^2q\bigr),\qquad
+  F_{\mathrm d}(q)=\frac{e^{-\pi q/\alpha^2}}{\pi q},\qquad F_{\mathrm d}'(q)=-\Bigl(\frac\pi{\alpha^2}+\frac1q\Bigr)F_{\mathrm d}(q).
+\end{equation}
+Thus $2F_{\mathrm r}'$ and $-F_{\mathrm d}$ are increasing and concave, and $F_{\mathrm r}''$ and $F_{\mathrm d}$ are positive,
+decreasing and convex. For a pair $\pm u$ of $\Z^3+f_0$ and a pair $\pm m$ of $\Z^3\setminus\{0\}$ let $\Pi_u$ and $\Pi_m$ denote their
+contributions to $2\ltwo[e(\xi,f)-e(\xi,f_0)]$ in \eqref{eq:screened}. By the proof of Lemma~\ref{lem:gain}(ii), with
+$\theta_m=2\pi m\cdot\delta$,
+\begin{equation}\label{eq:det-pair}
+\begin{aligned}
+  \Pi_u&\ \ge\ 2F_{\mathrm r}'(q_u)\,|h|^2+4F_{\mathrm r}''\bigl(q_u+|h|^2\bigr)\,(u^\T M\delta)^2,\\
+  \Pi_m&=2\epsilon_mF_{\mathrm d}(q^*_m)(1-\cos\theta_m)\ \ge\
+   \begin{cases}-F_{\mathrm d}(q^*_m)\,\theta_m^2&\text{if }\epsilon_m=-1,\\[1pt]
+   F_{\mathrm d}(q^*_m)\,\bigl(\theta_m^2-\tfrac1{12}\theta_m^4\bigr)_+&\text{if }\epsilon_m=+1.\end{cases}
+\end{aligned}
+\end{equation}
+
+\begin{lemma}[Omitted pairs]\label{lem:det-omit}
+Let $|R^{-\T}e_i|^2\le W$ and $|Re_i|^2\le Z$ for $i=1,2,3$ and all $\xi\in S$, and put $c_{\mathrm r}:=\pi\alpha^2/W$,
+$c_{\mathrm d}:=\pi/(\alpha^2Z)$ and $\lambda_{\mathrm r}(q):=2\alpha\,e^{-\pi\alpha^2q}\bigl(1+(2\pi\alpha^2q)^{-1}\bigr)/q$.
+\begin{enumerate}
+\item[\textup{(i)}] $\Pi_u\ge-\lambda_{\mathrm r}(q_u)\,|h|^2$ for every pair $\pm u$; $\Pi_m\ge0$ if $\epsilon_m=+1$, and
+$\Pi_m\ge-4\pi e^{-\pi q^*_m/\alpha^2}|h|^2$ if $\epsilon_m=-1$.
+\item[\textup{(ii)}] If $N_{\mathrm r}\ge1$ is an integer with $c_{\mathrm r}(N_{\mathrm r}+1)^2\ge1$, then the sum of
+$\lambda_{\mathrm r}(q_u)$ over the pairs with $\max_i|u_i|>N_{\mathrm r}+\frac12$ is at most
+$84\,\alpha W\sum_{k>N_{\mathrm r}}e^{-c_{\mathrm r}k^2}$.
+\item[\textup{(iii)}] For every integer $N_{\mathrm d}\ge1$, the sum of $4\pi e^{-\pi q^*_m/\alpha^2}$ over the pairs with
+$\max_i|m_i|>N_{\mathrm d}$ is at most $52\pi\sum_{k>N_{\mathrm d}}k^2e^{-c_{\mathrm d}k^2}$.
+\end{enumerate}
+On the whole of $\Kbox$ one may take $W=5$; then the hypothesis of \textup{(ii)} holds for $\alpha=\frac{11}{10}$ and $N_{\mathrm r}=2$.
+\end{lemma}
+
+\begin{proof}
+(i) Since $F_{\mathrm r}''>0$, \eqref{eq:det-pair} gives $\Pi_u\ge-2|F_{\mathrm r}'(q_u)|\,|h|^2$, and by \eqref{eq:det-kernels} and
+$\sqrt t\le\frac12(1+t)$ we have
+$2|F_{\mathrm r}'(q)|=2\pi\alpha^3\int_1^\infty e^{-\pi\alpha^2qt}\sqrt t\,dt\le\pi\alpha^3\int_1^\infty e^{-\pi\alpha^2qt}(1+t)\,dt=\lambda_{\mathrm r}(q)$.
+For $\epsilon_m=-1$ use $\theta_m^2=4\pi^2((R^{-\T}m)\cdot h)^2\le4\pi^2q_m^*|h|^2$ and $\pi qF_{\mathrm d}(q)=e^{-\pi q/\alpha^2}$.
+(ii) The number of $u\in\Z^3+f_0$ with $\max_i|u_i|\le k+\frac12$ is $\prod_i(2k+1+\varepsilon_i)$, where $\varepsilon_i=1$ if the
+$i$-th coordinate of $f_0$ is a half-integer and $\varepsilon_i=0$ otherwise. Hence the number of vectors with
+$k\le\max_i|u_i|\le k+\frac12$ is $\prod_i(2k+1+\varepsilon_i)-\prod_i(2k-1+\varepsilon_i)$, which is largest for
+$\varepsilon=(1,1,1)$; so there are at most $(2k+2)^3-(2k)^3\le56k^2$ such vectors, that is $28k^2$ pairs, for $k\ge1$. For these,
+$u_i=(R^{-\T}e_i)\cdot(Ru)$ gives $q_u\ge k^2/W$, and since $\lambda_{\mathrm r}$ is decreasing and $c_{\mathrm r}k^2\ge1$,
+$\lambda_{\mathrm r}(q_u)\le\lambda_{\mathrm r}(k^2/W)\le3\alpha Wk^{-2}e^{-c_{\mathrm r}k^2}$.
+(iii) There are $12k^2+1\le13k^2$ pairs with $\max_i|m_i|=k$, and $m_i=(Re_i)\cdot(R^{-\T}m)$ gives $q_m^*\ge k^2/Z$.
+Finally, $r_1\ge\frac58$, $r_2\ge\frac12$, $r_1r_2\le\frac{407}{256}$ and $|x|,|y|,|z|\le\frac12$ on $\Kbox$, so
+$|R^{-\T}e_1|^2=r_1^{-2}+x^2r_2^{-2}+(xz-y)^2r_1^2r_2^2\le\frac{64}{25}+1+\frac9{16}(\frac{407}{256})^2<5$; likewise
+$|R^{-\T}e_2|^2=r_2^{-2}+z^2r_1^2r_2^2<5$ and $|R^{-\T}e_3|^2=r_1^2r_2^2<5$.
+\end{proof}
+
+\emph{Affine bounds for the coefficients.} Let $\mathcal U$ be a finite set of pairs $\pm u$, and $\mathcal V^+$, $\mathcal V^-$ finite
+sets of pairs $\pm m$ with $\epsilon_m=+1$, respectively $\epsilon_m=-1$; these are the \emph{retained} pairs. Let
+$K:=M(\xi_{\mathrm c})$, an exact rational matrix, $\mathsf E:=M-K$, $\bar q_u:=u^\T Ku$ and $\bar q^*_m:=m^\T K^{-1}m$, so that
+\begin{equation}\label{eq:det-shift}
+  q_u=\bar q_u+u^\T\mathsf Eu,\qquad q^*_m=\bar q^*_m+m^\T\bigl(M^{-1}-K^{-1}\bigr)m .
+\end{equation}
+Let $0<q_u^-\le q_u\le q_u^+$ and $0<q_m^{*-}\le q_m^*\le q_m^{*+}$ on $S$. For the increasing concave functions
+$\psi=2F_{\mathrm r}'$ on $[q^-,q^+]=[q_u^-,q_u^+]$ and $\psi=-4\pi^2F_{\mathrm d}$ on $[q^-,q^+]=[q_m^{*-},q_m^{*+}]$ we use
+\begin{equation}\label{eq:det-secant}
+  \psi(q)\ \ge\ \varphi+s\,(q-q^-)\qquad(q^-\le q\le q^+),\qquad \varphi:=\psi(q^-),
+\end{equation}
+where $s$ is the slope of the chord of $\psi$ over $[q^-,q^+]$ or any number in $[0,\psi'(q^+)]$; indeed $\psi$ lies above its chords,
+and $\psi'$ decreases. (The certificate takes the chord if $q^+-q^->10^{-9}$ and a lower bound for $\psi'(q^+)$ otherwise.) We
+write $\varphi_u,s_u$ and $\varphi_m,s_m$ for these data. For the convex functions $4F_{\mathrm r}''$ and $4\pi^2F_{\mathrm d}$ we use
+the tangents at $\bar q_u$ and at $\bar q_m^*$, which are lower bounds on all of $(0,\infty)$.
+
+\begin{lemma}[Gram transport]\label{lem:det-transport}
+Let $K$ and $M$ be symmetric $3\times3$ matrices and $\mathsf E:=M-K$. Then $MPM\succeq KPK+\mathsf EPK+KP\mathsf E$ for every
+positive semidefinite symmetric matrix $P$.
+\end{lemma}
+
+\begin{proof}
+The difference of the two sides is $\mathsf EP\mathsf E\succeq0$.
+\end{proof}
+
+\begin{lemma}[Uniform energy-gain form]\label{lem:det-H}
+Let $\rho_1,\rho_2,\rho_3\ge0$, let $\Omega\subset\prod_i[-\rho_i,\rho_i]$, let $h_+\ge|R(\xi)\delta|$ for all $\xi\in S$ and
+$\delta\in\Omega$, and let
+$\bar\theta_m\ge2\pi\sum_i|m_i|\rho_i$ for $m\in\mathcal V^+$. Let $\tau_*$ be an upper bound, valid for all $\xi\in S$, for the sum
+of $\lambda_{\mathrm r}(q_u)$ over all pairs $\pm u\notin\mathcal U$ plus the sum of $4\pi e^{-\pi q_m^*/\alpha^2}$ over all pairs
+$\pm m\notin\mathcal V^-$ with $\epsilon_m=-1$. For symmetric $3\times3$ matrices $X$ put
+\begin{align*}
+  \mathsf U_0&:=4\sum_{\mathcal U}F_{\mathrm r}''(\bar q_u)\,uu^\T, &
+  \mathsf U_1[X]&:=4\sum_{\mathcal U}F_{\mathrm r}'''(\bar q_u)\,(u^\T Xu)\,uu^\T, \\
+  \mathsf U_2&:=-4\sum_{\mathcal U}F_{\mathrm r}'''(\bar q_u)\,uu^\T, &
+  \mathsf V_2&:=\frac{\pi^2}3\sum_{\mathcal V^+}F_{\mathrm d}(q_m^{*-})\,\bar\theta_m^2\,mm^\T,\\
+  a_0&:=\sum_{\mathcal U}\bigl[\varphi_u+s_u(\bar q_u-q_u^-)\bigr]-\tau_*, & a_1[X]&:=\sum_{\mathcal U}s_u\,u^\T Xu,\\
+  \mathsf V_0&:=\rlap{$\displaystyle\sum_{\mathcal V^-}\bigl[\varphi_m+s_m(\bar q_m^*-q_m^{*-})\bigr]\,mm^\T+4\pi^2\sum_{\mathcal V^+}F_{\mathrm d}(\bar q_m^*)\,mm^\T,$}\\
+  \mathsf V_1[X]&:=\rlap{$\displaystyle\sum_{\mathcal V^-}s_m\,(m^\T Xm)\,mm^\T+4\pi^2\sum_{\mathcal V^+}F_{\mathrm d}'(\bar q_m^*)\,(m^\T Xm)\,mm^\T ,$}
+\end{align*}
+and for $\xi\in S$ define the symmetric matrix $\mathsf H(\xi)$ by
+\begin{multline}\label{eq:det-H}
+  2\ltwo\,\mathsf H:=K\mathsf U_0K+\mathsf E\mathsf U_0K+K\mathsf U_0\mathsf E+M\,\mathsf U_1[\mathsf E]\,M-h_+^2\,M\mathsf U_2M\\
+    +\bigl(a_0+a_1[\mathsf E]\bigr)M+\mathsf V_0+\mathsf V_1\bigl[M^{-1}-K^{-1}\bigr]-\mathsf V_2 .
+\end{multline}
+Then $e(\xi,f)-e(\xi,f_0)\ge\delta^\T\mathsf H(\xi)\,\delta$ for all $\xi\in S$ and all $f=f_0+n+\delta$ with $\delta\in\Omega$.
+Every entry of $\mathsf H(\xi)$ is a polynomial of degree at most three in the entries of $\mathsf E(\xi)$ and of
+$M(\xi)^{-1}-K^{-1}$ whose coefficients do not depend on $\xi$; evaluating it with enclosures of these entries over $S$ gives a
+symmetric matrix $[\mathsf H]$ of intervals that contains $\mathsf H(\xi)$ for every $\xi\in S$.
+\end{lemma}
+
+\begin{proof}
+Insert \eqref{eq:det-secant}, \eqref{eq:det-shift} and the tangents into \eqref{eq:det-pair}, the tangent of $4F_{\mathrm r}''$ being
+evaluated at $q_u+|h|^2=\bar q_u+u^\T\mathsf Eu+|h|^2$. For $u\in\mathcal U$ this gives
+\[
+  \Pi_u\ \ge\ \bigl[\varphi_u+s_u(\bar q_u-q_u^-)+s_u\,u^\T\mathsf Eu\bigr]\,|h|^2
+     +4\bigl[F_{\mathrm r}''(\bar q_u)+F_{\mathrm r}'''(\bar q_u)\bigl(u^\T\mathsf Eu+|h|^2\bigr)\bigr]\,(u^\T M\delta)^2 ,
+\]
+and similarly for $m\in\mathcal V^\pm$, where for $\epsilon_m=+1$ we use
+$\frac1{12}F_{\mathrm d}(q_m^*)\theta_m^4\le\frac1{12}F_{\mathrm d}(q_m^{*-})\bar\theta_m^2\theta_m^2$ and
+$\theta_m^2=4\pi^2\delta^\T mm^\T\delta$. By Lemma~\ref{lem:det-omit}(i) all other pairs together contribute at least
+$-\tau_*|h|^2$. With $|h|^2=\delta^\T M\delta$ and $(u^\T M\delta)^2=\delta^\T Muu^\T M\delta$, the sum of these bounds is the
+quadratic form of
+$M(\mathsf U_0+\mathsf U_1[\mathsf E]-|h|^2\mathsf U_2)M+(a_0+a_1[\mathsf E])M+\mathsf V_0+\mathsf V_1[M^{-1}-K^{-1}]-\mathsf V_2$.
+Finally $\mathsf U_2\succeq0$ and $|h|\le h_+$, and Lemma~\ref{lem:det-transport} applies to $\mathsf U_0\succeq0$.
+\end{proof}
+
+In the evaluation of $[\mathsf H]$, each entry of the terms of first order,
+$\mathsf E\mathsf U_0K+K\mathsf U_0\mathsf E+K\mathsf U_1[\mathsf E]K+a_0\mathsf E+a_1[\mathsf E]K+\mathsf V_1[M^{-1}-K^{-1}]$, has the form
+$L\!:\!\mathsf E+L^*\!:\!(M^{-1}-K^{-1})$ with constant symmetric matrices $L,L^*$. As
+$L\!:\!M+L^*\!:\!M^{-1}=\tr(RLR^\T)+\tr(R^{-\T}L^*R^{-1})$ is an explicit rational function of $(r_1,r_2,x,y,z)$, its variation over
+$S$ is enclosed twice, entrywise and by the mean value theorem in the five coordinates, and the two enclosures are intersected. The
+offsets enter only through $h_+^2$, for which the certificate takes the upper endpoint of the interval value of $|R\delta|^2$ over
+$S\times\Omega$, and through $\mathsf V_2$, where it takes $\bar\theta_m=2\pi\sum_i|m_i|\rho_i$ with $\rho_i=\sup_\Omega|\delta_i|$.
+
+\begin{remark}[Parameters]\label{rem:det-variants}
+In the certificate (stages 3, 4--5 and 7 of Table~\ref{tab:stages}), Lemma~\ref{lem:det-H} is used with $\alpha=\frac{11}{10}$;
+$\mathcal U$ and $\mathcal V^\pm$ consist of the pairs with $\max_i|u_i|\le\frac52$, respectively $\max_i|m_i|\le3$, for which
+$\pi\alpha^2q_u^-\le18$, respectively $\pi q_m^{*-}/\alpha^2\le18$; and $\tau_*$ is the sum of the bounds of
+Lemma~\ref{lem:det-omit}\textup{(ii)}, \textup{(iii)} with $N_{\mathrm r}=2$, $N_{\mathrm d}=3$ and of the values
+$\lambda_{\mathrm r}(q_u^-)$ and, for $\epsilon_m=-1$, $4\pi e^{-\pi q_m^{*-}/\alpha^2}$ of the pairs of these two windows that are not
+retained.
+\end{remark}
+
+\subsection{The coefficient of the growth of the defect}\label{ssec:det-gamma}
+
+Let $\Omega\subset\R^3$ be a box and $0\le h_-\le|R(\xi)\delta|\le h_+$ for $\xi\in S$, $\delta\in\Omega$. Let $\mathcal L$ be the set
+of the pairs of the list of Lemma~\ref{lem:Dbox}(iv) for $S$ whose half class is congruent to $f_0$ modulo $\Z^3$. For
+$(B',f_0)\in\mathcal L$ we use the notation \eqref{eq:regdata}. Let $d^-\le d_0\le d^+$ on $S$. The certificate takes
+$d^-:=100\inf_S\|C-I\|_\Fro^2\,(1+(1+r_C)^{1/2})^{-2}$ and, if $r_C<1$, $d^+:=100\sup_S\|C-I\|_\Fro^2\,(1+(1-r_C)^{1/2})^{-2}$, where
+$r_C$ bounds the absolute row sums of $C-I$ on $S$: the eigenvalues $c$ of $C$ lie in $[1-r_C,1+r_C]$, and
+$(\sqrt c-1)^2=(c-1)^2/(1+\sqrt c)^2$. Pairs with $d^-\ge1$ are removed from $\mathcal L$. For each pair $\pm b$ of vectors of $\Bz$ of length $\sqrt2$
+with $\chi(b)=1$, that is $b\notin B'\Z^3$, let
+\[
+  q_b^-\le|Ab|^2,\qquad p_b\ge|Ab\cdot h|\quad\text{on }S\times\Omega,\qquad
+  c_b:=\max\bigl\{\tfrac{23}{25}\sqrt2,\ (q_b^-)^{1/2}\bigr\}-\tfrac{13}{10}>0 .
+\]
+Put $h_*:=\min\bigl\{h_+,\ ((1-d^-)/200)^{1/2}\bigr\}$ and, for $v\ge0$ and $c>0$,
+\begin{equation}\label{eq:det-rho}
+  \varrho(v,c):=\sup_{0<s\le v}\frac{10\,(s-c)_+}{s^2}=\begin{cases}0,&v\le c,\\ 10\,(v-c)/v^2,&c\le v\le2c,\\ 5/(2c),&v\ge2c;\end{cases}
+\end{equation}
+the second equality holds because $s\mapsto(s-c)/s^2$ increases on $(c,2c]$ and decreases on $[2c,\infty)$.
+
+\begin{lemma}[Growth coefficient]\label{lem:det-gamma}
+For $(B',f_0)\in\mathcal L$ let $\gamma(B'):=\min\{\gamma_{\mathrm{cap}},\gamma_{\mathrm{ann}}\}$, where
+\begin{itemize}
+\item[\textup{(a)}] $\gamma_{\mathrm{cap}}:=(1-d^-)/h_-^2$ if $h_->0$, and $\gamma_{\mathrm{cap}}:=+\infty$ if $h_-=0$;
+\item[\textup{(b)}] $\gamma_{\mathrm{ann}}:=200$ if $d^++200\,h_+^2\le d_\sharp$;
+\item[\textup{(c)}] otherwise
+$\gamma_{\mathrm{ann}}:=200+\sum_{\{\pm b\}}\min\bigl\{\varrho(h_*,c_b),\ 4\,(\frac{169}{100}-q_b^-+2p_b-h_-^2)_+/h_-^2\bigr\}$,
+the second entry of the minimum being omitted if $h_-=0$.
+\end{itemize}
+Let $\gamma\ge\max_{\mathcal L}\gamma(B')$, and $\gamma\ge0$ if $\mathcal L=\emptyset$. Then
+$D(\xi,f)-D(\xi,f_0)\le\gamma\,|h|^2=\gamma\,\delta^\T M\delta$ for all $\xi\in S$ and $f=f_0+n+\delta$ with $\delta\in\Omega$.
+Moreover $D(\xi,f_0)\ge D_0^-:=\min\{1,\min_{\mathcal L}d^-\}$ for all $\xi\in S$.
+\end{lemma}
+
+\begin{proof}
+Fix $\xi\in S$ and $\delta\in\Omega$. If $D(\xi,f_0)=1$, both claims hold by Lemma~\ref{lem:growth}(i), since $\gamma\ge0$. Let
+$D(\xi,f_0)<1$. The anchor is $Y=L\cup(L+\tau)$ with $L=R\Z^3$ and $\tau=R(f_0+n)\in\frac12L\setminus L$, so in
+Theorem~\ref{thm:registration}(b) we have $\tau_0=\tau$, $h=0$ and $\Lambda=Y$, and part (c) gives $A\in\SL(3,\R)$ with $A\Bz=Y$. Then
+$B':=A^{-1}R$ is a basis
+matrix of the sublattice $A^{-1}L$ of index two of $\Bz$, its half class is $f_0$ because $B'(f_0+n)=A^{-1}\tau\notin A^{-1}L$, and
+$d_0\le D(\xi,f_0)<1$ by \eqref{eq:Dformula}. So $(B',f_0,n)$ is a registration with $d_0<1$ at $\xi$; by Lemma~\ref{lem:Dbox}(iv) we
+may assume $(B',f_0)\in\mathcal L$, the quantities below being invariant under rotations preserving $\Bz$. By
+Lemma~\ref{lem:Dbox}(v), $D(\xi,f_0)=d_0\ge d^-$, which proves the last claim. By Lemma~\ref{lem:growth}(ii),
+\begin{equation}\label{eq:det-growth}
+  D(\xi,f)-D(\xi,f_0)\ \le\ \min\bigl\{1-d_0,\ 200\,|h|^2+\Phi^+\bigr\},
+\end{equation}
+and we show that the right side is at most $\gamma(B')\,|h|^2$. First, if $h_->0$, then
+$1-d_0\le1-d^-=\gamma_{\mathrm{cap}}h_-^2\le\gamma_{\mathrm{cap}}|h|^2$; if $h_-=0$, then $\gamma(B')=\gamma_{\mathrm{ann}}$.
+Next, if $q=d_0+200|h|^2\ge1$, then $1-d_0\le200|h|^2\le\gamma_{\mathrm{ann}}|h|^2$. Let $q<1$. In case (b), $q\le d_\sharp$ and
+$\Phi^+=0$. In case (c), $|h|\le h_*$ because $200|h|^2<1-d_0\le1-d^-$, and $|Ab|-\frac{13}{10}\ge c_b$ by the proof of
+Lemma~\ref{lem:Dbox}(v); so the two bounds of Lemma~\ref{lem:growth}(ii) for the pair $\pm b$ are at most
+$10(|h|-c_b)_+\le\varrho(h_*,c_b)\,|h|^2$ and $4(\frac{169}{100}-q_b^-+2p_b-h_-^2)_+\le4(\ldots)_+\,|h|^2/h_-^2$.
+\end{proof}
+
+The maximum over $\mathcal L$ is taken because the registration that realizes $D(\xi,f_0)$ is not known in advance and may change
+with $\xi\in S$; $\gamma(B')$ is a valid coefficient at every $\xi$ at which $B'$ is that registration. Where the anchor is
+saturated, $D(\xi,f_0)=1$, any $\gamma\ge0$ will do, and $\gamma=0$ if $\mathcal L$ is empty, in which case $D(\cdot,f_0)\equiv1$ on
+$S$. The number $D_0^-$ is used in Lemma~\ref{lem:anchor}(iii). If no upper bound $d^+$ is available ($r_C\ge1$), case (b) is
+skipped.
+
+\subsection{Positivity tests}\label{ssec:det-positive}
+
+\begin{lemma}[Positivity tests]\label{lem:det-positive}
+Let $[P]$ be a symmetric $3\times3$ matrix of compact intervals; we write $P\in[P]$ for the real symmetric matrices with entries in
+these intervals. Let $\Omega=\prod_i[a_i,b_i]\subset\R^3$ be a box. For $s\in\{\pm1\}^3$ let
+$\Omega_s:=\{\delta\in\Omega:s_i\delta_i\ge0\text{ for }i=1,2,3\}$, let $P^s$ be the real symmetric matrix whose entries are the
+lower endpoints of the intervals $s_is_j[P]_{ij}$, and let $\check P^s$ be obtained from $P^s$ by replacing its positive off-diagonal
+entries by $0$.
+\begin{enumerate}
+\item[\textup{(i)}] \emph{Interval factorization.} Suppose that the recursion
+$\nu_j=P_{jj}-\sum_{k<j}l_{jk}^2\nu_k$, $l_{ij}=(P_{ij}-\sum_{k<j}l_{ik}l_{jk}\nu_k)/\nu_j$ $(i>j)$, evaluated in interval arithmetic
+on the entries of $[P]$, yields intervals $\nu_1,\nu_2,\nu_3$ with positive lower endpoints. Then there is $c>0$ with
+$\delta^\T P\delta\ge c\,|\delta|^2$ for all $P\in[P]$ and all $\delta\in\R^3$.
+\item[\textup{(ii)}] \emph{Sign sectors.} If $P\in[P]$ and $\delta\in\Omega_s$, then $\delta^\T P\delta\ge y^\T P^sy\ge y^\T\check P^sy$
+with $y:=(|\delta_1|,|\delta_2|,|\delta_3|)$. Hence, if $\check P^s$ is positive definite for every $s$ with $\Omega_s\ne\emptyset$,
+then $\delta^\T P\delta\ge c\,|\delta|^2$ for all $P\in[P]$ and $\delta\in\Omega$, with $c>0$ the least eigenvalue of these matrices.
+\item[\textup{(iii)}] \emph{Floor on a box.} For a real symmetric matrix $Q$, the bound \eqref{eq:T1} applies to $\psi(y)=y^\T Qy$
+on a box with centre $\bar y$ and half-widths $\rho_i$, with $\partial_i\psi(\bar y)=2(Q\bar y)_i$ and $\partial_{ij}\psi=2Q_{ij}$; the
+$i$-th minimum in \eqref{eq:T1} equals $-g_i^2/(2\kappa_i)$ if $\kappa_i>0$ and $g_i\le\kappa_i\rho_i$, and
+$\frac12\kappa_i\rho_i^2-g_i\rho_i$ otherwise, where $g_i:=|\partial_i\psi(\bar y)|$. Coordinates with $\rho_i=0$ are omitted.
+\item[\textup{(iv)}] \emph{Schur complement.} Let $\{i,j,k\}=\{1,2,3\}$ and suppose that $|\delta_i|\ge l>0$ on $\Omega_s$, that the
+block $Q:=(\check P^s_{ab})_{a,b\in\{j,k\}}$ is positive definite and that $\varsigma:=\check P^s_{ii}-p^\T Q^{-1}p\ge0$, where
+$p:=(\check P^s_{ij},\check P^s_{ik})$. Then $\delta^\T P\delta\ge\varsigma\,l^2$ for all $P\in[P]$ and $\delta\in\Omega_s$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) Interval arithmetic is inclusion monotone, so for every $P\in[P]$ the same recursion in exact arithmetic is well defined and
+yields numbers in the computed intervals; thus $P=L\,\diag(\nu_1,\nu_2,\nu_3)L^\T$ with a unit lower triangular matrix $L$ and
+positive $\nu_j$, and $P$ is positive definite. The matrices $P\in[P]$ form a compact set, on which the least eigenvalue is
+continuous. (ii) $\delta^\T P\delta=\sum_{i,j}(s_is_jP_{ij})\,y_iy_j$ and $y_iy_j\ge0$. (iii) The one-variable minimum is elementary.
+(iv) By (ii), with $y'=(y_j,y_k)$,
+$\delta^\T P\delta\ge y^\T\check P^sy=(y'+y_iQ^{-1}p)^\T Q\,(y'+y_iQ^{-1}p)+\varsigma\,y_i^2\ge\varsigma\,l^2$.
+\end{proof}
+
+The tests are applied to $[P]=[\mathsf H]$ and to $[P]=[\mathsf H]-\gap^+\gamma\,[M]$, where $[M]$ encloses $M(\xi)$ over $S$; by
+Lemmas~\ref{lem:det-H} and~\ref{lem:det-gamma}, \eqref{eq:EDg} holds with $\mathcal E=\delta^\T\mathsf H\delta$ and
+$\mathcal D=\gamma\,\delta^\T M\delta$. A positive constant in (i) or (ii) for $[\mathsf H]-\gap^+\gamma[M]$ gives the hypothesis of
+Lemma~\ref{lem:anchor}(i), because $|h|^2\le\lambda_{\max}(M)|\delta|^2$; here $\Omega$ may contain $\delta=0$, and the recorded
+witness is the least lower endpoint of a pivot $\nu_j$. Tests (iii) and (iv) are applied on every nonempty $\Omega_s$, in the
+coordinates $y$, to $P^s$ and to $\check P^s$ respectively; with the interval value of $y^\T P^sy$ they give a number $J$, the
+least over $s$ of the largest of the three bounds, such that $\delta^\T P\delta\ge J$ for all $P\in[P]$, $\delta\in\Omega$. For
+$[P]=[\mathsf H]$ the inequality $J>\gap^+(1-D_0^-)$ is the hypothesis of Lemma~\ref{lem:anchor}(iii); for
+$[P]=[\mathsf H]-\gap^+\gamma[M]$ a positive $J$, which requires $0\notin\Omega$, gives Lemma~\ref{lem:anchor}(ii) with $s_-=0$, and
+also (i) with $c=J/h_+^2$; in Table~\ref{tab:stages} the boxes discharged in this way are listed with the conclusion (D). The
+verifying program uses $\rho_i=\sup_\Omega|\delta_i|$ and applies, on $\Omega$, first test (i), then test (ii), then the test
+$J>0$ for $[\mathsf H]-\gap^+\gamma[M]$, and then $J>\gap^+(1-D_0^-)$ for $[\mathsf H]$.
+
+\subsection{The planar expansion and the fibre bound}\label{ssec:det-fibre}
+
+\begin{proof}[Details of the proof of Lemma~\ref{lem:planar}]
+For $w\in\R^3$ let $\Theta_w(t):=\sum_{m\in\Z^3}e^{-\pi t|R(m+w)|^2}$. By \eqref{eq:Gdef},
+$\int_1^\infty t^{-1/2}e^{-\pi tq}\,dt=\Ga(\frac12,\pi q)$ and $\int_0^1t^{-2}e^{-\pi q/t}\,dt=\Ga(1,\pi q)$, and by the Poisson
+summation formula $\Theta_w(t)=t^{-3/2}\sum_me^{-\pi|R^{-\T}m|^2/t}e^{2\pi im\cdot w}$. Hence \eqref{eq:H2} is the identity
+\begin{equation}\label{eq:det-mellin}
+  2\ltwo\,e(\kappa)=\int_0^\infty t^{-1/2}\bigl[\Theta_0(t)+\Theta_f(t)-1-2t^{-3/2}\bigr]\,dt ,
+\end{equation}
+evaluated by splitting the integral at $t=1$ and transforming $\Theta_0+\Theta_f$ on $(0,1)$; the constant $-4$ is
+$-\int_0^1t^{-1/2}dt-\int_1^\infty2t^{-2}dt$. Now $R=\bigl(\begin{smallmatrix}A_\parallel&A_\parallel\sigma\\0&c\end{smallmatrix}\bigr)$.
+With
+\[
+  \vartheta_s(t):=\sum_{n\in\Z^2}e^{-\pi t|A_\parallel(n+s)|^2}=\frac1{at}\sum_{p\in\Z^2}e^{-\pi\varkappa_p^2/t}\,e^{2\pi ip\cdot s}\qquad(s\in\R^2,\ \varkappa_0:=0)
+\]
+we therefore have $\Theta_w(t)=\sum_{k\in\Z}e^{-\pi tc^2(k+w_3)^2}\,\vartheta_{w_\parallel+(k+w_3)\sigma}(t)$. Write the bracket of
+\eqref{eq:det-mellin} as $[\vartheta_0-1-(at)^{-1}]+[\Theta_0-\vartheta_0+\Theta_f+(at)^{-1}-2t^{-3/2}]$, where $\vartheta_0$ is the
+layer $k=0$ of $\Theta_0$. The first bracket tends to $-1$ as $t\to0$ and is $O(1/t)$ as $t\to\infty$, so it is integrable against
+$t^{-1/2}$, and it integrates to $\mathcal M(A_\parallel)$. In the second part we insert the second expression
+for $\vartheta_s$ in every layer. Since $ac=1$, the terms with $p=0$ add up to
+\[
+  \frac ct\Bigl[\sum_{k\in\Z}\bigl(e^{-\pi tc^2k^2}+e^{-\pi tc^2(k+f_3)^2}\bigr)-\frac2{c\sqrt t}\Bigr]
+  =t^{-3/2}\sum_{l\ne0}\bigl(1+\cos2\pi lf_3\bigr)\,e^{-\pi l^2/(c^2t)}
+\]
+by the one-dimensional Poisson formula. This function is nonnegative, and its integral against $t^{-1/2}$ is
+$\frac{c^2}\pi\sum_{l\ne0}(1+\cos2\pi lf_3)\,l^{-2}=2\pi c^2(f_3^2-f_3+\frac13)$, because
+$\sum_{l\ge1}l^{-2}\cos2\pi lu=\pi^2(u^2-u+\frac16)$ for $0\le u\le1$. The terms with $p\ne0$ give the double series of
+\eqref{eq:planar}, by the integral stated in Section~\ref{ssec:planar}, applied with the heights $k\ne0$ and $k+f_3\ne0$; the
+termwise integration is justified by Tonelli's theorem, because the integrands are positive up to the factors $e^{2\pi ip\cdot s}$
+of modulus one and the resulting series converges absolutely (Lemma~\ref{lem:det-ptail}). The second expression
+in \eqref{eq:M2} is obtained in the same way from the two expressions for $\vartheta_0$, used on $(1/a,\infty)$ and on $(0,1/a)$
+respectively.
+\end{proof}
+
+\emph{The paired form.} Replacing $f$ by $f-je_3$ with $j\in\Z$, which does not change the configuration, we may assume
+$f_3=\frac12+t$ with $|t|<\frac12$; from here on $t$ denotes this number and no longer a variable of integration. Put
+\begin{equation}\label{eq:det-pnot}
+  v:=f_\parallel+t\sigma,\qquad\theta_p:=2\pi\,p\cdot v,\qquad\omega_p:=\pi\,p\cdot\sigma,\qquad
+  W_p:=\frac{4c}{\varkappa_p}\,e^{-T_p/2},\qquad w_p:=W_p\cos\omega_p .
+\end{equation}
+In \eqref{eq:planar} the layers $k=j$ and $k=-j-1$ of the second sum, $j\ge0$, have the heights $(\pm(j+\frac12)+t)c$ and the phases
+$\theta_p\pm(2j+1)\omega_p$. Combining them, and the terms of $p$ and $-p$, we obtain
+\begin{multline}\label{eq:det-paired}
+  2\ltwo\,e=\mathcal M(A_\parallel)+2\pi c^2\bigl(\tfrac1{12}+t^2\bigr)+\sum_{p\succ0}\frac{4c}{\varkappa_p}\Bigl[\,\sum_{j\ge1}e^{-jT_p}\cos(2j\omega_p)\\
+   +\sum_{j\ge0}e^{-(j+\frac12)T_p}\bigl\{\cosh(T_pt)\cos((2j+1)\omega_p)\cos\theta_p+\sinh(T_pt)\sin((2j+1)\omega_p)\sin\theta_p\bigr\}\Bigr].
+\end{multline}
+The brace equals $\frac12[e^{-T_pt}\cos(\theta_p+(2j+1)\omega_p)+e^{T_pt}\cos(\theta_p-(2j+1)\omega_p)]$; for $j=0$ the term of the
+second sum is $W_p\{\cosh(T_pt)\cos\omega_p\cos\theta_p+\sinh(T_pt)\sin\omega_p\sin\theta_p\}$.
+
+\begin{lemma}[Planar tails]\label{lem:det-ptail}
+Let $\ell_\parallel:=\max\{|A_\parallel e_1|,|A_\parallel e_2|\}$ and $\tau:=2\pi c/\ell_\parallel$. Then
+$\varkappa_p\ge\max_i|p_i|/\ell_\parallel$ and $T_p\ge\tau\max_i|p_i|$. If $0<s\le\min\{f_3,1-f_3\}$ and $J\ge1$ is an integer, then
+the absolute values of the terms of \eqref{eq:planar} with $\max_i|p_i|\ge J$ add up to at most
+\[
+  \mathcal R_J(s):=\frac{8c\,\ell_\parallel}{1-e^{-\tau J}}\Bigl[\frac{2e^{-\tau J}}{1-e^{-\tau}}+\frac{2e^{-\tau sJ}}{1-e^{-\tau s}}\Bigr],
+\]
+an expression that increases with $c$ and $\ell_\parallel$ and decreases with $\tau$.
+\end{lemma}
+
+\begin{proof}
+$p_i=(A_\parallel^{-\T}p)\cdot(A_\parallel e_i)$ gives $|p_i|\le\varkappa_p\ell_\parallel$. For one $p$,
+$\sum_{k\ne0}e^{-T_p|k|}=2e^{-T_p}/(1-e^{-T_p})$ and
+$\sum_ke^{-T_p|k+f_3|}=(e^{-T_pf_3}+e^{-T_p(1-f_3)})/(1-e^{-T_p})\le2e^{-T_ps}/(1-e^{-T_p})$. There are $8j$ vectors $p$ with
+$\max_i|p_i|=j$; for them $1/\varkappa_p\le\ell_\parallel/j$ and $T_p\ge\tau j$, so they contribute at most
+$8c\,\ell_\parallel\,(2e^{-\tau j}+2e^{-\tau sj})/(1-e^{-\tau J})$ if $j\ge J$. Sum over $j\ge J$.
+\end{proof}
+
+In Lemma~\ref{lem:planarrules}(i) the retained terms are those of \eqref{eq:det-paired} with $\max_i|p_i|\le2$ and $j=1$ in the first
+sum, $j=0$ in the second; with $\eta\le\frac12-|t|$ as in that lemma, the other layers of such a pair $\pm p$ cost at most
+$\frac{2c}{\varkappa_p}(2e^{-2T_p}+2e^{-(1+\eta)T_p})/(1-e^{-T_p})$, as in the last proof, and all other modes at most
+$\mathcal R_3(\eta)$. When
+Montgomery's theorem is used, the first two terms of \eqref{eq:planar} are bounded below together by $C\beta+d\beta^4$,
+$\beta:=a^{-1/2}$, where $C\le M_\triangle$ is the partial sum over $\max_i|n_i|\le3$ of the series for $M_\triangle$, minus $4$, and
+$d:=2\pi(\frac1{12}+\inf_B(f_3-\frac12)^2)$; this convex function of $\beta$ lies above its tangents.
+
+\emph{The fibre bound.} Let $0\le\eta<\frac12$ and $|t|\le\eta$. Let $\operatorname{sinhc}u:=\sinh(u)/u$, an even function with
+$\operatorname{sinhc}0=1$ that increases with $|u|$; then
+\begin{equation}\label{eq:det-sinhc}
+  0\le\cosh(T_pt)-1=\tfrac12T_p^2t^2\operatorname{sinhc}^2(T_pt/2)\le\tfrac12T_p^2\operatorname{sinhc}^2(T_p\eta/2)\,t^2,\qquad
+  \sinh(T_pt)=T_pt\,\operatorname{sinhc}(T_pt).
+\end{equation}
+Let $\mathcal P_1:=\{(1,0),(0,1),(1,1)\}$, $\mathcal P_2:=\{(1,-1),(1,2),(2,1)\}$, $\mathcal P_3:=\{(2,0),(0,2),(2,2)\}$ and
+$\mathcal P:=\mathcal P_1\cup\mathcal P_2\cup\mathcal P_3$. We write $w_1,w_2,w_3$ for $w_p$ with $p=(1,0),(0,1),(1,1)$, and similarly
+$\theta_i,\omega_i,T_i,W_i$; note that $\theta_3=\theta_1+\theta_2$ and $\omega_3=\omega_1+\omega_2$. For positive $x_1,x_2,x_3$ let
+\[
+  \Psi(x_1,x_2,x_3):=\frac12\Bigl[\frac{x_1x_2}{x_3}+\frac{x_1x_3}{x_2}+\frac{x_2x_3}{x_1}\Bigr]-\frac{x_1+x_2+x_3}2
+   =\frac14\sum_{i=1}^3\frac{x_i\,(x_j-x_k)^2}{x_jx_k},
+\]
+where $\{i,j,k\}=\{1,2,3\}$ in each term of the last sum. Suppose that $w_p>0$ on $S$ for $p\in\mathcal P_1\cup\mathcal P_3$, and
+define the following functions of $\xi\in S$ (and of $\eta$). For $p=(1,-1)$, $(1,2)$, $(2,1)$ let $\mu_p>0$ and $\lambda_p\ge0$ be
+given by $\mu_p^2:=w_3/(w_1w_2)$, $w_1/(w_2w_3)$, $w_2/(w_1w_3)$ and $\lambda_p:=\mu_p^2|w_1-w_2|$, $\mu_p^2|w_2-w_3|$,
+$\mu_p^2|w_1-w_3|$, respectively; let $\bar b_p:=W_pT_p\operatorname{sinhc}(T_p\eta)\,|\sin\omega_p|$ for $p\in\mathcal P$ and
+$\overline{WT}:=\tfrac13(W_1T_1+W_2T_2+W_3T_3)$; and, with sums over $p$ in the indicated sets, let
+\begin{align*}
+  \mathfrak a&:=\tfrac12-2\sum_{\mathcal P_2}(w_p)_+\mu_p^2,\qquad
+  \mathfrak b:=2\pi c^2-\tfrac12\sum_{\mathcal P}W_pT_p^2\operatorname{sinhc}^2(T_p\eta/2),\qquad
+  \mathfrak c:=4\sum_{\mathcal P_2}(w_p)_+\mu_p\lambda_p,\\
+  \mathfrak d&:=\sum_{\mathcal P_3}\bar b_p+2\sum_{\mathcal P_2}\bar b_p\lambda_p+\bar b_1\frac{|w_3-w_1|}{w_1}+\bar b_2\frac{|w_3-w_2|}{w_2}\\
+     &\qquad+\sum_{i=1}^3\Bigl[\bigl(|W_iT_i-\overline{WT}|+W_iT_i(\operatorname{sinhc}(T_i\eta)-1)\bigr)|\omega_i|+\tfrac16W_iT_i\operatorname{sinhc}(T_i\eta)\,|\omega_i|^3\Bigr],\\
+  \mathfrak e&:=(\bar b_1+\bar b_2)\,\mu_{(1,-1)}+2\sum_{\mathcal P_2}\bar b_p\mu_p ,\\
+  \mathcal B_0&:=a^{-1/2}\Bigl[-4+4\!\!\sum_{n\succ0,\ \max|n_i|\le2}\!\!\Ga\bigl(\tfrac12,\tfrac\pi a|A_\parallel n|^2\bigr)\Bigr]+\frac{\pi c^2}6
+      +\sum_{\mathcal P}\frac{4c}{\varkappa_p}e^{-T_p}\cos2\omega_p-\frac12\sum_{\mathcal P_1\cup\mathcal P_3}w_p+\sum_{\mathcal P_2}w_p,\\
+  \mathcal B_1&:=\Psi(w_1,w_2,w_3)+\Psi(w_{(2,0)},w_{(0,2)},w_{(2,2)})+2\sum_{\mathcal P_2}(w_p)_+\lambda_p^2,\\
+  \mathcal B_2&:=\sum_{p\succ0,\ \max|p_i|\le5}\frac{2c}{\varkappa_p}\,\frac{\nu_p}{1-e^{-T_p}}+\mathcal R_6\bigl(\tfrac12-\eta\bigr),\qquad
+   \nu_p:=\begin{cases}2e^{-2T_p}+e^{-T_p}E_p,&p\in\mathcal P,\\2e^{-T_p}+E_p,&p\notin\mathcal P,\end{cases}
+\end{align*}
+where $E_p:=e^{-T_p(\frac12-\eta)}+e^{-T_p(\frac12+\eta)}$ and $\mathcal R_6$ is the bound of Lemma~\ref{lem:det-ptail}.
+
+\begin{lemma}[Planar fibre bound]\label{lem:det-fibre}
+Let $w_p>0$ on $S$ for $p\in\mathcal P_1\cup\mathcal P_3$. Then, for all $\xi\in S$, all $f_\parallel\in\R^2$ and all $f_3=\frac12+t$ with
+$|t|\le\eta$,
+\begin{equation}\label{eq:det-fibre}
+  2\ltwo\,e(\xi,f)\ \ge\ \mathcal B_0-\mathcal B_1-\mathcal B_2+\mathfrak a\,\zeta^2+\mathfrak b\,t^2-\mathfrak c\,\zeta-\mathfrak d\,|t|-\mathfrak e\,\zeta\,|t| ,
+  \qquad\zeta:=\bigl|A_0+A_1e^{i\theta_1}+A_2e^{-i\theta_2}\bigr|,
+\end{equation}
+where $A_0,A_1,A_2>0$ are determined by $A_0A_1=w_1$, $A_0A_2=w_2$, $A_1A_2=w_3$. Consequently, if
+$\mathcal B_0\ge\mathcal B_0^-$, $\mathcal B_1\le\mathcal B_1^+$, $\mathcal B_2\le\mathcal B_2^+$,
+$\mathfrak a\ge\mathfrak a^->0$, $\mathfrak b\ge\mathfrak b^->0$, $\mathfrak c\le\mathfrak c^+$, $\mathfrak d\le\mathfrak d^+$,
+$\mathfrak e\le\mathfrak e^+$ on $S$, if $4\mathfrak a^-\mathfrak b^->(\mathfrak e^+)^2$, and if
+\begin{equation}\label{eq:det-fibretest}
+  \frac1{2\ltwo}\Bigl[\,\mathcal B_0^--\mathcal B_1^+-\mathcal B_2^+
+    -\frac{\mathfrak b^-(\mathfrak c^+)^2+\mathfrak a^-(\mathfrak d^+)^2+\mathfrak e^+\mathfrak c^+\mathfrak d^+}{4\mathfrak a^-\mathfrak b^--(\mathfrak e^+)^2}\Bigr]>\eF^+ ,
+\end{equation}
+then $e(\xi,f)>\eF$ for all $\xi\in S$, all $f_\parallel\in\R^2$ and all $f_3$ with $|f_3-\frac12|\le\eta$.
+\end{lemma}
+
+\begin{proof}
+Fix $\xi$, $f_\parallel$ and $t$. In \eqref{eq:det-paired} we keep, for $p\in\mathcal P$, the term $j=1$ of the first and the term
+$j=0$ of the second sum.
+
+\emph{Omitted terms.} The terms of the first sum are at most $e^{-jT_p}$ in absolute value, and those of the second at most
+$e^{-(j+\frac12)T_p}\cosh(T_pt)\le\frac12e^{-jT_p}E_p$. Summing the geometric series gives the first part of $\mathcal B_2$ for the
+omitted terms with $\max_i|p_i|\le5$, and the modes with $\max_i|p_i|\ge6$ are bounded by Lemma~\ref{lem:det-ptail}. In
+\eqref{eq:M2} all terms are positive, and $a|A^{-\T}n|^2=a^{-1}|A\mathsf J^{-1}n|^2$ with $\mathsf J$ the rotation by a quarter turn,
+because $A^{-\T}=a^{-1}\mathsf JA\mathsf J^{-1}$ for a $2\times2$ matrix of determinant $a$. As $\mathsf J$ maps the square
+$\max_i|n_i|\le2$ onto itself, the two sums of \eqref{eq:M2} over this square coincide, and
+$\mathcal M(A_\parallel)\ge a^{-1/2}[-4+4\sum_{n\succ0,\,\max|n_i|\le2}\Ga(\frac12,\frac\pi a|A_\parallel n|^2)]$.
+
+\emph{Retained terms.} For $p\in\mathcal P$ the term $j=0$ is
+$w_p\cos\theta_p+w_p(\cosh(T_pt)-1)\cos\theta_p+b_p\,t\sin\theta_p$ with $b_p:=W_pT_p\operatorname{sinhc}(T_pt)\sin\omega_p$,
+$|b_p|\le\bar b_p$. By \eqref{eq:det-sinhc} the middle terms and the term $2\pi c^2t^2$ of \eqref{eq:det-paired} add up to at least
+$\mathfrak b\,t^2$. Put $X:=e^{i\theta_1}$, $Y:=e^{-i\theta_2}$ and $\mathsf Z:=A_0+A_1X+A_2Y$, so that $\zeta=|\mathsf Z|$. By the
+identity displayed after Lemma~\ref{lem:planarrules}, in which $\frac12(A_0^2+A_1^2+A_2^2)=\frac12(w_1+w_2+w_3)+\Psi(w_1,w_2,w_3)$,
+$\sum_{\mathcal P_1}w_p\cos\theta_p=\frac12\zeta^2-\frac12(w_1+w_2+w_3)-\Psi(w_1,w_2,w_3)$, and the same identity with $2\theta_i$ in
+place of $\theta_i$ gives $\sum_{\mathcal P_3}w_p\cos\theta_p\ge-\frac12\sum_{\mathcal P_3}w_p-\Psi(w_{(2,0)},w_{(0,2)},w_{(2,2)})$.
+
+For $p=(1,-1)$, $(1,2)$, $(2,1)$ we have $e^{i\theta_p}=XY$, $X/Y^2$, $X^2/Y$. From
+$XY\overline{\mathsf Z}-\mathsf Z=A_0(XY-1)+(A_2-A_1)(X-Y)$ we get $|XY-1|\le2(\zeta+|A_1-A_2|)/A_0=2(\mu_p\zeta+\lambda_p)$ for
+$p=(1,-1)$, because $A_0^{-2}=w_3/(w_1w_2)$ and $A_1-A_2=(w_1-w_2)/A_0$. The same argument for
+$\mathsf Z/Y=A_2+A_0\overline Y+A_1X\overline Y$ and for $\mathsf Z/X=A_1+A_0\overline X+A_2Y\overline X$ gives
+$|e^{i\theta_p}-1|\le2(\mu_p\zeta+\lambda_p)$ for the other two elements of $\mathcal P_2$. Hence, for $p\in\mathcal P_2$,
+$w_p\cos\theta_p=w_p-\frac12w_p|e^{i\theta_p}-1|^2\ge w_p-2(w_p)_+(\mu_p\zeta+\lambda_p)^2$ and
+$|b_p\,t\sin\theta_p|\le2\bar b_p|t|(\mu_p\zeta+\lambda_p)$.
+
+For the odd terms of $\mathcal P_1$ we use $\operatorname{Im}(X\overline{\mathsf Z})=A_0\sin\theta_1+A_2\sin\theta_3$ and
+$\operatorname{Im}(-Y\overline{\mathsf Z})=A_0\sin\theta_2+A_1\sin\theta_3$, together with $A_2/A_0=w_3/w_1$ and $A_1/A_0=w_3/w_2$:
+\[
+  \sum_{i=1}^3b_i\sin\theta_i=\frac{b_1}{A_0}\operatorname{Im}(X\overline{\mathsf Z})+\frac{b_2}{A_0}\operatorname{Im}(-Y\overline{\mathsf Z})
+     +\Bigl(b_3-\frac{w_3}{w_1}b_1-\frac{w_3}{w_2}b_2\Bigr)\sin\theta_3 .
+\]
+The first two terms are at most $(\bar b_1+\bar b_2)\mu_{(1,-1)}\zeta$ in absolute value, and the last coefficient is at most
+$|b_3-b_1-b_2|+\bar b_1|w_3-w_1|/w_1+\bar b_2|w_3-w_2|/w_2$. Since $\omega_3=\omega_1+\omega_2$,
+$b_3-b_1-b_2=(b_3-\overline{WT}\omega_3)-(b_1-\overline{WT}\omega_1)-(b_2-\overline{WT}\omega_2)$, and
+$|b_i-\overline{WT}\omega_i|$ is at most the $i$-th bracket in the definition of $\mathfrak d$, by
+$1\le\operatorname{sinhc}(T_it)\le\operatorname{sinhc}(T_i\eta)$ and $|\sin\omega-\omega|\le\frac16|\omega|^3$. The odd terms of
+$\mathcal P_3$ are at least $-|t|\sum_{\mathcal P_3}\bar b_p$. Collecting all terms gives \eqref{eq:det-fibre}.
+
+For the last statement, $\zeta\ge0$ and $|t|\ge0$ allow us to replace the coefficients in \eqref{eq:det-fibre} by their bounds,
+and for $\mathfrak a,\mathfrak b>0$ with $4\mathfrak a\mathfrak b>\mathfrak e^2$ the minimum over $(x,y)\in\R^2$ of
+$\mathfrak a x^2+\mathfrak b y^2-\mathfrak c x-\mathfrak d y-\mathfrak e xy$ is
+$-(\mathfrak b\mathfrak c^2+\mathfrak a\mathfrak d^2+\mathfrak e\mathfrak c\mathfrak d)/(4\mathfrak a\mathfrak b-\mathfrak e^2)$.
+\end{proof}
+
+\begin{remark}[Variants and evaluation]\label{rem:det-fibrevar}
+Two variants of \eqref{eq:det-fibre}, with $\zeta':=|1+X+Y|$ in place of $\zeta$ ($X$, $Y$ as in the last proof) and with $\mu_p=1$,
+$\lambda_p=0$ in the bounds for $\mathcal P_2$ and for the odd terms, are proved in the same way. Let $\mathfrak d'$ be the sum of the
+first and the last term of $\mathfrak d$, and $\mathfrak e':=\bar b_1+\bar b_2+2\sum_{\mathcal P_2}\bar b_p$. In the first variant,
+$\cos\theta_1+\frac12=\frac12\zeta'^2-\operatorname{Re}((1+X+Y)\overline Y)$ and its two analogues give
+$\sum_{\mathcal P_1}w_p\cos\theta_p\ge-\frac12\sum_iw_i+\frac16(\sum_iw_i)\zeta'^2-\zeta'\sum_i|w_i-\bar w|$, $\bar w$ being the mean
+of the $w_i$; the five coefficients are then $\frac16\sum_iw_i-2\sum_{\mathcal P_2}(w_p)_+$, $\mathfrak b$, $\sum_i|w_i-\bar w|$,
+$\mathfrak d'$, $\mathfrak e'$, and $\mathcal B_1$ reduces to $\Psi(w_{(2,0)},w_{(0,2)},w_{(2,2)})$. In the second variant a number $l$ with
+$0\le l<\min_iw_i$ on $S$ is fixed (the certificate takes
+$l=4\sum_{\mathcal P_2}\sup_S(w_p)_++\frac1{16}\min_i\inf_Sw_i$) and
+$\sum_{\mathcal P_1}w_p\cos\theta_p\ge\frac l2\zeta'^2-\frac12\sum_iw_i-\Psi(w_1-l,w_2-l,w_3-l)$; the
+coefficients are $\frac l2-2\sum_{\mathcal P_2}(w_p)_+$, $\mathfrak b$, $0$, $\mathfrak d'$, $\mathfrak e'$, and $\mathcal B_1$ reduces to
+$\Psi(w_1-l,w_2-l,w_3-l)+\Psi(w_{(2,0)},w_{(0,2)},w_{(2,2)})$. The certificate evaluates all three bounds and uses the best one.
+For $\mathcal B_0^-$ it takes the largest of the interval value of $\mathcal B_0$ over $S$ and of the bounds \eqref{eq:T1} and
+\eqref{eq:T2} in the five shape coordinates, the latter as after Lemma~\ref{lem:det-centred}, and it encloses the differences
+$w_i-w_j$ and $W_iT_i-\overline{WT}$ by the mean value theorem, so that their common dependence on the area cancels.
+\end{remark}
+
+\subsection{The planar energy gain and the energy of an anchor}\label{ssec:det-layer}
+
+Let $f_{0,3}\in\frac12+\Z$. For $\delta=f-f_0-n$ put $t:=\delta_3$ and $v:=(\delta_1,\delta_2)+t\sigma$; since
+$R\delta=(A_\parallel v,\,ct)$,
+\begin{equation}\label{eq:det-hv}
+  |h|^2=|A_\parallel v|^2+c^2t^2=(v,t)\,\diag\bigl(A_\parallel^\T A_\parallel,\,c^2\bigr)\,(v,t)^\T .
+\end{equation}
+Let $\chi_p:=\cos(2\pi p\cdot f_{0,\parallel})\in\{\pm1\}$ and $\theta_p:=2\pi p\cdot v$; $\omega_p$, $W_p$, $w_p$ are as in
+\eqref{eq:det-pnot}. In \eqref{eq:det-paired}, written for $(\xi,f)$, the phases are $\theta_p+2\pi p\cdot(f_{0,\parallel}+n_\parallel)$,
+so the braces are multiplied by $\chi_p$, and the anchor corresponds to $v=0$, $t=0$. Therefore
+\begin{multline}\label{eq:det-layerdiff}
+  2\ltwo\bigl[e(\xi,f)-e(\xi,f_0)\bigr]=2\pi c^2t^2+\sum_{p\succ0}\frac{4c}{\varkappa_p}\,\chi_p\sum_{j\ge0}e^{-(j+\frac12)T_p}
+   \bigl\{\bigl(\cosh(T_pt)\cos\theta_p-1\bigr)\cos((2j+1)\omega_p)\\+\sinh(T_pt)\sin\theta_p\sin((2j+1)\omega_p)\bigr\}.
+\end{multline}
+
+\begin{lemma}[Planar energy gain]\label{lem:det-layer}
+Let $N\ge1$ be an integer, $\rho_1,\rho_2\ge0$, $0\le\eta<\frac12$, and $\bar\theta_p:=2\pi(|p_1|\rho_1+|p_2|\rho_2)$. Let
+$c^-\le c\le c^+$ and $\ell_\parallel\le\ell_\parallel^+$ on $S$, with $\ell_\parallel$ as in Lemma~\ref{lem:det-ptail}, and put
+$\tau^-:=2\pi c^-/\ell_\parallel^+$ and $\tau^+:=2\pi c^+\sup_S(r_1^{-2}+(1+|x|)^2r_2^{-2})^{1/2}$. With sums over $p\succ0$,
+$\max_i|p_i|\le N$, define the $2\times2$ matrix $\mathsf L_\parallel$, the vectors $\mathsf l,\mathsf e\in\R^2$ and the number
+$\mathsf l_3$ by
+\begin{gather*}
+  \mathsf L_\parallel:=-\sum_p\Bigl[2\pi^2\chi_pw_p+\frac{\pi^2}6(-\chi_pw_p)_+\,\bar\theta_p^2\Bigr]pp^\T-\mathsf t_\parallel I,\qquad
+  \mathsf l:=\pi\sum_p\chi_pW_pT_p\sin\omega_p\;p,\\
+  \mathsf e_i:=\pi\sum_pW_pT_p|\sin\omega_p|\Bigl[\operatorname{sinhc}(T_p\eta)\bigl(1+\tfrac16\bar\theta_p^2\bigr)-1\Bigr]|p_i|,\qquad
+  \mathsf t_\parallel:=4\pi^2\sum_p\varsigma_p|p|^2+8\pi^2\mathsf s,\\
+  \mathsf l_3:=2\pi c^2-\frac12\sum_p|w_p|\,T_p^2\operatorname{sinhc}^2(T_p\eta/2)-\mathsf t_3,\qquad\mathsf t_3:=\sum_p\varsigma_pT_p^2+(\tau^+)^2\mathsf s,\\
+  \varsigma_p:=\frac{4c}{\varkappa_p}\,\frac{e^{-T_p(\frac32-\eta)}}{1-e^{-T_p}},\qquad
+  \mathsf s:=\frac{16\,c^+\ell_\parallel^+}{1-e^{-\tau^-(N+1)}}\sum_{k>N}k^2e^{-\tau^-(\frac12-\eta)k}.
+\end{gather*}
+Then, for all $\xi\in S$ and all $f$ with $|v_1|\le\rho_1$, $|v_2|\le\rho_2$ and $|t|\le\eta$,
+\begin{equation}\label{eq:det-layer}
+  2\ltwo\bigl[e(\xi,f)-e(\xi,f_0)\bigr]\ \ge\ v^\T\mathsf L_\parallel v+2t\;\mathsf l\cdot v-2|t|\bigl(\mathsf e_1|v_1|+\mathsf e_2|v_2|\bigr)+\mathsf l_3\,t^2 .
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For $\max_i|p_i|\le N$ the term $j=0$ of \eqref{eq:det-layerdiff} is
+$\chi_pw_p(\cos\theta_p-1)+\chi_pw_p(\cosh(T_pt)-1)\cos\theta_p+\chi_pW_p\sin\omega_p\sinh(T_pt)\sin\theta_p$. From
+$-\frac12\theta^2\le\cos\theta-1\le-\frac12\theta^2+\frac1{24}\theta^4$ the first part is at least
+$-\frac12\chi_pw_p\theta_p^2-\frac1{24}(-\chi_pw_p)_+\bar\theta_p^2\theta_p^2$, where $\theta_p^2=4\pi^2v^\T pp^\T v$. The second is at
+least $-\frac12|w_p|T_p^2\operatorname{sinhc}^2(T_p\eta/2)t^2$ by \eqref{eq:det-sinhc}. The third equals
+$\chi_pW_pT_p\sin\omega_p\,\theta_pt\,(1+\varepsilon)$ with $\varepsilon:=\operatorname{sinhc}(T_pt)\sin\theta_p/\theta_p-1$, and
+$|\varepsilon|\le\operatorname{sinhc}(T_p\eta)(1+\frac16\bar\theta_p^2)-1$ because $|\sin\theta/\theta-1|\le\frac16\theta^2$; moreover
+$\theta_pt=2\pi t\,p\cdot v$ and $|\theta_pt|\le2\pi|t|(|p_1||v_1|+|p_2||v_2|)$.
+
+For every $p$ and $j$ the brace of \eqref{eq:det-layerdiff} is at most
+$(\cosh x-1)+(1-\cos\theta)+|\sinh x\sin\theta|\le\frac12e^{|x|}(|\theta|+|x|)^2\le e^{T_p\eta}(\theta_p^2+T_p^2t^2)$ in absolute
+value, where $x=T_pt$, $\theta=\theta_p$, and $\theta_p^2\le4\pi^2|p|^2|v|^2$. Hence the terms $j\ge1$ of a mode with
+$\max_i|p_i|\le N$ add up to at most $\varsigma_p\,(4\pi^2|p|^2|v|^2+T_p^2t^2)$. There are $4k$ pairs $\pm p$ with
+$\max_i|p_i|=k$; for them $|p|^2\le2k^2$, $\varkappa_p\ge k/\ell_\parallel^+$ and $\tau^-k\le T_p\le\tau^+k$, so all their terms
+add up to at most
+$16c^+\ell_\parallel^+\,(1-e^{-\tau^-(N+1)})^{-1}k^2e^{-\tau^-(\frac12-\eta)k}\,(8\pi^2|v|^2+(\tau^+)^2t^2)$ if $k>N$.
+\end{proof}
+
+The right side of \eqref{eq:det-layer} is $(v,t)\,\mathsf L\,(v,t)^\T$ for a symmetric $3\times3$ matrix $\mathsf L=\mathsf L(\xi,v,t)$ with
+the blocks $\mathsf L_\parallel$ and $\mathsf l_3$ and with off-diagonal entries $\mathsf L_{i3}\in[\mathsf l_i-\mathsf e_i,\mathsf l_i+\mathsf e_i]$.
+Enclosing these data over $S$ gives a matrix $[\mathsf L]$ of intervals such that for every $\xi\in S$ and every $(v,t)$ under
+consideration there is $P\in[\mathsf L]$ for which the right side of \eqref{eq:det-layer} is at least $(v,t)\,P\,(v,t)^\T$; the
+sums over $p$ in the leading parts of $\mathsf L_\parallel$ and $\mathsf l$ are formed first and then enclosed as for
+$[\mathsf H]$, and
+$\sum_{k>N}k^2x^k=x^{N+1}[(N+1)^2(1-x)^{-1}+2(N+1)x(1-x)^{-2}+x(1+x)(1-x)^{-3}]$. The certificate uses $N=3$. By \eqref{eq:det-hv}
+and Lemma~\ref{lem:det-gamma}, $D(\xi,f)-D(\xi,f_0)\le\gamma\,(v,t)\diag(A_\parallel^\T A_\parallel,c^2)(v,t)^\T$. The tests of
+Lemma~\ref{lem:det-positive} are applied to $[\mathsf L]/(2\ltwo)$ and to
+$[\mathsf L]/(2\ltwo)-\gap^+\gamma\,\diag([A_\parallel^\T A_\parallel],[c^2])$ on a box in the coordinates $(v,t)$ that contains the
+image of $B$; this yields the anchor rules of Lemma~\ref{lem:anchor} with the planar gain, as in Section~\ref{ssec:det-positive}.
+
+\begin{lemma}[Energy of an anchor]\label{lem:det-anchor}
+Let $f_{0,3}\in\frac12+\Z$. Then
+\begin{equation}\label{eq:det-anchor}
+  2\ltwo\,e(\xi,f_0)=\mathcal M(A_\parallel)+\frac{\pi c^2}6+\sum_{p\succ0}\frac{4c}{\varkappa_p}\;
+   \frac{e^{-T_p}\cos2\omega_p-e^{-2T_p}+\chi_p\,e^{-T_p/2}(1-e^{-T_p})\cos\omega_p}{1-2e^{-T_p}\cos2\omega_p+e^{-2T_p}}\,.
+\end{equation}
+Let $\mathcal A_0(\xi)$ be the right side with $\mathcal M(A_\parallel)$ replaced by
+$a^{-1/2}[-4+4\sum_{n\succ0,\,\max|n_i|\le2}\Ga(\frac12,\frac\pi a|A_\parallel n|^2)]$ and with the sum restricted to $\max_i|p_i|\le3$.
+Then $2\ltwo\,e(\xi,f_0)\ge\mathcal A_0(\xi)-\mathcal R_4(\frac12)$, with $\mathcal R_4$ from Lemma~\ref{lem:det-ptail}.
+\end{lemma}
+
+\begin{proof}
+At the anchor, \eqref{eq:det-paired} holds with $t=0$ and with the braces equal to $\chi_p\cos((2j+1)\omega_p)$. With $x=e^{-T_p}$,
+$\sum_{j\ge1}x^j\cos(2j\omega)=\operatorname{Re}\,xe^{2i\omega}(1-xe^{2i\omega})^{-1}$ and
+$\sum_{j\ge0}x^{j+\frac12}\cos((2j+1)\omega)=\operatorname{Re}\,x^{1/2}e^{i\omega}(1-xe^{2i\omega})^{-1}$, and
+$|1-xe^{2i\omega}|^2=1-2x\cos2\omega+x^2$. The lower bound follows as in the proof of Lemma~\ref{lem:det-fibre}.
+\end{proof}
+
+\begin{lemma}[Centred tests]\label{lem:det-centred}
+Let $B=S\times O$, let $f_0$ with $f_{0,3}\in\frac12+\Z$ and $n\in\Z^3$ be fixed, and suppose that $|v_1|\le\rho_1$,
+$|v_2|\le\rho_2$ and $|t|\le\eta<\frac12$ for all $(\xi,f)\in B$. Let $\mathsf L$ be the matrix defined after
+Lemma~\ref{lem:det-layer} with these $\rho_1,\rho_2,\eta$, and let $\gamma$ be the coefficient of Lemma~\ref{lem:det-gamma} for a
+box $\Omega$ that contains $f-f_0-n$ for all $(\xi,f)\in B$. Let $E_0^-$, $J^-$, $D^+$, $s_-$ be numbers such that, for all
+$(\xi,f)\in B$,
+\[
+  E_0^-\le e(\xi,f_0),\qquad J^-\le\frac1{2\ltwo}\,(v,t)\,\mathsf L\,(v,t)^\T,\qquad D(\xi,f)\le D^+,\qquad s_-\le\Def(\xi,f_0).
+\]
+\begin{enumerate}
+\item[\textup{(i)}] If $E_0^-+J^->\eF^+$, then \textup{(E)} holds on $B$.
+\item[\textup{(ii)}] If $E_0^-+J^--\eB^+-\gap^+D^+>0$, then \textup{(D)} holds on $B$.
+\item[\textup{(iii)}] If $s_-+\inf_B\,(v,t)\bigl[\frac1{2\ltwo}\mathsf L-\gap^+\gamma\,\diag(A_\parallel^\T A_\parallel,c^2)\bigr](v,t)^\T>0$, then
+\textup{(D)} holds on $B$.
+\end{enumerate}
+Admissible values are $E_0^-:=\inf_S(\mathcal A_0-\mathcal R_4(\frac12))/(2\ltwo)$ and, with $D_0^+\ge D(\xi,f_0)$ on $S$ and with
+$C=B'^{-\T}MB'^{-1}$ for a registration $(B',f_0,n)$,
+\[
+  s_-:=\max\Bigl\{0,\ \ E_0^--\eB^+-\gap^+D_0^+,\ \ \inf_S\Bigl[\frac{\mathcal A_0-\mathcal R_4(\frac12)}{2\ltwo}-28\,\gap^+\|C-I\|_\Fro^2\Bigr]-\eB^+\Bigr\},
+\]
+the last entry being omitted if no registration is used.
+\end{lemma}
+
+\begin{proof}
+By Lemma~\ref{lem:det-layer}, $e(\xi,f)=e(\xi,f_0)+[e(\xi,f)-e(\xi,f_0)]\ge E_0^-+J^-$ on $B$; this gives (i), and (ii) follows
+from $\Def(\xi,f)\ge E_0^-+J^--\eB^+-\gap^+D^+$, as in Lemma~\ref{lem:deficit}(i). (iii) is Lemma~\ref{lem:anchor}(ii) with
+$\mathcal E=(v,t)\mathsf L(v,t)^\T/(2\ltwo)$ and $\mathcal D=\gamma|h|^2$, by \eqref{eq:det-hv}. The value of $E_0^-$ is admissible by
+Lemma~\ref{lem:det-anchor}. For $s_-$: $\Def(\xi,f_0)\ge0$ by Theorem~\ref{thm:bravais}; $\Def(\xi,f_0)\ge E_0^--\eB^+-\gap^+D_0^+$;
+and $\Def(\xi,f_0)\ge e(\xi,f_0)-\eB^+-28\,\gap^+\|C-I\|_\Fro^2$ by Lemma~\ref{lem:Dbox}(v).
+\end{proof}
+
+Unlike Lemma~\ref{lem:anchor}(i), these tests give strict inequalities on boxes that contain the anchor. The functions
+$\mathcal A_0$ and $\mathcal A_0-56\,\ltwo\gap^+\|C-I\|_\Fro^2$ are bounded below over $S$ in the variables
+$(r_1r_2,\,r_1/r_2,\,x,y,z)$, in which $c=(r_1r_2)^{-1}$ and
+$\varkappa_p^2=(p_1^2\,r_2/r_1+(p_2-p_1x)^2\,r_1/r_2)/(r_1r_2)$, on the box spanned by the ranges of these variables: by the interval
+value, by \eqref{eq:T1}, and by \eqref{eq:T2} in the variables rescaled by the half-widths (so that $\sum_i\rho_i^2$ becomes the
+number of variables with positive half-width and $\lambda$ a lower bound for the eigenvalues of
+$(\rho_i\rho_j\partial_{ij}\psi)$); the largest of the three bounds is used, and $B'$ is taken from the pair of the list of
+Lemma~\ref{lem:Dbox}(iv) with half class $f_0$ that has the least $\|C-I\|_\Fro$ at $\xi_{\mathrm c}$; if the list contains no such
+pair, the last entry of $s_-$ is omitted. Of the $6\,346$ boxes held after stage 9, $6\,324$ are discharged by
+Lemma~\ref{lem:anchor}(i) with the planar gain and $22$ by the tests of this lemma.

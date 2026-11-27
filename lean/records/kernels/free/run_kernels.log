@@ -1,0 +1,13 @@
+2026-11-26T12:27:32-07:00 start lean: ['<toolchain>\\bin\\leanchecker.exe', '--from-export', '<package>\\.lake\\exports\\free.ndjson']; gate {'committed_gib': 40.62, 'limit_gib': 141.56, 'avail_mb': 32432}; export sha256 dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202
+2026-11-26T12:29:29-07:00 done lean: exit 0, wall 116.6 s, cpu 115.9 s, peak commit 0.89 GiB, peak ws 0.91 GiB; snapshot unchanged
+2026-11-26T12:29:30-07:00 start paranoid: ['<toolchain>\\bin\\leanchecker-paranoid.exe', '--from-export', '<package>\\.lake\\exports\\free.ndjson']; gate {'committed_gib': 41.69, 'limit_gib': 141.56, 'avail_mb': 32349}; export sha256 dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202
+2026-11-26T12:31:51-07:00 done paranoid: exit 0, wall 140.1 s, cpu 139.6 s, peak commit 1.06 GiB, peak ws 1.06 GiB; snapshot unchanged
+2026-11-26T12:31:52-07:00 start nanoda: ['<toolchain>\\bin\\nanoda_bin.exe', '<package>\\.lake\\exports\\nanoda.config.json']; gate {'committed_gib': 49.47, 'limit_gib': 141.56, 'avail_mb': 29940}; export sha256 dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202
+2026-11-26T12:32:17-07:00 done nanoda: exit 0, wall 24.0 s, cpu 73.7 s, peak commit 0.99 GiB, peak ws 0.72 GiB; snapshot unchanged
+2026-11-26T12:32:17-07:00 start lean4lean: ['<toolchain>\\bin\\lean4lean.exe', '--import', '<package>\\.lake\\exports\\free.ndjson']; gate {'committed_gib': 52.17, 'limit_gib': 141.56, 'avail_mb': 29217}; export sha256 dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202
+2026-11-26T12:34:47-07:00 done lean4lean: exit 0, wall 148.6 s, cpu 147.8 s, peak commit 0.88 GiB, peak ws 0.88 GiB; snapshot unchanged
+2026-11-26T12:34:48-07:00 start con-leche: ['<toolchain>\\bin\\con-leche.exe', '--verified', '--jobs=4', '<package>\\.lake\\exports\\free.ndjson']; gate {'committed_gib': 50.62, 'limit_gib': 141.56, 'avail_mb': 30613}; export sha256 dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202
+2026-11-26T12:35:16-07:00 done con-leche: exit 0, wall 27.0 s, cpu 82.2 s, peak commit 0.74 GiB, peak ws 0.73 GiB; snapshot unchanged
+2026-11-26T12:35:16-07:00 start con-ron: ['<toolchain>\\bin\\con-ron.exe', '--verified', '--jobs=4', '<package>\\.lake\\exports\\free.ndjson']; gate {'committed_gib': 54.35, 'limit_gib': 141.56, 'avail_mb': 30320}; export sha256 dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202
+2026-11-26T12:35:34-07:00 done con-ron: exit 0, wall 17.0 s, cpu 47.0 s, peak commit 1.17 GiB, peak ws 1.01 GiB; snapshot unchanged
+2026-11-26T12:35:34-07:00 check done; failed: []

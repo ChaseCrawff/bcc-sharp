@@ -1,0 +1,15 @@
+name = "bcc_sharp"
+version = "1.0.0"
+
+# No default target on purpose: Lake starts every module of a target at once and has no limit on
+# parallel jobs, while several modules need 6 to 10 GB of memory each. Build one module per Lake call,
+# in the order of modules.txt (see README.md).
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "56a005855ea17e0b0958f73ec801ae140b0a1679"
+
+[[lean_lib]]
+name = "BccSharp"
+globs = ["BccSharp.+"]

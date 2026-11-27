@@ -1,0 +1,633 @@
+\section{The global cover}\label{sec:cover}
+
+By Proposition~\ref{prop:compact} it remains to prove $\Def\ge0$ on $\Kbox_{\mathrm{red}}$ and to identify the zeros. This is done by
+covering $\Kbox$ with finitely many boxes, on each of which one of a small number of sufficient conditions is verified in ball
+arithmetic. In this section we state these conditions as lemmas, prove that each implies the inequality, and describe the cover.
+The most technical bounds are stated here in outline; their complete statements, with all constants, are in
+Appendix~\ref{app:details}.
+
+\subsection{Discharged boxes and the cover theorem}\label{ssec:discharged}
+
+A \emph{box} is a product $B=S\times O$ of eight closed intervals with rational endpoints, where the \emph{shape box}
+$S\subset(0,\infty)^2\times\R^3$ and the \emph{offset box} $O\subset\R^3$ are arbitrary. Since $Y(\xi,f+n)=Y(\xi,f)$ for
+$n\in\Z^3$, the functions $e$, $D$ and $\Def$ of $\kappa=(\xi,f)$ are defined, and $\Z^3$-periodic in $f$, for all
+$f\in\R^3\setminus\Z^3$. We put
+\[
+  B_{\mathrm{red}}:=\bigl\{(\xi,f)\in B:\ f\notin\Z^3\text{ and }\xi\text{ satisfies \eqref{eq:R1} and \eqref{eq:R2}}\bigr\},
+\]
+so that $B_{\mathrm{red}}=B\cap\Kbox_{\mathrm{red}}$ for $B\subset\Kbox$; offset boxes that are not contained in $[-\frac12,\frac12]^3$
+occur because some rules are verified in translated coordinates (Section~\ref{ssec:stages}). The boxes that the cover has to
+exhaust are contained in $\Kbox$, whose shape part is
+$[\frac58,\frac{37}{32}]\times[\frac12,\frac{11}8]\times[0,\frac12]^2\times[-\frac12,\frac12]$. Boxes that carry a rule may extend
+beyond it; this is harmless, since Definition~\ref{def:discharged}, Lemma~\ref{lem:discharged} and the rules below hold for all
+boxes in the sense just defined, and Theorem~\ref{thm:cover} concerns only points of $\Kbox$. Let
+$\iota(r_1,r_2,x,y,z,f):=(r_1,r_2,x,y,z,-f)$; recall that $\Def\circ\iota=\Def$.
+The numbers $\eB,\eF$ are known through enclosures $[\eB^-,\eB^+]$, $[\eF^-,\eF^+]$ of width below $10^{-45}$
+(Section~\ref{ssec:constcert}); we put $\gap^+:=\eF^+-\eB^-\ge\gap$.
+
+\begin{definition}\label{def:discharged}
+A box $B$ is \emph{discharged} if one of the following holds.
+\begin{itemize}
+\item[(N)] $B_{\mathrm{red}}=\emptyset$.
+\item[(E)] $e(\kappa)>\eF$ for all $\kappa\in B_{\mathrm{red}}$.
+\item[(D)] $\Def(\kappa)>0$ for all $\kappa\in B_{\mathrm{red}}$.
+\item[(A)] There are $f_0\in\frac12\Z^3\setminus\Z^3$, $n\in\Z^3$ and $c>0$ such that, for all $\kappa=(\xi,f)\in B_{\mathrm{red}}$,
+\begin{equation}\label{eq:anchorconcl}
+  \Def(\xi,f)\ \ge\ \Def(\xi,f_0)+c\,\bigl|R(\xi)(f-f_0-n)\bigr|^2 .
+\end{equation}
+\end{itemize}
+\end{definition}
+
+\begin{lemma}\label{lem:discharged}
+\textup{(i)} If $B$ is discharged, then $\Def\ge0$ on $B_{\mathrm{red}}$, and $\Def(\kappa)=0$ for some $\kappa\in B_{\mathrm{red}}$ only if
+$X(\kappa)$ is a BCC or an FCC lattice.
+\textup{(ii)} If $B$ is discharged, so are $\iota(B)$, every translate $B+(0,n)$, $n\in\Z^3$, and every box contained in $B$.
+\textup{(iii)} Let $B=B^\circ\cup\Sigma_1\cup\dots\cup\Sigma_r$ with boxes $B^\circ$ and $\Sigma_i$ such that every $\Sigma_i$ satisfies
+\textup{(N)}. If $B^\circ$ satisfies one of \textup{(N)}, \textup{(E)}, \textup{(D)}, \textup{(A)}, then so does $B$.
+\end{lemma}
+
+\begin{proof}
+(i) (N) and (D): nothing to prove. (E): $\Def=e-\eB-\gap D\ge e-\eB-\gap=e-\eF>0$, since $D\le1$.
+(A): $X(\xi,f_0)$ is a lattice, because $2f_0\in\Z^3$, so $\Def(\xi,f_0)\ge0$ by Theorem~\ref{thm:bravais}, and \eqref{eq:anchorconcl} gives
+$\Def(\xi,f)\ge0$. If $\Def(\xi,f)=0$ then $R(\xi)(f-f_0-n)=0$, so $X(\xi,f)=X(\xi,f_0)$ is a lattice with $\Def=0$, hence a BCC or
+an FCC lattice by Theorem~\ref{thm:bravais}.
+(ii) Each condition of Definition~\ref{def:discharged} is a statement about the individual points of $B_{\mathrm{red}}$ (in (A) with
+fixed $f_0$, $n$ and $c$), so it is inherited by every box contained in $B$. The maps $\iota$ and $(\xi,f)\mapsto(\xi,f+n)$ preserve
+$e$ and $D$, and they map $B_{\mathrm{red}}$ onto $\iota(B)_{\mathrm{red}}$ and onto $(B+(0,n))_{\mathrm{red}}$. This gives the claim
+for (N), (E) and (D). In (A), replace $(f_0,n)$ by $(f_0,-n-2f_0)$ for $\iota$, and $n$ by $n$ plus the translation vector for a
+translate.
+(iii) $B_{\mathrm{red}}\subset B^\circ_{\mathrm{red}}$.
+\end{proof}
+
+Note that in (A) the point $(\xi,f_0)$ need not belong to $B$ or to $\Kbox_{\mathrm{red}}$: Theorem~\ref{thm:bravais} holds for every
+lattice, however it is represented. Conditions (E) and (D) can never hold on a box that contains a zero of $\Def$; near the zeros,
+and near the lattices on which $\Def$ is small, the cover relies on (A). In the rules below, (E) is verified in the form
+$e>\eF^+$ and (D) in the form $e-\eB^+-\gap^+\bar D>0$ with an upper bound $\bar D\ge D$; these imply (E) and (D) because
+$\gap\le\gap^+$ and $D\ge0$. Part (iii) is used as follows: slabs $\{\kappa\in B:\kappa_i\le a\}$ or $\{\kappa_i\ge a\}$ cut from a box
+along a shape coordinate are removed when they satisfy (N), and a rule is applied to the remaining box.
+
+\begin{theorem}[Cover]\label{thm:cover}
+There is a finite family $\mathcal F$ of discharged boxes such that for every $\kappa\in\Kbox_{\mathrm{red}}$ at least one of the
+points $\kappa$, $\iota(\kappa)$ lies in a box of $\mathcal F$.
+\end{theorem}
+
+The family $\mathcal F$, with the data that prove each box discharged, is the certificate described in
+Sections~\ref{ssec:stages} and~\ref{sec:computation}. Sections~\ref{ssec:tools}--\ref{ssec:anchor} contain the sufficient conditions.
+
+\subsection{Three tools}\label{ssec:tools}
+
+\emph{The screened series.} Applying Proposition~\ref{prop:ewald} with $\alpha\sqrt\pi/\ltwo$ in place of $\sqrt\pi/\ltwo$ gives,
+for every $\alpha>0$,
+\begin{equation}\label{eq:screened}
+  2\ltwo\,e(\kappa)=\sum_{m\ne0}F_{\mathrm r}(q_m)+\sum_{m}F_{\mathrm r}(q^\times_m)+\sum_{m\ne0}\bigl(1+\cos2\pi m\cdot f\bigr)F_{\mathrm d}(q^*_m)
+     -2\alpha-\frac2{\alpha^2},
+\end{equation}
+with $F_{\mathrm r}(q)=\alpha\,\Ga(\frac12,\pi\alpha^2q)$, $F_{\mathrm d}(q)=\alpha^{-2}\Ga(1,\pi q/\alpha^2)$ and the squared lengths
+\begin{align*}
+  q_m&=|Rm|^2=r_1^2(m_1+xm_2+ym_3)^2+r_2^2(m_2+zm_3)^2+r_3^2m_3^2,\qquad q^\times_m=|R(m+f)|^2,\\
+  q^*_m&=|R^{-\T}m|^2=r_1^{-2}m_1^2+r_2^{-2}(m_2-xm_1)^2+r_1^2r_2^2\bigl(m_3-zm_2+(xz-y)m_1\bigr)^2 .
+\end{align*}
+For $\alpha=1$ this is \eqref{eq:H2}. All terms are nonnegative, and $F_{\mathrm r}$, $F_{\mathrm d}$ are positive, decreasing and
+logarithmically convex; moreover each of them is the Laplace transform of a positive measure. Different rules use different values of
+$\alpha$ between $1$ and $\frac65$; a larger $\alpha$ moves weight from the direct to the reciprocal sums.
+
+\emph{Convex supports.} Let $F\in\{F_{\mathrm r},F_{\mathrm d}\}$ and $Q>0$. Then for all $q>0$
+\begin{equation}\label{eq:tangent}
+  F(q)\ \ge\ F(Q)\exp\bigl[-s\,(q-Q)\bigr]\ \ge\ F(Q)+F'(Q)\,(q-Q),\qquad s:=-F'(Q)/F(Q)>0 .
+\end{equation}
+For the phase factor $w(t):=1+\cos2\pi t=2\cos^2\pi t$ we use three lower bounds. If an interval $[t_L,t_R]$ contains no point of
+$\Z+\frac12$, then $\log w$ is concave on it and lies above its chord:
+\begin{equation}\label{eq:secant}
+\begin{gathered}
+  w(t)\ \ge\ p\,e^{b(t-t_0)}\qquad(t_L\le t\le t_R),\\
+  p=\sqrt{w(t_L)w(t_R)},\qquad b=\frac{\log w(t_R)-\log w(t_L)}{t_R-t_L},\qquad t_0=\frac{t_L+t_R}2 ,
+\end{gathered}
+\end{equation}
+where $b:=0$ if $t_L=t_R$, in which case \eqref{eq:secant} is an equality. If $|t-(k+\frac12)|\le d\le\frac12$ for an integer $k$,
+then, by the concavity of the sine,
+\begin{equation}\label{eq:extinction}
+  w(t)=2\sin^2\pi\bigl(t-k-\tfrac12\bigr)\ \ge\ c_d\,\bigl(t-k-\tfrac12\bigr)^2,\qquad c_d=2\Bigl(\frac{\sin\pi d}d\Bigr)^2\quad(d>0),
+  \qquad c_0=2\pi^2 ;
+\end{equation}
+for $d=0$ both sides vanish.
+Finally, $|1+e^{iu}+e^{-iv}|^2\ge0$ gives $\cos u+\cos v+\cos(u+v)\ge-\frac32$, so that
+\begin{equation}\label{eq:triad}
+  w(m_1\cdot f)+w(m_2\cdot f)+w(m_3\cdot f)\ \ge\ \tfrac32\qquad\text{whenever }m_1\pm m_2\pm m_3=0 .
+\end{equation}
+
+\emph{The vertex principle.} A function on a box is \emph{separately convex} if it is convex in each coordinate when the other seven
+are fixed. Such a function attains its maximum over the box at one of the $2^8=256$ vertices (maximize over one coordinate at a
+time), and a separately concave function attains its minimum at a vertex.
+
+\begin{lemma}\label{lem:sepconv}
+For fixed $m$, the functions $q_m$, $q^\times_m$ and $q^*_m$ of $\kappa=(r_1,r_2,x,y,z,f)$ are separately convex on
+$(0,\infty)^2\times\R^6$, in particular on every box. So is
+every linear combination of them with nonnegative coefficients plus an affine function of $f$, and so is $\Psi\circ q$ for every
+increasing convex $\Psi$ and $q\in\{q_m,q_m^\times,q_m^*\}$.
+\end{lemma}
+
+\begin{proof}
+As functions of $r_1$ or of $r_2$ alone they are combinations of $r^2$ and $r^{-2}$ with nonnegative coefficients; as functions of
+$x$, $y$, $z$ or $f_i$ alone they are sums of squares of affine functions with nonnegative coefficients.
+\end{proof}
+
+No joint convexity is claimed or needed. It is essential, however, that in every application the extremum is taken \emph{after} all
+terms have been added: the sum is evaluated at each of the $256$ vertices, and then the extremum over the vertices is taken. This
+retains the correlations between the terms, which separate bounds for the individual terms lose.
+
+\subsection{Lower bounds for the energy on a box}\label{ssec:energyrules}
+
+Fix a box $B$, a value of $\alpha$ and a finite set $J$ of terms of \eqref{eq:screened}; the omitted terms are nonnegative. A term
+$j\in J$ has a kernel $F_j$, a squared length $q_j(\kappa)$ and, for reciprocal terms, a phase $t_j(\kappa)=m_j\cdot f$, which is affine
+in $f$.
+
+\begin{lemma}[Energy rules]\label{lem:energy}
+Each of the following implies \textup{(E)} on $B$ (on all of $B$, reduced or not, except in case \textup{(iv)}).
+\begin{enumerate}
+\item[\textup{(i)}] \emph{Partial sum.} With upper bounds $\bar q_j\ge\sup_Bq_j$ and numbers $0\le\omega_j\le\inf_Bw(t_j)$ (and
+$\omega_j=1$ for direct terms),
+$\sum_{j\in J}\omega_jF_j(\bar q_j)-2\alpha-2\alpha^{-2}>2\ltwo\eF^+$.
+\item[\textup{(ii)}] \emph{Tangent support.} For each $j\in J$ let $\tau_j$ be one of the following functions on $B$:
+\begin{itemize}
+\item[(a)] $\omega_j\bigl[F_j(Q_j)+F_j'(Q_j)(q_j-Q_j)\bigr]$ with an arbitrary $Q_j>0$ and $\omega_j$ as in \textup{(i)};
+\item[(b)] for a reciprocal term whose phase interval over $B$ contains no point of $\Z+\frac12$, the tangent plane at an arbitrary
+point $(Q_j,T_j)\in(0,\infty)\times\R$ of the convex function $(q,t)\mapsto F_j(q)\,p_je^{b_j(t-t_{0,j})}$, evaluated at $(q_j,t_j)$,
+with $p_j,b_j,t_{0,j}$ from \eqref{eq:secant};
+\item[(c)] for a reciprocal term whose phase stays within $d\le\frac12$ of some $k+\frac12$, $k\in\Z$,
+$2u_j\zeta_j-u_j^2\,/\bigl(c_dF_j(q_j)\bigr)$ with $\zeta_j=t_j-k-\frac12$ and an arbitrary $u_j\in\R$.
+\end{itemize}
+Then $\mathcal T:=\sum_{j\in J}\tau_j$ is separately concave, and the condition is
+$\min_{v}\mathcal T(v)-2\alpha-2\alpha^{-2}>2\ltwo\eF^+$, the minimum being over the vertices $v$ of $B$.
+\item[\textup{(iii)}] \emph{Exponential support.} Let $Q_j>0$ and $s_j=-F_j'(Q_j)/F_j(Q_j)$. Let $W_j=F_j(Q_j)$, $b_j=0$ for direct terms;
+for a reciprocal term let either $W_j=p_jF_j(Q_j)$ with $p_j$, $b_j$, $t_{0,j}$ as in \textup{(b)}, or $W_j=\omega_jF_j(Q_j)$, $b_j=0$
+with $\omega_j$ as in \textup{(i)}. With $M=\sum_jW_j$, which is required to be positive, and
+\[
+  U(\kappa):=\frac1M\sum_{j\in J}W_j\bigl[-s_j(q_j(\kappa)-Q_j)+b_j(t_j(\kappa)-t_{0,j})\bigr],
+\]
+the condition is $M\exp\bigl(\min_vU(v)\bigr)-2\alpha-2\alpha^{-2}>2\ltwo\eF^+$.
+\item[\textup{(iii$'$)}] \emph{Phase reserve.} In \textup{(ii)} and in \textup{(iii)}, let $T$ range over triples of three distinct
+reciprocal terms of $J$ with $m_1\pm m_2\pm m_3=0$, each of which is bounded with a constant phase factor $\omega_j$:
+in \textup{(ii)} by \textup{(a)}, in \textup{(iii)} by the alternative $W_j=\omega_jF_j(Q_j)$, $b_j=0$. Let $s_T\ge0$ satisfy
+$\sum_{T\ni j}s_T\le\inf_BF_j(q_j)$ for every $j$. Then $\varrho:=\sum_Ts_T\bigl(\tfrac32-\sum_{j\in T}\omega_j\bigr)_+$ may be added to the
+left side of the condition. Terms bounded by \textup{(b)} or \textup{(c)}, or by the chord in \textup{(iii)}, do not qualify.
+\item[\textup{(iv)}] \emph{Reduced variant.} In \textup{(ii)(a)} or \textup{(iii)}, let $\Lambda=\sum_j\lambda_jq_j$ be the combination
+of squared lengths that occurs with a negative sign, let $\lambda_{e_1}$ be the coefficient of $q_{e_1}=r_1^2$, and let $c$ be one of
+$c_1=r_2^2-\frac34r_1^2$, $c_2=r_2^2+r_1^2x^2-r_1^2$. For $0\le\lambda\le\lambda_{e_1}$ replace $\Lambda$ by $\Lambda+\lambda c$
+before taking the extremum over the vertices. Then the conclusion \textup{(E)} holds on $B_{\mathrm{red}}$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) $F_j$ is decreasing and all omitted terms are nonnegative.
+(ii) Each $\tau_j$ is a lower bound for the $j$-th term on $B$: (a) by \eqref{eq:tangent}, with $w(t_j)\ge\omega_j\ge0$; (b) because
+$w(t)F_j(q)\ge F_j(q)p_je^{b_j(t-t_{0,j})}$ by \eqref{eq:secant}, and the right side is logarithmically convex, hence convex, in $(q,t)$,
+so it lies above its tangent planes, also at points $(Q_j,T_j)$ that are not attained on $B$; (c) by \eqref{eq:extinction},
+$w(t_j)F_j(q_j)\ge\zeta_j^2/\mathsf R$ with $\mathsf R=1/(c_dF_j(q_j))$, and $\zeta^2/\mathsf R\ge2u\zeta-u^2\mathsf R$. In (a) and (b)
+the coefficient of $q_j$ is negative, and in (c) $1/F_j$ is increasing and convex, since $1/F_{\mathrm d}(q)$ is a multiple of
+$qe^{\pi q/\alpha^2}$; so each $\tau_j$ is separately concave by Lemma~\ref{lem:sepconv}.
+(iii) By \eqref{eq:tangent} and \eqref{eq:secant} the $j$-th term is at least $W_j\exp(u_j)$ with $u_j$ the bracket in the definition
+of $U$, and Jensen's inequality gives $\sum_jW_je^{u_j}\ge Me^U$; $U$ is separately concave.
+(iii$'$) For $0\le a_j\le F_j(q_j)$ we have $w(t_j)F_j(q_j)\ge\omega_jF_j(q_j)+a_j(w(t_j)-\omega_j)$, the difference being
+$(F_j(q_j)-a_j)(w(t_j)-\omega_j)\ge0$. For a term of a triple, $\omega_jF_j(q_j)$ is at least the bound for the $j$-th term that
+\textup{(a)}, respectively the alternative $W_j=\omega_jF_j(Q_j)$ of \textup{(iii)}, uses, by \eqref{eq:tangent}. With
+$a_j=\sum_{T\ni j}s_T$,
+$\sum_ja_j(w(t_j)-\omega_j)=\sum_Ts_T\sum_{j\in T}(w(t_j)-\omega_j)\ge\sum_Ts_T(\frac32-\sum_{j\in T}\omega_j)_+$ by \eqref{eq:triad} and
+$w(t_j)\ge\omega_j$. Hence the sum of the terms of $J$ is at least $\mathcal T+\varrho$ in \textup{(ii)}, and at least
+$\sum_jW_je^{u_j}+\varrho\ge Me^U+\varrho$ in \textup{(iii)}.
+(iv) On reduced shapes $c_2=|Re_2|^2-|Re_1|^2\ge0$ and $c_1\ge0$ by \eqref{eq:R1}, the latter with $m=e_2-ke_1$ for the integer $k$
+nearest to $x$, since $|R(e_2-ke_1)|^2=r_1^2(x-k)^2+r_2^2$ and $(x-k)^2\le\frac14$. Hence $\Lambda\le\Lambda+\lambda c$ on
+$B_{\mathrm{red}}$, and $\Lambda+\lambda c$ is still separately convex: the coefficient of $r_1^2$ in it is at least
+$\lambda_{e_1}-\lambda\ge0$.
+\end{proof}
+
+The base points $Q_j,T_j,u_j$ and the weights $s_T$ of the triples are free parameters, and their choice affects the strength of
+the bound but not its validity. The base points are proposed by floating-point optimization and determined by exact data stored
+in the certificate; the weights are allocated by the verifying program (Section~\ref{ssec:stages}). In the last stages the base
+points $(Q_j,T_j)$ are averages of the values of $(q_j,t_j)$ over the
+vertices of $B$ with respect to an optimized probability distribution on the vertices. A support that is valid on a box is valid
+on every sub-box, and re-evaluating $\min_v\mathcal T(v)$ over the vertices of a sub-box requires no new evaluation of special
+functions; this makes deep subdivision cheap. Rules (ii)--(iv) may be applied also to boxes $B$ that meet $\{f\in\Z^3\}$: such
+points do not belong to $B_{\mathrm{red}}$, and the functions $\mathcal T$ and $U$ are finite and separately concave on all of $B$.
+
+\subsection{Planar expansion}\label{ssec:planar}
+
+When the cell is elongated or the offset is close to a mid-plane, the three-dimensional sums converge slowly in the bounds above, and
+it is better to sum over planes. Let
+\[
+  A_\parallel=\begin{pmatrix}r_1&r_1x\\0&r_2\end{pmatrix},\qquad a=r_1r_2,\qquad c=\frac1a,\qquad \sigma=(y-xz,\,z),\qquad f=(f_\parallel,f_3),
+\]
+so that $Y(\kappa)$ consists of translates of the planar lattice $A_\parallel\Z^2$ at the heights $kc$ and $(k+f_3)c$, $k\in\Z$, shifted
+in the plane by $k\sigma$ and by $f_\parallel+(k+f_3)\sigma$ (in units of the planar basis). For $p\in\Z^2\setminus\{0\}$ let
+$\varkappa_p:=|A_\parallel^{-\T}p|$ and $T_p:=2\pi c\varkappa_p$.
+
+\begin{lemma}[Planar expansion]\label{lem:planar}
+For $0<f_3<1$,
+\begin{multline}\label{eq:planar}
+  2\ltwo\,e(\kappa)=\mathcal M(A_\parallel)+2\pi c^2\bigl(f_3^2-f_3+\tfrac13\bigr)\\
+   +\frac1a\sum_{p\ne0}\frac1{\varkappa_p}\Bigl[\sum_{k\ne0}e^{-T_p|k|}\cos(2\pi k\,p\cdot\sigma)
+   +\sum_{k\in\Z}e^{-T_p|k+f_3|}\cos\bigl(2\pi p\cdot(f_\parallel+(k+f_3)\sigma)\bigr)\Bigr],
+\end{multline}
+where, for a real $2\times2$ matrix $A$ with $\det A=a>0$,
+\begin{equation}\label{eq:M2}
+  \mathcal M(A)=\int_0^\infty t^{-1/2}\Bigl[\sum_{n\in\Z^2}e^{-\pi t|An|^2}-1-\frac1{at}\Bigr]dt
+  =a^{-1/2}\Bigl[-4+\sum_{n\ne0}\Bigl(\Ga\bigl(\tfrac12,\tfrac\pi a|An|^2\bigr)+\Ga\bigl(\tfrac12,\pi a|A^{-\T}n|^2\bigr)\Bigr)\Bigr].
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Write the left side as the Mellin integral $\int_0^\infty t^{-1/2}[\,\cdot\,]\,dt$ of the theta series of $Y$, regularized as in the
+proof of Proposition~\ref{prop:ewald}, and apply the two-dimensional Poisson summation formula in each plane. The mode $p=0$ gives the
+one-dimensional energy of uniformly charged planes in a neutralizing background, which is the quadratic polynomial in $f_3$; the modes
+$p\ne0$ give the exponentially decaying terms through
+$\int_0^\infty t^{-3/2}e^{-\pi\varkappa^2/t-\pi c^2s^2t}\,dt=\varkappa^{-1}e^{-2\pi c\varkappa|s|}$. The in-plane term of the first
+coset is $\mathcal M(A_\parallel)$; the second expression for it follows by splitting the integral at $t=1/a$ and applying Poisson
+summation to the part $t<1/a$. The details are given in Appendix~\ref{app:details}.
+\end{proof}
+
+The series \eqref{eq:planar} converges exponentially, with rate $2\pi c\varkappa_p\min(f_3,1-f_3)$ for the cross-coset layers, and it
+has few significant terms when $c\varkappa_p$ is not small. Its terms have no sign, so truncation costs explicit tails, which are
+geometric series. Two rules are built on it.
+
+\begin{lemma}[Planar energy rules]\label{lem:planarrules}
+Let $B=S\times O$ be a box, translated by an integer multiple of $e_3$ if necessary; this is permitted by
+Lemma~\ref{lem:discharged}\textup{(ii)}.
+
+\textup{(i)} Let $\eta\le f_3\le1-\eta$ on $B$, with $\eta>0$. By Montgomery's theorem \cite{Montgomery1988} the planar theta function
+at fixed area is minimized by the triangular lattice, so $\mathcal M(A)\ge a^{-1/2}M_\triangle$, where $M_\triangle=-3.9210\ldots$ is
+the value of the bracket in \eqref{eq:M2} for the triangular lattice; moreover the bracket is bounded below by each of its partial
+sums minus $4$, with the squared lengths replaced by upper bounds over $B$. Let $\underline{\mathcal M}$ be a lower bound for
+$\mathcal M(A_\parallel)$ of one of these two kinds. If a lower bound over $B$ for the sum of $\underline{\mathcal M}$, of the
+zero-mode term and of the terms of \eqref{eq:planar} with $\max|p_i|\le2$ from the two nearest layers of each coset, minus an upper
+bound for the absolute values of the omitted terms \textup{(}Section~\ref{ssec:det-fibre}\textup{)}, exceeds $2\ltwo\eF^+$, then
+\textup{(E)} holds on $B$.
+
+\textup{(ii)} Let $|f_3-\frac12|\le\eta<\frac12$ on $B$. There is an explicit lower bound for the right side of \eqref{eq:planar} that
+depends on the shape box and on $\eta$ only and holds for \emph{all} $f_\parallel\in\R^2$
+(Lemma~\ref{lem:det-fibre}); if it exceeds $2\ltwo\eF^+$, then \textup{(E)} holds on $S\times\R^2\times\{|f_3-\frac12|\le\eta\}$.
+\end{lemma}
+
+In (ii) the two adjacent cross-coset layers are combined first. For the three shortest waves $p_1=(1,0)$, $p_2=(0,1)$,
+$p_3=(1,1)$, whose phases $\theta_i=2\pi p_i\cdot(f_\parallel+(f_3-\frac12)\sigma)$ satisfy $\theta_3=\theta_1+\theta_2$, and positive
+weights $w_i$, one has the identity
+\[
+  \sum_{i=1}^3w_i\cos\theta_i=\tfrac12\bigl|A_0+A_1e^{i\theta_1}+A_2e^{-i\theta_2}\bigr|^2-\tfrac12\bigl(A_0^2+A_1^2+A_2^2\bigr),
+  \qquad A_0A_1=w_1,\ A_0A_2=w_2,\ A_1A_2=w_3 .
+\]
+The nonnegative square controls the contributions of the next waves and of the terms that are odd in $f_3-\frac12$, and the zero-mode
+term $2\pi c^2(f_3-\frac12)^2$ controls the dependence on the height; completing a square in the two variables
+$|A_0+A_1e^{i\theta_1}+A_2e^{-i\theta_2}|$ and $|f_3-\frac12|$ gives a bound in which $f_\parallel$ no longer appears. The weights
+are the coefficients of the two combined layers; the rule requires them to be positive on the shape box for the waves $p_i$ and
+$2p_i$, the identity being used for both triples. In this rule $\mathcal M(A_\parallel)$ is bounded below by a finite partial sum of
+the positive series in \eqref{eq:M2}, without Montgomery's theorem.
+
+\subsection{The defect on a box}\label{ssec:Dbox}
+
+In this section a \emph{registration} is a triple $(B',f_0,n)$ of a basis matrix $B'$, with $\det B'=1$, of a sublattice of index two
+of $\Bz$, its half class $f_0\in\frac12\Z^3\setminus\Z^3$ (so that $B'f_0\in\Bz\setminus B'\Z^3$) and $n\in\Z^3$. For $\kappa=(\xi,f)$ put
+\begin{equation}\label{eq:regdata}
+\begin{gathered}
+  A:=R(\xi)B'^{-1},\qquad C:=A^\T A,\qquad \delta:=f-f_0-n,\qquad h:=R(\xi)\delta,\\
+  d_0:=100\,\|C^{1/2}-I\|_\Fro^2,\qquad q:=d_0+200\,|h|^2 .
+\end{gathered}
+\end{equation}
+Then $Y(\kappa)=A\bigl(B'\Z^3\cup(B'\Z^3+B'f_0+A^{-1}h)\bigr)$, and Theorem~\ref{thm:registration} says that $D(\kappa)<1$ if and only if
+some registration has $q+\Phi<1$, where $\Phi$ is the sum over unmatched neighbours in \eqref{eq:Dformula}, and then $D=q+\Phi$ for
+this registration.
+
+\begin{lemma}[Bounds for the defect]\label{lem:Dbox}
+Let $(B',f_0,n)$ be a registration, with the notation \eqref{eq:regdata}.
+\begin{enumerate}
+\item[\textup{(i)}] If the eigenvalues of $C$ lie in $[\mu_-,\mu_+]$ with $\mu_-\ge\frac{169}{200}$,
+$\sqrt{\mu_+}\,(1+|B'\delta|)<\frac{13}{10}$ and $\sqrt{2\mu_-}-\sqrt{\mu_+}\,|B'\delta|>\frac{13}{10}$, then
+$D\le28\,\|C-I\|_\Fro^2+200\,|h|^2$.
+\item[\textup{(ii)}] If $q<1$, then every neighbour vector that is not matched by the registration is the image of one of the twelve
+vectors of $\Bz$ of length $\sqrt2$ and is longer than $\frac65$, and none occurs if
+$q\le d_\sharp:=\frac{600}{11}(\sqrt2-\frac{13}{10})^2=0.7115\ldots$ Hence $D=\min\{1,q+\Phi\}$ with $\Phi$ a sum of at most twelve terms
+$\phi(|y|)$.
+\item[\textup{(iii)}] For every $U\in\SO(3)$ we have $q\le100\,\|A-U\|_\Fro^2+200\,|h|^2$. If $q<1$, then
+$D\le100\,\|A-U\|_\Fro^2+200\,|h|^2+\Phi$ with $\Phi$ as in \textup{(ii)}; if $q\ge1$, then $D\le1\le100\,\|A-U\|_\Fro^2+200\,|h|^2$.
+\item[\textup{(iv)}] \emph{(Saturation.)} For a shape box $S$ there is a finite list of pairs $(B',f_0)$, computable in exact
+arithmetic, that contains, for every $\xi\in S$, all registrations with $d_0<1$ up to rotations preserving $\Bz$. If for every pair of
+the list and every $n$ with $|h|<\frac1{14}$ somewhere on $B$ a lower bound for $q+\Phi$ over $B$ is at least $1$, then $D\equiv1$ on $B$.
+\item[\textup{(v)}] \emph{(Lattices.)} If $\delta=0$, then $D(\xi,f_0)\le28\,\|C-I\|_\Fro^2$, and $D(\xi,f_0)=d_0$ whenever $d_0<1$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) is Lemma~\ref{lem:Dupper}(i) with $(\sqrt c-1)^2\le(c-1)^2/(1+\sqrt{\mu_-})^2$ and $100/(1+\sqrt{169/200})^2<28$. (ii) As in Step~6
+of the proof of Theorem~\ref{thm:registration}, a vector $Ab+\chi(b)h$ with $|b|=t$ has length at least
+$t-\sqrt q\,(t^2/150+1/200)^{1/2}$, where we used that the least singular value $s$ of $A$ satisfies
+$\|C^{1/2}-I\|_\Fro^2\ge(1-s)^2+2(s^{-1/2}-1)^2\ge\frac32(1-s)^2$ because $\det A=1$; this exceeds $\frac65$ for $t=\sqrt2$ and
+$\frac{13}{10}$ for the next length $t=\sqrt{11}/2$ when $q<1$, and it exceeds $\frac{13}{10}$ for $t=\sqrt2$ when $q\le d_\sharp$. The
+trial given by the registration and the polar rotation of $A$ has cost $q+\Phi$, so $D\le\min\{1,q+\Phi\}$, with equality if
+$q+\Phi<1$ by Theorem~\ref{thm:registration}; and if $q+\Phi\ge1$, a trial of cost less than $1$ would match the same fourteen
+vectors, by Theorem~\ref{thm:registration}(a) (the vectors $Ae+\chi(e)h$, $e\in\Star$, are shorter than
+$\frac{11}{10}+\frac1{14}<\frac65$ when $q<1$), and would have the same least cost. (iii) The first claim holds because
+$d_0=100\dist_\Fro(A,\SO(3))^2\le100\|A-U\|_\Fro^2$. If $q<1$, the bound is the cost of the trial $\sigma(e)=Ae+\chi(e)h$, $O=U$.
+By the proof of (ii), these fourteen vectors are elements of $\mathcal N$ shorter than $\frac65$, and the neighbours that the trial
+leaves unmatched are those counted in $\Phi$; the vectors are distinct because $|A(e-e')|\ge\frac9{10}\cdot\frac{\sqrt3}2>|h|$ for
+$e\ne e'$. Since eight elements of $\Star$ have $\chi=1$ and $\sum_e\chi(e)e=0$, the matched part of the cost is
+$25\,(4\|A-U\|_\Fro^2+8|h|^2)$, as in Steps~4 and~5 of the proof of Theorem~\ref{thm:registration}. If $q\ge1$, the bound is
+$D\le1$. (iv) By Theorem~\ref{thm:registration},
+$D<1$ at $\kappa$ implies a registration with $q+\Phi=D<1$; then $\|C^{1/2}-I\|_\Fro<\frac1{10}$ gives
+$\frac9{10}|B'm|\le|R(\xi)m|\le\frac{11}{10}|B'm|$ for $m\in\Z^3$, which confines the columns of $B'$ to finitely many vectors of $\Bz$
+once $\xi$ ranges over $S$, and $|h|^2<\frac1{200}$ confines $n$. (v) Let $\delta=0$. If $d_0<1$, then
+$(1-s)^2+2(s^{-1/2}-1)^2<\frac1{100}$ gives $s>\frac{23}{25}$, so the images of the vectors of length $\sqrt2$ have length at least
+$s\sqrt2>\frac{13}{10}$, $\Phi=0$ and $D(\xi,f_0)=d_0$ by (ii). For the first claim we may assume $28\|C-I\|_\Fro^2<1$; then
+$\|C-I\|_\op<\frac{19}{100}$, the eigenvalues of $C$ exceed $(\frac9{10})^2$, and
+$d_0\le\frac{100}{(19/10)^2}\|C-I\|_\Fro^2<28\|C-I\|_\Fro^2<1$.
+\end{proof}
+
+\subsection{Deficit rules}\label{ssec:deficit}
+
+\begin{lemma}[Deficit rules]\label{lem:deficit}
+Each of the following implies \textup{(D)} on $B$.
+\begin{enumerate}
+\item[\textup{(i)}] A lower bound $E_-$ for $e$ on $B$ and an upper bound $D_+\le1$ for $D$ on $B$ satisfy
+$E_--\eB^+-\gap^+D_+>0$. Here $D_+$ comes from Lemma~\ref{lem:Dbox} or from Lemma~\ref{lem:growth}\textup{(ii)}, and $E_-$ comes
+from Lemma~\ref{lem:energy} or~\ref{lem:planarrules}, or it is the sum of a lower bound for the energy $e(\xi,f_0)$ of an anchor over
+the shape box and of a lower bound for the energy gain $e(\xi,f)-e(\xi,f_0)$ over $B$ (Section~\ref{ssec:anchor};
+Lemmas~\ref{lem:det-anchor} and~\ref{lem:det-centred}).
+\item[\textup{(ii)}] \emph{Joint vertex rule.} Let $\mathcal T$ be a separately concave lower bound for $2\ltwo e+2\alpha+2\alpha^{-2}$
+as in Lemma~\ref{lem:energy}\textup{(ii)}, let $t\in[0,1]$, and let $\mathcal C$ be a separately convex function on $B$ with
+$D\le\mathcal C$ on $B$. If
+\[
+  \min_v\Bigl[\frac{\mathcal T(v)-2\alpha-2\alpha^{-2}}{2\ltwo}-\eB^+-\gap^+\bigl(1-t+t\,\mathcal C(v)\bigr)\Bigr]>0 ,
+\]
+the minimum being over the vertices $v$ of $B$, then \textup{(D)} holds on $B$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) is immediate.
+(ii) $D\le1$ and $D\le\mathcal C$ give $D\le1-t+t\mathcal C$, so the bracket, a separately concave function, is a lower bound for
+$\Def$, and its minimum over $B$ is attained at a vertex.
+\end{proof}
+
+For (ii) one needs a separately convex function $\mathcal C\ge D$. The certificate takes a registration $(B',f_0,n)$ and a matrix
+$U\in\SO(3)$ with rational entries, and it uses the following majorant of the cost of the corresponding trial, in which
+$[r_i^-,r_i^+]$ denotes the interval of $r_i$ on $B$, $i=1,2$.
+
+\emph{The strain.} By \eqref{eq:Rchart}, the first two rows of $A=RB'^{-1}$ are affine in each of the coordinates $r_1,r_2,x,y,z$
+separately, so their contribution to $\|A-U\|_\Fro^2$ is separately convex. The third row of $A$ is $w/(r_1r_2)$, where $w$ is the
+third row of $B'^{-1}$, and with the third row $U_3$ of $U$ its contribution is
+\[
+  \Bigl|\frac w{r_1r_2}-U_3\Bigr|^2=\frac{|w|^2}{r_1^2r_2^2}-\frac{2\,w\cdot U_3}{r_1r_2}+1 ,
+\]
+whose second derivative with respect to $r_1$ is $(6|w|^2-4\,r_1r_2\,w\cdot U_3)/(r_1^4r_2^2)$; the same holds with $r_1$ and $r_2$
+exchanged. As $|w\cdot U_3|\le|w|$, both second derivatives are nonnegative on $B$ if
+\[
+  3\,|w|\ \ge\ 2\,r_1^+r_2^+ ,
+\]
+and the rule is applied only if this holds; it is tested in the form $9|w|^2\ge4(r_1^+r_2^+)^2$, in exact rational arithmetic.
+
+\emph{The displacement.} $|h|^2=\delta^\T R^\T R\delta$ is separately convex by the proof of Lemma~\ref{lem:sepconv}.
+
+\emph{The unmatched neighbours.} At the points of $B$ where $q<1$, each term of $\Phi$ is, by Lemma~\ref{lem:Dbox}(ii),
+$\phi(|Rv|)$ with $v=B'^{-1}b+\chi(b)\delta$ for one of the twelve vectors $b\in\Bz$ of length $\sqrt2$; it is at most
+$(13-10|Rv|)_+$. Terms with $|Rv|\ge\frac{13}{10}$ on all of $B$ are omitted. For the others let $p\in\R^3$ with $|p|\le1$,
+and let $\lambda_v\ge\Delta\sup_B|p_3v_3|$, with $\Delta$ as below. The verifying program uses the unit vector in the direction of
+$Rv$ at the centre of $B$, which is not stored in the certificate: it checks that $Rv\ne0$ there, encloses the unit vector in a
+ball, takes for $\lambda_v$ the product of upper bounds for $\Delta$ and for $|p_3v_3|$ over this ball and over $B$, and evaluates
+the function $L$ below with this ball; by inclusion monotonicity the results contain the values of $L$ for the unit vector itself.
+Let
+$\sigma_i(t):=(r_i^-+r_i^+-t)/(r_i^-r_i^+)$ be the chord of $t\mapsto1/t$ on $[r_i^-,r_i^+]$. From
+$0\le\sigma_i(t)-1/t=(t-r_i^-)(r_i^+-t)/(r_i^-r_i^+t)\le(r_i^+-r_i^-)^2/\bigl(4(r_i^-)^2r_i^+\bigr)$ and
+$\sigma_1\sigma_2-\frac1{r_1r_2}=\sigma_1\bigl(\sigma_2-\frac1{r_2}\bigr)+\frac1{r_2}\bigl(\sigma_1-\frac1{r_1}\bigr)$, with
+$0<\sigma_1\le1/r_1^-$ and $1/r_2\le1/r_2^-$, we get, on $B$,
+\[
+  0\ \le\ \sigma_1(r_1)\,\sigma_2(r_2)-\frac1{r_1r_2}\ \le\ \Delta:=\frac{(r_1^+-r_1^-)^2}{4\,(r_1^-)^2\,r_1^+\,r_2^-}+\frac{(r_2^+-r_2^-)^2}{4\,(r_2^-)^2\,r_2^+\,r_1^-} .
+\]
+Since $Rv=\bigl(r_1(v_1+xv_2+yv_3),\ r_2(v_2+zv_3),\ v_3/(r_1r_2)\bigr)$, the function
+\[
+  L:=p_1\,r_1(v_1+xv_2+yv_3)+p_2\,r_2(v_2+zv_3)+p_3\,v_3\,\sigma_1(r_1)\,\sigma_2(r_2)-\lambda_v
+\]
+satisfies $L\le p\cdot Rv\le|Rv|$ on $B$. It is affine in each of the eight coordinates separately, because $v$ is affine in $f$ and
+does not depend on $\xi$; hence $(13-10L)_+$ is separately convex, and it is an upper bound for $\phi(|Rv|)$. At the vertices of
+$B$, where $\sigma_i(r_i)=1/r_i$, the value of $L$ is $p\cdot Rv-\lambda_v$, so no chord has to be evaluated. If
+$100\|A-U\|_\Fro^2+200|h|^2\le d_\sharp$ at all vertices of $B$, then $q\le d_\sharp$ on $B$ and $\Phi=0$ by
+Lemma~\ref{lem:Dbox}(ii); in this case no term is added.
+
+The function used is $\mathcal C:=100\,\|A-U\|_\Fro^2+200\,|h|^2+\sum(13-10L)_+$, the sum being over the terms that are not omitted.
+It is separately convex, and $D\le\mathcal C$ on $B$: at the points where $q<1$ this follows from Lemma~\ref{lem:Dbox}(ii),
+(iii) and the bounds above, and at the points where $q\ge1$ from
+$\mathcal C\ge100\|A-U\|_\Fro^2+200|h|^2\ge1\ge D$, by Lemma~\ref{lem:Dbox}(iii). Rule (ii) evaluates the energy bound and the
+defect bound at the same vertices; in the last stages of the cover, where the deficit is of order $10^{-10}$, this is what makes
+the subdivision terminate.
+
+\subsection{Anchor rules}\label{ssec:anchor}
+
+Let $f_0\in\frac12\Z^3\setminus\Z^3$, $n\in\Z^3$, and for $\kappa=(\xi,f)$ let $\delta=f-f_0-n$, $h=R(\xi)\delta$ and $M=R^\T R$, so
+$|h|^2=\delta^\T M\delta$. The lattice $X(\xi,f_0)$ is the \emph{anchor} of $X(\xi,f)$. Condition (A) follows from two separate
+estimates, of the gain in energy and of the growth of the defect away from the anchor:
+\begin{equation}\label{eq:EDg}
+  e(\xi,f)-e(\xi,f_0)\ \ge\ \mathcal E(\xi,\delta),\qquad D(\xi,f)-D(\xi,f_0)\ \le\ \mathcal D(\xi,\delta),\quad\mathcal D\ge0 ,
+\end{equation}
+since then $\Def(\xi,f)-\Def(\xi,f_0)\ge\mathcal E-\gap^+\mathcal D$.
+
+\begin{lemma}[Energy gain]\label{lem:gain}
+\textup{(i)} $e(\xi,f_0+\delta)=e(\xi,f_0-\delta)$; in particular $\delta\mapsto e(\xi,f_0+\delta)$ has vanishing derivatives of odd
+order at $0$.
+
+\textup{(ii)} For every $\alpha>0$, with $F_{\mathrm r},F_{\mathrm d}$ as in \eqref{eq:screened},
+\begin{multline}\label{eq:pairs}
+  2\ltwo\bigl[e(\xi,f)-e(\xi,f_0)\bigr]\ \ge\ \sum_{\{\pm u\}}\Bigl[2F_{\mathrm r}'(q_u)\,|h|^2+4F_{\mathrm r}''\bigl(q_u+|h|^2\bigr)\,(u^\T M\delta)^2\Bigr]\\
+   +\sum_{\{\pm m\}}\epsilon_m\,F_{\mathrm d}(q^*_m)\,\theta_m^2\,\Bigl(1-\frac{(1+\epsilon_m)\,\theta_m^2}{24}\Bigr)_+,
+\end{multline}
+where the first sum is over the pairs $\pm u$ of $\Z^3+f_0$, with $q_u=|Ru|^2$, and the second over the pairs $\pm m$ of
+$\Z^3\setminus\{0\}$, with $\theta_m=2\pi m\cdot\delta$ and $\epsilon_m=-\cos(2\pi m\cdot f_0)\in\{\pm1\}$.
+\end{lemma}
+
+\begin{proof}
+(i) The point reflection in the origin maps $Y(\xi,f_0+\delta)$ onto $Y(\xi,f_0-\delta)$ up to a translation by a period, because
+$2f_0\in\Z^3$. (ii) In the difference the same-coset sum and the constants of \eqref{eq:screened} cancel. The vectors of the second
+coset are $R(u+\delta)$, $u\in\Z^3+f_0$, and $\Z^3+f_0=-(\Z^3+f_0)$; for a pair $\pm u$ the squared lengths are
+$|R(\pm u+\delta)|^2=q_u+|h|^2\pm2u^\T M\delta$. Since $F_{\mathrm r}$ is a Laplace transform of a positive measure,
+$F_{\mathrm r}(Q+s)+F_{\mathrm r}(Q-s)\ge2F_{\mathrm r}(Q)+F_{\mathrm r}''(Q)s^2$ (use $\cosh\sigma\ge1+\frac12\sigma^2$ under the
+integral), and $F_{\mathrm r}(q_u+|h|^2)-F_{\mathrm r}(q_u)\ge F_{\mathrm r}'(q_u)|h|^2$ by convexity. For the reciprocal pair $\pm m$ the
+change is $2\epsilon_mF_{\mathrm d}(q_m^*)(1-\cos\theta_m)$, and
+$\frac12\theta^2-\frac1{24}\theta^4\le1-\cos\theta\le\frac12\theta^2$, $1-\cos\theta\ge0$.
+\end{proof}
+
+To leading order in the displacement the right side of \eqref{eq:pairs} is a quadratic form in $\delta$, built from $M$, the vectors
+$Mu$ and the integer vectors $m$; terms of fourth order come from the shift $|h|^2$ in the argument of $F''_{\mathrm r}$ and from the
+factor $(\,\cdot\,)_+$. The certificate bounds the right side from below, for all shapes in a shape box and all displacements in a
+box, by a quadratic form $\delta^\T\mathsf H(\xi)\delta$ whose matrix is enclosed uniformly over the shape box
+(Lemma~\ref{lem:det-H}): the sums are truncated, with all omitted terms of unfavourable sign charged to explicit tails; the
+coefficients $F'_{\mathrm r}$, $F''_{\mathrm r}$, $F_{\mathrm d}$ are replaced by affine bounds in the squared lengths, which are valid
+because these functions are monotone and convex or concave; the terms of fourth order are bounded by means of an upper bound for
+the displacement; and the dependence on the shape is expanded about the exact Gram matrix at the centre of the shape box, with
+rigorous remainders. A second form of the energy gain, the \emph{planar gain}, uses the planar expansion \eqref{eq:planar} in the
+same way, for anchors with $f_{0,3}\in\frac12+\Z$: there the difference $e(\xi,f)-e(\xi,f_0)$ is bounded below by a quadratic
+expression in $\delta_3$ and $(\delta_1,\delta_2)+\delta_3\sigma$ (Lemma~\ref{lem:det-layer}). The complete statements of these
+bounds are given in Appendix~\ref{app:details}.
+
+\begin{lemma}[Growth of the defect]\label{lem:growth}
+\textup{(i)} If $D(\xi,f_0)=1$, then $D(\xi,f)-D(\xi,f_0)\le0$.
+
+\textup{(ii)} Suppose that $d_0<1$ for a registration $(B',f_0,n)$ at $\xi$. Then $D(\xi,f_0)=d_0$ and
+\[
+  D(\xi,f)-D(\xi,f_0)\ \le\ \min\bigl\{1-d_0,\ 200\,|h|^2+\Phi^+\bigr\},
+\]
+where $\Phi^+$ is an upper bound for the sum $\Phi$ of Lemma~\ref{lem:Dbox}\textup{(ii)} at $(\xi,f)$ in case $q<1$; $\Phi^+=0$ if
+$q\le d_\sharp$, and in general each pair $\pm b$ of vectors of $\Bz$ of length $\sqrt2$ with $\chi(b)=1$ contributes at most
+\[
+  \min\Bigl\{10\,\bigl(|h|-(|Ab|-\tfrac{13}{10})\bigr)_+,\ \ 4\,\bigl(\tfrac{169}{100}-|Ab|^2+2\,|Ab\cdot h|-|h|^2\bigr)_+\Bigr\}.
+\]
+\end{lemma}
+
+\begin{proof}
+(i) is $D\le1$.
+(ii) $D(\xi,f_0)=d_0$ by Lemma~\ref{lem:Dbox}(v), whose proof also shows that $|Ab|\ge s\sqrt2>\frac{13}{10}$ for $|b|=\sqrt2$. At
+$(\xi,f)$ the same registration gives $D\le\min\{1,q+\Phi\}$, and $q-d_0=200|h|^2$; if $q\ge1$ the minimum on the right is
+$1-d_0$, so let $q<1$. The vectors $Ab$ with $\chi(b)=0$ do not move. Of the two vectors $\pm Ab+h$ with $\chi(b)=1$ at most one is
+shorter than $\frac{13}{10}$, because their lengths add up to at least $2|Ab|\ge\frac{13}5$; its length $\ell$ satisfies
+$\ell\ge|Ab|-|h|$ and $\ell^2\ge|Ab|^2-2|Ab\cdot h|+|h|^2$, and $\ell>\frac65$ by Lemma~\ref{lem:Dbox}(ii). Its weight is
+$10(\frac{13}{10}-\ell)_+$, and $10(\frac{13}{10}-\ell)\le4(\frac{169}{100}-\ell^2)$ for $\frac65\le\ell\le\frac{13}{10}$, since
+$\frac{13}{10}+\ell\ge\frac52$.
+\end{proof}
+
+\begin{lemma}[Anchor rules]\label{lem:anchor}
+Let $B=S\times O$, $f_0$, $n$ be as above, and let $\mathcal E$, $\mathcal D$ satisfy \eqref{eq:EDg} on $B$.
+\begin{enumerate}
+\item[\textup{(i)}] If $\mathcal E(\xi,\delta)-\gap^+\mathcal D(\xi,\delta)\ge c\,|h|^2$ on $B$ with $c>0$, then \textup{(A)} holds on $B$.
+\item[\textup{(ii)}] If $s_-\le\Def(\xi,f_0)$ for all $\xi\in S$ and $s_-+\inf_B(\mathcal E-\gap^+\mathcal D)>0$, then \textup{(D)} holds
+on $B$.
+\item[\textup{(iii)}] If $D_0^-\le D(\xi,f_0)$ for all $\xi\in S$ and $\inf_B\mathcal E>\gap^+(1-D_0^-)$, then \textup{(E)} holds on $B$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) and (ii) follow from $\Def(\xi,f)-\Def(\xi,f_0)\ge\mathcal E-\gap^+\mathcal D$. (iii) By Theorem~\ref{thm:bravais},
+$e(\xi,f_0)\ge\eB+\gap D_0^-$, hence $e(\xi,f)>\eB+\gap D_0^-+\gap^+(1-D_0^-)\ge\eF$.
+\end{proof}
+
+In (i) the condition is verified in most cases as the positive definiteness of a symmetric interval matrix, namely of
+$\mathsf H-\gap^+\gamma\,M$ when $\mathcal E=\delta^\T\mathsf H\delta$ and $\mathcal D=\gamma|h|^2$, by an $LDL^\T$ factorization in ball
+arithmetic (Lemma~\ref{lem:det-positive}); the recorded witness is then a positive pivot and not an energy margin, and the box may
+contain the anchor itself. In (ii), $s_-$ may be taken to be $0$, by Theorem~\ref{thm:bravais}, or a positive lower bound
+for the deficit of the anchor, obtained from a lower bound for its energy, by Lemma~\ref{lem:energy} on $S\times\{f_0+n\}$ or by
+Lemma~\ref{lem:det-anchor}, and from an upper bound for its defect by Lemma~\ref{lem:Dbox}(v), with the bound $d^+$ of
+Section~\ref{ssec:det-gamma} (Lemma~\ref{lem:det-centred}); a positive $s_-$ allows a form that is not positive definite. The
+coefficient $\gamma$ of the defect growth is obtained from Lemma~\ref{lem:growth}: the certificate takes the largest value that
+parts (i) and (ii) give over the complete list of Lemma~\ref{lem:Dbox}(iv), so that no assumption is made on which registration
+is optimal (Lemma~\ref{lem:det-gamma}).
+
+The anchor rules are the only place where Theorem~\ref{thm:bravais} enters the proof of Theorem~\ref{thm:cover}, but they are
+indispensable: a neighbourhood of the family of lattices with small deficit, for instance of all lattices near the body-centred and
+face-centred cubic ones, is covered by them.
+
+\subsection{The certificate}\label{ssec:stages}
+
+The family $\mathcal F$ of Theorem~\ref{thm:cover}, with the data that prove each of its boxes discharged, is given by a
+certificate of thirteen files, which are read in order (Table~\ref{tab:stages}). At every moment there is a finite set
+$\mathcal H$ of \emph{held} boxes; initially $\mathcal H=\{\Kbox\}$. One of the files marks the reflection step described below
+and contains no data. Each of the other twelve replaces every box $P\in\mathcal H$ by a box $\tilde P\supset P$ together with a
+subdivision of $\tilde P$ into closed boxes, called parts, each of which
+\begin{itemize}
+\item[(a)] is held, and then belongs to the set $\mathcal H$ of the next file; or
+\item[(b)] carries condition (N), with an integer vector for which \eqref{eq:R1} or \eqref{eq:R2} is violated strictly on it, or
+one of the rules of Sections~\ref{ssec:energyrules}--\ref{ssec:anchor} and Appendix~\ref{app:details}, in either case possibly
+after slabs that satisfy (N) have been removed (Lemma~\ref{lem:discharged}(iii)), and with all its parameters; or
+\item[(c)] is contained in $B$, in $B+(0,n)$ or in $\iota(B)+(0,n)$ with $n\in\Z^3$, for a box $B$ that the same file lists
+with a rule and all its parameters.
+\end{itemize}
+Subdivisions are of two kinds: repeated bisection at the exact midpoint of a coordinate, both closed halves being kept;
+and, in the file of stages 4 and 5, a list of boxes with rational endpoints of which it is verified in exact arithmetic
+that their union contains $\tilde P$. After the last file $\mathcal H$ is empty. The following points make the
+bookkeeping rigorous.
+
+\begin{itemize}
+\item \emph{Closed boxes.} Subdivisions consist of closed boxes that cover the subdivided box, and every rule is evaluated
+on the closed box, the coordinate intervals being enclosed by balls. Hence, as long as no reflection has been used, the
+union of the boxes of types (b), (c) and of the held boxes contains $\Kbox$ after every file, faces included. The
+inequalities \eqref{eq:R1}, \eqref{eq:R2} are used for (N) only when one of them is violated strictly on the whole box for a
+fixed integer vector, so no reduced point is lost at a tie.
+\item \emph{Reflection.} Every box held after the third pass of stage 3 lies on one side of the hyperplane $f_1=0$. At
+this point $\mathcal H$ is replaced by the set of all boxes $P\cap\iota(P')$ of positive volume with $P,P'\in\mathcal H$,
+$P\subset\{f_1\ge0\}$ and $P'\subset\{f_1\le0\}$. The file of this step contains no data: the verifying program computes
+the new set. The step is legitimate. Let $\mathcal Z$ be the union of the discharged boxes so far, and let
+$\kappa\in\Kbox$ with $f_1\ge0$ lie neither in $\mathcal Z$ nor in $\iota(\mathcal Z)$. Then $\kappa$ has a neighbourhood
+$U$ in $\Kbox\cap\{f_1\ge0\}$ with the same property. The points $\kappa'\in U$ with $f_1>0$ such that neither $\kappa'$
+nor $\iota(\kappa')$ lies on a face of a held box are dense in $U$, because there are finitely many faces. Such a point
+lies in the interior of a held box $P\subset\{f_1\ge0\}$, and $\iota(\kappa')$, which lies in $\Kbox\setminus\mathcal Z$
+and has $f_1<0$, lies in the interior of a held box $P'\subset\{f_1\le0\}$. So $\kappa'\in P\cap\iota(P')$, and this box
+has positive volume. Since the union of these finitely many boxes is closed, it contains $\kappa$. After the step,
+therefore, every $\kappa\in\Kbox$ lies in a discharged box, in a held box, or in the image under $\iota$ of such a box.
+This weaker statement is preserved when a held box is replaced by a subdivision as above, and when no box is held it is
+the statement of Theorem~\ref{thm:cover}, because the image under $\iota$ of a discharged box is discharged. The step is
+used once; the argument needs the stronger statement before it.
+\item \emph{Periodicity and symmetry.} Parts of type (c) are discharged by Lemma~\ref{lem:discharged}(ii). Rules that
+involve an integer vector $n$ are verified on boxes in the unwrapped offset.
+\item \emph{Exact data.} The endpoints of all boxes and the data that determine the parameters of the rules are stored in the
+certificate as exact rational numbers and integers: the integer vectors that violate \eqref{eq:R1} or \eqref{eq:R2}; for a
+support, the value of $\alpha$, the set of terms, and either a probability distribution with dyadic weights on the vertices of a
+box, of which the base points are the averages, or the instruction to take the base points at the centre or at the
+vertex maxima of the box; the slabs; the registrations, the trial rotations (integer quaternions) and the numbers $t$;
+the anchors. Other parameters are not stored but chosen by the verifying program from these data by fixed procedures,
+which is admissible because the lemmas allow every choice; among them are the phase factors $\omega_j$ of
+Lemma~\ref{lem:energy} (a lower bound for the smaller value of $w$ at the two ends of the phase interval, or $0$ if the interval
+meets $\Z+\frac12$), the vectors $p$ and the numbers $\lambda_v$ of Section~\ref{ssec:deficit}, computed in ball arithmetic,
+and the weights $s_T$ of Lemma~\ref{lem:energy}(iii$'$), allocated greedily up to lower bounds for $\inf_BF_j(q_j)$, the
+triples being ordered in floating point. Floating-point arithmetic was used only to propose the stored data and to order these
+triples.
+\end{itemize}
+
+\begin{table}[h]
+\small
+\begin{tabular}{l>{\raggedright\arraybackslash}p{0.66\textwidth}r}
+\toprule
+stage & boxes discharged in the stage, by rule & held after\\
+\midrule
+1 & (N): $37\,962$; energy rule (i): $28\,765$ & $966\,547$\\
+2 & energy rule (ii): $243\,486$; (N): $49\,840$; planar rule (i): $43\,751$ & $675\,174$\\
+3, passes 1--2 & energy rule (iii): $9\,227\,312$; energy rule (ii): $979\,538$; (N): $285\,457$; energy rule (iv): $34\,079$; planar rule (i): $27\,642$ & $597\,330$\\
+3, pass 3 & energy rule (iii): $388\,387$; energy rule (ii): $220\,027$; (N): $26\,613$; energy rule (iv): $12\,247$; planar rule (i): $1\,752$; $61\,252$ of these after removing slabs & $494\,192$\\
+reflection & boxes $P\cap\iota(P')$ computed by the verifier & $250\,647$\\
+3, passes 4--14 & energy rule (ii): $2\,190\,441$; energy rule (iii): $1\,926\,395$; (N): $100\,898$; energy rule (iv): $53\,650$; planar rule (i): $3\,751$; anchor rule with gain (ii) $\to$ (A): $2\,302$; anchor rule (ii) with gain (ii) and $s_->0$: $289$; centred tests of Lemma~\ref{lem:det-centred} $\to$ (D): $109$; anchor rule with gain (ii) $\to$ (D): $67$; anchor rule with the planar gain $\to$ (A): $46$; centred tests of Lemma~\ref{lem:det-centred} $\to$ (E): $20$; anchor rule with the planar gain $\to$ (D): $7$; $390\,368$ of these after removing slabs & $1\,129\,620$\\
+4--5 & energy rule (iii): $18\,755$; anchor rule with gain (ii) $\to$ (A): $4\,369$; anchor rule (ii) with gain (ii) and $s_->0$: $557$; deficit rule (i): $64$; anchor rule with gain (ii) $\to$ (D): $3$; contained in discharged boxes: $82\,143$ & $1\,271\,350$\\
+6 & deficit rule (i): $242\,631$; energy rule (iii): $121\,658$; contained in discharged boxes: $561\,950$ & $709\,400$\\
+7 & energy rule (ii): $391\,724$; deficit rule (i): $202\,119$; anchor rule with gain (ii) $\to$ (A): $82\,872$; anchor rule with the planar gain $\to$ (A): $1\,549$; anchor rule with gain (ii) $\to$ (D): $701$; anchor rule with the planar gain $\to$ (D): $230$; anchor rule with gain (ii) $\to$ (E): $1$ & $30\,258$\\
+8 & deficit rule (ii): $51\,908$; energy rule (ii): $11\,435$; deficit rule (i): $11\,194$; planar rule (ii): $759$; anchor rule with the planar gain $\to$ (A): $369$ & $5\,721$\\
+9 & deficit rule (ii): $42\,897$; deficit rule (i): $14\,217$; energy rule (ii): $1\,023$ & $6\,346$\\
+10 & anchor rule with the planar gain $\to$ (A): $6\,324$; centred tests of Lemma~\ref{lem:det-centred} $\to$ (D): $22$ & $0$\\
+\bottomrule
+\end{tabular}
+\caption{The certificate by stage (two files for stage 1, four for stage 3 including the reflection step, one for stages 4 and 5
+together, one for each other stage) and the counts of the verification run (Section~\ref{ssec:certs}): for each stage, the boxes
+discharged in it, by rule, and the number of boxes held after it. The counts by rule are those of the boxes on which the hypothesis
+of a rule was checked, namely the parts of type (b) and the boxes that a file lists with a rule for parts of type (c); they add up
+to the $17\,092\,214$ checks of Section~\ref{ssec:certs}(b). ``Contained in discharged boxes'' counts the parts of type (c). In
+stages 4--5 and 6 every part is held or of type (c), so that the counts by rule in these rows are those of the listed boxes. Slabs
+removed by Lemma~\ref{lem:discharged}(iii) are not counted separately; the counts of (N) in stage 3 include $6$ boxes (pass 3) and
+$16$ boxes (passes 4--14) that satisfy (N) after slabs have been removed. Stage 1 is a dyadic partition of $\Kbox$ into $1\,033\,274$
+boxes of depth up to $22$; stage 3 consists of fourteen passes, most of them adaptive bisection, with the reflection step after
+its third pass. For the anchor rules, ``$\to$ (A)'', ``$\to$ (D)'' and ``$\to$ (E)'' mean parts (i), (ii) with $s_-=0$, and
+(iii) of Lemma~\ref{lem:anchor}; gain (ii) is that of Lemma~\ref{lem:gain}, in the form of Lemma~\ref{lem:det-H}, and the planar
+gain that of Lemma~\ref{lem:det-layer}.}\label{tab:stages}
+\end{table}
+
+\begin{proof}[Proof of Theorem~\ref{thm:cover}]
+The verification (Section~\ref{ssec:certs}) establishes, in exact rational arithmetic, the statements made above about
+the subdivisions and the sets $\mathcal H$, and, in ball arithmetic, the hypothesis of the rule of every part of type
+(b) and of every box $B$ in (c). By Lemmas~\ref{lem:discharged}--\ref{lem:anchor} and the bounds of
+Appendix~\ref{app:details}, all these boxes are discharged, that is, each satisfies (N), (E), (D) or (A), and so are the parts
+of type (c), by Lemma~\ref{lem:discharged}(ii). Let $\mathcal F$ consist of all of them. By the first two points above,
+every $\kappa\in\Kbox$ lies in a box of $\mathcal F$ or in the image under $\iota$ of one, since no box is held after the last
+file.
+\end{proof}
+
+\begin{remark}[Zeros and smallest margins]\label{rem:margins}
+The zeros of $\Def$ in $\Kbox_{\mathrm{red}}$ are the reduced representatives of the seven descriptions of each cubic
+lattice as a two-site configuration (Section~\ref{sec:reduction}) and their translates by $f\mapsto f+n$. By
+Theorem~\ref{thm:cover}, each of them or its
+image under $\iota$ lies in a box of $\mathcal F$, and every box of $\mathcal F$ that contains a zero is discharged
+by anchor rule~(i), directly or through the box that contains it (type (c)), with a pivot of at least $1.1\times10^{-5}$.
+The smallest certified margin in a rule of type (E) or (D) is
+$8.5\times10^{-13}$ in units of the energy per particle, to be compared with $\gap=5.6\times10^{-5}$ and with a working
+precision of $128$ bits. Such a small margin reflects the crudeness of the bound that happened to be used on a particular
+box: a numerical minimization of $e$ over the box in question (not certified) finds $e-\eF\approx2.7\times10^{-6}$, about
+$5\%$ of $\gap$, at a vertex, and no smaller value. Where
+the cover has to work hardest is near the set of lattices and near low-energy configurations with $D=1$, for instance stackings of
+triangular layers, such as the hexagonal close-packed structure, whose energies are within $\gap$ of $\eF$.
+\end{remark}

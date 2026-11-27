@@ -1,0 +1,279 @@
+{
+ "command": [
+  "lake",
+  "build",
+  "--no-build",
+  "BccSharp"
+ ],
+ "executable": {
+  "path": "<toolchain>\\bin\\lake.EXE",
+  "sha256": "023feb24d3e7244fe671dba79f1cd1affc6c7a7cacfe497bf3675febb506578c"
+ },
+ "environment": {},
+ "before": {
+  "time": "2026-11-26T12:08:01-07:00",
+  "python": {
+   "version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+   "sha256": "fda7026477256845afab371e354c4d512896665f1761939cb5887d0a9dec257a"
+  },
+  "tools": {
+   "compare_receipts.py": "394cfd9e7ccabe5ef43f8204213d16483f79d829e9901d96c86b37fdaf413f5f",
+   "export_stats.py": "8835c1e84054cada20eda7666a90ca979d909bdccb7bd90f6a07363bc63c7cbb",
+   "export_taint.py": "8e28b4d88788d99c302b18f92e5cfb8a3e2968ab55abd6c5335ddd28bbfdb4d8",
+   "gated_runner.py": "08d2911db3e8080170347efce3b881f6e7de88b37bf4c9d8acdc7948c17f6d42",
+   "make_audit.py": "31565e4047750add362143b0ea02701ab35bfbba5422346e929db1019fdd5d99",
+   "make_export_list.py": "7a49034afc043687e40c3094e74dc7be1fc80b7e2cb9575ee35267a4ca460b65",
+   "make_theorem_table.py": "1cd30e6527c671790d008c23b5709c94d949823e38f34372dc069521e3595d4c",
+   "olean_receipts.py": "7599f0beb4e05688cbb2515191dabdee892a780939a41933eae3e379424f4266",
+   "pack_logs.py": "82483e35d70c571e7645d98304fbbe4068c225541c0390b5db537f1ac0d6a84e",
+   "record_run.py": "0bdb4016be83a5c289c5e293f039ddabcfc037c3d832957782a6453d1b663e6a",
+   "record_state.py": "fd6aa0ecc7ec6410f926816ecc6146ae7b54d0651610b995c40d6ad054ec16de",
+   "run_kernels.py": "1ffc5b3c8ad67419346ee8bb94ea9674156d4832a09066b258831f9a61ba5be8",
+   "snapshot.py": "45e47a97a9289130fd5306e3c87b9386527d7c13e86fb6c3cdb7430e9af3af59",
+   "summarize_results.py": "a1388de263c7cb1090ace19e64c633e68cb65fa54a4cd86ea974a7fca148f0f2",
+   "verify_build_logs.py": "d0f114eb4c35bd6de3d99dc08c513f8c38c65a6c67f5f37db89c5c54f891ec85"
+  },
+  "toolchain": {
+   "bin": {
+    "cadical.exe": "4ad2c6d5baa2eb8dfdf46601063a45345a3cd0c29559252bb7bd3dfc23df4e82",
+    "clang.exe": "c8a5ddb837555782c0f47768255ea044412afa73e58e1f66a74e5c40e5145e31",
+    "con-leche.exe": "4b7ba57f7e4f50afb21374a4f8f980fe0c8d347fde91a1f70e0462749014baa0",
+    "con-ron.exe": "4e351dd1d556da22efb44c17be30e3ff3900780730ce642ee007d1416d332d40",
+    "lake.exe": "023feb24d3e7244fe671dba79f1cd1affc6c7a7cacfe497bf3675febb506578c",
+    "ld.lld.exe": "6910ee0b1150f0504542c77f2a13f81a7b91c52144eb1a30922939f76371d0c5",
+    "lean.exe": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "lean4lean.exe": "2463006ea615a6f69c80689142cf7cb0a8724fc7819c57ad2b395e99eb6a9f3c",
+    "leanc.exe": "de687735b986be0fa041d9bd51feab737544027ea3ff92587e13f68c1c86f16d",
+    "leanchecker-paranoid.exe": "3430a114fcb94d1697555bed88f252a1479d936aff26f36fd2dd1f098144ec9c",
+    "leanchecker.exe": "9ef6baeb28d5e28897d5ed6dddd60ff81e511d97374013ece435dff38e9e0137",
+    "leanexport.exe": "bda24bb3fafaf299ba472f944942d6293294b76559fafc9f166badd7c0f981b3",
+    "leanir.exe": "5121c9cd8d9c159e14ec907ad27042fd57104b460f97078c43a33c2df55422ac",
+    "leanmake": "9f0b70acbde379a835c4fe80606501eb2586d6525ae874e802f7ef5ad50c18bb",
+    "leantar.exe": "c7dbe74520f4c7fb132593f9f2bcd894618bf381b793961a4ab1bb37e13ba587",
+    "libInit_shared.dll": "da779e21c05a2dc4518eb03e62b7319cc03e813a5abe9aa56607b8f974f8c6b7",
+    "libLLVM-23.dll": "55fec27e1f2808a2f8268aa589fc9cdac0065234edd21b0b384e43ae080f6340",
+    "libLake_shared.dll": "4f4647a626bb75f117d98802b2539498843d6664a4f0ae14dedfd4005660bc18",
+    "libc++.dll": "8a9deaac6d2f4d2de468a544d1f35cd0dd4bcde03cda3cfb76fb9674749828d4",
+    "libclang-cpp.dll": "5c775e6e1d3f9ebdf729ce9b6c896e4517209a48fb57b7711c52ee11c4c4421f",
+    "libleanshared.dll": "1175ac09966d023c2584c3cf2692f25cbb62c9f59f4e0244eb6d61f66c4e07f5",
+    "libleanshared_1.dll": "67d53556c84cb01969704e704a5179867bc7763745d424eb8f8ad3d967c90564",
+    "libleanshared_2.dll": "60d88ed08f3f60eab5003f213c512873b8cb54f04f3fa27565ade6c97695e05b",
+    "lld.exe": "6910ee0b1150f0504542c77f2a13f81a7b91c52144eb1a30922939f76371d0c5",
+    "llvm-ar.exe": "9d773f45fc70f7dbf831b797c0bf353921c6e4a320a832117bf3552cb64c98b0",
+    "nanoda_bin.exe": "de57d9dd7f647eb57398bc3dab4dcaa1d64f961f3f49964d5455fbddc73b35a8",
+    "zlib1.dll": "94dd0a72d4da79e25294a91d1edf902d76eade7512d9218609a5fe43e3a7397a"
+   },
+   "lib": {
+    "files": 15316,
+    "by_suffix": {
+     ".a": 41,
+     ".builtins-x86_64.a": 1,
+     ".dll.a": 6,
+     ".ilean": 2546,
+     ".ir": 2543,
+     ".ir.sig": 2543,
+     ".o": 4,
+     ".olean": 2546,
+     ".olean.private": 2543,
+     ".olean.server": 2543
+    },
+    "digest": "2ef46eb359fb8014c47c44dd13e4e666735352d1879a988a45708c1312ae4ad5"
+   }
+  },
+  "package_files": {
+   "lakefile.toml": "f31a61e3d1c5c43ccdd1b4112e5dcedb356dc7146aa211a28b0a96c5f17415c7",
+   "lake-manifest.json": "4ea005d8467c04200ef0eb20cfef8f5f155ccc5545604fe07417121344c4bb54",
+   "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+   "scope.json": "f935ebd45892f038f1928519ba8e812eafc3f1d57fd6d7109e210f308c3adec7"
+  },
+  "scope": {
+   "modules": 405,
+   "sources_equal_to_scope": 405,
+   "sources_digest": "745a57ff92c2878a9494bd4d8eb5160c9ca29cf2a1460f66a74e5787704ed80d",
+   "olean_digest": "315ee38c9e6fce411913ce2fb4b4f617e2d3b6e059c712b39fecf40b68e037ac",
+   "ilean_digest": "263ab72293c766aa92f529059f4d65780e4c1e5b8ac14f0a56fbf3dcb9b59110",
+   "missing": []
+  },
+  "build_lib": {
+   "files": 2337,
+   "by_suffix": {
+    ".ilean": 405,
+    ".ilean.hash": 405,
+    ".ir": 39,
+    ".ir.hash": 39,
+    ".ir.sig": 39,
+    ".ir.sig.hash": 39,
+    ".olean": 405,
+    ".olean.hash": 405,
+    ".olean.private": 39,
+    ".olean.private.hash": 39,
+    ".olean.server": 39,
+    ".olean.server.hash": 39,
+    ".trace": 405
+   },
+   "digest": "2fa18b42b3f44e7a87e40d3326a89666b839ce78faa07d2cc7b92ff5d512446f"
+  },
+  "packages": {
+   "files": 117664,
+   "by_suffix": {
+    "": 9,
+    ".ilean": 9049,
+    ".ilean.hash": 9049,
+    ".ir": 9049,
+    ".ir.hash": 9049,
+    ".ir.sig": 9049,
+    ".ir.sig.hash": 9049,
+    ".json": 9,
+    ".lean": 2,
+    ".olean": 9049,
+    ".olean.hash": 9049,
+    ".olean.private": 9049,
+    ".olean.private.hash": 9049,
+    ".olean.server": 9049,
+    ".olean.server.hash": 9049,
+    ".toml": 7,
+    ".trace": 9049
+   },
+   "digest": "85850d79d0f65b379ce6878e659e332d7968db096fa6bea51e43bf9623d8e0ca"
+  },
+  "files": {}
+ },
+ "start": "2026-11-26T12:10:59-07:00",
+ "wall_s": 5.7,
+ "end": "2026-11-26T12:11:04-07:00",
+ "exit": 0,
+ "log": {
+  "file": "BccSharp.log",
+  "sha256": "a3d6efac2490c6ae96d2d6ed78c8d712a7f9793f25d48c3c6359b90ff0d8f382",
+  "bytes": 124732
+ },
+ "after": {
+  "time": "2026-11-26T12:11:04-07:00",
+  "python": {
+   "version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+   "sha256": "fda7026477256845afab371e354c4d512896665f1761939cb5887d0a9dec257a"
+  },
+  "tools": {
+   "compare_receipts.py": "394cfd9e7ccabe5ef43f8204213d16483f79d829e9901d96c86b37fdaf413f5f",
+   "export_stats.py": "8835c1e84054cada20eda7666a90ca979d909bdccb7bd90f6a07363bc63c7cbb",
+   "export_taint.py": "8e28b4d88788d99c302b18f92e5cfb8a3e2968ab55abd6c5335ddd28bbfdb4d8",
+   "gated_runner.py": "08d2911db3e8080170347efce3b881f6e7de88b37bf4c9d8acdc7948c17f6d42",
+   "make_audit.py": "31565e4047750add362143b0ea02701ab35bfbba5422346e929db1019fdd5d99",
+   "make_export_list.py": "7a49034afc043687e40c3094e74dc7be1fc80b7e2cb9575ee35267a4ca460b65",
+   "make_theorem_table.py": "1cd30e6527c671790d008c23b5709c94d949823e38f34372dc069521e3595d4c",
+   "olean_receipts.py": "7599f0beb4e05688cbb2515191dabdee892a780939a41933eae3e379424f4266",
+   "pack_logs.py": "82483e35d70c571e7645d98304fbbe4068c225541c0390b5db537f1ac0d6a84e",
+   "record_run.py": "0bdb4016be83a5c289c5e293f039ddabcfc037c3d832957782a6453d1b663e6a",
+   "record_state.py": "fd6aa0ecc7ec6410f926816ecc6146ae7b54d0651610b995c40d6ad054ec16de",
+   "run_kernels.py": "1ffc5b3c8ad67419346ee8bb94ea9674156d4832a09066b258831f9a61ba5be8",
+   "snapshot.py": "45e47a97a9289130fd5306e3c87b9386527d7c13e86fb6c3cdb7430e9af3af59",
+   "summarize_results.py": "a1388de263c7cb1090ace19e64c633e68cb65fa54a4cd86ea974a7fca148f0f2",
+   "verify_build_logs.py": "d0f114eb4c35bd6de3d99dc08c513f8c38c65a6c67f5f37db89c5c54f891ec85"
+  },
+  "toolchain": {
+   "bin": {
+    "cadical.exe": "4ad2c6d5baa2eb8dfdf46601063a45345a3cd0c29559252bb7bd3dfc23df4e82",
+    "clang.exe": "c8a5ddb837555782c0f47768255ea044412afa73e58e1f66a74e5c40e5145e31",
+    "con-leche.exe": "4b7ba57f7e4f50afb21374a4f8f980fe0c8d347fde91a1f70e0462749014baa0",
+    "con-ron.exe": "4e351dd1d556da22efb44c17be30e3ff3900780730ce642ee007d1416d332d40",
+    "lake.exe": "023feb24d3e7244fe671dba79f1cd1affc6c7a7cacfe497bf3675febb506578c",
+    "ld.lld.exe": "6910ee0b1150f0504542c77f2a13f81a7b91c52144eb1a30922939f76371d0c5",
+    "lean.exe": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "lean4lean.exe": "2463006ea615a6f69c80689142cf7cb0a8724fc7819c57ad2b395e99eb6a9f3c",
+    "leanc.exe": "de687735b986be0fa041d9bd51feab737544027ea3ff92587e13f68c1c86f16d",
+    "leanchecker-paranoid.exe": "3430a114fcb94d1697555bed88f252a1479d936aff26f36fd2dd1f098144ec9c",
+    "leanchecker.exe": "9ef6baeb28d5e28897d5ed6dddd60ff81e511d97374013ece435dff38e9e0137",
+    "leanexport.exe": "bda24bb3fafaf299ba472f944942d6293294b76559fafc9f166badd7c0f981b3",
+    "leanir.exe": "5121c9cd8d9c159e14ec907ad27042fd57104b460f97078c43a33c2df55422ac",
+    "leanmake": "9f0b70acbde379a835c4fe80606501eb2586d6525ae874e802f7ef5ad50c18bb",
+    "leantar.exe": "c7dbe74520f4c7fb132593f9f2bcd894618bf381b793961a4ab1bb37e13ba587",
+    "libInit_shared.dll": "da779e21c05a2dc4518eb03e62b7319cc03e813a5abe9aa56607b8f974f8c6b7",
+    "libLLVM-23.dll": "55fec27e1f2808a2f8268aa589fc9cdac0065234edd21b0b384e43ae080f6340",
+    "libLake_shared.dll": "4f4647a626bb75f117d98802b2539498843d6664a4f0ae14dedfd4005660bc18",
+    "libc++.dll": "8a9deaac6d2f4d2de468a544d1f35cd0dd4bcde03cda3cfb76fb9674749828d4",
+    "libclang-cpp.dll": "5c775e6e1d3f9ebdf729ce9b6c896e4517209a48fb57b7711c52ee11c4c4421f",
+    "libleanshared.dll": "1175ac09966d023c2584c3cf2692f25cbb62c9f59f4e0244eb6d61f66c4e07f5",
+    "libleanshared_1.dll": "67d53556c84cb01969704e704a5179867bc7763745d424eb8f8ad3d967c90564",
+    "libleanshared_2.dll": "60d88ed08f3f60eab5003f213c512873b8cb54f04f3fa27565ade6c97695e05b",
+    "lld.exe": "6910ee0b1150f0504542c77f2a13f81a7b91c52144eb1a30922939f76371d0c5",
+    "llvm-ar.exe": "9d773f45fc70f7dbf831b797c0bf353921c6e4a320a832117bf3552cb64c98b0",
+    "nanoda_bin.exe": "de57d9dd7f647eb57398bc3dab4dcaa1d64f961f3f49964d5455fbddc73b35a8",
+    "zlib1.dll": "94dd0a72d4da79e25294a91d1edf902d76eade7512d9218609a5fe43e3a7397a"
+   },
+   "lib": {
+    "files": 15316,
+    "by_suffix": {
+     ".a": 41,
+     ".builtins-x86_64.a": 1,
+     ".dll.a": 6,
+     ".ilean": 2546,
+     ".ir": 2543,
+     ".ir.sig": 2543,
+     ".o": 4,
+     ".olean": 2546,
+     ".olean.private": 2543,
+     ".olean.server": 2543
+    },
+    "digest": "2ef46eb359fb8014c47c44dd13e4e666735352d1879a988a45708c1312ae4ad5"
+   }
+  },
+  "package_files": {
+   "lakefile.toml": "f31a61e3d1c5c43ccdd1b4112e5dcedb356dc7146aa211a28b0a96c5f17415c7",
+   "lake-manifest.json": "4ea005d8467c04200ef0eb20cfef8f5f155ccc5545604fe07417121344c4bb54",
+   "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+   "scope.json": "f935ebd45892f038f1928519ba8e812eafc3f1d57fd6d7109e210f308c3adec7"
+  },
+  "scope": {
+   "modules": 405,
+   "sources_equal_to_scope": 405,
+   "sources_digest": "745a57ff92c2878a9494bd4d8eb5160c9ca29cf2a1460f66a74e5787704ed80d",
+   "olean_digest": "315ee38c9e6fce411913ce2fb4b4f617e2d3b6e059c712b39fecf40b68e037ac",
+   "ilean_digest": "263ab72293c766aa92f529059f4d65780e4c1e5b8ac14f0a56fbf3dcb9b59110",
+   "missing": []
+  },
+  "build_lib": {
+   "files": 2337,
+   "by_suffix": {
+    ".ilean": 405,
+    ".ilean.hash": 405,
+    ".ir": 39,
+    ".ir.hash": 39,
+    ".ir.sig": 39,
+    ".ir.sig.hash": 39,
+    ".olean": 405,
+    ".olean.hash": 405,
+    ".olean.private": 39,
+    ".olean.private.hash": 39,
+    ".olean.server": 39,
+    ".olean.server.hash": 39,
+    ".trace": 405
+   },
+   "digest": "2fa18b42b3f44e7a87e40d3326a89666b839ce78faa07d2cc7b92ff5d512446f"
+  },
+  "packages": {
+   "files": 117664,
+   "by_suffix": {
+    "": 9,
+    ".ilean": 9049,
+    ".ilean.hash": 9049,
+    ".ir": 9049,
+    ".ir.hash": 9049,
+    ".ir.sig": 9049,
+    ".ir.sig.hash": 9049,
+    ".json": 9,
+    ".lean": 2,
+    ".olean": 9049,
+    ".olean.hash": 9049,
+    ".olean.private": 9049,
+    ".olean.private.hash": 9049,
+    ".olean.server": 9049,
+    ".olean.server.hash": 9049,
+    ".toml": 7,
+    ".trace": 9049
+   },
+   "digest": "85850d79d0f65b379ce6878e659e332d7968db096fa6bea51e43bf9623d8e0ca"
+  },
+  "files": {}
+ },
+ "unchanged": true
+}

@@ -1,0 +1,621 @@
+{
+ "provenance": {
+  "program": "constants.py",
+  "program_sha256": "91583171dad714bafd0e3aec584dbeb08e14a497206af515e4894e0aee1250ee",
+  "source_sha256": {
+   "bccnum/__init__.py": "fc2600f811cef44754eb6f904a68f8b11cad308f89e4e22eb690771047e1b281",
+   "bccnum/chart_atlas.py": "39fa24f8d99b7999257eecd6da0111953cafa738d8fc15734dcbd7c43af3d2fc",
+   "bccnum/ewald_cert.py": "fb48a6db225211e3604ca0ff2f5319e4ebb5d91ba8b734af72a9fef59fe4b0de",
+   "bccnum/ewald_float.py": "2474f6ce03b1cf72ba4c14e0b335f8695e096824bd56937c2d41445000bab906",
+   "bccnum/exact.py": "8511d53d782d4475bb3f8aeec22d491a484a394fc3915e774fc9d57e49a6b789",
+   "bccnum/intervals.py": "cd8a6beab7d9b999d87fe4bfaa7fc2a001a06b00f9cd176f7c64d3c4f7b9023c",
+   "bccnum/lattice_cert.py": "1c0f2dcc590c46cb85e9a31ec0e88a705937a4874e5ba0b6d0752cff4099de74",
+   "bccnum/lattice_strain.py": "33c36b62421428cfba5061c09955d66c2ad3f3661521a27ddf51c46e8d2ed55c",
+   "bccnum/provenance.py": "ff6af7b6c3f64ab3c79c1e67f935df13ba289a6e74bff2c6babcf7ae73212fe9",
+   "bccnum/structures.py": "0eb179d42c6aa748b807548f1f18db5cb4ae651315f107c8624b64303c513bb3",
+   "bccnum/two_site.py": "c468b448f83cd2daf71fa8e1c4fac8fb430b3a370625ed751cb7858c82e9c092"
+  },
+  "inputs_sha256": {},
+  "unchanged_at_end": true,
+  "parameters": {
+   "alpha_ws_pair": [
+    0.9,
+    1.4
+   ],
+   "X": 160,
+   "prec_bits": 384,
+   "digits_reported": 45,
+   "hcp_search": {
+    "gamma_bracket": [
+     1.62,
+     1.65
+    ],
+    "golden_iterations": 40,
+    "search_X": 70,
+    "search_prec_bits": 160,
+    "gamma2_max_denominator": 1000000
+   }
+  },
+  "seeds": null,
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+   "flint": "0.9.0",
+   "FLINT": "3.6.0",
+   "numpy": "2.5.4",
+   "scipy": "1.18.1"
+  },
+  "started_utc": "2026-11-26T19:28:37+00:00",
+  "wall_time_s": 0.148,
+  "tier": "mixed"
+ },
+ "results": {
+  "definition": "e_L = E_cell/n: Ewald energy per particle of the periodic configuration L of unit point charges with a uniform neutralizing background, G=0 Fourier mode removed (tinfoil/periodic convention), including the background term -pi Q^2/(2 V alpha^2); units e^2/a, a = Wigner-Seitz radius. Equals W/N for the periodic jellium energy W at the perfect lattice on any commensurate torus (identity of Ewald representations). Agreement with the thermodynamic-limit jellium energy of large neutral samples built from Wigner-Seitz cells is standard (argument: the cells are neutral with vanishing dipole moment, so cell-cell interactions decay like R^-5 and the limit is shape independent; total energy of a neutral system is independent of the potential offset, so the dropped G=0 mode does not matter).",
+  "energies": {
+   "bcc": {
+    "structure": {
+     "name": "bcc",
+     "gram_matrix_natural_units": [
+      [
+       "3/4",
+       "-1/4",
+       "-1/4"
+      ],
+      [
+       "-1/4",
+       "3/4",
+       "-1/4"
+      ],
+      [
+       "-1/4",
+       "-1/4",
+       "3/4"
+      ]
+     ],
+     "fractional_basis": [
+      [
+       "0",
+       "0",
+       "0"
+      ]
+     ],
+     "charges": [
+      1
+     ],
+     "cartesian_primitive_vectors_columns": [
+      [
+       "-1/2",
+       "1/2",
+       "1/2"
+      ],
+      [
+       "1/2",
+       "-1/2",
+       "1/2"
+      ],
+      [
+       "1/2",
+       "1/2",
+       "-1/2"
+      ]
+     ],
+     "note": "bcc, primitive cell, conventional cube side 1"
+    },
+    "alpha_runs": [
+     {
+      "alpha_nat": "457/250",
+      "R2_nat": "10000000/208849",
+      "kappa": "54171721/1000000",
+      "e_ws": {
+       "enclosure": "[-0.895929255681765289166245462938294605380610467 +/- 2.21e-46]",
+       "lower": "-0.89592925568176528916624546293829460538061046722070",
+       "upper": "-0.89592925568176528916624546293829460538061046722066",
+       "mid_float": -0.8959292556817653,
+       "radius_float": 1.9823350024331956e-69
+      },
+      "real_tail_bound_per_translate": 1.0370750598689828e-68,
+      "reciprocal_tail_bound": 2.2812294430162212e-70,
+      "n_real_points": 2732,
+      "n_real_shells": 64,
+      "n_reciprocal_points": 886,
+      "n_reciprocal_shells": 26,
+      "phases_exact": true,
+      "seconds": 0.0034
+     },
+     {
+      "alpha_nat": "2843/1000",
+      "R2_nat": "160000000/8082649",
+      "kappa": "32757743/250000",
+      "e_ws": {
+       "enclosure": "[-0.895929255681765289166245462938294605380610467 +/- 2.21e-46]",
+       "lower": "-0.89592925568176528916624546293829460538061046722070",
+       "upper": "-0.89592925568176528916624546293829460538061046722066",
+       "mid_float": -0.8959292556817653,
+       "radius_float": 1.5791389481300813e-69
+      },
+      "real_tail_bound_per_translate": 4.720749409318108e-69,
+      "reciprocal_tail_bound": 3.226018764066295e-70,
+      "n_real_points": 724,
+      "n_real_shells": 27,
+      "n_reciprocal_points": 3102,
+      "n_reciprocal_shells": 60,
+      "phases_exact": true,
+      "seconds": 0.0018
+     }
+    ],
+    "alpha_self_check_overlap": true,
+    "e_ws_certified": {
+     "enclosure": "[-0.895929255681765289166245462938294605380610467 +/- 2.21e-46]",
+     "lower": "-0.89592925568176528916624546293829460538061046722070",
+     "upper": "-0.89592925568176528916624546293829460538061046722066",
+     "mid_float": -0.8959292556817653,
+     "radius_float": 1.576745624010745e-69
+    },
+    "e_rydberg_times_rs": {
+     "enclosure": "[-1.79185851136353057833249092587658921076122093 +/- 4.45e-45]",
+     "lower": "-1.7918585113635305783324909258765892107612209344415",
+     "upper": "-1.7918585113635305783324909258765892107612209344411",
+     "mid_float": -1.7918585113635306,
+     "radius_float": 3.1534912566576586e-69
+    }
+   },
+   "fcc": {
+    "structure": {
+     "name": "fcc",
+     "gram_matrix_natural_units": [
+      [
+       "1/2",
+       "1/4",
+       "1/4"
+      ],
+      [
+       "1/4",
+       "1/2",
+       "1/4"
+      ],
+      [
+       "1/4",
+       "1/4",
+       "1/2"
+      ]
+     ],
+     "fractional_basis": [
+      [
+       "0",
+       "0",
+       "0"
+      ]
+     ],
+     "charges": [
+      1
+     ],
+     "cartesian_primitive_vectors_columns": [
+      [
+       "0",
+       "1/2",
+       "1/2"
+      ],
+      [
+       "1/2",
+       "0",
+       "1/2"
+      ],
+      [
+       "1/2",
+       "1/2",
+       "0"
+      ]
+     ],
+     "note": "fcc, primitive cell, conventional cube side 1"
+    },
+    "alpha_runs": [
+     {
+      "alpha_nat": "2303/1000",
+      "R2_nat": "160000000/5303809",
+      "kappa": "42991057/500000",
+      "e_ws": {
+       "enclosure": "[-0.895873615195108459897487796110285344501815106 +/- 8.90e-47]",
+       "lower": "-0.89587361519510845989748779611028534450181510608894",
+       "upper": "-0.89587361519510845989748779611028534450181510608890",
+       "mid_float": -0.8958736151951084,
+       "radius_float": 1.941367981013642e-69
+      },
+      "real_tail_bound_per_translate": 1.2064308793355929e-68,
+      "reciprocal_tail_bound": 1.5530101910394436e-70,
+      "n_real_points": 2778,
+      "n_real_shells": 56,
+      "n_reciprocal_points": 868,
+      "n_reciprocal_shells": 30,
+      "phases_exact": true,
+      "seconds": 0.0024
+     },
+     {
+      "alpha_nat": "1791/500",
+      "R2_nat": "40000000/3207681",
+      "kappa": "26000483/125000",
+      "e_ws": {
+       "enclosure": "[-0.895873615195108459897487796110285344501815106 +/- 8.90e-47]",
+       "lower": "-0.89587361519510845989748779611028534450181510608894",
+       "upper": "-0.89587361519510845989748779611028534450181510608890",
+       "mid_float": -0.8958736151951084,
+       "radius_float": 1.619109854437111e-69
+      },
+      "real_tail_bound_per_translate": 5.50499807107948e-69,
+      "reciprocal_tail_bound": 2.2017425853612218e-70,
+      "n_real_points": 682,
+      "n_real_shells": 23,
+      "n_reciprocal_points": 3142,
+      "n_reciprocal_shells": 71,
+      "phases_exact": true,
+      "seconds": 0.0019
+     }
+    ],
+    "alpha_self_check_overlap": true,
+    "e_ws_certified": {
+     "enclosure": "[-0.895873615195108459897487796110285344501815106 +/- 8.90e-47]",
+     "lower": "-0.89587361519510845989748779611028534450181510608894",
+     "upper": "-0.89587361519510845989748779611028534450181510608890",
+     "mid_float": -0.8958736151951084,
+     "radius_float": 1.5996912588766522e-69
+    },
+    "e_rydberg_times_rs": {
+     "enclosure": "[-1.79174723039021691979497559222057068900363021 +/- 2.18e-45]",
+     "lower": "-1.7917472303902169197949755922205706890036302121780",
+     "upper": "-1.7917472303902169197949755922205706890036302121776",
+     "mid_float": -1.7917472303902169,
+     "radius_float": 3.199382526389473e-69
+    }
+   },
+   "hcp": {
+    "structure": {
+     "name": "hcp",
+     "gram_matrix_natural_units": [
+      [
+       "1",
+       "-1/2",
+       "0"
+      ],
+      [
+       "-1/2",
+       "1",
+       "0"
+      ],
+      [
+       "0",
+       "0",
+       "8/3"
+      ]
+     ],
+     "fractional_basis": [
+      [
+       "0",
+       "0",
+       "0"
+      ],
+      [
+       "1/3",
+       "2/3",
+       "1/2"
+      ]
+     ],
+     "charges": [
+      1,
+      1
+     ],
+     "cartesian_primitive_vectors_columns": null,
+     "note": "hcp, a=1, (c/a)^2=8/3"
+    },
+    "alpha_runs": [
+     {
+      "alpha_nat": "407/250",
+      "R2_nat": "10000000/165649",
+      "kappa": "42966409/1000000",
+      "e_ws": {
+       "enclosure": "[-0.895838120459277987884093877471446659192884910 +/- 4.36e-46]",
+       "lower": "-0.89583812045927798788409387747144665919288491043523",
+       "upper": "-0.89583812045927798788409387747144665919288491043519",
+       "mid_float": -0.895838120459278,
+       "radius_float": 7.711861854136255e-69
+      },
+      "real_tail_bound_per_translate": 8.535205838188161e-69,
+      "reciprocal_tail_bound": 2.1801216175751944e-69,
+      "n_real_points": 4190,
+      "n_real_shells": 128,
+      "n_reciprocal_points": 1712,
+      "n_reciprocal_shells": 101,
+      "phases_exact": true,
+      "seconds": 0.0047
+     },
+     {
+      "alpha_nat": "2533/1000",
+      "R2_nat": "160000000/6416089",
+      "kappa": "104013719/1000000",
+      "e_ws": {
+       "enclosure": "[-0.895838120459277987884093877471446659192884910 +/- 4.36e-46]",
+       "lower": "-0.89583812045927798788409387747144665919288491043523",
+       "upper": "-0.89583812045927798788409387747144665919288491043519",
+       "mid_float": -0.895838120459278,
+       "radius_float": 9.013772796351275e-69
+      },
+      "real_tail_bound_per_translate": 3.8922404381341204e-69,
+      "reciprocal_tail_bound": 3.2328444211347824e-69,
+      "n_real_points": 1086,
+      "n_real_shells": 50,
+      "n_reciprocal_points": 6314,
+      "n_reciprocal_shells": 256,
+      "phases_exact": true,
+      "seconds": 0.0046
+     }
+    ],
+    "alpha_self_check_overlap": true,
+    "e_ws_certified": {
+     "enclosure": "[-0.895838120459277987884093877471446659192884910 +/- 4.36e-46]",
+     "lower": "-0.89583812045927798788409387747144665919288491043523",
+     "upper": "-0.89583812045927798788409387747144665919288491043519",
+     "mid_float": -0.895838120459278,
+     "radius_float": 7.711861862772424e-69
+    },
+    "e_rydberg_times_rs": {
+     "enclosure": "[-1.79167624091855597576818775494289331838576982 +/- 8.71e-46]",
+     "lower": "-1.7916762409185559757681877549428933183857698208706",
+     "upper": "-1.7916762409185559757681877549428933183857698208702",
+     "mid_float": -1.791676240918556,
+     "radius_float": 1.5423723777361859e-68
+    }
+   },
+   "sc": {
+    "structure": {
+     "name": "sc",
+     "gram_matrix_natural_units": [
+      [
+       "1",
+       "0",
+       "0"
+      ],
+      [
+       "0",
+       "1",
+       "0"
+      ],
+      [
+       "0",
+       "0",
+       "1"
+      ]
+     ],
+     "fractional_basis": [
+      [
+       "0",
+       "0",
+       "0"
+      ]
+     ],
+     "charges": [
+      1
+     ],
+     "cartesian_primitive_vectors_columns": [
+      [
+       "1",
+       "0",
+       "0"
+      ],
+      [
+       "0",
+       "1",
+       "0"
+      ],
+      [
+       "0",
+       "0",
+       "1"
+      ]
+     ],
+     "note": "simple cubic, cube side 1"
+    },
+    "alpha_runs": [
+     {
+      "alpha_nat": "1451/1000",
+      "R2_nat": "160000000/2105401",
+      "kappa": "34131477/1000000",
+      "e_ws": {
+       "enclosure": "[-0.880059442111716319095104057622537206495672675 +/- 2.35e-46]",
+       "lower": "-0.88005944211171631909510405762253720649567267476555",
+       "upper": "-0.88005944211171631909510405762253720649567267476551",
+       "mid_float": -0.8800594421117163,
+       "radius_float": 2.603672111676873e-69
+      },
+      "real_tail_bound_per_translate": 1.0534653721588715e-68,
+      "reciprocal_tail_bound": 4.9763642707964635e-70,
+      "n_real_points": 2776,
+      "n_real_shells": 64,
+      "n_reciprocal_points": 846,
+      "n_reciprocal_shells": 29,
+      "phases_exact": true,
+      "seconds": 0.0024
+     },
+     {
+      "alpha_nat": "2257/1000",
+      "R2_nat": "160000000/5094049",
+      "kappa": "82581613/1000000",
+      "e_ws": {
+       "enclosure": "[-0.880059442111716319095104057622537206495672675 +/- 2.35e-46]",
+       "lower": "-0.88005944211171631909510405762253720649567267476555",
+       "upper": "-0.88005944211171631909510405762253720649567267476551",
+       "mid_float": -0.8800594421117163,
+       "radius_float": 2.123050081566158e-69
+      },
+      "real_tail_bound_per_translate": 4.758374205427584e-69,
+      "reciprocal_tail_bound": 7.106885146486715e-70,
+      "n_real_points": 738,
+      "n_real_shells": 26,
+      "n_reciprocal_points": 3118,
+      "n_reciprocal_shells": 70,
+      "phases_exact": true,
+      "seconds": 0.0016
+     }
+    ],
+    "alpha_self_check_overlap": true,
+    "e_ws_certified": {
+     "enclosure": "[-0.880059442111716319095104057622537206495672675 +/- 2.35e-46]",
+     "lower": "-0.88005944211171631909510405762253720649567267476555",
+     "upper": "-0.88005944211171631909510405762253720649567267476551",
+     "mid_float": -0.8800594421117163,
+     "radius_float": 2.1230500837252002e-69
+    },
+    "e_rydberg_times_rs": {
+     "enclosure": "[-1.76011888422343263819020811524507441299134535 +/- 4.70e-46]",
+     "lower": "-1.7601188842234326381902081152450744129913453495312",
+     "upper": "-1.7601188842234326381902081152450744129913453495308",
+     "mid_float": -1.7601188842234325,
+     "radius_float": 4.246100180404653e-69
+    }
+   }
+  },
+  "checks": {
+   "bcc_conventional_cell": {
+    "e_ws_certified": {
+     "enclosure": "[-0.895929255681765289166245462938294605380610467 +/- 2.21e-46]",
+     "lower": "-0.89592925568176528916624546293829460538061046722070",
+     "upper": "-0.89592925568176528916624546293829460538061046722066",
+     "mid_float": -0.8959292556817653,
+     "radius_float": 3.4653090391833767e-69
+    },
+    "overlaps_primitive": true
+   },
+   "fcc_conventional_cell": {
+    "e_ws_certified": {
+     "enclosure": "[-0.895873615195108459897487796110285344501815106 +/- 8.90e-47]",
+     "lower": "-0.89587361519510845989748779611028534450181510608894",
+     "upper": "-0.89587361519510845989748779611028534450181510608890",
+     "mid_float": -0.8958736151951084,
+     "radius_float": 5.345189382769491e-69
+    },
+    "overlaps_primitive": true
+   },
+   "float_implementation": {
+    "sc": {
+     "value": -0.8800594421117165,
+     "abs_diff_to_certified_mid": 2.220446049250313e-16
+    },
+    "bcc": {
+     "value": -0.8959292556817653,
+     "abs_diff_to_certified_mid": 0.0
+    },
+    "fcc": {
+     "value": -0.8958736151951087,
+     "abs_diff_to_certified_mid": 2.220446049250313e-16
+    },
+    "hcp": {
+     "value": -0.8958381204592781,
+     "abs_diff_to_certified_mid": 1.1102230246251565e-16
+    }
+   }
+  },
+  "gaps": {
+   "bcc-fcc": {
+    "difference_ws": {
+     "enclosure": "[-5.56404866568292687576668280093e-5 +/- 3.92e-35]",
+     "lower": "-0.000055640486656829268757666828009260880",
+     "upper": "-0.000055640486656829268757666828009260876",
+     "mid_float": -5.564048665682927e-05,
+     "radius_float": 3.1764368828873973e-69
+    },
+    "relative_to_|e_bcc|": {
+     "enclosure": "[-6.21036608682782084702912089057e-5 +/- 3.62e-35]",
+     "lower": "-0.00006210366086827820847029120890566387",
+     "upper": "-0.00006210366086827820847029120890566383",
+     "mid_float": -6.21036608682782e-05,
+     "radius_float": 3.545573801320554e-69
+    },
+    "sign_certified": "negative"
+   },
+   "bcc-hcp": {
+    "difference_ws": {
+     "enclosure": "[-9.11352224873012821515854668479e-5 +/- 4.62e-35]",
+     "lower": "-0.00009113522248730128215158546684794620",
+     "upper": "-0.00009113522248730128215158546684794616",
+     "mid_float": -9.113522248730129e-05,
+     "radius_float": 9.288607495419337e-69
+    },
+    "relative_to_|e_bcc|": {
+     "enclosure": "[-0.000101721449444075948560174440320 +/- 3.86e-34]",
+     "lower": "-0.00010172144944407594856017444032038557",
+     "upper": "-0.00010172144944407594856017444032038553",
+     "mid_float": -0.00010172144944407595,
+     "radius_float": 1.0367905302576657e-68
+    },
+    "sign_certified": "negative"
+   },
+   "fcc-hcp": {
+    "difference_ws": {
+     "enclosure": "[-3.54947358304720133939186388387e-5 +/- 1.47e-35]",
+     "lower": "-0.000035494735830472013393918638838685310",
+     "upper": "-0.000035494735830472013393918638838685306",
+     "mid_float": -3.5494735830472016e-05,
+     "radius_float": 9.311553138921413e-69
+    },
+    "relative_to_|e_bcc|": {
+     "enclosure": "[-3.96177885757977400898832314147e-5 +/- 2.17e-35]",
+     "lower": "-0.000039617788575797740089883231414721700",
+     "upper": "-0.000039617788575797740089883231414721696",
+     "mid_float": -3.9617788575797743e-05,
+     "radius_float": 1.0393407390149737e-68
+    },
+    "sign_certified": "negative"
+   },
+   "bcc-sc": {
+    "difference_ws": {
+     "enclosure": "[-0.0158698135700489700711414053158 +/- 4.27e-32]",
+     "lower": "-0.015869813570048970071141405315757400",
+     "upper": "-0.015869813570048970071141405315757396",
+     "mid_float": -0.01586981357004897,
+     "radius_float": 3.6997957098949874e-69
+    },
+    "relative_to_|e_bcc|": {
+     "enclosure": "[-0.0177132440640892958782948610489 +/- 4.71e-32]",
+     "lower": "-0.017713244064089295878294861048947075",
+     "upper": "-0.017713244064089295878294861048947071",
+     "mid_float": -0.017713244064089296,
+     "radius_float": 4.160799370435185e-69
+    },
+    "sign_certified": "negative"
+   }
+  },
+  "hcp_optimal_ca": {
+   "tier_note": "location of the optimum exploratory (golden-section search over rational (c/a)^2); energies certified. e_hcp(gamma*) is a certified UPPER bound for min over c/a of e_hcp.",
+   "gamma2_best": "1482679/554207",
+   "c_over_a_best_float": 1.6356394048493905,
+   "c_over_a_ideal": 1.632993161855452,
+   "n_certified_evaluations_in_search": 42,
+   "e_ws_certified": {
+    "enclosure": "[-0.895838451203016840847131307718722175069313818 +/- 1.93e-46]",
+    "lower": "-0.89583845120301684084713130771872217506931381780706",
+    "upper": "-0.89583845120301684084713130771872217506931381780702",
+    "mid_float": -0.8958384512030169,
+    "radius_float": 7.732238056133651e-69
+   },
+   "alpha_self_check_overlap": true,
+   "e_opt_minus_e_ideal": {
+    "enclosure": "[-3.30743738852963037430247275516e-7 +/- 1.24e-37]",
+    "lower": "-0.00000033074373885296303743024727551587644",
+    "upper": "-0.00000033074373885296303743024727551587640",
+    "mid_float": -3.3074373885296304e-07,
+    "radius_float": 1.5444099918906075e-68
+   },
+   "e_bcc_minus_e_opt": {
+    "enclosure": "[-9.08044787484483191141552195724e-5 +/- 3.04e-35]",
+    "lower": "-0.00009080447874844831911415521957243033",
+    "upper": "-0.00009080447874844831911415521957243029",
+    "mid_float": -9.080447874844832e-05,
+    "radius_float": 9.308983688780564e-69
+   },
+   "e_fcc_minus_e_opt": {
+    "enclosure": "[-3.51639920916190503564883915632e-5 +/- 3.06e-35]",
+    "lower": "-0.000035163992091619050356488391563169434",
+    "upper": "-0.000035163992091619050356488391563169430",
+    "mid_float": -3.516399209161905e-05,
+    "radius_float": 9.33192933228264e-69
+   }
+  }
+ }
+}

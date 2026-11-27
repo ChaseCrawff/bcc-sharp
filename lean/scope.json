@@ -1,0 +1,5676 @@
+{
+ "targets": {
+  "BccSharp": [
+   "BccSharp.Analysis.CoulombFourier",
+   "BccSharp.Analysis.CoulombIntegrability",
+   "BccSharp.Analysis.CoulombLaplace",
+   "BccSharp.Analysis.CoulombPeriodization",
+   "BccSharp.Analysis.CoulombTransform",
+   "BccSharp.Analysis.Coverage",
+   "BccSharp.Analysis.DividedExp",
+   "BccSharp.Analysis.DividedReal",
+   "BccSharp.Analysis.Erfc",
+   "BccSharp.Analysis.ErfcBounds",
+   "BccSharp.Analysis.Ewald",
+   "BccSharp.Analysis.EwaldDomain",
+   "BccSharp.Analysis.EwaldPeriodicity",
+   "BccSharp.Analysis.EwaldRegular",
+   "BccSharp.Analysis.ExpBounds",
+   "BccSharp.Analysis.FixedPoint",
+   "BccSharp.Analysis.FourierUniqueness",
+   "BccSharp.Analysis.Gaussian",
+   "BccSharp.Analysis.GaussianSummability",
+   "BccSharp.Analysis.Interpolation",
+   "BccSharp.Analysis.IntervalChecks",
+   "BccSharp.Analysis.Intervals",
+   "BccSharp.Analysis.KernelDerivatives",
+   "BccSharp.Analysis.LatticeNeighborhood",
+   "BccSharp.Analysis.LatticeTails",
+   "BccSharp.Analysis.PeriodLattice",
+   "BccSharp.Analysis.PeriodicPotential",
+   "BccSharp.Analysis.RadialPotential",
+   "BccSharp.Analysis.RealSpaceHessian",
+   "BccSharp.Analysis.RealSpaceSeries",
+   "BccSharp.Analysis.ReciprocalPotential",
+   "BccSharp.Analysis.ReciprocalSeries",
+   "BccSharp.Analysis.RegularBounds",
+   "BccSharp.Analysis.RoundedPolynomial",
+   "BccSharp.Analysis.ScreenedBounds",
+   "BccSharp.Analysis.SpecialFunctions",
+   "BccSharp.Analysis.TorusLattice",
+   "BccSharp.Analysis.TrigBounds",
+   "BccSharp.Analysis.WeightedTails",
+   "BccSharp.Cover.AdaptiveCheck",
+   "BccSharp.Cover.AdaptiveConst",
+   "BccSharp.Cover.AdaptiveCorner",
+   "BccSharp.Cover.AdaptiveDeficit",
+   "BccSharp.Cover.AdaptiveFarQ",
+   "BccSharp.Cover.AdaptiveGain",
+   "BccSharp.Cover.AdaptiveGap",
+   "BccSharp.Cover.AdaptiveKernel",
+   "BccSharp.Cover.AdaptiveLayeredSign",
+   "BccSharp.Cover.AdaptiveLogTangent",
+   "BccSharp.Cover.AdaptiveOptical",
+   "BccSharp.Cover.AdaptiveScreened",
+   "BccSharp.Cover.AdaptiveSupport",
+   "BccSharp.Cover.AdaptiveThinItems",
+   "BccSharp.Cover.AdaptiveThinK",
+   "BccSharp.Cover.AdaptiveThinQ",
+   "BccSharp.Cover.AdaptiveThinV",
+   "BccSharp.Cover.AdaptiveThinX",
+   "BccSharp.Cover.AnchorCatControls",
+   "BccSharp.Cover.AnchorCatPilot011",
+   "BccSharp.Cover.AnchorCatPilot111",
+   "BccSharp.Cover.AnchorCatPilotEdge",
+   "BccSharp.Cover.AnchorCatalogue",
+   "BccSharp.Cover.CenteredAnchor",
+   "BccSharp.Cover.CenteredRoute",
+   "BccSharp.Cover.CoverAssembly",
+   "BccSharp.Cover.CoverClips",
+   "BccSharp.Cover.CoverCorner",
+   "BccSharp.Cover.CoverDirectMoment",
+   "BccSharp.Cover.CoverDirectOperands",
+   "BccSharp.Cover.CoverDirectSeries",
+   "BccSharp.Cover.CoverEarlyDecode",
+   "BccSharp.Cover.CoverEarlyHandoff",
+   "BccSharp.Cover.CoverEarlyMirror",
+   "BccSharp.Cover.CoverEarlyReplay",
+   "BccSharp.Cover.CoverEarlyTransport",
+   "BccSharp.Cover.CoverExactReal",
+   "BccSharp.Cover.CoverExactRealGeometry",
+   "BccSharp.Cover.CoverLatePackets",
+   "BccSharp.Cover.CoverNormalized",
+   "BccSharp.Cover.CoverOpticalSurplus",
+   "BccSharp.Cover.CoverPacketDecode",
+   "BccSharp.Cover.CoverReductionLeaves",
+   "BccSharp.Cover.CoverReflection",
+   "BccSharp.Cover.DataPath",
+   "BccSharp.Cover.DataPathLater",
+   "BccSharp.Cover.DataPathLaterChecks",
+   "BccSharp.Cover.DataPathLaterMirror",
+   "BccSharp.Cover.DataPathLaterOr",
+   "BccSharp.Cover.DataPathLaterRun",
+   "BccSharp.Cover.DataPathPacker",
+   "BccSharp.Cover.DirectFix",
+   "BccSharp.Cover.DirectFixConst",
+   "BccSharp.Cover.DirectFixSound",
+   "BccSharp.Cover.DirectSidecarFix",
+   "BccSharp.Cover.FLeafSample",
+   "BccSharp.Cover.JLeafCheck",
+   "BccSharp.Cover.JLeafChord",
+   "BccSharp.Cover.JLeafCore",
+   "BccSharp.Cover.JLeafDefect",
+   "BccSharp.Cover.JLeafF",
+   "BccSharp.Cover.JLeafKernels",
+   "BccSharp.Cover.JLeafPhase",
+   "BccSharp.Cover.JLeafScreenedCheck",
+   "BccSharp.Cover.JLeafScreenedTerms",
+   "BccSharp.Cover.JLeafTerms",
+   "BccSharp.Cover.JensenCore",
+   "BccSharp.Cover.JensenFix",
+   "BccSharp.Cover.JensenFixSound",
+   "BccSharp.Cover.LateChecker",
+   "BccSharp.Cover.LateCompose",
+   "BccSharp.Cover.LayeredCatRoute",
+   "BccSharp.Cover.LayeredControls",
+   "BccSharp.Cover.LayeredDefect",
+   "BccSharp.Cover.LayeredDefectCutoff",
+   "BccSharp.Cover.LayeredFarControls",
+   "BccSharp.Cover.LayeredFarPilotHalfShift",
+   "BccSharp.Cover.LayeredFarPilotPlanarFibre",
+   "BccSharp.Cover.LayeredFarRoute",
+   "BccSharp.Cover.LayeredFix",
+   "BccSharp.Cover.LayeredFixSound",
+   "BccSharp.Cover.LayeredGain",
+   "BccSharp.Cover.LayeredHalfShift",
+   "BccSharp.Cover.LayeredHalfShiftPilot",
+   "BccSharp.Cover.LayeredPilot",
+   "BccSharp.Cover.LayeredRoute",
+   "BccSharp.Cover.LayeredScalar",
+   "BccSharp.Cover.LeafFix",
+   "BccSharp.Cover.LeafFixControls",
+   "BccSharp.Cover.LeafFixCorner",
+   "BccSharp.Cover.LeafFixCornerEnv",
+   "BccSharp.Cover.LeafFixCornerPacked",
+   "BccSharp.Cover.LeafFixCornerSample",
+   "BccSharp.Cover.LeafFixDLeaves",
+   "BccSharp.Cover.LeafFixFLeaves",
+   "BccSharp.Cover.LeafFixFar",
+   "BccSharp.Cover.LeafFixFarControls",
+   "BccSharp.Cover.LeafFixFarDLeaves",
+   "BccSharp.Cover.LeafFixFarJLeaves",
+   "BccSharp.Cover.LeafFixJLeaves",
+   "BccSharp.Cover.LeafFixPack",
+   "BccSharp.Cover.LeafFixRound5",
+   "BccSharp.Cover.LeafFixRound6",
+   "BccSharp.Cover.LeafFixSound",
+   "BccSharp.Cover.LeafFixSupport",
+   "BccSharp.Cover.OverlayArea",
+   "BccSharp.Cover.OverlayAxial",
+   "BccSharp.Cover.OverlayCorpusGlue",
+   "BccSharp.Cover.OverlayCorpusPrefix",
+   "BccSharp.Cover.OverlayCorpusTrace",
+   "BccSharp.Cover.OverlayDecodeBase",
+   "BccSharp.Cover.OverlayEnergyHeat",
+   "BccSharp.Cover.OverlayFix",
+   "BccSharp.Cover.OverlayFixConst",
+   "BccSharp.Cover.OverlayFixSound",
+   "BccSharp.Cover.OverlayGaussianPoisson",
+   "BccSharp.Cover.OverlayHeatSplit",
+   "BccSharp.Cover.OverlayKernelCheck",
+   "BccSharp.Cover.OverlayLayerCheck",
+   "BccSharp.Cover.OverlayLayerIntegral",
+   "BccSharp.Cover.OverlayMontgomery",
+   "BccSharp.Cover.OverlayPhysicalIdentity",
+   "BccSharp.Cover.OverlayPilotLeaves",
+   "BccSharp.Cover.OverlayPlanarAxialCheck",
+   "BccSharp.Cover.OverlayPlanarOperands",
+   "BccSharp.Cover.OverlayPlanarPoisson",
+   "BccSharp.Cover.OverlayRadial",
+   "BccSharp.Cover.OverlayScalarHeat",
+   "BccSharp.Cover.OverlaySharpLayer",
+   "BccSharp.Cover.OverlaySharpPass",
+   "BccSharp.Cover.OverlaySoundCheck",
+   "BccSharp.Cover.OverlayZeroMode",
+   "BccSharp.Cover.PlanarFibreGWeights",
+   "BccSharp.Cover.PlanarFibreJet",
+   "BccSharp.Cover.PlanarFibreJetSound",
+   "BccSharp.Cover.PlanarFibrePlanar",
+   "BccSharp.Cover.PlanarFibreTaylor",
+   "BccSharp.Cover.PlanarFibreTri",
+   "BccSharp.Cover.PlanarFibreTriCell",
+   "BccSharp.Cover.PlanarFibreTriLarge",
+   "BccSharp.Cover.PlanarFibreTriLarge0",
+   "BccSharp.Cover.PlanarFibreTriLarge1",
+   "BccSharp.Cover.PlanarFibreTriLarge2",
+   "BccSharp.Cover.PlanarFibreTriLarge3",
+   "BccSharp.Cover.PlanarFibreTriLargeData",
+   "BccSharp.Cover.PlanarFibreTriPilot",
+   "BccSharp.Cover.PlanarFibreTriRelax",
+   "BccSharp.Cover.PlanarFibreTriSample",
+   "BccSharp.Cover.PrefixDirectItems",
+   "BccSharp.Cover.PrefixFixGlue",
+   "BccSharp.Cover.PrefixSidecarItems",
+   "BccSharp.Cover.PrefixStage2PhaseItems",
+   "BccSharp.Cover.PrefixStage2TangentItems",
+   "BccSharp.Cover.PrefixStage2TangentTable",
+   "BccSharp.Cover.ReplayCompose",
+   "BccSharp.Cover.Round6ScreenedFixture",
+   "BccSharp.Cover.Round6ScreenedLeaf",
+   "BccSharp.Cover.Round7Fixture",
+   "BccSharp.Cover.Round7Geometry",
+   "BccSharp.Cover.Round7Leaves",
+   "BccSharp.Cover.Stage2Bulk",
+   "BccSharp.Cover.Stage2Fix",
+   "BccSharp.Cover.Stage2FixSound",
+   "BccSharp.Cover.Stage2Geometry",
+   "BccSharp.Cover.Stage2Phase",
+   "BccSharp.Cover.Stage2Table",
+   "BccSharp.Cover.Stage2Tangents",
+   "BccSharp.Cover.Stage3",
+   "BccSharp.Cover.Stage3Leaves",
+   "BccSharp.Cover.Stage3Stage6Compose",
+   "BccSharp.Cover.Stage3Stage6Hybrid",
+   "BccSharp.Cover.Stage4Controls",
+   "BccSharp.Cover.Stage4Stage5a",
+   "BccSharp.Cover.Stage4Stage5aOpen",
+   "BccSharp.Cover.Stage4Thin1",
+   "BccSharp.Cover.Stage4Thin2",
+   "BccSharp.Cover.Stage5aAnchored",
+   "BccSharp.Cover.Stage5aThin1",
+   "BccSharp.Cover.Stage5bOptical",
+   "BccSharp.Cover.Stage5bOpticalDefect",
+   "BccSharp.Cover.Stage5bOpticalLeaves0",
+   "BccSharp.Cover.Stage5bOpticalLeaves1",
+   "BccSharp.Cover.Stage5bOpticalLeaves2",
+   "BccSharp.Cover.Stage5bPhase",
+   "BccSharp.Cover.Stage5bPhaseLeaves",
+   "BccSharp.Cover.Stage5bStage6HybridThin",
+   "BccSharp.Cover.Stage6DLeaves",
+   "BccSharp.Cover.Stage6Deficit",
+   "BccSharp.Cover.Stage6FLeaves",
+   "BccSharp.FinalAssembly",
+   "BccSharp.Lattice.Addressed",
+   "BccSharp.Lattice.Atlas.Atlases",
+   "BccSharp.Lattice.Atlas.Bcc0",
+   "BccSharp.Lattice.Atlas.Bcc1",
+   "BccSharp.Lattice.Atlas.Bcc2",
+   "BccSharp.Lattice.Atlas.Bcc3",
+   "BccSharp.Lattice.Atlas.Bcc4",
+   "BccSharp.Lattice.Atlas.Bcc5",
+   "BccSharp.Lattice.Atlas.Bcc6",
+   "BccSharp.Lattice.Atlas.Bcc7",
+   "BccSharp.Lattice.Atlas.Bcc8",
+   "BccSharp.Lattice.Atlas.Controls",
+   "BccSharp.Lattice.Atlas.Data",
+   "BccSharp.Lattice.Atlas.Fcc0",
+   "BccSharp.Lattice.Atlas.Fcc1",
+   "BccSharp.Lattice.Atlas.Fcc2",
+   "BccSharp.Lattice.Atlas.Fcc3",
+   "BccSharp.Lattice.Atlas.Fcc4",
+   "BccSharp.Lattice.Atlas.Fcc5",
+   "BccSharp.Lattice.Atlas.LatticeCase",
+   "BccSharp.Lattice.Atlas.TableHalf0",
+   "BccSharp.Lattice.Atlas.TableHalf1",
+   "BccSharp.Lattice.Atlas.TableHalf2",
+   "BccSharp.Lattice.Atlas.TableHalf3",
+   "BccSharp.Lattice.Atlas.TableHalf4",
+   "BccSharp.Lattice.Atlas.TableMirror",
+   "BccSharp.Lattice.Atlas.TableOne0",
+   "BccSharp.Lattice.Atlas.TableOne1",
+   "BccSharp.Lattice.Atlas.TableOne2",
+   "BccSharp.Lattice.Atlas.TableOne3",
+   "BccSharp.Lattice.Atlas.TableOne4",
+   "BccSharp.Lattice.BccFrame",
+   "BccSharp.Lattice.CenteredStrain",
+   "BccSharp.Lattice.CubicFold",
+   "BccSharp.Lattice.CubicMoves",
+   "BccSharp.Lattice.Curvature",
+   "BccSharp.Lattice.E2Core",
+   "BccSharp.Lattice.Energy",
+   "BccSharp.Lattice.Escape",
+   "BccSharp.Lattice.FccDefect",
+   "BccSharp.Lattice.FccStrain",
+   "BccSharp.Lattice.FirstJet",
+   "BccSharp.Lattice.FixedLocal",
+   "BccSharp.Lattice.FixedLocalBall",
+   "BccSharp.Lattice.Forest",
+   "BccSharp.Lattice.ForestBase",
+   "BccSharp.Lattice.ForestControls",
+   "BccSharp.Lattice.ForestG00",
+   "BccSharp.Lattice.ForestG01",
+   "BccSharp.Lattice.ForestG02",
+   "BccSharp.Lattice.GeometricLeaves",
+   "BccSharp.Lattice.Geometry",
+   "BccSharp.Lattice.HandoffBox",
+   "BccSharp.Lattice.HessianTail",
+   "BccSharp.Lattice.KernelJet",
+   "BccSharp.Lattice.KzBasis",
+   "BccSharp.Lattice.KzChart",
+   "BccSharp.Lattice.KzChoices",
+   "BccSharp.Lattice.KzProjection",
+   "BccSharp.Lattice.KzTransport",
+   "BccSharp.Lattice.LdlCurvature",
+   "BccSharp.Lattice.LocalBalls",
+   "BccSharp.Lattice.LocalBallsBcc",
+   "BccSharp.Lattice.LocalBallsBccAnalytic",
+   "BccSharp.Lattice.LocalBallsBccData",
+   "BccSharp.Lattice.LocalBallsBccMetric",
+   "BccSharp.Lattice.LocalBallsBccModes",
+   "BccSharp.Lattice.LocalBallsBccSlabBallDirect",
+   "BccSharp.Lattice.LocalBallsBccSlabQ00Dual",
+   "BccSharp.Lattice.LocalBallsBccSlabQ01Dual",
+   "BccSharp.Lattice.LocalBallsBccSlabQ10Dual",
+   "BccSharp.Lattice.LocalBallsBccSlabQ11Dual",
+   "BccSharp.Lattice.LocalBallsFcc",
+   "BccSharp.Lattice.LocalBallsFccAnalytic",
+   "BccSharp.Lattice.LocalBallsFccData",
+   "BccSharp.Lattice.LocalBallsFccMetric",
+   "BccSharp.Lattice.LocalBallsFccModes",
+   "BccSharp.Lattice.LocalBallsFccSlabBallDirect",
+   "BccSharp.Lattice.LocalBallsFccSlabBallDual",
+   "BccSharp.Lattice.LocalDifferentiation",
+   "BccSharp.Lattice.LocalHessian",
+   "BccSharp.Lattice.LocalMetricJet",
+   "BccSharp.Lattice.LocalObjective",
+   "BccSharp.Lattice.LocalSeries",
+   "BccSharp.Lattice.LocalShell",
+   "BccSharp.Lattice.MeanValue",
+   "BccSharp.Lattice.Polar",
+   "BccSharp.Lattice.Routing",
+   "BccSharp.Lattice.SecondJet",
+   "BccSharp.Lattice.ShortestVector",
+   "BccSharp.Lattice.StarDefect",
+   "BccSharp.Lattice.Stationarity",
+   "BccSharp.Lattice.StrainAtlas",
+   "BccSharp.Lattice.StrainChart",
+   "BccSharp.Lattice.StrainE2",
+   "BccSharp.Lattice.StrainFirstJet",
+   "BccSharp.Lattice.StrainLeaf",
+   "BccSharp.Lattice.StrainMetric",
+   "BccSharp.Lattice.StrainOrigin",
+   "BccSharp.Lattice.StrainTangent",
+   "BccSharp.Lattice.StrictLeaves",
+   "BccSharp.Lattice.TangentCover",
+   "BccSharp.Lattice.TangentE1",
+   "BccSharp.Lattice.TangentE1SampleRoot10",
+   "BccSharp.Lattice.TangentTableHalf0",
+   "BccSharp.Lattice.TangentTableHalf1",
+   "BccSharp.Lattice.TangentTableHalf2",
+   "BccSharp.Lattice.TangentTableHalf3",
+   "BccSharp.Lattice.TangentTableHalf4",
+   "BccSharp.Lattice.TangentTableHalf5",
+   "BccSharp.Lattice.TangentTableHalf6",
+   "BccSharp.Lattice.TangentTableHalf7",
+   "BccSharp.Lattice.TangentTableHalf8",
+   "BccSharp.Lattice.TangentTableOne0",
+   "BccSharp.Lattice.TangentTableOne1",
+   "BccSharp.Lattice.TangentTableOne2",
+   "BccSharp.Lattice.TangentTableOne3",
+   "BccSharp.Lattice.TangentTableOne4",
+   "BccSharp.Lattice.TangentTableOne5",
+   "BccSharp.Lattice.TangentTableOne6",
+   "BccSharp.Lattice.TangentTableOne7",
+   "BccSharp.Lattice.TangentTableOne8",
+   "BccSharp.Lattice.TangentTables",
+   "BccSharp.TwoSite.Assembly",
+   "BccSharp.TwoSite.Bravais",
+   "BccSharp.TwoSite.BravaisCover",
+   "BccSharp.TwoSite.Coverage",
+   "BccSharp.TwoSite.DefectAnnulus",
+   "BccSharp.TwoSite.DefectCutoff",
+   "BccSharp.TwoSite.DefectCutoffBox",
+   "BccSharp.TwoSite.DefectInvariance",
+   "BccSharp.TwoSite.EwaldCellRepetition",
+   "BccSharp.TwoSite.ExpectedStatement",
+   "BccSharp.TwoSite.GeneralSummability",
+   "BccSharp.TwoSite.GlobalAttain",
+   "BccSharp.TwoSite.GlobalCompact",
+   "BccSharp.TwoSite.GlobalDet",
+   "BccSharp.TwoSite.GlobalInputs",
+   "BccSharp.TwoSite.GlobalRegister",
+   "BccSharp.TwoSite.GlobalValues",
+   "BccSharp.TwoSite.GoodPoint",
+   "BccSharp.TwoSite.Interface",
+   "BccSharp.TwoSite.JacobiTriple",
+   "BccSharp.TwoSite.Montgomery",
+   "BccSharp.TwoSite.MontgomeryBasic",
+   "BccSharp.TwoSite.MontgomeryDefs",
+   "BccSharp.TwoSite.MontgomerySmallT",
+   "BccSharp.TwoSite.MontgomeryX",
+   "BccSharp.TwoSite.MontgomeryY",
+   "BccSharp.TwoSite.PeriodFourier",
+   "BccSharp.TwoSite.PeriodRepetition",
+   "BccSharp.TwoSite.Physical",
+   "BccSharp.TwoSite.PhysicalScale",
+   "BccSharp.TwoSite.Pi",
+   "BccSharp.TwoSite.PrimitiveAnchor",
+   "BccSharp.TwoSite.ReciprocalRepetition",
+   "BccSharp.TwoSite.Reduction",
+   "BccSharp.TwoSite.Reference",
+   "BccSharp.TwoSite.ReferenceCert",
+   "BccSharp.TwoSite.ReferenceKernels",
+   "BccSharp.TwoSite.ReferencePacket",
+   "BccSharp.TwoSite.ReferencePhysical",
+   "BccSharp.TwoSite.ReferencePoints",
+   "BccSharp.TwoSite.ReferenceTails",
+   "BccSharp.TwoSite.RegularLimit",
+   "BccSharp.TwoSite.RepetitionVolume",
+   "BccSharp.TwoSite.ScalarChecks",
+   "BccSharp.TwoSite.ScreenedModes",
+   "BccSharp.TwoSite.ScreenedSeries",
+   "BccSharp.TwoSite.ScreenedTransform",
+   "BccSharp.TwoSite.ScreeningDifference",
+   "BccSharp.TwoSite.ScreeningIndependence",
+   "BccSharp.TwoSite.SeriesModes",
+   "BccSharp.TwoSite.Spec",
+   "BccSharp.TwoSite.Star",
+   "BccSharp.TwoSite.StatementFull"
+  ]
+ },
+ "external_import_roots": [
+  "Init",
+  "Lean",
+  "Mathlib"
+ ],
+ "order": [
+  "BccSharp.TwoSite.Interface",
+  "BccSharp.TwoSite.MontgomeryDefs",
+  "BccSharp.TwoSite.JacobiTriple",
+  "BccSharp.TwoSite.MontgomeryBasic",
+  "BccSharp.TwoSite.MontgomerySmallT",
+  "BccSharp.TwoSite.MontgomeryX",
+  "BccSharp.TwoSite.MontgomeryY",
+  "BccSharp.TwoSite.Montgomery",
+  "BccSharp.TwoSite.Physical",
+  "BccSharp.TwoSite.Reference",
+  "BccSharp.Cover.Round7Geometry",
+  "BccSharp.TwoSite.ScalarChecks",
+  "BccSharp.TwoSite.Bravais",
+  "BccSharp.TwoSite.PeriodRepetition",
+  "BccSharp.TwoSite.ReciprocalRepetition",
+  "BccSharp.TwoSite.PhysicalScale",
+  "BccSharp.TwoSite.RepetitionVolume",
+  "BccSharp.TwoSite.EwaldCellRepetition",
+  "BccSharp.TwoSite.Star",
+  "BccSharp.Analysis.Coverage",
+  "BccSharp.TwoSite.BravaisCover",
+  "BccSharp.Lattice.Addressed",
+  "BccSharp.TwoSite.Coverage",
+  "BccSharp.TwoSite.GoodPoint",
+  "BccSharp.TwoSite.Reduction",
+  "BccSharp.Analysis.FourierUniqueness",
+  "BccSharp.Analysis.Gaussian",
+  "BccSharp.Analysis.Interpolation",
+  "BccSharp.Analysis.Intervals",
+  "BccSharp.Analysis.IntervalChecks",
+  "BccSharp.Analysis.FixedPoint",
+  "BccSharp.Analysis.LatticeTails",
+  "BccSharp.Analysis.Ewald",
+  "BccSharp.Analysis.EwaldDomain",
+  "BccSharp.Analysis.EwaldPeriodicity",
+  "BccSharp.Analysis.SpecialFunctions",
+  "BccSharp.Lattice.Geometry",
+  "BccSharp.Lattice.GeometricLeaves",
+  "BccSharp.Lattice.Curvature",
+  "BccSharp.Analysis.Erfc",
+  "BccSharp.Analysis.DividedExp",
+  "BccSharp.Analysis.DividedReal",
+  "BccSharp.Analysis.TrigBounds",
+  "BccSharp.Analysis.RoundedPolynomial",
+  "BccSharp.Analysis.ExpBounds",
+  "BccSharp.Analysis.ErfcBounds",
+  "BccSharp.TwoSite.ReferenceKernels",
+  "BccSharp.TwoSite.Pi",
+  "BccSharp.Analysis.WeightedTails",
+  "BccSharp.Analysis.EwaldRegular",
+  "BccSharp.Analysis.GaussianSummability",
+  "BccSharp.TwoSite.GeneralSummability",
+  "BccSharp.TwoSite.SeriesModes",
+  "BccSharp.TwoSite.ExpectedStatement",
+  "BccSharp.TwoSite.ReferenceTails",
+  "BccSharp.TwoSite.ReferencePacket",
+  "BccSharp.TwoSite.ReferenceCert",
+  "BccSharp.TwoSite.ReferencePhysical",
+  "BccSharp.Analysis.RegularBounds",
+  "BccSharp.Analysis.KernelDerivatives",
+  "BccSharp.Analysis.RadialPotential",
+  "BccSharp.Analysis.RealSpaceHessian",
+  "BccSharp.Analysis.CoulombLaplace",
+  "BccSharp.Analysis.CoulombIntegrability",
+  "BccSharp.Analysis.CoulombFourier",
+  "BccSharp.Analysis.CoulombTransform",
+  "BccSharp.TwoSite.ScreenedTransform",
+  "BccSharp.Analysis.ReciprocalPotential",
+  "BccSharp.Analysis.ReciprocalSeries",
+  "BccSharp.Analysis.ScreenedBounds",
+  "BccSharp.Analysis.LatticeNeighborhood",
+  "BccSharp.Analysis.RealSpaceSeries",
+  "BccSharp.Analysis.PeriodicPotential",
+  "BccSharp.Analysis.TorusLattice",
+  "BccSharp.Analysis.PeriodLattice",
+  "BccSharp.Analysis.CoulombPeriodization",
+  "BccSharp.TwoSite.PeriodFourier",
+  "BccSharp.TwoSite.ScreeningDifference",
+  "BccSharp.TwoSite.ScreeningIndependence",
+  "BccSharp.Cover.OverlayGaussianPoisson",
+  "BccSharp.TwoSite.RegularLimit",
+  "BccSharp.TwoSite.ReferencePoints",
+  "BccSharp.Lattice.Energy",
+  "BccSharp.Lattice.MeanValue",
+  "BccSharp.Lattice.StrainChart",
+  "BccSharp.Lattice.StrictLeaves",
+  "BccSharp.Lattice.Escape",
+  "BccSharp.Lattice.KernelJet",
+  "BccSharp.Lattice.HessianTail",
+  "BccSharp.Lattice.LdlCurvature",
+  "BccSharp.Cover.AdaptiveLogTangent",
+  "BccSharp.TwoSite.PrimitiveAnchor",
+  "BccSharp.TwoSite.Assembly",
+  "BccSharp.Cover.CoverLatePackets",
+  "BccSharp.Cover.CoverClips",
+  "BccSharp.Cover.CoverCorner",
+  "BccSharp.Cover.CoverReflection",
+  "BccSharp.Cover.CoverAssembly",
+  "BccSharp.Cover.CoverEarlyTransport",
+  "BccSharp.Cover.CoverEarlyReplay",
+  "BccSharp.Cover.CoverEarlyMirror",
+  "BccSharp.Cover.CoverPacketDecode",
+  "BccSharp.Cover.CoverReductionLeaves",
+  "BccSharp.Cover.CoverDirectOperands",
+  "BccSharp.Cover.CoverExactRealGeometry",
+  "BccSharp.Cover.CoverNormalized",
+  "BccSharp.Cover.CoverEarlyHandoff",
+  "BccSharp.Lattice.StarDefect",
+  "BccSharp.Lattice.Polar",
+  "BccSharp.Lattice.E2Core",
+  "BccSharp.Cover.CoverOpticalSurplus",
+  "BccSharp.Lattice.StrainMetric",
+  "BccSharp.Cover.CoverDirectSeries",
+  "BccSharp.Cover.CoverExactReal",
+  "BccSharp.Cover.CoverDirectMoment",
+  "BccSharp.Lattice.BccFrame",
+  "BccSharp.Lattice.FirstJet",
+  "BccSharp.Lattice.StrainE2",
+  "BccSharp.Lattice.HandoffBox",
+  "BccSharp.Lattice.CubicMoves",
+  "BccSharp.Lattice.CubicFold",
+  "BccSharp.Lattice.StrainFirstJet",
+  "BccSharp.Lattice.CenteredStrain",
+  "BccSharp.Lattice.StrainOrigin",
+  "BccSharp.Lattice.FccDefect",
+  "BccSharp.Lattice.FccStrain",
+  "BccSharp.Lattice.Routing",
+  "BccSharp.Lattice.LocalObjective",
+  "BccSharp.Lattice.LocalSeries",
+  "BccSharp.Lattice.SecondJet",
+  "BccSharp.Lattice.LocalMetricJet",
+  "BccSharp.Lattice.LocalShell",
+  "BccSharp.Lattice.LocalHessian",
+  "BccSharp.Lattice.ShortestVector",
+  "BccSharp.Lattice.KzProjection",
+  "BccSharp.Lattice.KzChoices",
+  "BccSharp.Lattice.KzBasis",
+  "BccSharp.Lattice.KzChart",
+  "BccSharp.Lattice.KzTransport",
+  "BccSharp.Lattice.Stationarity",
+  "BccSharp.Lattice.LocalDifferentiation",
+  "BccSharp.Lattice.FixedLocal",
+  "BccSharp.Lattice.FixedLocalBall",
+  "BccSharp.Lattice.LocalBallsBccData",
+  "BccSharp.Lattice.LocalBallsBccAnalytic",
+  "BccSharp.Lattice.LocalBallsBccMetric",
+  "BccSharp.Lattice.LocalBallsBccModes",
+  "BccSharp.Lattice.LocalBallsBccSlabBallDirect",
+  "BccSharp.Lattice.LocalBallsBccSlabQ00Dual",
+  "BccSharp.Lattice.LocalBallsBccSlabQ01Dual",
+  "BccSharp.Lattice.LocalBallsBccSlabQ10Dual",
+  "BccSharp.Lattice.LocalBallsBccSlabQ11Dual",
+  "BccSharp.Lattice.LocalBallsBcc",
+  "BccSharp.Lattice.LocalBallsFccData",
+  "BccSharp.Lattice.LocalBallsFccAnalytic",
+  "BccSharp.Lattice.LocalBallsFccMetric",
+  "BccSharp.Lattice.LocalBallsFccModes",
+  "BccSharp.Lattice.LocalBallsFccSlabBallDirect",
+  "BccSharp.Lattice.LocalBallsFccSlabBallDual",
+  "BccSharp.Lattice.LocalBallsFcc",
+  "BccSharp.Lattice.LocalBalls",
+  "BccSharp.TwoSite.GlobalValues",
+  "BccSharp.TwoSite.GlobalCompact",
+  "BccSharp.TwoSite.GlobalAttain",
+  "BccSharp.TwoSite.GlobalDet",
+  "BccSharp.TwoSite.GlobalRegister",
+  "BccSharp.TwoSite.GlobalInputs",
+  "BccSharp.TwoSite.DefectInvariance",
+  "BccSharp.Cover.AdaptiveGap",
+  "BccSharp.Cover.Stage2Tangents",
+  "BccSharp.Lattice.TangentE1",
+  "BccSharp.Lattice.TangentCover",
+  "BccSharp.Lattice.StrainTangent",
+  "BccSharp.Lattice.StrainLeaf",
+  "BccSharp.Lattice.StrainAtlas",
+  "BccSharp.Lattice.Atlas.TableHalf0",
+  "BccSharp.Lattice.Atlas.TableHalf1",
+  "BccSharp.Lattice.Atlas.TableHalf2",
+  "BccSharp.Lattice.Atlas.TableHalf3",
+  "BccSharp.Lattice.Atlas.TableHalf4",
+  "BccSharp.Lattice.Atlas.TableOne0",
+  "BccSharp.Lattice.Atlas.TableOne1",
+  "BccSharp.Lattice.Atlas.TableOne2",
+  "BccSharp.Lattice.Atlas.TableOne3",
+  "BccSharp.Lattice.Atlas.TableOne4",
+  "BccSharp.Lattice.TangentE1SampleRoot10",
+  "BccSharp.Lattice.TangentTableHalf0",
+  "BccSharp.Lattice.TangentTableHalf1",
+  "BccSharp.Lattice.TangentTableHalf2",
+  "BccSharp.Lattice.TangentTableHalf3",
+  "BccSharp.Lattice.TangentTableHalf4",
+  "BccSharp.Lattice.TangentTableHalf5",
+  "BccSharp.Lattice.TangentTableHalf6",
+  "BccSharp.Lattice.TangentTableHalf7",
+  "BccSharp.Lattice.TangentTableHalf8",
+  "BccSharp.Lattice.TangentTableOne0",
+  "BccSharp.Lattice.TangentTableOne1",
+  "BccSharp.Lattice.TangentTableOne2",
+  "BccSharp.Lattice.TangentTableOne3",
+  "BccSharp.Lattice.TangentTableOne4",
+  "BccSharp.Lattice.TangentTableOne5",
+  "BccSharp.Lattice.TangentTableOne6",
+  "BccSharp.Lattice.TangentTableOne7",
+  "BccSharp.Lattice.TangentTableOne8",
+  "BccSharp.Lattice.TangentTables",
+  "BccSharp.Lattice.Atlas.TableMirror",
+  "BccSharp.Lattice.Atlas.Data",
+  "BccSharp.Lattice.Atlas.Bcc0",
+  "BccSharp.Lattice.Atlas.Bcc1",
+  "BccSharp.Lattice.Atlas.Bcc2",
+  "BccSharp.Lattice.Atlas.Bcc3",
+  "BccSharp.Lattice.Atlas.Bcc4",
+  "BccSharp.Lattice.Atlas.Bcc5",
+  "BccSharp.Lattice.Atlas.Bcc6",
+  "BccSharp.Lattice.Atlas.Bcc7",
+  "BccSharp.Lattice.Atlas.Bcc8",
+  "BccSharp.Lattice.Atlas.Controls",
+  "BccSharp.Lattice.Atlas.Fcc0",
+  "BccSharp.Lattice.Atlas.Fcc1",
+  "BccSharp.Lattice.Atlas.Fcc2",
+  "BccSharp.Lattice.Atlas.Fcc3",
+  "BccSharp.Lattice.Atlas.Fcc4",
+  "BccSharp.Lattice.Atlas.Fcc5",
+  "BccSharp.Lattice.Atlas.Atlases",
+  "BccSharp.Lattice.ForestBase",
+  "BccSharp.Lattice.ForestControls",
+  "BccSharp.Lattice.ForestG00",
+  "BccSharp.Lattice.ForestG01",
+  "BccSharp.Lattice.ForestG02",
+  "BccSharp.Lattice.Forest",
+  "BccSharp.Lattice.Atlas.LatticeCase",
+  "BccSharp.Cover.OverlayAxial",
+  "BccSharp.Cover.OverlayPlanarOperands",
+  "BccSharp.Cover.OverlayPlanarAxialCheck",
+  "BccSharp.Cover.OverlayPlanarPoisson",
+  "BccSharp.Cover.OverlayHeatSplit",
+  "BccSharp.Cover.OverlayRadial",
+  "BccSharp.Cover.OverlayLayerCheck",
+  "BccSharp.Cover.OverlayArea",
+  "BccSharp.Cover.OverlayKernelCheck",
+  "BccSharp.Cover.OverlayScalarHeat",
+  "BccSharp.Cover.OverlayEnergyHeat",
+  "BccSharp.Cover.OverlaySharpLayer",
+  "BccSharp.Cover.OverlaySharpPass",
+  "BccSharp.Cover.OverlayFixConst",
+  "BccSharp.Cover.DirectFixConst",
+  "BccSharp.Cover.OverlayFix",
+  "BccSharp.Cover.OverlayZeroMode",
+  "BccSharp.Cover.OverlayLayerIntegral",
+  "BccSharp.Cover.OverlayPhysicalIdentity",
+  "BccSharp.Cover.OverlayMontgomery",
+  "BccSharp.Cover.OverlaySoundCheck",
+  "BccSharp.Cover.OverlayFixSound",
+  "BccSharp.Cover.OverlayDecodeBase",
+  "BccSharp.Cover.OverlayPilotLeaves",
+  "BccSharp.Cover.AdaptiveConst",
+  "BccSharp.Cover.AdaptiveKernel",
+  "BccSharp.Cover.CenteredAnchor",
+  "BccSharp.Cover.Stage2Geometry",
+  "BccSharp.Cover.AdaptiveCorner",
+  "BccSharp.Cover.Stage2Bulk",
+  "BccSharp.Cover.AdaptiveSupport",
+  "BccSharp.Cover.AdaptiveGain",
+  "BccSharp.Cover.JLeafKernels",
+  "BccSharp.Cover.JLeafCore",
+  "BccSharp.Cover.JLeafChord",
+  "BccSharp.Cover.JLeafDefect",
+  "BccSharp.TwoSite.DefectAnnulus",
+  "BccSharp.TwoSite.DefectCutoff",
+  "BccSharp.Cover.JLeafPhase",
+  "BccSharp.Cover.JLeafTerms",
+  "BccSharp.Cover.JLeafCheck",
+  "BccSharp.TwoSite.DefectCutoffBox",
+  "BccSharp.Cover.JLeafF",
+  "BccSharp.Cover.FLeafSample",
+  "BccSharp.Cover.Stage2Phase",
+  "BccSharp.Cover.CoverEarlyDecode",
+  "BccSharp.Cover.DirectFix",
+  "BccSharp.Cover.DirectFixSound",
+  "BccSharp.Cover.DirectSidecarFix",
+  "BccSharp.Cover.OverlayCorpusGlue",
+  "BccSharp.Cover.OverlayCorpusPrefix",
+  "BccSharp.Cover.OverlayCorpusTrace",
+  "BccSharp.Cover.DataPath",
+  "BccSharp.Cover.DataPathPacker",
+  "BccSharp.Cover.Stage2Fix",
+  "BccSharp.Cover.Stage2FixSound",
+  "BccSharp.Cover.Stage2Table",
+  "BccSharp.Cover.PlanarFibreGWeights",
+  "BccSharp.Cover.PlanarFibreJet",
+  "BccSharp.Cover.PlanarFibreJetSound",
+  "BccSharp.Cover.PlanarFibrePlanar",
+  "BccSharp.Cover.PlanarFibreTaylor",
+  "BccSharp.Cover.LateCompose",
+  "BccSharp.Cover.PlanarFibreTri",
+  "BccSharp.Cover.PlanarFibreTriCell",
+  "BccSharp.Cover.PlanarFibreTriLargeData",
+  "BccSharp.Cover.PlanarFibreTriLarge0",
+  "BccSharp.Cover.PlanarFibreTriLarge1",
+  "BccSharp.Cover.PlanarFibreTriLarge2",
+  "BccSharp.Cover.PlanarFibreTriLarge3",
+  "BccSharp.Cover.PlanarFibreTriLarge",
+  "BccSharp.Cover.PlanarFibreTriPilot",
+  "BccSharp.Cover.PlanarFibreTriRelax",
+  "BccSharp.Cover.PlanarFibreTriSample",
+  "BccSharp.Cover.LayeredDefect",
+  "BccSharp.Cover.LayeredDefectCutoff",
+  "BccSharp.Cover.LayeredScalar",
+  "BccSharp.Cover.LayeredGain",
+  "BccSharp.Cover.LayeredFix",
+  "BccSharp.Cover.LayeredFixSound",
+  "BccSharp.Cover.LayeredRoute",
+  "BccSharp.Cover.AnchorCatalogue",
+  "BccSharp.Cover.AdaptiveLayeredSign",
+  "BccSharp.Cover.CenteredRoute",
+  "BccSharp.Cover.LayeredHalfShift",
+  "BccSharp.Cover.LayeredCatRoute",
+  "BccSharp.Cover.AnchorCatPilot011",
+  "BccSharp.Cover.AnchorCatPilot111",
+  "BccSharp.Cover.AnchorCatPilotEdge",
+  "BccSharp.Cover.LayeredFarRoute",
+  "BccSharp.Cover.AdaptiveFarQ",
+  "BccSharp.Cover.AdaptiveOptical",
+  "BccSharp.Cover.LayeredFarPilotHalfShift",
+  "BccSharp.Cover.LayeredFarPilotPlanarFibre",
+  "BccSharp.Cover.AnchorCatControls",
+  "BccSharp.Cover.LayeredFarControls",
+  "BccSharp.Cover.PrefixDirectItems",
+  "BccSharp.Cover.PrefixFixGlue",
+  "BccSharp.Cover.PrefixStage2TangentTable",
+  "BccSharp.Cover.PrefixStage2PhaseItems",
+  "BccSharp.Cover.PrefixStage2TangentItems",
+  "BccSharp.Cover.PrefixSidecarItems",
+  "BccSharp.Cover.ReplayCompose",
+  "BccSharp.Cover.DataPathLater",
+  "BccSharp.Cover.DataPathLaterChecks",
+  "BccSharp.Cover.DataPathLaterMirror",
+  "BccSharp.Cover.DataPathLaterRun",
+  "BccSharp.Cover.DataPathLaterOr",
+  "BccSharp.Cover.Round7Leaves",
+  "BccSharp.Cover.Round7Fixture",
+  "BccSharp.TwoSite.ScreenedSeries",
+  "BccSharp.Cover.AdaptiveScreened",
+  "BccSharp.Cover.JLeafScreenedTerms",
+  "BccSharp.Cover.JLeafScreenedCheck",
+  "BccSharp.Cover.JensenCore",
+  "BccSharp.Cover.JensenFix",
+  "BccSharp.Cover.JensenFixSound",
+  "BccSharp.Cover.Stage5bPhase",
+  "BccSharp.Cover.Stage3Stage6Compose",
+  "BccSharp.Cover.Stage3Stage6Hybrid",
+  "BccSharp.Cover.Stage3",
+  "BccSharp.Cover.Stage5bOpticalDefect",
+  "BccSharp.Cover.Stage5bPhaseLeaves",
+  "BccSharp.Cover.Stage6FLeaves",
+  "BccSharp.Cover.Stage3Leaves",
+  "BccSharp.Cover.Stage5bStage6HybridThin",
+  "BccSharp.Cover.LeafFix",
+  "BccSharp.Cover.LeafFixPack",
+  "BccSharp.Cover.LeafFixSupport",
+  "BccSharp.Cover.LeafFixSound",
+  "BccSharp.Cover.LeafFixDLeaves",
+  "BccSharp.Cover.LeafFixFLeaves",
+  "BccSharp.Cover.LeafFixFar",
+  "BccSharp.Cover.AdaptiveDeficit",
+  "BccSharp.Cover.AdaptiveCheck",
+  "BccSharp.Cover.AdaptiveThinItems",
+  "BccSharp.Cover.AdaptiveThinK",
+  "BccSharp.Cover.AdaptiveThinQ",
+  "BccSharp.Cover.AdaptiveThinV",
+  "BccSharp.Cover.AdaptiveThinX",
+  "BccSharp.Cover.Stage4Stage5a",
+  "BccSharp.Cover.Stage4Stage5aOpen",
+  "BccSharp.Cover.Stage4Thin1",
+  "BccSharp.Cover.Stage4Thin2",
+  "BccSharp.Cover.Stage4Controls",
+  "BccSharp.Cover.Stage5aAnchored",
+  "BccSharp.Cover.Stage5aThin1",
+  "BccSharp.Cover.Stage6Deficit",
+  "BccSharp.Cover.Stage5bOptical",
+  "BccSharp.Cover.Stage5bOpticalLeaves0",
+  "BccSharp.Cover.Stage5bOpticalLeaves1",
+  "BccSharp.Cover.Stage5bOpticalLeaves2",
+  "BccSharp.Cover.Stage6DLeaves",
+  "BccSharp.Cover.LateChecker",
+  "BccSharp.Cover.LayeredHalfShiftPilot",
+  "BccSharp.Cover.LayeredPilot",
+  "BccSharp.Cover.LayeredControls",
+  "BccSharp.Cover.LeafFixFarDLeaves",
+  "BccSharp.Cover.LeafFixFarJLeaves",
+  "BccSharp.Cover.LeafFixFarControls",
+  "BccSharp.Cover.LeafFixJLeaves",
+  "BccSharp.Cover.LeafFixCorner",
+  "BccSharp.Cover.LeafFixCornerEnv",
+  "BccSharp.Cover.LeafFixCornerPacked",
+  "BccSharp.Cover.LeafFixCornerSample",
+  "BccSharp.Cover.LeafFixRound5",
+  "BccSharp.Cover.LeafFixRound6",
+  "BccSharp.Cover.LeafFixControls",
+  "BccSharp.Cover.Round6ScreenedLeaf",
+  "BccSharp.Cover.Round6ScreenedFixture",
+  "BccSharp.TwoSite.ScreenedModes",
+  "BccSharp.TwoSite.Spec",
+  "BccSharp.TwoSite.StatementFull",
+  "BccSharp.FinalAssembly"
+ ],
+ "modules": {
+  "BccSharp.TwoSite.Interface": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Interface.lean",
+   "lines": 317,
+   "bytes": 13593,
+   "sha256": "a5d44cb193435267ad2891ae5c2c0bc86f5074ccc209325df8361c3642ed4316",
+   "deps": [],
+   "external_imports": [
+    "Mathlib"
+   ]
+  },
+  "BccSharp.TwoSite.MontgomeryDefs": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/MontgomeryDefs.lean",
+   "lines": 92,
+   "bytes": 4087,
+   "sha256": "84e39b5ce354fdea388cd8bc0f9d6ae93c184587a68d9af89d6cd44afde8ef78",
+   "deps": [],
+   "external_imports": [
+    "Mathlib"
+   ]
+  },
+  "BccSharp.TwoSite.JacobiTriple": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/JacobiTriple.lean",
+   "lines": 644,
+   "bytes": 32820,
+   "sha256": "a3639b2a6e452530a179e2caedacc732dd806963b44051afc8ac7242a4b77ed5",
+   "deps": [
+    "BccSharp.TwoSite.MontgomeryDefs"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.MontgomeryBasic": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/MontgomeryBasic.lean",
+   "lines": 363,
+   "bytes": 17823,
+   "sha256": "c0be7807d47f16b5723ffefcf148a28d8ff1b339337a2a76e3ece672f2ac0c23",
+   "deps": [
+    "BccSharp.TwoSite.MontgomeryDefs"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.MontgomerySmallT": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/MontgomerySmallT.lean",
+   "lines": 358,
+   "bytes": 17504,
+   "sha256": "faba396007f79667c30443e00ab1f8dbfc537298d0875b5324b13ed19991ff96",
+   "deps": [
+    "BccSharp.TwoSite.MontgomeryBasic"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.MontgomeryX": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/MontgomeryX.lean",
+   "lines": 580,
+   "bytes": 28077,
+   "sha256": "6a2a7d605d7ac5824a5b2902d3f13e257e62f41468d59a2f8661b663b3ab65e1",
+   "deps": [
+    "BccSharp.TwoSite.MontgomeryBasic"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.MontgomeryY": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/MontgomeryY.lean",
+   "lines": 942,
+   "bytes": 45851,
+   "sha256": "67c849e2cc27a3392d86981148d6d9954fe624a535594cdd477d65d03992f6a6",
+   "deps": [
+    "BccSharp.TwoSite.MontgomeryDefs"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Montgomery": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Montgomery.lean",
+   "lines": 37,
+   "bytes": 1599,
+   "sha256": "85a571de000872af8259d1aef6b38ca85117e796238a7e79bbf8b2dade3497ed",
+   "deps": [
+    "BccSharp.TwoSite.JacobiTriple",
+    "BccSharp.TwoSite.MontgomeryBasic",
+    "BccSharp.TwoSite.MontgomerySmallT",
+    "BccSharp.TwoSite.MontgomeryX",
+    "BccSharp.TwoSite.MontgomeryY"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Physical": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Physical.lean",
+   "lines": 275,
+   "bytes": 12328,
+   "sha256": "4dca2686578e5ae2c88450bf06b725f2144dc63bbea2503fbf4f7abf36f08e66",
+   "deps": [
+    "BccSharp.TwoSite.Interface"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Reference": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Reference.lean",
+   "lines": 309,
+   "bytes": 13058,
+   "sha256": "e561e52a62cc43375972547acbbb9cff69c4f1590437e32e2e8ca8f76b295ad7",
+   "deps": [
+    "BccSharp.TwoSite.Physical"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Round7Geometry": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Round7Geometry.lean",
+   "lines": 211,
+   "bytes": 8626,
+   "sha256": "f7bb25c4c82c244ed14c943bdc7728c927f681c514bc8f39c6316313ea712513",
+   "deps": [],
+   "external_imports": [
+    "Init.Data.Rat.Basic",
+    "Lean.Elab.Tactic.Decide",
+    "Lean.Elab.Tactic.RCases",
+    "Lean.Elab.Tactic.Rewrite",
+    "Lean.Elab.Tactic.Simp",
+    "Lean.Elab.Tactic.Simpa"
+   ]
+  },
+  "BccSharp.TwoSite.ScalarChecks": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ScalarChecks.lean",
+   "lines": 81,
+   "bytes": 4017,
+   "sha256": "4e3dd38c36ba3d97036e3fea5736f77daa478dfc4996a59899ae63e3960bc10b",
+   "deps": [
+    "BccSharp.TwoSite.Interface"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Bravais": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Bravais.lean",
+   "lines": 166,
+   "bytes": 7018,
+   "sha256": "884207f51499db13ebb14c8157cf2928dbd2a151773c2dc7df1006c8a8863c5d",
+   "deps": [
+    "BccSharp.TwoSite.Physical",
+    "BccSharp.TwoSite.ScalarChecks"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.PeriodRepetition": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/PeriodRepetition.lean",
+   "lines": 116,
+   "bytes": 5235,
+   "sha256": "06523c9ae3c477c3bda5cf1dc7997aab4f9a6d449995a79563bb9acf271e5d62",
+   "deps": [
+    "BccSharp.TwoSite.Bravais"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ReciprocalRepetition": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ReciprocalRepetition.lean",
+   "lines": 273,
+   "bytes": 13122,
+   "sha256": "9bf3383d3482cd2da7a5929994219005fbe40881fbc31a5ea325cbbe6ce838ac",
+   "deps": [
+    "BccSharp.TwoSite.PeriodRepetition"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.PhysicalScale": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/PhysicalScale.lean",
+   "lines": 142,
+   "bytes": 6143,
+   "sha256": "d93c806495439cdfe8e1f99bc6d62658b454fdd4d7c7522657c765975029e208",
+   "deps": [
+    "BccSharp.TwoSite.ReciprocalRepetition"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.RepetitionVolume": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/RepetitionVolume.lean",
+   "lines": 133,
+   "bytes": 6185,
+   "sha256": "e682708dd9ab86eaf05f30e164af469c7259e79d6906fb720af69f6fa752c076",
+   "deps": [
+    "BccSharp.TwoSite.ReciprocalRepetition"
+   ],
+   "external_imports": [
+    "Mathlib.Algebra.Module.ZLattice.Covolume"
+   ]
+  },
+  "BccSharp.TwoSite.EwaldCellRepetition": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/EwaldCellRepetition.lean",
+   "lines": 217,
+   "bytes": 10326,
+   "sha256": "128f028987c0dec10c9c66f205da918d97d31887cc3586866f9a4d43893c542b",
+   "deps": [
+    "BccSharp.TwoSite.RepetitionVolume"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Star": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Star.lean",
+   "lines": 67,
+   "bytes": 2637,
+   "sha256": "9e02ce2262573c577caf72d7ead5b41844fe1ea532f223bb7e7dbe3411795956",
+   "deps": [
+    "BccSharp.TwoSite.Bravais"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.Coverage": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/Coverage.lean",
+   "lines": 73,
+   "bytes": 2783,
+   "sha256": "57380b81275fd6f99282b26332b50a53fdacf0bc96547a9b75cd2c241b90fcf5",
+   "deps": [],
+   "external_imports": [
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Topology.Instances.Real.Lemmas",
+    "Mathlib.Topology.Order.MonotoneConvergence"
+   ]
+  },
+  "BccSharp.TwoSite.BravaisCover": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/BravaisCover.lean",
+   "lines": 102,
+   "bytes": 4602,
+   "sha256": "3d101115067099379868b5eb39b68c382894bc919247f8520bf76290cfd2da0e",
+   "deps": [
+    "BccSharp.TwoSite.Bravais",
+    "BccSharp.Analysis.Coverage"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Addressed": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Addressed.lean",
+   "lines": 204,
+   "bytes": 9689,
+   "sha256": "61d5c2e301e054441489d61b65163ed24513b3e7cadb05ab82cd3255dec052d8",
+   "deps": [
+    "BccSharp.TwoSite.BravaisCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Coverage": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Coverage.lean",
+   "lines": 369,
+   "bytes": 15259,
+   "sha256": "314087932042199232c151d41da7eabd3cf79fb11e66899f07ff94652f023018",
+   "deps": [
+    "BccSharp.TwoSite.Bravais",
+    "BccSharp.Analysis.Coverage"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.GoodPoint": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/GoodPoint.lean",
+   "lines": 231,
+   "bytes": 10998,
+   "sha256": "2146076ab96eb404869782f1884b0749724ac89feff9c4feac11a085efc037e3",
+   "deps": [
+    "BccSharp.TwoSite.Coverage"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Reduction": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Reduction.lean",
+   "lines": 86,
+   "bytes": 4083,
+   "sha256": "47cadd963cabe9f5aeee1030bcef788cd5751555c8f8e0729b8117d7497b2fd0",
+   "deps": [
+    "BccSharp.TwoSite.Coverage",
+    "BccSharp.TwoSite.Reference"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.FourierUniqueness": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/FourierUniqueness.lean",
+   "lines": 161,
+   "bytes": 7800,
+   "sha256": "4612a30320bfdec9f23391c7b12741109b17e090d5ad8ab39ade4311284bb764",
+   "deps": [],
+   "external_imports": [
+    "Mathlib.Analysis.Fourier.AddCircleMulti",
+    "Mathlib.MeasureTheory.Function.AEEqOfLIntegral",
+    "Mathlib.MeasureTheory.Measure.HasOuterApproxClosed"
+   ]
+  },
+  "BccSharp.Analysis.Gaussian": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/Gaussian.lean",
+   "lines": 120,
+   "bytes": 5298,
+   "sha256": "3a392942972075601b08432461e86f2effcb13987bbae72e4b3440a7d5671f96",
+   "deps": [],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral",
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.FunProp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring"
+   ]
+  },
+  "BccSharp.Analysis.Interpolation": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/Interpolation.lean",
+   "lines": 128,
+   "bytes": 6158,
+   "sha256": "84a664d632ba5bed10653666969f006faaa593aaf9b8faddac13f6a84d9434d2",
+   "deps": [],
+   "external_imports": [
+    "Mathlib.Analysis.Calculus.Deriv.Pow",
+    "Mathlib.Analysis.Convex.Deriv",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring"
+   ]
+  },
+  "BccSharp.Analysis.Intervals": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/Intervals.lean",
+   "lines": 102,
+   "bytes": 4117,
+   "sha256": "bd2bc1d1b60cd5354174eee958075b07c616b53635a7d8bf97557bae45692860",
+   "deps": [],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.Sqrt",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Ring"
+   ]
+  },
+  "BccSharp.Analysis.IntervalChecks": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/IntervalChecks.lean",
+   "lines": 49,
+   "bytes": 2175,
+   "sha256": "38a56c1b92881bf9fa509523de3f7248341f4d0c600d230d150b4724bd634878",
+   "deps": [
+    "BccSharp.Analysis.Intervals"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.FixedPoint": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/FixedPoint.lean",
+   "lines": 186,
+   "bytes": 8435,
+   "sha256": "2e0e0f010600fb9dcfeedcb4d19fd15c768612449f5dcab4b135a4ccee059cf5",
+   "deps": [
+    "BccSharp.Analysis.IntervalChecks"
+   ],
+   "external_imports": [
+    "Mathlib.Algebra.Order.Floor.Ring"
+   ]
+  },
+  "BccSharp.Analysis.LatticeTails": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/LatticeTails.lean",
+   "lines": 184,
+   "bytes": 8562,
+   "sha256": "0af13fb734f5c392f5ec271b66e34f7b857c774da168b8196483503492a7a3b2",
+   "deps": [],
+   "external_imports": [
+    "Mathlib.Analysis.Complex.ExponentialBounds",
+    "Mathlib.Analysis.Normed.Ring.InfiniteSum",
+    "Mathlib.Analysis.SpecificLimits.Normed",
+    "Mathlib.Data.Int.Interval",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Topology.Algebra.InfiniteSum.NatInt"
+   ]
+  },
+  "BccSharp.Analysis.Ewald": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/Ewald.lean",
+   "lines": 334,
+   "bytes": 15205,
+   "sha256": "51b6f3a3055897d73a527484eee8d7bbad7720ccc980c2c06275c670ac97b159",
+   "deps": [
+    "BccSharp.Analysis.Gaussian",
+    "BccSharp.Analysis.LatticeTails"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.Real.Pi.Bounds",
+    "Mathlib.Data.Matrix.Basic",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.GCongr"
+   ]
+  },
+  "BccSharp.Analysis.EwaldDomain": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/EwaldDomain.lean",
+   "lines": 134,
+   "bytes": 5798,
+   "sha256": "cb1a50f83aa4a8143e1b179bb4bd86178b49c78eb7c89d525d98a7cb8b3d6190",
+   "deps": [
+    "BccSharp.Analysis.Ewald"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.EwaldPeriodicity": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/EwaldPeriodicity.lean",
+   "lines": 77,
+   "bytes": 2861,
+   "sha256": "ec52ceaaf15b205599c2fed8af77c6b4027ebd9855590d05bd5467466e9b0c29",
+   "deps": [
+    "BccSharp.Analysis.EwaldDomain"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.SpecialFunctions": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/SpecialFunctions.lean",
+   "lines": 142,
+   "bytes": 6680,
+   "sha256": "ed9f66fa4d8ea18384be397c3b00cbe9ce4b476e07ae96f2c94d9e5ff4558345",
+   "deps": [
+    "BccSharp.Analysis.Ewald",
+    "BccSharp.Analysis.Intervals"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Geometry": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Geometry.lean",
+   "lines": 196,
+   "bytes": 8508,
+   "sha256": "506d2096d83cf933790f6c45ce80d2f228b0b859d4fcdb72dc8af7d991bafc7d",
+   "deps": [
+    "BccSharp.Lattice.Addressed",
+    "BccSharp.Analysis.SpecialFunctions"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.GeometricLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/GeometricLeaves.lean",
+   "lines": 262,
+   "bytes": 12764,
+   "sha256": "3e3442808164e3cedaebb52752577d18277c274547e3767fd5dd5f26d8d9d7cf",
+   "deps": [
+    "BccSharp.Lattice.Geometry",
+    "BccSharp.Analysis.IntervalChecks"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Curvature": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Curvature.lean",
+   "lines": 168,
+   "bytes": 7529,
+   "sha256": "0d201db1755e247e2190fe83985c5c56415b7141cb4a3e14b51bea109f6a41df",
+   "deps": [
+    "BccSharp.Lattice.GeometricLeaves"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.Calculus.Deriv.MeanValue"
+   ]
+  },
+  "BccSharp.Analysis.Erfc": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/Erfc.lean",
+   "lines": 237,
+   "bytes": 11219,
+   "sha256": "dc7f9637813451be7e4bf6ba4ac3a7a3477207a1036bc3ad29b87f412753c3af",
+   "deps": [
+    "BccSharp.Analysis.SpecialFunctions"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+   ]
+  },
+  "BccSharp.Analysis.DividedExp": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/DividedExp.lean",
+   "lines": 237,
+   "bytes": 9665,
+   "sha256": "447746d97f0aaba83da490ae607332e265e088304dde99684703ca22b1ca7371",
+   "deps": [
+    "BccSharp.Analysis.Erfc"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.Asymptotics.Lemmas",
+    "Mathlib.Analysis.Calculus.Deriv.Slope"
+   ]
+  },
+  "BccSharp.Analysis.DividedReal": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/DividedReal.lean",
+   "lines": 60,
+   "bytes": 2402,
+   "sha256": "3cec0b7f89db8c16a2faf7383bc087d902b1b960a0ef6088599378fbbbbd67c7",
+   "deps": [
+    "BccSharp.Analysis.DividedExp"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.Complex.RealDeriv"
+   ]
+  },
+  "BccSharp.Analysis.TrigBounds": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/TrigBounds.lean",
+   "lines": 105,
+   "bytes": 4844,
+   "sha256": "68d0b3f529258837823127add4b6ccc7ca94879893168351d78f1b036141cc3e",
+   "deps": [
+    "BccSharp.Analysis.DividedReal"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds"
+   ]
+  },
+  "BccSharp.Analysis.RoundedPolynomial": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/RoundedPolynomial.lean",
+   "lines": 160,
+   "bytes": 6956,
+   "sha256": "adec219cc94d0b93f84943d028c01349fecc04738b901a200efd99f9c91d6228",
+   "deps": [
+    "BccSharp.Analysis.IntervalChecks",
+    "BccSharp.Analysis.TrigBounds"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.ExpBounds": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/ExpBounds.lean",
+   "lines": 110,
+   "bytes": 4466,
+   "sha256": "65aac7da2d9ea6b29e305ff899dd1b968ef2815b2a8b24e06f7af1228a6e0ae8",
+   "deps": [
+    "BccSharp.Analysis.IntervalChecks",
+    "BccSharp.Analysis.RoundedPolynomial",
+    "BccSharp.Analysis.SpecialFunctions"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.ErfcBounds": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/ErfcBounds.lean",
+   "lines": 95,
+   "bytes": 4260,
+   "sha256": "e2d6af27ec5f60415c3ca56ce5ff839c578cb1eac7fe4643717ed23303da6f2a",
+   "deps": [
+    "BccSharp.Analysis.Erfc",
+    "BccSharp.Analysis.ExpBounds"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ReferenceKernels": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ReferenceKernels.lean",
+   "lines": 95,
+   "bytes": 4248,
+   "sha256": "8aea440bb0dd6566e49331922a62ffef4861ddcbc36e7169ff56f40db828e316",
+   "deps": [
+    "BccSharp.TwoSite.Reference",
+    "BccSharp.Analysis.ErfcBounds"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Pi": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Pi.lean",
+   "lines": 176,
+   "bytes": 8626,
+   "sha256": "9ea54f966b64468780435899b5184c6ac9dd2e1ad84e7fa220629827b7e68b50",
+   "deps": [
+    "BccSharp.TwoSite.ReferenceKernels"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.WeightedTails": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/WeightedTails.lean",
+   "lines": 111,
+   "bytes": 5640,
+   "sha256": "9666f08617e63f545ea39e393184310aa540126fe0afceb1219cc54b9450a57a",
+   "deps": [
+    "BccSharp.Analysis.LatticeTails"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.EwaldRegular": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/EwaldRegular.lean",
+   "lines": 138,
+   "bytes": 6036,
+   "sha256": "bf321eb4b1c3e5c7ae1061ac439b6dc0c6ccd1b781a3b272e4518e5a48de0a3a",
+   "deps": [
+    "BccSharp.Analysis.DividedExp",
+    "BccSharp.Analysis.EwaldPeriodicity",
+    "BccSharp.Analysis.WeightedTails"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.GaussianSummability": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/GaussianSummability.lean",
+   "lines": 62,
+   "bytes": 2550,
+   "sha256": "212cdc5ec059573b5dbc9a5271b3b4b169faab23429c4702867889a89c02ed20",
+   "deps": [
+    "BccSharp.Analysis.WeightedTails"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.GeneralSummability": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/GeneralSummability.lean",
+   "lines": 176,
+   "bytes": 8103,
+   "sha256": "0fb970ec4e8395a6f0b8d5be039b32264a7cf636c93b26198828e3bd31af6d76",
+   "deps": [
+    "BccSharp.TwoSite.EwaldCellRepetition",
+    "BccSharp.Analysis.Ewald",
+    "BccSharp.Analysis.GaussianSummability"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.SeriesModes": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/SeriesModes.lean",
+   "lines": 227,
+   "bytes": 10734,
+   "sha256": "7ea307495659024ce44ab90a191df22e590fa6c771cc011a023e1978160b154f",
+   "deps": [
+    "BccSharp.TwoSite.GeneralSummability",
+    "BccSharp.TwoSite.PhysicalScale"
+   ],
+   "external_imports": [
+    "Mathlib.MeasureTheory.Integral.IntegralEqImproper"
+   ]
+  },
+  "BccSharp.TwoSite.ExpectedStatement": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ExpectedStatement.lean",
+   "lines": 63,
+   "bytes": 2624,
+   "sha256": "1e82c6b9216ce9a29d577d7fa5ba47ec90118254adaa681d9fb1ea049f464b4a",
+   "deps": [
+    "BccSharp.TwoSite.SeriesModes"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ReferenceTails": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ReferenceTails.lean",
+   "lines": 324,
+   "bytes": 17635,
+   "sha256": "31222cb44977d5a2cb1aec8d09d60b592a11f45dcefcb01e7502092a993c5c03",
+   "deps": [
+    "BccSharp.TwoSite.Pi",
+    "BccSharp.Analysis.GaussianSummability"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ReferencePacket": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ReferencePacket.lean",
+   "lines": 460,
+   "bytes": 21374,
+   "sha256": "1839c0187e24d6b486ad4ea874c355a1c8ded931fcb213aacf09eabb20f18340",
+   "deps": [
+    "BccSharp.TwoSite.ReferenceTails"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ReferenceCert": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ReferenceCert.lean",
+   "lines": 2117,
+   "bytes": 192060,
+   "sha256": "e64d93a32ba4141f6eb3bb4bf3ca080e927a67c269d161ed3d2b7e85b412e95d",
+   "deps": [
+    "BccSharp.TwoSite.ReferencePacket"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ReferencePhysical": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ReferencePhysical.lean",
+   "lines": 125,
+   "bytes": 5471,
+   "sha256": "2a6ae34f5982e6b18e087897e08e07f1b1cfbafebff61cff3bb5b160e74ec091",
+   "deps": [
+    "BccSharp.TwoSite.PhysicalScale",
+    "BccSharp.TwoSite.ReferenceCert"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.RegularBounds": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/RegularBounds.lean",
+   "lines": 130,
+   "bytes": 5100,
+   "sha256": "966784b75350d90073bac2cc9058cfb8ca7717c7e260c3cf17fa421ebba342ef",
+   "deps": [
+    "BccSharp.Analysis.EwaldRegular",
+    "BccSharp.Analysis.Interpolation"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds"
+   ]
+  },
+  "BccSharp.Analysis.KernelDerivatives": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/KernelDerivatives.lean",
+   "lines": 303,
+   "bytes": 14320,
+   "sha256": "d6c5b8766ca3f09b972bbbf68f2f17ffaf27122101dc578d9c93ecb02b90527d",
+   "deps": [
+    "BccSharp.Analysis.RegularBounds"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.RadialPotential": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/RadialPotential.lean",
+   "lines": 63,
+   "bytes": 2598,
+   "sha256": "386eae0e42548171bf661106153fc23a21a36b59dc2dd79a5268b92b374af7bc",
+   "deps": [
+    "BccSharp.Analysis.Erfc",
+    "BccSharp.Analysis.KernelDerivatives"
+   ],
+   "external_imports": [
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus"
+   ]
+  },
+  "BccSharp.Analysis.RealSpaceHessian": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/RealSpaceHessian.lean",
+   "lines": 105,
+   "bytes": 4993,
+   "sha256": "be343f5fd3161d97cd98f052a7a1f5108f04d381ddf1db1c1a9c56128820aee1",
+   "deps": [
+    "BccSharp.Analysis.RadialPotential"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.Sqrt"
+   ]
+  },
+  "BccSharp.Analysis.CoulombLaplace": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/CoulombLaplace.lean",
+   "lines": 69,
+   "bytes": 2988,
+   "sha256": "4680316e907ea6fd2af3fcc6eca8b891381a813dd38705caedc0568eb66c15c7",
+   "deps": [
+    "BccSharp.Analysis.RealSpaceHessian"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform"
+   ]
+  },
+  "BccSharp.Analysis.CoulombIntegrability": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/CoulombIntegrability.lean",
+   "lines": 72,
+   "bytes": 3141,
+   "sha256": "99f3f7ae14be09e76164fed75f5f806da6a579f6f9c03bb1db3eaf41ed1acd36",
+   "deps": [
+    "BccSharp.Analysis.CoulombLaplace"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.MeasureTheory.Integral.Pi"
+   ]
+  },
+  "BccSharp.Analysis.CoulombFourier": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/CoulombFourier.lean",
+   "lines": 59,
+   "bytes": 2382,
+   "sha256": "3cc6b99ca9345d340255e7f342794cd361f2788b6742645ac76fa3c7fcb88372",
+   "deps": [
+    "BccSharp.Analysis.CoulombIntegrability"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.CoulombTransform": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/CoulombTransform.lean",
+   "lines": 115,
+   "bytes": 4712,
+   "sha256": "333366fd8a24e84cc6cefb41d2dbc3dcdff5ddde6b958fc79e2e844ace1d3a25",
+   "deps": [
+    "BccSharp.Analysis.CoulombFourier"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ScreenedTransform": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ScreenedTransform.lean",
+   "lines": 122,
+   "bytes": 5514,
+   "sha256": "5113fad88c48b5942e9da433f93b667ea859b26fe0e58d79fbafd683f7d0e98e",
+   "deps": [
+    "BccSharp.TwoSite.PhysicalScale",
+    "BccSharp.Analysis.CoulombTransform"
+   ],
+   "external_imports": [
+    "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar"
+   ]
+  },
+  "BccSharp.Analysis.ReciprocalPotential": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/ReciprocalPotential.lean",
+   "lines": 58,
+   "bytes": 2521,
+   "sha256": "cc1f32e781bbbf5858170927608bad31ddaceae2d7304c6db796f9e8e2c97aef",
+   "deps": [
+    "BccSharp.Analysis.RealSpaceHessian"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.ReciprocalSeries": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/ReciprocalSeries.lean",
+   "lines": 215,
+   "bytes": 9927,
+   "sha256": "0a6d9912768d41777fbb7c04017910ca80e6a07344fe06c302612c3771bf9ab4",
+   "deps": [
+    "BccSharp.Analysis.GaussianSummability",
+    "BccSharp.Analysis.ReciprocalPotential"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.Calculus.SmoothSeries"
+   ]
+  },
+  "BccSharp.Analysis.ScreenedBounds": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/ScreenedBounds.lean",
+   "lines": 144,
+   "bytes": 6278,
+   "sha256": "7f2124c2a18e8f73a5a871afcee36abcc27e00516f2a02c21534cdfa7c30ca61",
+   "deps": [
+    "BccSharp.Analysis.GaussianSummability",
+    "BccSharp.Analysis.RealSpaceHessian"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.LatticeNeighborhood": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/LatticeNeighborhood.lean",
+   "lines": 100,
+   "bytes": 4568,
+   "sha256": "dcad1dfe633676f7235d23efd47fc073236202b6e32ff4244ad99e84239b1132",
+   "deps": [
+    "BccSharp.Analysis.ScreenedBounds"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.Calculus.SmoothSeries"
+   ]
+  },
+  "BccSharp.Analysis.RealSpaceSeries": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/RealSpaceSeries.lean",
+   "lines": 155,
+   "bytes": 8033,
+   "sha256": "1f110f5a36788850f46893b0301a59038458249a0a22cad5dbbc92a0238d785f",
+   "deps": [
+    "BccSharp.Analysis.LatticeNeighborhood",
+    "BccSharp.Analysis.ReciprocalSeries"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.PeriodicPotential": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/PeriodicPotential.lean",
+   "lines": 53,
+   "bytes": 2997,
+   "sha256": "59559007ef5875a2b2428e862b3ff741a0159b5b1f853960df97f7cb93b1a56e",
+   "deps": [
+    "BccSharp.Analysis.RealSpaceSeries"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Analysis.TorusLattice": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/TorusLattice.lean",
+   "lines": 135,
+   "bytes": 4940,
+   "sha256": "e3980c86f2272f39b956e71be33575df7bff6ddd553343432589f1ec6497681f",
+   "deps": [
+    "BccSharp.Analysis.PeriodicPotential"
+   ],
+   "external_imports": [
+    "Mathlib.GroupTheory.OrderOfElement",
+    "Mathlib.GroupTheory.QuotientGroup.Basic"
+   ]
+  },
+  "BccSharp.Analysis.PeriodLattice": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/PeriodLattice.lean",
+   "lines": 140,
+   "bytes": 6196,
+   "sha256": "4031bbfcf9c5269b72f288159bb3446fa1baa6d9b509d289f1e1c5c85ef149f6",
+   "deps": [
+    "BccSharp.Analysis.TorusLattice"
+   ],
+   "external_imports": [
+    "Mathlib.Algebra.Module.ZLattice.Covolume"
+   ]
+  },
+  "BccSharp.Analysis.CoulombPeriodization": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Analysis/CoulombPeriodization.lean",
+   "lines": 128,
+   "bytes": 5724,
+   "sha256": "5aa74e950535446950b23470f20cf68dac83290fb006d424580564b00987a000",
+   "deps": [
+    "BccSharp.Analysis.CoulombTransform",
+    "BccSharp.Analysis.PeriodLattice"
+   ],
+   "external_imports": [
+    "Mathlib.MeasureTheory.Constructions.Polish.StronglyMeasurable"
+   ]
+  },
+  "BccSharp.TwoSite.PeriodFourier": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/PeriodFourier.lean",
+   "lines": 431,
+   "bytes": 21447,
+   "sha256": "50906a089c1f3b006f2a7a679ee47543962eb1fef41153529b85383b9035aced",
+   "deps": [
+    "BccSharp.TwoSite.EwaldCellRepetition",
+    "BccSharp.Analysis.CoulombPeriodization",
+    "BccSharp.Analysis.FourierUniqueness"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ScreeningDifference": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ScreeningDifference.lean",
+   "lines": 139,
+   "bytes": 6778,
+   "sha256": "a81e2d16d8191e3350eac82734596edca0e929a3a269b1ef957be91162967ccf",
+   "deps": [
+    "BccSharp.TwoSite.GeneralSummability",
+    "BccSharp.TwoSite.PeriodFourier",
+    "BccSharp.TwoSite.ScreenedTransform"
+   ],
+   "external_imports": [
+    "Mathlib.MeasureTheory.Integral.DominatedConvergence"
+   ]
+  },
+  "BccSharp.TwoSite.ScreeningIndependence": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ScreeningIndependence.lean",
+   "lines": 345,
+   "bytes": 17896,
+   "sha256": "da4112dcc272b23099436d67e4fde6254f55cd74d1e75760afca780c8b8306ed",
+   "deps": [
+    "BccSharp.TwoSite.ScreeningDifference"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayGaussianPoisson": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayGaussianPoisson.lean",
+   "lines": 180,
+   "bytes": 8224,
+   "sha256": "93f29b9ca07608b05748709b02f8a9ec70d014532f16d4fe128e31443c282a3d",
+   "deps": [
+    "BccSharp.TwoSite.ScreeningIndependence",
+    "BccSharp.Analysis.CoulombFourier"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.RegularLimit": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/RegularLimit.lean",
+   "lines": 194,
+   "bytes": 9530,
+   "sha256": "dfcec016809d223d719cf250f9226554ee58ba1397f8e2633e4cc148b0489fff",
+   "deps": [
+    "BccSharp.TwoSite.ScreeningIndependence"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ReferencePoints": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ReferencePoints.lean",
+   "lines": 302,
+   "bytes": 13664,
+   "sha256": "fc864f45a827afdae055b0f8b5df803f8045f418a2707586177fe30e10523e33",
+   "deps": [
+    "BccSharp.TwoSite.SeriesModes",
+    "BccSharp.TwoSite.ReferencePhysical",
+    "BccSharp.TwoSite.RegularLimit"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Energy": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Energy.lean",
+   "lines": 173,
+   "bytes": 8162,
+   "sha256": "f16ad7a2f64f2d2a5e4d451b4d55071164126cad2789ff64b24a86b4ca5d604c",
+   "deps": [
+    "BccSharp.Lattice.GeometricLeaves",
+    "BccSharp.TwoSite.ReferencePoints"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.MeanValue": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/MeanValue.lean",
+   "lines": 95,
+   "bytes": 4531,
+   "sha256": "9fb25bae4bbd3f099134d15d7489bb5a9d9a931d5f1eb97801d29b095916e75e",
+   "deps": [
+    "BccSharp.Lattice.Curvature",
+    "BccSharp.Lattice.Energy"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StrainChart": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrainChart.lean",
+   "lines": 184,
+   "bytes": 8566,
+   "sha256": "9c9f2e1a60f7cee1866a568a03c5b0c76c9ea274181920af692454e638fb0387",
+   "deps": [
+    "BccSharp.Lattice.Energy"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StrictLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrictLeaves.lean",
+   "lines": 344,
+   "bytes": 16245,
+   "sha256": "64f2dd316c6967e5484cfd27ca322b1a387e33f065dadde8d5b5a99022fc8652",
+   "deps": [
+    "BccSharp.Lattice.Energy",
+    "BccSharp.TwoSite.ReferencePacket"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Escape": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Escape.lean",
+   "lines": 161,
+   "bytes": 7352,
+   "sha256": "145c8e2b66623e56e6c6689ee965b71e09f0a8dab984079c477db989846461ff",
+   "deps": [
+    "BccSharp.Lattice.StrictLeaves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.KernelJet": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/KernelJet.lean",
+   "lines": 160,
+   "bytes": 7206,
+   "sha256": "ca70159f0f2284abf9db4b80b6a65accf5ea48592a4f47b5517200d8ed2b0094",
+   "deps": [
+    "BccSharp.Lattice.StrictLeaves",
+    "BccSharp.Analysis.RadialPotential"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.HessianTail": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/HessianTail.lean",
+   "lines": 222,
+   "bytes": 11182,
+   "sha256": "73be53f6ce72f49755e96f22d8bb61dd589b1e74351255def6d1e6e07cf2663a",
+   "deps": [
+    "BccSharp.Lattice.KernelJet"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LdlCurvature": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LdlCurvature.lean",
+   "lines": 193,
+   "bytes": 8268,
+   "sha256": "9f0ac58537c5f8a845f0f23c9c9518abf12ce919c3bb3f0d76b01d26da502732",
+   "deps": [
+    "BccSharp.Lattice.Curvature",
+    "BccSharp.Lattice.HessianTail"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveLogTangent": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveLogTangent.lean",
+   "lines": 279,
+   "bytes": 13036,
+   "sha256": "df6b2049ef6390006f2ee76093da168c1443c36627bf33e7ea56e8718d883645",
+   "deps": [
+    "BccSharp.Lattice.KernelJet",
+    "BccSharp.TwoSite.SeriesModes"
+   ],
+   "external_imports": [
+    "Mathlib.MeasureTheory.Integral.IntegralEqImproper"
+   ]
+  },
+  "BccSharp.TwoSite.PrimitiveAnchor": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/PrimitiveAnchor.lean",
+   "lines": 135,
+   "bytes": 6109,
+   "sha256": "b4f25a4a9507961173e3b2371b12895175821d8005523c24efeee4f4c041b2bd",
+   "deps": [
+    "BccSharp.TwoSite.ReferencePoints"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Assembly": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Assembly.lean",
+   "lines": 154,
+   "bytes": 7371,
+   "sha256": "148936e58dc6e72523daa848215352835f7f2da7ee55be3d9ccca4642c5802e6",
+   "deps": [
+    "BccSharp.TwoSite.PrimitiveAnchor",
+    "BccSharp.TwoSite.Reduction",
+    "BccSharp.TwoSite.ReferenceKernels",
+    "BccSharp.TwoSite.ReferencePoints",
+    "BccSharp.TwoSite.Star"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverLatePackets": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverLatePackets.lean",
+   "lines": 417,
+   "bytes": 18855,
+   "sha256": "d2f6067f098b62923b219641187fee06457314aacbf61da33eda1bf8242161db",
+   "deps": [
+    "BccSharp.TwoSite.Assembly"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverClips": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverClips.lean",
+   "lines": 135,
+   "bytes": 6165,
+   "sha256": "9149b1829c01fbfaf4a1146fc59a4d3ab2728f6e95ca52f505f2f0b14a58ebb9",
+   "deps": [
+    "BccSharp.Cover.CoverLatePackets"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverCorner": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverCorner.lean",
+   "lines": 172,
+   "bytes": 8039,
+   "sha256": "b650b021edb8ec48f244e392b4a0b2b51ad061fc747c171bbfa4944c1be776f6",
+   "deps": [
+    "BccSharp.Cover.CoverClips"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverReflection": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverReflection.lean",
+   "lines": 291,
+   "bytes": 12874,
+   "sha256": "062b8d9a3dbb7dcb2ad68cedafc4986b796ddc8f3cd7bfcdb3f7c42f169a7dc6",
+   "deps": [
+    "BccSharp.Cover.CoverClips"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverAssembly": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverAssembly.lean",
+   "lines": 123,
+   "bytes": 5398,
+   "sha256": "953fb1f2e50f07860927e976cd48de56b240f2892b0eb92fd908e026affc4a26",
+   "deps": [
+    "BccSharp.Cover.CoverCorner",
+    "BccSharp.Cover.CoverReflection"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverEarlyTransport": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverEarlyTransport.lean",
+   "lines": 121,
+   "bytes": 4935,
+   "sha256": "789916025ce9b3a07594084337dfc1ea10e7475b3f72e8ebf1957d3a1551c672",
+   "deps": [
+    "BccSharp.Cover.CoverReflection"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverEarlyReplay": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverEarlyReplay.lean",
+   "lines": 225,
+   "bytes": 9763,
+   "sha256": "70044df330477f302ef2aedb076fe5caf9304ba9db17b76d162c32c0cd9b6e39",
+   "deps": [
+    "BccSharp.Cover.CoverEarlyTransport"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverEarlyMirror": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverEarlyMirror.lean",
+   "lines": 162,
+   "bytes": 8196,
+   "sha256": "7d71d588d296934b74d27886b20e7fbbcddda023f9e049f2df2d866173d3dfc6",
+   "deps": [
+    "BccSharp.Cover.CoverEarlyReplay"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverPacketDecode": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverPacketDecode.lean",
+   "lines": 181,
+   "bytes": 7991,
+   "sha256": "8ded5fdf50b8651dda778252094e30d4c451c8466f93c9c98e1e8811cfc97223",
+   "deps": [
+    "BccSharp.Cover.CoverAssembly"
+   ],
+   "external_imports": [
+    "Lean.Data.Json.Parser"
+   ]
+  },
+  "BccSharp.Cover.CoverReductionLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverReductionLeaves.lean",
+   "lines": 103,
+   "bytes": 4860,
+   "sha256": "18e73c2450157b78a1362da2b2af2c41910f7c1bd85051a60cf87001bfc6435f",
+   "deps": [
+    "BccSharp.Cover.CoverAssembly",
+    "BccSharp.Lattice.GeometricLeaves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverDirectOperands": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverDirectOperands.lean",
+   "lines": 245,
+   "bytes": 11970,
+   "sha256": "a28cdf3117faf4f9dc4e50b97e044725e1accb6009d3e91a6d0c134706f9f57e",
+   "deps": [
+    "BccSharp.Cover.CoverReductionLeaves",
+    "BccSharp.Lattice.StrictLeaves",
+    "BccSharp.Analysis.TrigBounds"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverExactRealGeometry": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverExactRealGeometry.lean",
+   "lines": 224,
+   "bytes": 10734,
+   "sha256": "5f7ef5c930796edadfae414b9b97cdb13c22205f5237f045791bc9d9f743389b",
+   "deps": [
+    "BccSharp.Cover.CoverCorner",
+    "BccSharp.Cover.CoverDirectOperands"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverNormalized": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverNormalized.lean",
+   "lines": 185,
+   "bytes": 8933,
+   "sha256": "d81bbfefc71854a58c25095daf7be69d972525f645922db4e8614595f456ec85",
+   "deps": [
+    "BccSharp.Cover.CoverReductionLeaves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverEarlyHandoff": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverEarlyHandoff.lean",
+   "lines": 505,
+   "bytes": 23182,
+   "sha256": "aa0def84c02aa695b92bea485399aa83429ec470218624f7731d32d90e7ef7e7",
+   "deps": [
+    "BccSharp.Cover.CoverEarlyMirror",
+    "BccSharp.Cover.CoverNormalized"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StarDefect": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StarDefect.lean",
+   "lines": 230,
+   "bytes": 9808,
+   "sha256": "cac7934af05e0f7f7609438c907a2704b766d200fa7435368d34d53a349deaec",
+   "deps": [
+    "BccSharp.TwoSite.PrimitiveAnchor",
+    "BccSharp.TwoSite.Star"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Polar": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Polar.lean",
+   "lines": 199,
+   "bytes": 8587,
+   "sha256": "351ec4f0c38a6fc8f781d19dc41b221dd346b96faa7bd82c413e2ea38f903345",
+   "deps": [
+    "BccSharp.Lattice.StarDefect"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.Matrix.Spectrum"
+   ]
+  },
+  "BccSharp.Lattice.E2Core": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/E2Core.lean",
+   "lines": 187,
+   "bytes": 8387,
+   "sha256": "44455f2587468e544a60301bcba81135090678a644be17fce26b0c7b60976e78",
+   "deps": [
+    "BccSharp.Lattice.Curvature",
+    "BccSharp.Lattice.Escape",
+    "BccSharp.Lattice.Polar"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverOpticalSurplus": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverOpticalSurplus.lean",
+   "lines": 77,
+   "bytes": 4232,
+   "sha256": "56fcafc6019715804a4083960574b3cbaf2950b469df9a14bb1f9f2010e9fe4d",
+   "deps": [
+    "BccSharp.Cover.CoverAssembly",
+    "BccSharp.Lattice.E2Core",
+    "BccSharp.Lattice.LdlCurvature"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StrainMetric": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrainMetric.lean",
+   "lines": 180,
+   "bytes": 9377,
+   "sha256": "d6ac7c1ddd8ea162052be97b9eed6ad92fd12c92703958e288d38142eb992b8c",
+   "deps": [
+    "BccSharp.Lattice.E2Core",
+    "BccSharp.Lattice.StrainChart"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverDirectSeries": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverDirectSeries.lean",
+   "lines": 389,
+   "bytes": 19771,
+   "sha256": "a986497d3212ad37be1807ba2d302935db3c34591ece4cc31a3d94c30fce642b",
+   "deps": [
+    "BccSharp.Cover.CoverDirectOperands",
+    "BccSharp.Lattice.StrainMetric"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverExactReal": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverExactReal.lean",
+   "lines": 99,
+   "bytes": 4748,
+   "sha256": "33093eb571a324a409fe633bc25333fe2054fde2fd649e3f9f02a4aeecd32a27",
+   "deps": [
+    "BccSharp.Cover.CoverDirectSeries",
+    "BccSharp.Cover.CoverExactRealGeometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverDirectMoment": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverDirectMoment.lean",
+   "lines": 244,
+   "bytes": 12915,
+   "sha256": "9dca13b0c39a1b079df263d5fd4ba8a08f878e2ac2c8f1b72e3ad297de991973",
+   "deps": [
+    "BccSharp.Cover.CoverExactReal",
+    "BccSharp.Lattice.KernelJet"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.BccFrame": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/BccFrame.lean",
+   "lines": 141,
+   "bytes": 6345,
+   "sha256": "82ffe49b52c35fc7d3403df435486f025dd17ed388434ee162ff285a0ec5c7aa",
+   "deps": [
+    "BccSharp.Lattice.StrainMetric"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.FirstJet": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/FirstJet.lean",
+   "lines": 285,
+   "bytes": 12493,
+   "sha256": "6342d695d370bfae5fbc24c57f785dd8c19f813d0f8dd8cd14622f4b79a64249",
+   "deps": [
+    "BccSharp.Lattice.KernelJet",
+    "BccSharp.Lattice.MeanValue",
+    "BccSharp.Lattice.StrainMetric"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.SpecialFunctions.Pow.Deriv"
+   ]
+  },
+  "BccSharp.Lattice.StrainE2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrainE2.lean",
+   "lines": 248,
+   "bytes": 12380,
+   "sha256": "260503b8282892136b1c3349a5c9738e2c4c52bdeb5eb244f09787544b5a0c46",
+   "deps": [
+    "BccSharp.Lattice.BccFrame"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.HandoffBox": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/HandoffBox.lean",
+   "lines": 397,
+   "bytes": 19885,
+   "sha256": "25c67e240d3cdebc3a99d22b50ac40f0605deead10455508af7be2a43704f3dc",
+   "deps": [
+    "BccSharp.Lattice.StrainE2"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.CubicMoves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/CubicMoves.lean",
+   "lines": 144,
+   "bytes": 5444,
+   "sha256": "a65e79dd9500dcf932bc6bdb7da5aeb4410cf9e78eca1a48603b7029af1f5a7b",
+   "deps": [
+    "BccSharp.Lattice.HandoffBox"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.CubicFold": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/CubicFold.lean",
+   "lines": 289,
+   "bytes": 13956,
+   "sha256": "62a4e19dc5618d279c4d10afa009dc776a63110b44bda85d796babfe48406bed",
+   "deps": [
+    "BccSharp.Lattice.CubicMoves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StrainFirstJet": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrainFirstJet.lean",
+   "lines": 205,
+   "bytes": 10170,
+   "sha256": "9fc6dca5813d471ff43d87209e6e546ee383c99ca8f00da8572c34f2ab21ec80",
+   "deps": [
+    "BccSharp.Lattice.FirstJet",
+    "BccSharp.Lattice.StrainE2"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.CenteredStrain": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/CenteredStrain.lean",
+   "lines": 323,
+   "bytes": 14679,
+   "sha256": "45a41f007e6f27574542c3ce8783b9ab7774e355cacc341244e83ea0be7703c8",
+   "deps": [
+    "BccSharp.Lattice.StrainFirstJet"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StrainOrigin": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrainOrigin.lean",
+   "lines": 170,
+   "bytes": 7391,
+   "sha256": "18d70a21191315bc3d8ae6896b0832e6a4cd12368887f8f55821006557aa893e",
+   "deps": [
+    "BccSharp.Lattice.CubicFold"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.FccDefect": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/FccDefect.lean",
+   "lines": 200,
+   "bytes": 8725,
+   "sha256": "603b75d082682b69289e6214af5e0de3167e19b5d16ebf9eb29e6fd18715282b",
+   "deps": [
+    "BccSharp.Lattice.StrainOrigin"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.FccStrain": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/FccStrain.lean",
+   "lines": 127,
+   "bytes": 6277,
+   "sha256": "b7fc3cfca84a2a7846b1262e2d26dbd4e7d885e9a44555456f258dc05cd8efb6",
+   "deps": [
+    "BccSharp.Lattice.StrainOrigin"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Routing": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Routing.lean",
+   "lines": 295,
+   "bytes": 15362,
+   "sha256": "fe8edb045f8645ca0bc75cb0ec653d0d2ae48319b9204f1ff96bb1c2d1d3128d",
+   "deps": [
+    "BccSharp.Lattice.CenteredStrain",
+    "BccSharp.Lattice.Curvature",
+    "BccSharp.Lattice.FccDefect",
+    "BccSharp.Lattice.FccStrain",
+    "BccSharp.Lattice.LdlCurvature",
+    "BccSharp.TwoSite.PrimitiveAnchor"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalObjective": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalObjective.lean",
+   "lines": 152,
+   "bytes": 7111,
+   "sha256": "037696ff1b9169b1a377b901f9ad421b3c1160f915caba82215a56507c759a7e",
+   "deps": [
+    "BccSharp.Lattice.Routing"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalSeries": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalSeries.lean",
+   "lines": 188,
+   "bytes": 10169,
+   "sha256": "56437c8b1418ebbd7c3f2ec07148f24b703ecd58dd6c535926c18e235b914955",
+   "deps": [
+    "BccSharp.Lattice.HessianTail",
+    "BccSharp.Lattice.LocalObjective",
+    "BccSharp.TwoSite.GeneralSummability"
+   ],
+   "external_imports": [
+    "Mathlib.Analysis.Calculus.SmoothSeries"
+   ]
+  },
+  "BccSharp.Lattice.SecondJet": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/SecondJet.lean",
+   "lines": 303,
+   "bytes": 14709,
+   "sha256": "20f7eccb5cc1154fb08e0d878f9ccb92af5223db4ed18bc13f6651dd7b969757",
+   "deps": [
+    "BccSharp.Lattice.LocalSeries",
+    "BccSharp.Lattice.StrainFirstJet"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalMetricJet": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalMetricJet.lean",
+   "lines": 579,
+   "bytes": 32987,
+   "sha256": "b1a3ccd9a9d6baca68e3081171d31c6a302a8bf83d1b9b3f53e9a267741974d3",
+   "deps": [
+    "BccSharp.Lattice.SecondJet"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalShell": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalShell.lean",
+   "lines": 398,
+   "bytes": 21974,
+   "sha256": "5ac02c18ca5b9138814f0d210f97fd072986a87ca0a2a1eda08184c1a72362a2",
+   "deps": [
+    "BccSharp.Lattice.LocalMetricJet"
+   ],
+   "external_imports": [
+    "Mathlib.Topology.Algebra.InfiniteSum.Real"
+   ]
+  },
+  "BccSharp.Lattice.LocalHessian": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalHessian.lean",
+   "lines": 176,
+   "bytes": 9309,
+   "sha256": "42f3c70cc6967eaced19222233bfcfd7bb8bfbbb17a50c1f0bd77d207e39ca0f",
+   "deps": [
+    "BccSharp.Lattice.LocalShell"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.ShortestVector": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/ShortestVector.lean",
+   "lines": 80,
+   "bytes": 2931,
+   "sha256": "efa5822ab9bd7ca88e9ab65cc4456c3c0f490b687750e7cc9f4a3365c0580677",
+   "deps": [
+    "BccSharp.Lattice.FccDefect"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.KzProjection": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/KzProjection.lean",
+   "lines": 238,
+   "bytes": 9302,
+   "sha256": "0f61ecbdffbb02b489c9265aafaf8bd5ab3f68037fea89b304fcc53616ed8a16",
+   "deps": [
+    "BccSharp.Lattice.ShortestVector"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.KzChoices": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/KzChoices.lean",
+   "lines": 174,
+   "bytes": 7766,
+   "sha256": "6cac380419b12181a7484168666c27373612b5c6c20ef538cec5250c62d23c92",
+   "deps": [
+    "BccSharp.Lattice.KzProjection"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.KzBasis": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/KzBasis.lean",
+   "lines": 243,
+   "bytes": 9581,
+   "sha256": "f2b4801be6713123ad938bdbe5fea7db78ad25f9aeec51e21ab03de1ea9ce97f",
+   "deps": [
+    "BccSharp.Lattice.KzChoices"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.KzChart": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/KzChart.lean",
+   "lines": 212,
+   "bytes": 8688,
+   "sha256": "b77d4bacae3ee34c58cb4744ec0277f1409c70c213361ade0f1f0d8a89dff642",
+   "deps": [
+    "BccSharp.Lattice.KzBasis"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.KzTransport": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/KzTransport.lean",
+   "lines": 214,
+   "bytes": 9533,
+   "sha256": "defc9c3364130011cbaeb0c9926e91f7a778373dc6248e45567b1060000a25ce",
+   "deps": [
+    "BccSharp.TwoSite.Assembly",
+    "BccSharp.Lattice.KzChart",
+    "BccSharp.Lattice.Routing"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Stationarity": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Stationarity.lean",
+   "lines": 79,
+   "bytes": 4020,
+   "sha256": "152560b6b525fafba31306dba2d871cc42955b5a4b5890b49758079bcec2de1f",
+   "deps": [
+    "BccSharp.Lattice.LocalObjective"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalDifferentiation": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalDifferentiation.lean",
+   "lines": 435,
+   "bytes": 25529,
+   "sha256": "2542a14e37fe53bd3c80835f1c5e540b116de8891a6aaeafb5c0fc36c10e5825",
+   "deps": [
+    "BccSharp.Lattice.LocalHessian",
+    "BccSharp.Lattice.Stationarity"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.FixedLocal": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/FixedLocal.lean",
+   "lines": 783,
+   "bytes": 37188,
+   "sha256": "c0f1259331c385fb73db91a86140c7884f6b6a77dd20e49c5fad6298c5101102",
+   "deps": [
+    "BccSharp.Lattice.LocalDifferentiation",
+    "BccSharp.Analysis.FixedPoint",
+    "BccSharp.Analysis.RoundedPolynomial"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.FixedLocalBall": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/FixedLocalBall.lean",
+   "lines": 842,
+   "bytes": 45516,
+   "sha256": "dfe8097e74288783bf1158bb22622e6b298ad7379371cacf7eed2add4e424715",
+   "deps": [
+    "BccSharp.Lattice.FixedLocal"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccData": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccData.lean",
+   "lines": 198,
+   "bytes": 302518,
+   "sha256": "643501b7933c08f72d956f9e930e25a7d058b77024599135a42bb5112f53aa15",
+   "deps": [
+    "BccSharp.Lattice.FixedLocalBall"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccAnalytic": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccAnalytic.lean",
+   "lines": 80,
+   "bytes": 5303,
+   "sha256": "3a08a00dfe2962d6bd201502a80798d527a4ceb356db89aa6187ca939075cb70",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccMetric": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccMetric.lean",
+   "lines": 154,
+   "bytes": 12147,
+   "sha256": "6b8ad2179f7e76ce95f9b6069ccab64f698d199475bad200e206081f4dcb8fd9",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccModes": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccModes.lean",
+   "lines": 131,
+   "bytes": 4669,
+   "sha256": "2c923a9a1ef461a745c8adf1a42616d8f271f8d3188aef3351e043d27bdbfae7",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccSlabBallDirect": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccSlabBallDirect.lean",
+   "lines": 72,
+   "bytes": 2611,
+   "sha256": "708f40d90f58e10c86d4989e72eaf95b410c12ec1f88fa85646c49ea0cb17df0",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccSlabQ00Dual": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccSlabQ00Dual.lean",
+   "lines": 72,
+   "bytes": 2464,
+   "sha256": "7ec749c02128748227f13e76f9dbe4df7b7bac9f2c7cb97ee9eac5788d64a7fa",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccSlabQ01Dual": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccSlabQ01Dual.lean",
+   "lines": 72,
+   "bytes": 2464,
+   "sha256": "a1a0163ae54f2b3b9e2a556726c52e78cd0985510fc6e51d63516db8fb11a523",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccSlabQ10Dual": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccSlabQ10Dual.lean",
+   "lines": 72,
+   "bytes": 2464,
+   "sha256": "fa7257cc360f59c9759a1c649f44ba08d59e5f48d6faf971bb69a7d3c9ab1a1e",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBccSlabQ11Dual": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBccSlabQ11Dual.lean",
+   "lines": 72,
+   "bytes": 2464,
+   "sha256": "90071681ee20fa98d76479f5147f1fcf3a18fc8be1d9f523602b5a0628bd8758",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsBcc": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsBcc.lean",
+   "lines": 103,
+   "bytes": 5730,
+   "sha256": "0da6db40936c9ae47b2eb9db506431ba6db693aff18865cd943498acd40e9000",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsBccAnalytic",
+    "BccSharp.Lattice.LocalBallsBccMetric",
+    "BccSharp.Lattice.LocalBallsBccModes",
+    "BccSharp.Lattice.LocalBallsBccSlabBallDirect",
+    "BccSharp.Lattice.LocalBallsBccSlabQ00Dual",
+    "BccSharp.Lattice.LocalBallsBccSlabQ01Dual",
+    "BccSharp.Lattice.LocalBallsBccSlabQ10Dual",
+    "BccSharp.Lattice.LocalBallsBccSlabQ11Dual"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsFccData": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsFccData.lean",
+   "lines": 116,
+   "bytes": 141511,
+   "sha256": "51bfafd0a14f488481629290fb55ae220613485cc58106cb8fd5d8c4a9085951",
+   "deps": [
+    "BccSharp.Lattice.FixedLocalBall"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsFccAnalytic": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsFccAnalytic.lean",
+   "lines": 78,
+   "bytes": 5204,
+   "sha256": "985ec8d7f58c12d2f207996c25c8540762ed50df70a82b78743f27b486a75d05",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsFccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsFccMetric": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsFccMetric.lean",
+   "lines": 74,
+   "bytes": 5076,
+   "sha256": "11cbe4c20551553d1f4e04754ce915c734c272459a8645498e040900701f77c1",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsFccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsFccModes": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsFccModes.lean",
+   "lines": 119,
+   "bytes": 4209,
+   "sha256": "168594436c31cb2f0b37f70abce7d3162471df84da0223fd8be73838289bb570",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsFccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsFccSlabBallDirect": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsFccSlabBallDirect.lean",
+   "lines": 66,
+   "bytes": 2383,
+   "sha256": "bc131be0b8f1fa51e12b20f104f09fc364f96c0ddcb775f6ceb9d95f3bb611c2",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsFccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsFccSlabBallDual": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsFccSlabBallDual.lean",
+   "lines": 66,
+   "bytes": 2295,
+   "sha256": "644ae47da06e8471d91daa447d5cb0287502093c026bc36727a5b55f46ddb847",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsFccData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBallsFcc": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBallsFcc.lean",
+   "lines": 51,
+   "bytes": 2434,
+   "sha256": "fb31a57a949f5281cfce08a3ed2ca092ede272049a56cde4d8be38a080446094",
+   "deps": [
+    "BccSharp.Lattice.LocalBallsFccAnalytic",
+    "BccSharp.Lattice.LocalBallsFccMetric",
+    "BccSharp.Lattice.LocalBallsFccModes",
+    "BccSharp.Lattice.LocalBallsFccSlabBallDirect",
+    "BccSharp.Lattice.LocalBallsFccSlabBallDual"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.LocalBalls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/LocalBalls.lean",
+   "lines": 31,
+   "bytes": 1383,
+   "sha256": "822beea6f1cea1a6a97e643e44298d39644e040caf620d92000ddb9dc8f3bbde",
+   "deps": [
+    "BccSharp.Lattice.KzTransport",
+    "BccSharp.Lattice.LocalBallsBcc",
+    "BccSharp.Lattice.LocalBallsFcc"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.GlobalValues": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/GlobalValues.lean",
+   "lines": 214,
+   "bytes": 9074,
+   "sha256": "8342b15609c9a26552205c2828d693a81ed086896ce34ad19b8e0a8fbbf27e64",
+   "deps": [
+    "BccSharp.Lattice.KzTransport"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.GlobalCompact": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/GlobalCompact.lean",
+   "lines": 514,
+   "bytes": 23713,
+   "sha256": "81f1252f23b7ffc0fcc92188b3625c8cbf79dedccde591368fe95720c4ae2459",
+   "deps": [
+    "BccSharp.TwoSite.GlobalValues"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.GlobalAttain": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/GlobalAttain.lean",
+   "lines": 114,
+   "bytes": 4769,
+   "sha256": "e24b7bb9dfd2d4bf754f2b9c96d6cf7e3bc86d1cd9ab4f9ceee7d6c6f3dd8426",
+   "deps": [
+    "BccSharp.TwoSite.GlobalCompact"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.GlobalDet": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/GlobalDet.lean",
+   "lines": 256,
+   "bytes": 11439,
+   "sha256": "07d60b18bbf925a00baaa2d5e4eb33407b96272763e9707095dca32e4b16a06e",
+   "deps": [
+    "BccSharp.TwoSite.GlobalAttain"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.GlobalRegister": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/GlobalRegister.lean",
+   "lines": 770,
+   "bytes": 32985,
+   "sha256": "f7e2b01db54ee14652f43ccfc515eedbac93186e5392fec3e7cd527338815537",
+   "deps": [
+    "BccSharp.TwoSite.GlobalDet"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.GlobalInputs": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/GlobalInputs.lean",
+   "lines": 55,
+   "bytes": 2581,
+   "sha256": "0d91eba2fc8e26f7c7c55de0146231987318d098f41fc4a8e201627125821b75",
+   "deps": [
+    "BccSharp.Cover.CoverAssembly",
+    "BccSharp.Cover.CoverEarlyHandoff",
+    "BccSharp.TwoSite.GlobalRegister"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.DefectInvariance": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/DefectInvariance.lean",
+   "lines": 760,
+   "bytes": 34536,
+   "sha256": "36a3ac8d382fcfffbf66ec02e4f55fcb0884eb2700db628609964653da00f48a",
+   "deps": [
+    "BccSharp.TwoSite.ExpectedStatement",
+    "BccSharp.TwoSite.GlobalInputs"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveGap": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveGap.lean",
+   "lines": 435,
+   "bytes": 20170,
+   "sha256": "9da666db83a71450344e2fe77b9ef25d1b18cddf0cff0ee1dadfe57b26fe6576",
+   "deps": [
+    "BccSharp.Lattice.StarDefect",
+    "BccSharp.TwoSite.DefectInvariance",
+    "BccSharp.TwoSite.GoodPoint"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage2Tangents": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage2Tangents.lean",
+   "lines": 141,
+   "bytes": 6846,
+   "sha256": "5cb7334b7a9e71524c3532b7b440e59bae78488a118c93b8b136ff321c8a357b",
+   "deps": [
+    "BccSharp.Cover.CoverDirectSeries",
+    "BccSharp.Lattice.KernelJet"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentE1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentE1.lean",
+   "lines": 684,
+   "bytes": 31000,
+   "sha256": "a8d8c2d7360a6e4827118258ef261f0f7cb3f9e7765dab9298a56ac3ac7ca351",
+   "deps": [
+    "BccSharp.Lattice.FixedLocal",
+    "BccSharp.Cover.Stage2Tangents"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentCover": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentCover.lean",
+   "lines": 206,
+   "bytes": 8547,
+   "sha256": "908d72bb375de9ebe3ae3b2c8666d2850e064685784914627bdb4783b3ce53f0",
+   "deps": [
+    "BccSharp.Lattice.LocalBalls",
+    "BccSharp.Lattice.TangentE1"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StrainTangent": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrainTangent.lean",
+   "lines": 1723,
+   "bytes": 79235,
+   "sha256": "172b67b668e116b6b280b8034d73c982cee407860bf131703ec2bd8e472b4ad5",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StrainLeaf": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrainLeaf.lean",
+   "lines": 1285,
+   "bytes": 59288,
+   "sha256": "665c2fa8267bfdad2ca3b7e4ac37a0807961fd7706c5552ffe09b655c76d3962",
+   "deps": [
+    "BccSharp.Lattice.StrainTangent"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.StrainAtlas": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/StrainAtlas.lean",
+   "lines": 594,
+   "bytes": 26092,
+   "sha256": "f43a843edebe09a6efbb7f4edbc1746afe4f3353fcc6ad429febdce17d19f7da",
+   "deps": [
+    "BccSharp.Lattice.StrainLeaf",
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableHalf0": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableHalf0.lean",
+   "lines": 175,
+   "bytes": 23910,
+   "sha256": "b8dd63223a0b95b66cc3e07f4b023c3b049ea42fdbe3d0e21cfd8e0fde8f9858",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableHalf1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableHalf1.lean",
+   "lines": 175,
+   "bytes": 23648,
+   "sha256": "f871b47b2d1dc80934137c09e644f88353c766268e3b48f1d37bab5999e69f81",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableHalf2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableHalf2.lean",
+   "lines": 175,
+   "bytes": 23689,
+   "sha256": "e86b01b29ea177d6c237f65af03c650434cfd5737d53a507c44a723142607fe2",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableHalf3": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableHalf3.lean",
+   "lines": 175,
+   "bytes": 24612,
+   "sha256": "5fac7479a15a8bb7d98c91db73be2dba1f23927fcf15cfe9f4847972480ea4e2",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableHalf4": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableHalf4.lean",
+   "lines": 90,
+   "bytes": 10885,
+   "sha256": "5aa069fa30733100219b7522aa05d2e7e183ca26f40fa19cd7a42231fd7f0ce9",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableOne0": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableOne0.lean",
+   "lines": 175,
+   "bytes": 23781,
+   "sha256": "ebf2f2c11b70d9778c76f443665b782984c1a485ae862feeaec19b285ee2eaca",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableOne1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableOne1.lean",
+   "lines": 175,
+   "bytes": 23519,
+   "sha256": "b53c6152f2bb39208669c0d72df02432ee22f89909121c97794d869a77a089cf",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableOne2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableOne2.lean",
+   "lines": 175,
+   "bytes": 23560,
+   "sha256": "76d5c4fb15be61a896baaced49dd2cf5b2ce11f3e7e67bba1d3ddc7331bfcc26",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableOne3": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableOne3.lean",
+   "lines": 175,
+   "bytes": 24487,
+   "sha256": "ba5ebb5cccdfab4aaf7ea5ac0ebdd67f53514a495b27945aecd3711b5a465fc9",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableOne4": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableOne4.lean",
+   "lines": 90,
+   "bytes": 10824,
+   "sha256": "a739ba2d3f02b35de49d6667bddbcdb84df418fc128ea553a8851524aee1400f",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentE1SampleRoot10": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentE1SampleRoot10.lean",
+   "lines": 175,
+   "bytes": 26357,
+   "sha256": "f433edeb4e1d27196ec36b633865ee5508ba268060a8aabc252cfeb1f6b78673",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf0": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf0.lean",
+   "lines": 94,
+   "bytes": 25219,
+   "sha256": "afc6ef666ffce7cb84a546031973643cec3f75d68e15654c7c452bf7ab2d63de",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf1.lean",
+   "lines": 94,
+   "bytes": 25048,
+   "sha256": "2cf950bba4667be2718d51728b0b254d6fd87e4d429522ce86f0e739bdb9f30d",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf2.lean",
+   "lines": 94,
+   "bytes": 24819,
+   "sha256": "b16ce71861268a8963a312bed6e0c2911274fd0c12e15fb739664b2439603dd0",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf3": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf3.lean",
+   "lines": 94,
+   "bytes": 24646,
+   "sha256": "f928e3da2149b13600bb8cc98037a095ab58c6ba4c8a74ac382529736e564452",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf4": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf4.lean",
+   "lines": 94,
+   "bytes": 24410,
+   "sha256": "da3de169925f7277dc3453bca41f243a29dba30385154899051b8169a45499ae",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf5": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf5.lean",
+   "lines": 94,
+   "bytes": 24255,
+   "sha256": "10392abfd177e091cab234a22f7d70a7fba3d49310ad9936252bb178e1c97bce",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf6": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf6.lean",
+   "lines": 94,
+   "bytes": 24153,
+   "sha256": "024ab95060d407253141d3bc66b0742a01a1c1c07aaeccb15ce3b05bfebfe435",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf7": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf7.lean",
+   "lines": 94,
+   "bytes": 24069,
+   "sha256": "e2b89c33e1a81d897306e94b64bdb5415840287b985afa7838f59b488cfd5aef",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableHalf8": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableHalf8.lean",
+   "lines": 39,
+   "bytes": 6699,
+   "sha256": "275a9b7605f6ede48a4339884277d10e7852973a00bad11f307302750dd1bb82",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne0": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne0.lean",
+   "lines": 94,
+   "bytes": 25230,
+   "sha256": "bcd9f185d7fe2e743c535c75dafec412d13af9156ed11954d66227b617d3a72e",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne1.lean",
+   "lines": 94,
+   "bytes": 25028,
+   "sha256": "8926d42a779c5ad211045ae3ff4c8b615dc196a0394865db333ed79d85040dfc",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne2.lean",
+   "lines": 94,
+   "bytes": 24814,
+   "sha256": "05f29bb6b877dfdcf0de3322b4624440dadf7dd75c09967d4ea839f976b42a37",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne3": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne3.lean",
+   "lines": 94,
+   "bytes": 24616,
+   "sha256": "32c33c631fa5755bddc68e34a20bf4f153624d88e7cd55c85e935c95fbc36761",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne4": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne4.lean",
+   "lines": 94,
+   "bytes": 24456,
+   "sha256": "5d13fe27e3c6724d146305ba42db9ca6af704a8dd1f9f3b0558e2861126ee6a2",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne5": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne5.lean",
+   "lines": 94,
+   "bytes": 24259,
+   "sha256": "f599023c67a8bea761beae2b80486cb57fb54e6b764e04daea61f63a5b7c1cf6",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne6": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne6.lean",
+   "lines": 94,
+   "bytes": 24110,
+   "sha256": "2ac9c2f966532ab4b80f2f68df49abf8ac77b2f7052f71b6939e2d4391fb6822",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne7": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne7.lean",
+   "lines": 94,
+   "bytes": 24035,
+   "sha256": "13da08c46e0711b6514b07d38a3c3e37115c8099d08ba56ebd3162d623398805",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTableOne8": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTableOne8.lean",
+   "lines": 59,
+   "bytes": 12547,
+   "sha256": "0ad4d7e716905cdc0391550032adb52eba4bb14cedd175196b59e526eb4df363",
+   "deps": [
+    "BccSharp.Lattice.TangentCover"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.TangentTables": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/TangentTables.lean",
+   "lines": 39,
+   "bytes": 30494,
+   "sha256": "3d243a7f7a42cc46efcc73b94c633a41bcc5d28d527250d2ba0fbafbdc11cf0c",
+   "deps": [
+    "BccSharp.Lattice.TangentTableHalf0",
+    "BccSharp.Lattice.TangentTableHalf1",
+    "BccSharp.Lattice.TangentTableHalf2",
+    "BccSharp.Lattice.TangentTableHalf3",
+    "BccSharp.Lattice.TangentTableHalf4",
+    "BccSharp.Lattice.TangentTableHalf5",
+    "BccSharp.Lattice.TangentTableHalf6",
+    "BccSharp.Lattice.TangentTableHalf7",
+    "BccSharp.Lattice.TangentTableHalf8",
+    "BccSharp.Lattice.TangentTableOne0",
+    "BccSharp.Lattice.TangentTableOne1",
+    "BccSharp.Lattice.TangentTableOne2",
+    "BccSharp.Lattice.TangentTableOne3",
+    "BccSharp.Lattice.TangentTableOne4",
+    "BccSharp.Lattice.TangentTableOne5",
+    "BccSharp.Lattice.TangentTableOne6",
+    "BccSharp.Lattice.TangentTableOne7",
+    "BccSharp.Lattice.TangentTableOne8"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.TableMirror": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/TableMirror.lean",
+   "lines": 32,
+   "bytes": 206379,
+   "sha256": "4e189e8f5578297885ebb979622d968a8b3692b4e020d1a76d2c79ffbb67dfa9",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas",
+    "BccSharp.Lattice.TangentTables"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Data": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Data.lean",
+   "lines": 760,
+   "bytes": 59275,
+   "sha256": "0fae8edd24a206aa8101be47d31b3d449dc7705f83aa04b50b28a7939d8d17c8",
+   "deps": [
+    "BccSharp.Lattice.Atlas.TableHalf0",
+    "BccSharp.Lattice.Atlas.TableHalf1",
+    "BccSharp.Lattice.Atlas.TableHalf2",
+    "BccSharp.Lattice.Atlas.TableHalf3",
+    "BccSharp.Lattice.Atlas.TableHalf4",
+    "BccSharp.Lattice.Atlas.TableMirror",
+    "BccSharp.Lattice.Atlas.TableOne0",
+    "BccSharp.Lattice.Atlas.TableOne1",
+    "BccSharp.Lattice.Atlas.TableOne2",
+    "BccSharp.Lattice.Atlas.TableOne3",
+    "BccSharp.Lattice.Atlas.TableOne4"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc0": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc0.lean",
+   "lines": 624,
+   "bytes": 274532,
+   "sha256": "237544edf1f3eee813489cc78c8223792e85e53ed0396ae2ef18eb162c93fc1c",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc1.lean",
+   "lines": 638,
+   "bytes": 211158,
+   "sha256": "a0b3b38877898268b3cab7b9c4f171ec935f6693147b75567753a796511f59d1",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc2.lean",
+   "lines": 575,
+   "bytes": 160898,
+   "sha256": "9ded2ed1d8e264b928d78fa31d3f73c2a90876afa730336cbc0c4f662fc41fdb",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc3": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc3.lean",
+   "lines": 603,
+   "bytes": 255305,
+   "sha256": "eb5a69504654d3314077122cf97c286ee847d6b14fd847ecee188b2236f0fc14",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc4": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc4.lean",
+   "lines": 666,
+   "bytes": 224701,
+   "sha256": "ace9fbc4e645b7aa8bd203d213dab64077934ed8296a130aaeb1b0ebe7cc3a07",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc5": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc5.lean",
+   "lines": 540,
+   "bytes": 151107,
+   "sha256": "43c4eedc2718e456793181564933019fb6f78a80ed562adb560da3982a21a53c",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc6": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc6.lean",
+   "lines": 624,
+   "bytes": 130209,
+   "sha256": "4f60adfce48f7fa5faac4b8f08a5abead55c28653855d08b6a1344bdc615c782",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc7": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc7.lean",
+   "lines": 666,
+   "bytes": 125780,
+   "sha256": "cb829519df36bed88da497d6d819c64f82a32fa01606e5237fda0d9f3dbee123",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Bcc8": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Bcc8.lean",
+   "lines": 442,
+   "bytes": 83317,
+   "sha256": "62d6d0168e410927355892ccca16429021bdfd4e16b61c8bf2f956d4ad27bf99",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Controls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Controls.lean",
+   "lines": 60,
+   "bytes": 3409,
+   "sha256": "4bce30b7f66ef796c53b3421720f34c117ac72e9cd6c9ec7406bba9f9d012bb9",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Fcc0": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Fcc0.lean",
+   "lines": 603,
+   "bytes": 247731,
+   "sha256": "35e78a37b0d344274ef0a557f0c77cfcfae1cdd931b4ca91db82fdb381e0bd89",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Fcc1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Fcc1.lean",
+   "lines": 596,
+   "bytes": 181848,
+   "sha256": "fd130a8c976b0b173eb3bbce78c30492a01a876b1e2d7bccf5edc3aa58fc3936",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Fcc2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Fcc2.lean",
+   "lines": 603,
+   "bytes": 244686,
+   "sha256": "08336fa8b0e441f5c1075b790a1a27f4eb4135cccc8728806a917165023396c2",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Fcc3": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Fcc3.lean",
+   "lines": 603,
+   "bytes": 135279,
+   "sha256": "ea41521d582e0cb322ffd53ee6162b1c570ab8c39bffd53980fe0988c6e6066a",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Fcc4": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Fcc4.lean",
+   "lines": 582,
+   "bytes": 106658,
+   "sha256": "496c7696d667137af77726b3788a175d7376d2f8796604c5af438e57573c4310",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Fcc5": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Fcc5.lean",
+   "lines": 141,
+   "bytes": 21586,
+   "sha256": "fc6d40bb2e67db24ee9149ecfd083b2c2fd35671e15b373be9aae38f99a0839a",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Data"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.Atlases": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/Atlases.lean",
+   "lines": 2415,
+   "bytes": 103649,
+   "sha256": "d5aec76c175e7e09318a796308c5229420223ef9fdc8a1663f69b4307aafabc5",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Bcc0",
+    "BccSharp.Lattice.Atlas.Bcc1",
+    "BccSharp.Lattice.Atlas.Bcc2",
+    "BccSharp.Lattice.Atlas.Bcc3",
+    "BccSharp.Lattice.Atlas.Bcc4",
+    "BccSharp.Lattice.Atlas.Bcc5",
+    "BccSharp.Lattice.Atlas.Bcc6",
+    "BccSharp.Lattice.Atlas.Bcc7",
+    "BccSharp.Lattice.Atlas.Bcc8",
+    "BccSharp.Lattice.Atlas.Fcc0",
+    "BccSharp.Lattice.Atlas.Fcc1",
+    "BccSharp.Lattice.Atlas.Fcc2",
+    "BccSharp.Lattice.Atlas.Fcc3",
+    "BccSharp.Lattice.Atlas.Fcc4",
+    "BccSharp.Lattice.Atlas.Fcc5"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.ForestBase": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/ForestBase.lean",
+   "lines": 110,
+   "bytes": 5077,
+   "sha256": "f23968e0f71d32229f75f08973d613089c2ce68b505f5544578033ed99b488a4",
+   "deps": [
+    "BccSharp.Lattice.TangentTables"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.ForestControls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/ForestControls.lean",
+   "lines": 48,
+   "bytes": 7359,
+   "sha256": "ba96add9e082cfb43f8ca8efaca17476d23293d699d794d52885b3878caebb8c",
+   "deps": [
+    "BccSharp.Lattice.ForestBase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.ForestG00": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/ForestG00.lean",
+   "lines": 5722,
+   "bytes": 624392,
+   "sha256": "5d5abf0ea002a5b707fe5f60d2396ab6d5b491cac806826380107bf81272000b",
+   "deps": [
+    "BccSharp.Lattice.ForestBase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.ForestG01": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/ForestG01.lean",
+   "lines": 1981,
+   "bytes": 778222,
+   "sha256": "b70389b8cd7057d51479e258bddd48b603832dcc9a8b1dcdb23876a4e2c0638c",
+   "deps": [
+    "BccSharp.Lattice.ForestBase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.ForestG02": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/ForestG02.lean",
+   "lines": 567,
+   "bytes": 98455,
+   "sha256": "84bc19f951be52886be13793f806c96ce809306b473aa2f82cec2cb39350de9e",
+   "deps": [
+    "BccSharp.Lattice.ForestBase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Forest": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Forest.lean",
+   "lines": 52,
+   "bytes": 21618,
+   "sha256": "ae84cda6f6f40fcf2862f74715c5007f938b65a658a4f3dbca00ece919201255",
+   "deps": [
+    "BccSharp.Lattice.ForestG00",
+    "BccSharp.Lattice.ForestG01",
+    "BccSharp.Lattice.ForestG02"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Lattice.Atlas.LatticeCase": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Lattice/Atlas/LatticeCase.lean",
+   "lines": 31,
+   "bytes": 1537,
+   "sha256": "44b48e1529214d16ebd55a91a836d62df49d69a436584eaca8f21d206aa38d35",
+   "deps": [
+    "BccSharp.Lattice.Atlas.Atlases",
+    "BccSharp.Lattice.Forest"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayAxial": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayAxial.lean",
+   "lines": 266,
+   "bytes": 13569,
+   "sha256": "6a91b1f33ae8280549821bb3168a105e1850078c737c380e6b43669524e1719e",
+   "deps": [
+    "BccSharp.Cover.Stage2Tangents"
+   ],
+   "external_imports": [
+    "Mathlib.Topology.Algebra.InfiniteSum.Real"
+   ]
+  },
+  "BccSharp.Cover.OverlayPlanarOperands": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayPlanarOperands.lean",
+   "lines": 120,
+   "bytes": 5996,
+   "sha256": "40f751cfeb59546480aca8c09666f8f9fe126064eed439e4939c3c62aa63bf0c",
+   "deps": [
+    "BccSharp.Cover.CoverEarlyTransport",
+    "BccSharp.Cover.OverlayAxial"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayPlanarAxialCheck": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayPlanarAxialCheck.lean",
+   "lines": 175,
+   "bytes": 8840,
+   "sha256": "e379d88be6ef0e129b727c053bf009dca3524958cab29456998746f8022a5bf1",
+   "deps": [
+    "BccSharp.Cover.OverlayPlanarOperands"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayPlanarPoisson": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayPlanarPoisson.lean",
+   "lines": 219,
+   "bytes": 11396,
+   "sha256": "fd89fc8144b0a968f811d3692bf9bb9798674f65149acc389e94fc0285cee78a",
+   "deps": [
+    "BccSharp.Cover.OverlayGaussianPoisson",
+    "BccSharp.Cover.OverlayPlanarOperands"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayHeatSplit": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayHeatSplit.lean",
+   "lines": 237,
+   "bytes": 12295,
+   "sha256": "1429d52a1282c5f7857b5e1d741966cd41131dff4d0a3e8c62f5aea8414fb354",
+   "deps": [
+    "BccSharp.Cover.OverlayPlanarPoisson"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayRadial": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayRadial.lean",
+   "lines": 204,
+   "bytes": 10021,
+   "sha256": "a77c055f26c63c5c5dd6b7ae106f5221f9b30f319489653d2c2b86aebd996ff8",
+   "deps": [
+    "BccSharp.Cover.OverlayPlanarAxialCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayLayerCheck": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayLayerCheck.lean",
+   "lines": 196,
+   "bytes": 9781,
+   "sha256": "964a1cd0bf74aeff09ab71bd88f055849034c376f3aa0ce46897a100f8ea2279",
+   "deps": [
+    "BccSharp.Cover.OverlayRadial"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayArea": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayArea.lean",
+   "lines": 271,
+   "bytes": 13471,
+   "sha256": "04c697281ce7e1b0ad3b81555ec66bdc1113e10ce7eb0becc8693218d6ac09da",
+   "deps": [
+    "BccSharp.Lattice.HessianTail",
+    "BccSharp.Cover.OverlayLayerCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayKernelCheck": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayKernelCheck.lean",
+   "lines": 62,
+   "bytes": 2521,
+   "sha256": "ce13aefc06a6587346d2cfce66e36aefac7b34d92f7831b5d243f54d9331d342",
+   "deps": [
+    "BccSharp.Cover.OverlayArea"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayScalarHeat": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayScalarHeat.lean",
+   "lines": 312,
+   "bytes": 16461,
+   "sha256": "6539c3e208410360458c0a68272721ee7557401025c2066c0da3407ca8495717",
+   "deps": [
+    "BccSharp.Cover.OverlayHeatSplit",
+    "BccSharp.Analysis.CoulombFourier",
+    "BccSharp.Analysis.RadialPotential"
+   ],
+   "external_imports": [
+    "Mathlib.MeasureTheory.Integral.IntegralEqImproper"
+   ]
+  },
+  "BccSharp.Cover.OverlayEnergyHeat": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayEnergyHeat.lean",
+   "lines": 270,
+   "bytes": 13756,
+   "sha256": "5a3317573e95a2dd4d9dec19ff16f790722b9f897dfc9c93069c5c5a996cf401",
+   "deps": [
+    "BccSharp.Cover.CoverDirectSeries",
+    "BccSharp.Cover.OverlayScalarHeat"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlaySharpLayer": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlaySharpLayer.lean",
+   "lines": 641,
+   "bytes": 30714,
+   "sha256": "9fb676fecf7b4d72c1f366dfd4c030ae59c642f6e1ce292d2fa557bdc5890a39",
+   "deps": [
+    "BccSharp.Cover.OverlayKernelCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlaySharpPass": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlaySharpPass.lean",
+   "lines": 69,
+   "bytes": 3004,
+   "sha256": "63401653043d430767c96793c4ccb0a8adf8a325e4b8f722a1042244aa91f941",
+   "deps": [
+    "BccSharp.Cover.OverlaySharpLayer"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayFixConst": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayFixConst.lean",
+   "lines": 84,
+   "bytes": 24698,
+   "sha256": "188a6c05d20ad4b590a129b656f1122c997c3664beccf0f15fa95cd6fc519708",
+   "deps": [
+    "BccSharp.Cover.OverlaySharpPass"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DirectFixConst": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DirectFixConst.lean",
+   "lines": 142,
+   "bytes": 152465,
+   "sha256": "59c7fa2dc30b0c08d683061b04c7f7abb14a53329d075b3948ce1c07e07f3ca5",
+   "deps": [
+    "BccSharp.Cover.OverlayFixConst"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayFix": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayFix.lean",
+   "lines": 341,
+   "bytes": 14069,
+   "sha256": "c95b0a24dd03be922615e288c0f406ffe36dba4cc8163b683bc29d9255ed656a",
+   "deps": [
+    "BccSharp.Cover.OverlayFixConst"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayZeroMode": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayZeroMode.lean",
+   "lines": 143,
+   "bytes": 6647,
+   "sha256": "9288b5eb5bc6825d184476c80f7d107c5cee782c640e04e1768fdb7fbc86b2d5",
+   "deps": [
+    "BccSharp.Cover.OverlayArea",
+    "BccSharp.Cover.OverlayEnergyHeat"
+   ],
+   "external_imports": [
+    "Mathlib.NumberTheory.ZetaValues"
+   ]
+  },
+  "BccSharp.Cover.OverlayLayerIntegral": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayLayerIntegral.lean",
+   "lines": 296,
+   "bytes": 16569,
+   "sha256": "51c2f566d0707c633ef15be5a4e20dda1ec77d73f5d47467683842077b6a382a",
+   "deps": [
+    "BccSharp.Cover.OverlayZeroMode"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayPhysicalIdentity": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayPhysicalIdentity.lean",
+   "lines": 62,
+   "bytes": 3115,
+   "sha256": "10c6eb9cb8eeec2c4ad9a97c915f35e9c44f58213ff5caf1846a13090c71258f",
+   "deps": [
+    "BccSharp.Cover.OverlayLayerIntegral"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayMontgomery": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayMontgomery.lean",
+   "lines": 493,
+   "bytes": 24016,
+   "sha256": "339a63ba932b62e864a9a8f978ed77418c47acc83412fae74b3279defc757a25",
+   "deps": [
+    "BccSharp.Cover.OverlayArea",
+    "BccSharp.Cover.OverlayEnergyHeat",
+    "BccSharp.Cover.OverlayPhysicalIdentity",
+    "BccSharp.TwoSite.SeriesModes",
+    "BccSharp.TwoSite.Montgomery"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlaySoundCheck": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlaySoundCheck.lean",
+   "lines": 90,
+   "bytes": 4445,
+   "sha256": "dc5cda06c401576da8b44851ed96d6f0c87f9ed54979fb5b75df0f296a993c86",
+   "deps": [
+    "BccSharp.Cover.OverlayMontgomery",
+    "BccSharp.Cover.OverlaySharpPass"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayFixSound": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayFixSound.lean",
+   "lines": 1498,
+   "bytes": 70255,
+   "sha256": "6dee2edf701e5bb04c90ec8a7742ed4bc9c1a3d70e9935eacdf2836eeba07a0e",
+   "deps": [
+    "BccSharp.Cover.OverlayFix",
+    "BccSharp.Cover.OverlaySoundCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayDecodeBase": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayDecodeBase.lean",
+   "lines": 53,
+   "bytes": 2245,
+   "sha256": "089db58d5ace59b75d1328a0344f8f925298da84044003abd538a583f7d084de",
+   "deps": [
+    "BccSharp.Cover.OverlayFixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayPilotLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayPilotLeaves.lean",
+   "lines": 479,
+   "bytes": 18945,
+   "sha256": "4e1f609fefe567e6bd84884b91650b7e9b9380ced18ad1d43d308a4a98caa255",
+   "deps": [
+    "BccSharp.Cover.OverlaySoundCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveConst": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveConst.lean",
+   "lines": 166,
+   "bytes": 212778,
+   "sha256": "5a0cb989d8435fb73c09713e936825b8092cff651013119dbbee621c0cb1a937",
+   "deps": [
+    "BccSharp.Cover.OverlayFixConst"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveKernel": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveKernel.lean",
+   "lines": 405,
+   "bytes": 18720,
+   "sha256": "cf712b21892e1670b7448940811f90e33bf8b0b0e8d7f5b027d1a4c1e7fb04ba",
+   "deps": [
+    "BccSharp.Cover.OverlayFixSound",
+    "BccSharp.Cover.AdaptiveConst",
+    "BccSharp.Cover.AdaptiveLogTangent"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CenteredAnchor": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CenteredAnchor.lean",
+   "lines": 192,
+   "bytes": 9712,
+   "sha256": "241f9b48ac114c93bc9e26c9cf56f5883b5c249beb93c22e0c01f5a33e219c0e",
+   "deps": [
+    "BccSharp.Lattice.StrainAtlas"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage2Geometry": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage2Geometry.lean",
+   "lines": 339,
+   "bytes": 15162,
+   "sha256": "04ea308069d31e10bc3303477f92518e7449c134132081d4480dbf12c20c3c36",
+   "deps": [
+    "BccSharp.Cover.CoverExactRealGeometry",
+    "BccSharp.Cover.Stage2Tangents"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveCorner": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveCorner.lean",
+   "lines": 803,
+   "bytes": 37635,
+   "sha256": "5ea2ecf4643bc4b4e9f235f112b53170c844a1c97f9f52c9a7517ddec936fe04",
+   "deps": [
+    "BccSharp.Cover.Stage2Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage2Bulk": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage2Bulk.lean",
+   "lines": 374,
+   "bytes": 18394,
+   "sha256": "2b010ecf70db36d833594ba027d2288e8ea674c79fd6da202c7845567e823be2",
+   "deps": [
+    "BccSharp.Cover.Stage2Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveSupport": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveSupport.lean",
+   "lines": 830,
+   "bytes": 37597,
+   "sha256": "e3333db5009c81ba545571d326835b5d7841a7a59274dc9a7fbffdc960e172b7",
+   "deps": [
+    "BccSharp.Cover.AdaptiveCorner",
+    "BccSharp.Cover.AdaptiveKernel",
+    "BccSharp.Cover.Stage2Bulk"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveGain": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveGain.lean",
+   "lines": 630,
+   "bytes": 28992,
+   "sha256": "1f2f8c299403d39789cdd08a60492d54d95486ba350a2bf60c242abb3e57dadd",
+   "deps": [
+    "BccSharp.Cover.AdaptiveSupport"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafKernels": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafKernels.lean",
+   "lines": 214,
+   "bytes": 9930,
+   "sha256": "8a167104d95ed571f1de66c50c6115a6731d78f0d521f10a19e7ce26834dbaa0",
+   "deps": [
+    "BccSharp.Cover.Stage2Bulk"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafCore": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafCore.lean",
+   "lines": 200,
+   "bytes": 8233,
+   "sha256": "0e533b035f71a3ca8fd4344a1e5c93154621a8712c0de236473b0ced4f84a118",
+   "deps": [
+    "BccSharp.Cover.JLeafKernels"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafChord": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafChord.lean",
+   "lines": 671,
+   "bytes": 33836,
+   "sha256": "6f7d63fbb307f9978bdf8e2aac5fab0d6b642c90a9f2797a595d6a05f849705d",
+   "deps": [
+    "BccSharp.Cover.JLeafCore"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafDefect": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafDefect.lean",
+   "lines": 910,
+   "bytes": 36672,
+   "sha256": "c5a275681b0b4d3911ae54936178069e93b58e4a3bf546430f2116346c93ea46",
+   "deps": [
+    "BccSharp.Cover.JLeafCore"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.DefectAnnulus": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/DefectAnnulus.lean",
+   "lines": 670,
+   "bytes": 28709,
+   "sha256": "45a064130e6f3113182a9e2bf186eab12942b8830601152224f6db3273dc985d",
+   "deps": [
+    "BccSharp.Cover.JLeafDefect"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.DefectCutoff": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/DefectCutoff.lean",
+   "lines": 419,
+   "bytes": 19243,
+   "sha256": "c4322e47b7689255e41488ec366bcc50ba4d4a82189a958031924e69435d9aca",
+   "deps": [
+    "BccSharp.TwoSite.DefectAnnulus"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafPhase": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafPhase.lean",
+   "lines": 242,
+   "bytes": 11831,
+   "sha256": "ec0fddb95777ece8ed8e41e2e35f30a62de47b187ebf60040db086e3e9f53d32",
+   "deps": [
+    "BccSharp.Cover.JLeafCore"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafTerms": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafTerms.lean",
+   "lines": 752,
+   "bytes": 36183,
+   "sha256": "5da4f6b39016263d3619ea997e05b99ffeb4456a08e5a061cfce31182e2b63a1",
+   "deps": [
+    "BccSharp.Cover.JLeafChord",
+    "BccSharp.Cover.JLeafPhase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafCheck": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafCheck.lean",
+   "lines": 277,
+   "bytes": 13998,
+   "sha256": "c65d7a0d1818c45512d45f12ccd0b266e028051402c80b036cd641290d4d05a3",
+   "deps": [
+    "BccSharp.Cover.JLeafDefect",
+    "BccSharp.Cover.JLeafTerms"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.DefectCutoffBox": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/DefectCutoffBox.lean",
+   "lines": 344,
+   "bytes": 17261,
+   "sha256": "4ebc624408a55f5e6e4b14e33090d747e6ebdaa88b869942cafd68180bbd85d7",
+   "deps": [
+    "BccSharp.TwoSite.DefectCutoff",
+    "BccSharp.Cover.JLeafCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafF": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafF.lean",
+   "lines": 94,
+   "bytes": 4853,
+   "sha256": "4e64c63397aa3630b16877930e4517a4afef906e8545ceb6173b1e78eaff3234",
+   "deps": [
+    "BccSharp.Cover.JLeafCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.FLeafSample": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/FLeafSample.lean",
+   "lines": 585,
+   "bytes": 78973,
+   "sha256": "9f0c785fb220e012232249c3c7046efe2dbf2351349d2ec0280b36b099976e17",
+   "deps": [
+    "BccSharp.Cover.JLeafF",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage2Phase": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage2Phase.lean",
+   "lines": 278,
+   "bytes": 14243,
+   "sha256": "2e46c91c03083ab80d87358d030afa4f08511590bb2ba057b95670473cdb827c",
+   "deps": [
+    "BccSharp.Cover.Stage2Bulk"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CoverEarlyDecode": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CoverEarlyDecode.lean",
+   "lines": 353,
+   "bytes": 17963,
+   "sha256": "1ae9be805a2326689f455c9dd685b666ca3168f3b3a386d2ad50fd6b72342a75",
+   "deps": [
+    "BccSharp.Cover.CoverDirectMoment",
+    "BccSharp.Cover.CoverDirectSeries",
+    "BccSharp.Cover.CoverEarlyHandoff",
+    "BccSharp.Cover.CoverPacketDecode",
+    "BccSharp.Cover.Stage2Phase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DirectFix": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DirectFix.lean",
+   "lines": 116,
+   "bytes": 5276,
+   "sha256": "4dc412673d4d8e26622408b050f4cc88dcb9fee9accef103f81b83c729df94cb",
+   "deps": [
+    "BccSharp.Cover.CoverEarlyDecode",
+    "BccSharp.Cover.DirectFixConst",
+    "BccSharp.Cover.OverlayFix"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DirectFixSound": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DirectFixSound.lean",
+   "lines": 463,
+   "bytes": 23460,
+   "sha256": "c613ac657fedad8ef5d8b57c955e2cfca0986db56ae50f65e146578aba7a106e",
+   "deps": [
+    "BccSharp.Cover.DirectFix",
+    "BccSharp.Cover.OverlayFixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DirectSidecarFix": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DirectSidecarFix.lean",
+   "lines": 312,
+   "bytes": 16525,
+   "sha256": "c4a7243c4bc0ac29d074bf49d894a47af68e3f58099487329991c61bf96e11dd",
+   "deps": [
+    "BccSharp.Cover.DirectFixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayCorpusGlue": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayCorpusGlue.lean",
+   "lines": 121,
+   "bytes": 6097,
+   "sha256": "cf036b41448541937b1a4b6de50ba2d76484551c8333715bb31290e6e923287e",
+   "deps": [
+    "BccSharp.Cover.CoverEarlyDecode",
+    "BccSharp.Cover.OverlayDecodeBase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayCorpusPrefix": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayCorpusPrefix.lean",
+   "lines": 365,
+   "bytes": 19736,
+   "sha256": "2615de5192c2ec2218fdb801a7690f1381b18803da99f612a98b0d5933097dc5",
+   "deps": [
+    "BccSharp.Cover.OverlayCorpusGlue",
+    "BccSharp.TwoSite.GlobalInputs"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.OverlayCorpusTrace": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/OverlayCorpusTrace.lean",
+   "lines": 562,
+   "bytes": 31611,
+   "sha256": "5726cb1696d0fcf4984431db7bcf82e18ac3ea0207ce6e81b8a8a386cedf3909",
+   "deps": [
+    "BccSharp.Cover.OverlayCorpusPrefix"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DataPath": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DataPath.lean",
+   "lines": 655,
+   "bytes": 30463,
+   "sha256": "f6bba8b46061557a7fb38ecd786c8465b86472e6ab7800ab914b4c645d83ff23",
+   "deps": [
+    "BccSharp.Cover.OverlayCorpusTrace"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DataPathPacker": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DataPathPacker.lean",
+   "lines": 449,
+   "bytes": 24296,
+   "sha256": "dd679b206d53229954d6527ddaa819d97393175641358b3fa9ab5843a09a978e",
+   "deps": [
+    "BccSharp.Cover.DataPath"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage2Fix": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage2Fix.lean",
+   "lines": 307,
+   "bytes": 13850,
+   "sha256": "8f5641c75b521426c9a85763ed77e26d33eb776fa8335b2316f13f5506c30382",
+   "deps": [
+    "BccSharp.Cover.DirectFixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage2FixSound": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage2FixSound.lean",
+   "lines": 1039,
+   "bytes": 54748,
+   "sha256": "2956c2d211271db5699a92753a049df374060634d64a90bbdd0ced4862912e7d",
+   "deps": [
+    "BccSharp.Cover.Stage2Fix"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage2Table": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage2Table.lean",
+   "lines": 186,
+   "bytes": 7903,
+   "sha256": "554a8a68d387fffd50ed276dd2b963108e80a31edd9554cc5c752273e0134215",
+   "deps": [
+    "BccSharp.Cover.Stage2FixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreGWeights": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreGWeights.lean",
+   "lines": 91,
+   "bytes": 69350,
+   "sha256": "c995b846304c2f77043a00ddcfd5ee33b40430a012a2d047fbe7ff245ad42cd1",
+   "deps": [
+    "BccSharp.Cover.OverlayFixConst"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreJet": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreJet.lean",
+   "lines": 385,
+   "bytes": 16130,
+   "sha256": "9b789ea2ced3e121548e35b445d5b21e9216cfe494901de6ff1aaa49b3350e87",
+   "deps": [
+    "BccSharp.Cover.OverlayFixSound",
+    "BccSharp.Cover.PlanarFibreGWeights"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreJetSound": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreJetSound.lean",
+   "lines": 887,
+   "bytes": 39410,
+   "sha256": "964f4b05e054f19c8d6d5c84a6eb6b76ac19ed98d9bb3cb43d1d1cc9d0f2e5bb",
+   "deps": [
+    "BccSharp.Lattice.KernelJet",
+    "BccSharp.Cover.PlanarFibreJet"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibrePlanar": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibrePlanar.lean",
+   "lines": 295,
+   "bytes": 14768,
+   "sha256": "332edaeecb5566ac297c26c460feb1168f3a8f99ce2d5b33f679fbdd9e384d8f",
+   "deps": [
+    "BccSharp.Cover.OverlayMontgomery"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTaylor": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTaylor.lean",
+   "lines": 521,
+   "bytes": 24446,
+   "sha256": "1889129cbee6d57204041b1e0a67e5beb6f5dacbd3330a204215b2e03646cb7d",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreJetSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LateCompose": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LateCompose.lean",
+   "lines": 136,
+   "bytes": 5654,
+   "sha256": "3c76d7fd6ff3890ceb829a8c5c153184fe2732b473596d324012eaa4ac62c8ae",
+   "deps": [
+    "BccSharp.Cover.CoverLatePackets"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTri": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTri.lean",
+   "lines": 434,
+   "bytes": 20012,
+   "sha256": "92a75588aaf65c2b84b57c03516b60e65b5f17cdde416c517030a3353bc84cd2",
+   "deps": [
+    "BccSharp.Cover.PlanarFibrePlanar",
+    "BccSharp.Cover.PlanarFibreTaylor",
+    "BccSharp.Cover.LateCompose"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriCell": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriCell.lean",
+   "lines": 30,
+   "bytes": 999,
+   "sha256": "aee7b79a05d5aac1bcba6140aac608dce3f1d5bf2b4b50170c2bd8af59cc0b7c",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTri"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriLargeData": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriLargeData.lean",
+   "lines": 102,
+   "bytes": 21861,
+   "sha256": "4f81a6452637d95f690bf865e5cb8a9cc347eef7f0ef3820929ea676b0196215",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTriCell"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriLarge0": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriLarge0.lean",
+   "lines": 39,
+   "bytes": 3113,
+   "sha256": "0ac549e8cdd92f65620ec6347d543c5d58daaef40ad66ea601d1abef96e76e87",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTriLargeData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriLarge1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriLarge1.lean",
+   "lines": 39,
+   "bytes": 3126,
+   "sha256": "d599856cd47cf9cc79ec15586b713f942344648091a2c395b5e718846646f0cd",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTriLargeData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriLarge2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriLarge2.lean",
+   "lines": 39,
+   "bytes": 3080,
+   "sha256": "33c9e8226e8975349301341a1179c1fac756c866c177330a29a3928f2f39844a",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTriLargeData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriLarge3": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriLarge3.lean",
+   "lines": 35,
+   "bytes": 2720,
+   "sha256": "ccfe49a668470655b190e2428c08d6403a6bece4addef574234d730ec1f93c3f",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTriLargeData"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriLarge": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriLarge.lean",
+   "lines": 25,
+   "bytes": 1985,
+   "sha256": "623bc8b146af68cad5aab0dd2283afae4c4d62289042c260d2ed8c9edcf1ad88",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTriLarge0",
+    "BccSharp.Cover.PlanarFibreTriLarge1",
+    "BccSharp.Cover.PlanarFibreTriLarge2",
+    "BccSharp.Cover.PlanarFibreTriLarge3"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriPilot": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriPilot.lean",
+   "lines": 72,
+   "bytes": 7263,
+   "sha256": "22e6675fb6dd7f4f539c3bfb783f426289d24cdf95f1963a43a3f86a034227fb",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTri"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriRelax": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriRelax.lean",
+   "lines": 466,
+   "bytes": 50320,
+   "sha256": "4a18332e3918afb2126ce51f9843d4f64610c9e6d622ff5a6b4530f20bfb9a63",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTri"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PlanarFibreTriSample": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PlanarFibreTriSample.lean",
+   "lines": 96,
+   "bytes": 10374,
+   "sha256": "3bd65ba3e267110b4c0e9d0951648f8afb96c05e1b75071e29458c88d9364362",
+   "deps": [
+    "BccSharp.Cover.PlanarFibreTri"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredDefect": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredDefect.lean",
+   "lines": 578,
+   "bytes": 26198,
+   "sha256": "86772803c5aad8d06c45d3ab5f08a108dee327d44ffc3070ad609b2d88f3c399",
+   "deps": [
+    "BccSharp.TwoSite.GlobalAttain",
+    "BccSharp.TwoSite.GlobalRegister",
+    "BccSharp.Cover.JLeafDefect"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredDefectCutoff": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredDefectCutoff.lean",
+   "lines": 1019,
+   "bytes": 47432,
+   "sha256": "66efbdbd1c0d069e361b5b86279f2c7881325a7e16650846dc43b4872a65fd74",
+   "deps": [
+    "BccSharp.TwoSite.DefectCutoffBox",
+    "BccSharp.Cover.LayeredDefect"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredScalar": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredScalar.lean",
+   "lines": 382,
+   "bytes": 18153,
+   "sha256": "8af81c4fa7fcd8ce8474f42525900a7228650259d416e26854d9c3ad42d8b34f",
+   "deps": [
+    "BccSharp.Cover.OverlayAxial"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredGain": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredGain.lean",
+   "lines": 641,
+   "bytes": 35218,
+   "sha256": "7535004c685763537a606299c1b71a7e0b82e9836ad91a612bcfe0b9809251da",
+   "deps": [
+    "BccSharp.Cover.OverlayArea",
+    "BccSharp.Cover.OverlayPhysicalIdentity",
+    "BccSharp.Cover.LayeredScalar"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredFix": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredFix.lean",
+   "lines": 255,
+   "bytes": 11232,
+   "sha256": "f4dfd7093c9752897ed742d1a76378983f758fd8944bf11b091bb98f39903f39",
+   "deps": [
+    "BccSharp.Cover.OverlayFix",
+    "BccSharp.Cover.OverlaySharpLayer",
+    "BccSharp.Cover.LayeredGain"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredFixSound": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredFixSound.lean",
+   "lines": 902,
+   "bytes": 44722,
+   "sha256": "3483ec17472493035ff539a128a182b31296de967c47088ee11693e485861fbb",
+   "deps": [
+    "BccSharp.Cover.OverlayFixSound",
+    "BccSharp.Cover.LayeredFix"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredRoute": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredRoute.lean",
+   "lines": 433,
+   "bytes": 20700,
+   "sha256": "cafd14be675470f8fc581cd5148e9e092f029ef1570fe8a151914bc233712da9",
+   "deps": [
+    "BccSharp.Cover.CoverEarlyTransport",
+    "BccSharp.Cover.JLeafCheck",
+    "BccSharp.Cover.LateCompose",
+    "BccSharp.Cover.LayeredDefect",
+    "BccSharp.Cover.LayeredFixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AnchorCatalogue": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AnchorCatalogue.lean",
+   "lines": 677,
+   "bytes": 31826,
+   "sha256": "a2a40be6d6544ea42ee434ae22a4fde9670f9045badd018632eda3c30ddbfe4a",
+   "deps": [
+    "BccSharp.Cover.LayeredDefectCutoff",
+    "BccSharp.Cover.LayeredRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveLayeredSign": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveLayeredSign.lean",
+   "lines": 962,
+   "bytes": 50310,
+   "sha256": "36e052da02ce16f2f0dcf53b740a5dcdf49a7a7b6d576593736e8d802316d10a",
+   "deps": [
+    "BccSharp.Cover.LayeredRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.CenteredRoute": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/CenteredRoute.lean",
+   "lines": 664,
+   "bytes": 33252,
+   "sha256": "329438c473e3ad3c1f26a0200781a4a2f3c1ba04a77b4e8d7b0ff2441227d631",
+   "deps": [
+    "BccSharp.Cover.CenteredAnchor",
+    "BccSharp.Cover.LayeredRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredHalfShift": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredHalfShift.lean",
+   "lines": 54,
+   "bytes": 2351,
+   "sha256": "c515eeb494c96f4f76b2a266ecde47e778a3a978cf5820c40242aaff5344310f",
+   "deps": [
+    "BccSharp.Cover.LayeredRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredCatRoute": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredCatRoute.lean",
+   "lines": 168,
+   "bytes": 7664,
+   "sha256": "057060181649f095d8893109b2d61a54a22904b96616eb69cf6db05b804ebf3e",
+   "deps": [
+    "BccSharp.Cover.AnchorCatalogue",
+    "BccSharp.Cover.LayeredHalfShift"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AnchorCatPilot011": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AnchorCatPilot011.lean",
+   "lines": 48,
+   "bytes": 2693,
+   "sha256": "2ca8879b7d70d6c0416dab7bb720dc1c2e28e2c7014ebf8b8d43cc1905e74f87",
+   "deps": [
+    "BccSharp.Cover.LayeredCatRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AnchorCatPilot111": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AnchorCatPilot111.lean",
+   "lines": 57,
+   "bytes": 3732,
+   "sha256": "d4ddf54c3058971a5da50c8ac9404c13f477a0bc828232546318353315051ec1",
+   "deps": [
+    "BccSharp.Cover.LayeredCatRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AnchorCatPilotEdge": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AnchorCatPilotEdge.lean",
+   "lines": 46,
+   "bytes": 2477,
+   "sha256": "f7ae6741edca8878b58ac977d94d5145fcabc922fc9b15621678e217b176515c",
+   "deps": [
+    "BccSharp.Cover.LayeredCatRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredFarRoute": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredFarRoute.lean",
+   "lines": 348,
+   "bytes": 16904,
+   "sha256": "d7a191bde09895ee3793293c559741cbcded72b06083d4ce9c32ff5f6dc3b9df",
+   "deps": [
+    "BccSharp.Cover.LayeredDefectCutoff",
+    "BccSharp.Cover.LayeredHalfShift"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveFarQ": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveFarQ.lean",
+   "lines": 197,
+   "bytes": 9762,
+   "sha256": "e2245d6807401e4416447f0eafb1e5e076e30dbcb3af5701c952aa50f871f30d",
+   "deps": [
+    "BccSharp.Cover.AdaptiveLayeredSign",
+    "BccSharp.Cover.LayeredFarRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveOptical": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveOptical.lean",
+   "lines": 520,
+   "bytes": 26611,
+   "sha256": "ddb18245d7366d8f35d1998c4cd5911255738af22861dc68a70b5da00a7b223a",
+   "deps": [
+    "BccSharp.Cover.AdaptiveFarQ",
+    "BccSharp.Cover.AdaptiveGap",
+    "BccSharp.TwoSite.DefectCutoffBox",
+    "BccSharp.TwoSite.DefectInvariance"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredFarPilotHalfShift": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredFarPilotHalfShift.lean",
+   "lines": 90,
+   "bytes": 6628,
+   "sha256": "e22e9d2f8b418d8c703f7e98e07c8b6c68befa28ab1dcdeca136155b136ca721",
+   "deps": [
+    "BccSharp.Cover.LayeredFarRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredFarPilotPlanarFibre": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredFarPilotPlanarFibre.lean",
+   "lines": 75,
+   "bytes": 5808,
+   "sha256": "fdae0ca5e0ab2b3659eeca8bb31a80e889d56d0c377258e784dbe20c8459d7a0",
+   "deps": [
+    "BccSharp.Cover.LayeredFarRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AnchorCatControls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AnchorCatControls.lean",
+   "lines": 26,
+   "bytes": 1091,
+   "sha256": "f94123d04d937d8c662a1079f67a64e10b27faa2e81c01109af1a42936da1cdf",
+   "deps": [
+    "BccSharp.Cover.LayeredCatRoute",
+    "BccSharp.Cover.LayeredFarPilotHalfShift",
+    "BccSharp.Cover.LayeredFarPilotPlanarFibre"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredFarControls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredFarControls.lean",
+   "lines": 44,
+   "bytes": 2480,
+   "sha256": "17e17088ea907c0bf80f411e233297bfcbf469e8acccdf5a9a294f7a7b479e0c",
+   "deps": [
+    "BccSharp.Cover.LayeredFarPilotPlanarFibre"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PrefixDirectItems": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PrefixDirectItems.lean",
+   "lines": 722,
+   "bytes": 33861,
+   "sha256": "11ff9c1860bf34454d641fe66d4bc9431929a481434be1e9563d3da3459aedb6",
+   "deps": [
+    "BccSharp.Cover.DirectFixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PrefixFixGlue": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PrefixFixGlue.lean",
+   "lines": 208,
+   "bytes": 10816,
+   "sha256": "a5db24a77f740f3b37559477ed6c55f7b234c7282fafdc623eaf89e3acb76796",
+   "deps": [
+    "BccSharp.Cover.DirectSidecarFix",
+    "BccSharp.Cover.Stage2Table"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PrefixStage2TangentTable": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PrefixStage2TangentTable.lean",
+   "lines": 10964,
+   "bytes": 596343,
+   "sha256": "43b95ac2ab8b957c7bb9e045c2aba24f4b961a0ba470cd03e815fa8c97c4d118",
+   "deps": [
+    "BccSharp.Cover.Stage2Table"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PrefixStage2PhaseItems": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PrefixStage2PhaseItems.lean",
+   "lines": 7304,
+   "bytes": 403812,
+   "sha256": "e6ddf2b4f4a2555a4e4af0dd64cf64082ff6f35e88295561d9216f8ea34a63f4",
+   "deps": [
+    "BccSharp.Cover.PrefixStage2TangentTable"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PrefixStage2TangentItems": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PrefixStage2TangentItems.lean",
+   "lines": 6953,
+   "bytes": 330665,
+   "sha256": "8d3cab205cd5dcb43f1c76266d9b53d6ee8c667e737d44db3e30256502efba14",
+   "deps": [
+    "BccSharp.Cover.PrefixStage2TangentTable"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.PrefixSidecarItems": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/PrefixSidecarItems.lean",
+   "lines": 1682,
+   "bytes": 299561,
+   "sha256": "c545ad7be9a19a746c577ae5551311a6729da8ad049993117d5f4ba273d1d1d1",
+   "deps": [
+    "BccSharp.Cover.DirectSidecarFix"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.ReplayCompose": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/ReplayCompose.lean",
+   "lines": 1001,
+   "bytes": 53495,
+   "sha256": "68c3d7b7e131f6555cb66bbe5a35a38baebbb0a8d2f0844b2cd66abaefd76a1f",
+   "deps": [
+    "BccSharp.Cover.DataPathPacker"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DataPathLater": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DataPathLater.lean",
+   "lines": 328,
+   "bytes": 16792,
+   "sha256": "074785d1d0b7d61a1e236afc56f5ef3cfa43391fc34f6ac89811f409f40c05e6",
+   "deps": [
+    "BccSharp.Cover.ReplayCompose"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DataPathLaterChecks": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DataPathLaterChecks.lean",
+   "lines": 78,
+   "bytes": 4596,
+   "sha256": "0178d70c2e85564b4f051a6d855f95e018f54f221782dcf4ca7fd0dafd6be3ee",
+   "deps": [
+    "BccSharp.Cover.DataPathLater"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DataPathLaterMirror": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DataPathLaterMirror.lean",
+   "lines": 230,
+   "bytes": 11898,
+   "sha256": "bbbf1b6f222efb65ccdd69f772e6c92691234ed72b6308efd4bfdb8f3b6bb3ab",
+   "deps": [
+    "BccSharp.Cover.ReplayCompose"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DataPathLaterRun": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DataPathLaterRun.lean",
+   "lines": 91,
+   "bytes": 5142,
+   "sha256": "caa628f1df380ae116a52cc37e6b1065bc6649166eb7dd05c2da2699fe7c5e2d",
+   "deps": [
+    "BccSharp.Cover.DataPathLaterChecks",
+    "BccSharp.Cover.DataPathLaterMirror"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.DataPathLaterOr": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/DataPathLaterOr.lean",
+   "lines": 129,
+   "bytes": 5927,
+   "sha256": "5c795aeee651100085acfdf8bacf04d804281ffc01a8509158566986a96671fb",
+   "deps": [
+    "BccSharp.Cover.DataPathLaterRun"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Round7Leaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Round7Leaves.lean",
+   "lines": 2836,
+   "bytes": 411654,
+   "sha256": "7f6a708e3f636dff305c9b70f622b2a599ce2e33618b9428848bf64c3f811ca4",
+   "deps": [
+    "BccSharp.Cover.JLeafCheck",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Round7Fixture": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Round7Fixture.lean",
+   "lines": 258,
+   "bytes": 12995,
+   "sha256": "795682c017a16d32d545716e8b79e836c63719939d2c3be42339cb8496240037",
+   "deps": [
+    "BccSharp.Cover.Round7Leaves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ScreenedSeries": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ScreenedSeries.lean",
+   "lines": 467,
+   "bytes": 23333,
+   "sha256": "571037004eb411e1434d2e6cde640b9067eae0bf3b89f3ed79cbff310c781f3c",
+   "deps": [
+    "BccSharp.Cover.CoverDirectSeries",
+    "BccSharp.TwoSite.ScreeningIndependence"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveScreened": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveScreened.lean",
+   "lines": 990,
+   "bytes": 49264,
+   "sha256": "49fc35da2caf2e084d349ef065ee559ab1bc2f2fe7337d3388245235566d87fd",
+   "deps": [
+    "BccSharp.Cover.AdaptiveGain",
+    "BccSharp.TwoSite.ScreenedSeries"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafScreenedTerms": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafScreenedTerms.lean",
+   "lines": 699,
+   "bytes": 35609,
+   "sha256": "802e977de95b755167f923dd252c3756ff5a7e7082926f3bbacce3ae6711c79e",
+   "deps": [
+    "BccSharp.Cover.JLeafCheck",
+    "BccSharp.TwoSite.ScreenedSeries"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JLeafScreenedCheck": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JLeafScreenedCheck.lean",
+   "lines": 146,
+   "bytes": 7559,
+   "sha256": "78ae7e0d243828bae52fbac2031cbe794459b86973ce17968490c44372e14873",
+   "deps": [
+    "BccSharp.Cover.JLeafScreenedTerms"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JensenCore": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JensenCore.lean",
+   "lines": 671,
+   "bytes": 33259,
+   "sha256": "54fd060b828e14f3ee5e7eaa0dc2bab82db06bdd773b94fc9facdf572c229aab",
+   "deps": [
+    "BccSharp.Lattice.KernelJet",
+    "BccSharp.Cover.JLeafF",
+    "BccSharp.Cover.JLeafScreenedTerms"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JensenFix": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JensenFix.lean",
+   "lines": 323,
+   "bytes": 13858,
+   "sha256": "a856a1df700c54c8c6afa30d7a8c54d49e71cc4a407779103e1480370493aed3",
+   "deps": [
+    "BccSharp.Cover.OverlayFix",
+    "BccSharp.Cover.JensenCore"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.JensenFixSound": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/JensenFixSound.lean",
+   "lines": 1091,
+   "bytes": 48023,
+   "sha256": "2931b779c394d9ddd487e58227c08f492c81135f3a9e35619ff9181a00e9a42c",
+   "deps": [
+    "BccSharp.Cover.OverlayFixSound",
+    "BccSharp.Cover.JensenFix"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5bPhase": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5bPhase.lean",
+   "lines": 127,
+   "bytes": 5503,
+   "sha256": "3a75cf38fe907b1d43d1ab988167adab4957dfde9f96d583d621fc79f76e8e8f",
+   "deps": [
+    "BccSharp.Cover.JensenFixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage3Stage6Compose": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage3Stage6Compose.lean",
+   "lines": 145,
+   "bytes": 7098,
+   "sha256": "85d4afe16cd7ff4837aaecdd8ce573b074c1535f272058d7fe3ce3f87916e7db",
+   "deps": [
+    "BccSharp.Cover.OverlayCorpusPrefix",
+    "BccSharp.Cover.Stage5bPhase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage3Stage6Hybrid": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage3Stage6Hybrid.lean",
+   "lines": 221,
+   "bytes": 9870,
+   "sha256": "c6f6216485174e75d8ce29b57e9b12b7f469fd3cd9eea747b991890f99619845",
+   "deps": [
+    "BccSharp.Cover.AdaptiveGain",
+    "BccSharp.Cover.Stage3Stage6Compose"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage3": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage3.lean",
+   "lines": 72,
+   "bytes": 2921,
+   "sha256": "cb5f0b05cb37579b80bd3f5088028345f9269849968e25cd63cd103488150420",
+   "deps": [
+    "BccSharp.Cover.Stage3Stage6Hybrid"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5bOpticalDefect": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5bOpticalDefect.lean",
+   "lines": 170,
+   "bytes": 11511,
+   "sha256": "0b3b2a3a19952c740053f9dc6acbe5c35e9610e817dd0b3f3f9cfb9bb3f524c2",
+   "deps": [
+    "BccSharp.TwoSite.DefectCutoffBox",
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Stage5bPhase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5bPhaseLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5bPhaseLeaves.lean",
+   "lines": 285,
+   "bytes": 17650,
+   "sha256": "1b2211cc7d383ac1de1880337a86f222c75d2e9dc871e281abc03e27147fe6fb",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Stage5bPhase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage6FLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage6FLeaves.lean",
+   "lines": 139,
+   "bytes": 8226,
+   "sha256": "bc50e9a5600739cd38fa0c5ac4f18c4c65a276b380687447f596ac8082a01ae7",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Stage3Stage6Compose"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage3Leaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage3Leaves.lean",
+   "lines": 568,
+   "bytes": 30057,
+   "sha256": "add2623fc9b7cb1a707cf82c6d221513a2b405c3df206d3e0bf6e29aa92ab4ca",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Stage3",
+    "BccSharp.Cover.Stage6FLeaves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5bStage6HybridThin": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5bStage6HybridThin.lean",
+   "lines": 985,
+   "bytes": 48188,
+   "sha256": "386f10691b8887bba51a56682b7fbc0c0f6c322bbd2e9f56de09fff53a780200",
+   "deps": [
+    "BccSharp.Cover.Stage3Stage6Hybrid",
+    "BccSharp.Cover.Stage5bPhaseLeaves",
+    "BccSharp.Cover.Stage6FLeaves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFix": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFix.lean",
+   "lines": 586,
+   "bytes": 25719,
+   "sha256": "4a414b8d34538705d1199029a0328ea68d1f72e4e388bb84b47165f2e3dca76d",
+   "deps": [
+    "BccSharp.Cover.OverlayFix",
+    "BccSharp.Cover.JLeafScreenedCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixPack": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixPack.lean",
+   "lines": 69,
+   "bytes": 2499,
+   "sha256": "0656958fb94098ddf529d79312e789a79b6f8ca764e381e34db1806a44c90765",
+   "deps": [
+    "BccSharp.Cover.LeafFix"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixSupport": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixSupport.lean",
+   "lines": 1401,
+   "bytes": 62872,
+   "sha256": "d2ff4b0e8d384ef00a62a714838cdb8ad276db94ac2e5af3f261a8287402481e",
+   "deps": [
+    "BccSharp.Cover.OverlayFixSound",
+    "BccSharp.Cover.LeafFix"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixSound": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixSound.lean",
+   "lines": 1047,
+   "bytes": 49614,
+   "sha256": "622b2a0db9970bd274df183e5bef5b67d71789eaad991bd27f8e7233d8382b5c",
+   "deps": [
+    "BccSharp.Cover.LeafFixSupport"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixDLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixDLeaves.lean",
+   "lines": 1528,
+   "bytes": 152324,
+   "sha256": "8e0fba4ce208dad64ed086b0dfcb3ded36c4cd3fce1e7b04107c7c077e48f88e",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixFLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixFLeaves.lean",
+   "lines": 868,
+   "bytes": 81380,
+   "sha256": "588fd109695626bcd44dc5517f6503c921fcd95a4a25e3cf4ec385f6a7886cc9",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixFar": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixFar.lean",
+   "lines": 434,
+   "bytes": 21365,
+   "sha256": "1b2a19aa61a44bd54022b961187d43f5f28d5e751af2a1e8712e8387b81d713d",
+   "deps": [
+    "BccSharp.TwoSite.DefectCutoffBox",
+    "BccSharp.Cover.LeafFixSound"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveDeficit": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveDeficit.lean",
+   "lines": 291,
+   "bytes": 14446,
+   "sha256": "30f9427018014845cd58dc6d1ef6f58a5a97d1d6e1824a63116a1cc2d28e3961",
+   "deps": [
+    "BccSharp.Cover.AdaptiveScreened",
+    "BccSharp.Cover.LeafFixFar"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveCheck": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveCheck.lean",
+   "lines": 214,
+   "bytes": 10010,
+   "sha256": "6c20780e5774ed6b4a3fc8d51f58d612aecf1b1b59cdf7e6a891d5319f568963",
+   "deps": [
+    "BccSharp.Cover.CoverEarlyHandoff",
+    "BccSharp.Cover.CoverReductionLeaves",
+    "BccSharp.Cover.OverlayFixSound",
+    "BccSharp.Cover.AdaptiveDeficit",
+    "BccSharp.Cover.AdaptiveOptical",
+    "BccSharp.Cover.AdaptiveScreened"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveThinItems": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveThinItems.lean",
+   "lines": 4160,
+   "bytes": 220575,
+   "sha256": "33def873fc9c4aed738015f4de96f3c711fe7b272c62b35fb78af7af2ff47d86",
+   "deps": [
+    "BccSharp.Cover.AdaptiveCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveThinK": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveThinK.lean",
+   "lines": 6116,
+   "bytes": 326228,
+   "sha256": "39d5dee33f99492107ee8fca0fabcc03a35e430dd1ad705e2f4e2a23c3873b73",
+   "deps": [
+    "BccSharp.Cover.AdaptiveCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveThinQ": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveThinQ.lean",
+   "lines": 209,
+   "bytes": 18162,
+   "sha256": "426e24ab161124528f19a0e2e0f82afa7fcf5f24414e039df21db47c28eaaae2",
+   "deps": [
+    "BccSharp.Cover.AdaptiveCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveThinV": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveThinV.lean",
+   "lines": 520,
+   "bytes": 29981,
+   "sha256": "4ee600e987539b1c099d8d7d9c84bb9cf04bc6e7701a4a5e438944927dc0aef8",
+   "deps": [
+    "BccSharp.Cover.AdaptiveCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.AdaptiveThinX": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/AdaptiveThinX.lean",
+   "lines": 54,
+   "bytes": 6401,
+   "sha256": "74bd61abb5decf1bf1ea7917841029e675b72cd2c8cdbce0c5a5fad43faf58b9",
+   "deps": [
+    "BccSharp.Cover.AdaptiveCheck"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage4Stage5a": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage4Stage5a.lean",
+   "lines": 511,
+   "bytes": 25593,
+   "sha256": "3466de5237e5a306a65eecbdc936710ecd2321ec49d78a52b259ba310b788ca3",
+   "deps": [
+    "BccSharp.Cover.OverlayCorpusPrefix",
+    "BccSharp.Cover.AdaptiveDeficit",
+    "BccSharp.Cover.AdaptiveOptical",
+    "BccSharp.Cover.LayeredFarRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage4Stage5aOpen": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage4Stage5aOpen.lean",
+   "lines": 63,
+   "bytes": 4906,
+   "sha256": "bbd17a53f6951043769d88e590fbcee1467bdbac97c688b03f0d7a6fb3a23ae8",
+   "deps": [
+    "BccSharp.Cover.Stage4Stage5a"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage4Thin1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage4Thin1.lean",
+   "lines": 145,
+   "bytes": 21249,
+   "sha256": "1fb9e775ebf658b3b30f4b629e7d75955f520020d932bf20abbc41a2e52a0961",
+   "deps": [
+    "BccSharp.Cover.Stage4Stage5a"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage4Thin2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage4Thin2.lean",
+   "lines": 172,
+   "bytes": 18892,
+   "sha256": "fb123f84acf2663817f34bcb456ae656ee1a6c07c18f4b6f0c9bc616021272d9",
+   "deps": [
+    "BccSharp.Cover.Stage4Stage5a"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage4Controls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage4Controls.lean",
+   "lines": 51,
+   "bytes": 2516,
+   "sha256": "170869cabeaf68ac84233c5ea552209266e4ba31de20431eecc6893ac86f425e",
+   "deps": [
+    "BccSharp.Cover.Stage4Thin1",
+    "BccSharp.Cover.Stage4Thin2"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5aAnchored": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5aAnchored.lean",
+   "lines": 267,
+   "bytes": 13287,
+   "sha256": "b189985310960cc5c17cf3c7daccb546927170cfc16effcf6074698471290969",
+   "deps": [
+    "BccSharp.Cover.Stage4Stage5a"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5aThin1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5aThin1.lean",
+   "lines": 165,
+   "bytes": 14643,
+   "sha256": "058c48c40b8ac813ea25a2a3505ce83b0f22b42a0b5320e71323ccc243d3cdfd",
+   "deps": [
+    "BccSharp.Cover.Stage4Stage5a"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage6Deficit": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage6Deficit.lean",
+   "lines": 284,
+   "bytes": 14619,
+   "sha256": "b66896345783fee3d77e62a12aa05a03b543b24f7cd637eb8cdac5e55efab053",
+   "deps": [
+    "BccSharp.TwoSite.DefectCutoffBox",
+    "BccSharp.Cover.Stage3Stage6Hybrid",
+    "BccSharp.Cover.LeafFixFar"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5bOptical": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5bOptical.lean",
+   "lines": 392,
+   "bytes": 18521,
+   "sha256": "bff3ae0f40b038c06b001452c5cc498a375713627b892a61cb1dbf85bb5d1c0e",
+   "deps": [
+    "BccSharp.Cover.Stage6Deficit",
+    "BccSharp.Cover.LayeredFarRoute",
+    "BccSharp.Cover.LayeredRoute"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5bOpticalLeaves0": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5bOpticalLeaves0.lean",
+   "lines": 299,
+   "bytes": 19089,
+   "sha256": "a20c1f92db2e8f03108df78cf430690f0f6d7684eaed54e83793a0dd5de8bb29",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Stage5bOptical",
+    "BccSharp.Cover.Stage5bPhase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5bOpticalLeaves1": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5bOpticalLeaves1.lean",
+   "lines": 167,
+   "bytes": 10317,
+   "sha256": "ce7b520fa56d6264906b6457cc5d1b9f97e813a7273747992d410b5ed83e47a0",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Stage5bOptical",
+    "BccSharp.Cover.Stage5bPhase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage5bOpticalLeaves2": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage5bOpticalLeaves2.lean",
+   "lines": 300,
+   "bytes": 20615,
+   "sha256": "02298086cf9d77b8fa904cf8f5cacc8344f65eea96841e423dac876ac3e1c125",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Stage5bOptical",
+    "BccSharp.Cover.Stage5bPhase"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Stage6DLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Stage6DLeaves.lean",
+   "lines": 294,
+   "bytes": 19788,
+   "sha256": "b95868e0e6a81fc76a2eb95d90e71a2da4dd83162a684b7549340655834fe81d",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Stage6Deficit",
+    "BccSharp.Cover.Stage6FLeaves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LateChecker": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LateChecker.lean",
+   "lines": 270,
+   "bytes": 15687,
+   "sha256": "0df762a71b19c3579ccb231aaaf601d4a4afd52743c4129cf643f764b39569a2",
+   "deps": [
+    "BccSharp.Cover.OverlayCorpusPrefix",
+    "BccSharp.Cover.CenteredRoute",
+    "BccSharp.Cover.PlanarFibreTri",
+    "BccSharp.Cover.LateCompose",
+    "BccSharp.Cover.LayeredCatRoute",
+    "BccSharp.Cover.LayeredFarRoute",
+    "BccSharp.Cover.LayeredHalfShift",
+    "BccSharp.Cover.LeafFixFar"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredHalfShiftPilot": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredHalfShiftPilot.lean",
+   "lines": 88,
+   "bytes": 6420,
+   "sha256": "793b95160b6db6843fcafd61523c26326531310ac1fc80efa5497b512e836ac2",
+   "deps": [
+    "BccSharp.Cover.LateChecker"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredPilot": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredPilot.lean",
+   "lines": 88,
+   "bytes": 6323,
+   "sha256": "426cddf75a1d425046ab878148243e055cce15190050743c89c3c7e820352bdc",
+   "deps": [
+    "BccSharp.Cover.LateChecker"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LayeredControls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LayeredControls.lean",
+   "lines": 47,
+   "bytes": 2182,
+   "sha256": "77e8dbbefc42855ff4d353eaae9b98bcecf7e997c8280a263f5d6be8d3affaa3",
+   "deps": [
+    "BccSharp.Cover.LayeredPilot"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixFarDLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixFarDLeaves.lean",
+   "lines": 2181,
+   "bytes": 212285,
+   "sha256": "da463c89216c19276c66c3a6546cec8bacf82a6538b8a95fc09a3a626c80838b",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixFar",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixFarJLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixFarJLeaves.lean",
+   "lines": 3048,
+   "bytes": 287900,
+   "sha256": "4a5c321d607fb100eb682e4990e55df15970fa95d38a86008bdfc53bf2d9b2e2",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixFar",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixFarControls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixFarControls.lean",
+   "lines": 55,
+   "bytes": 3116,
+   "sha256": "5b345c86d7827f4b13e6ef8f7834e2fa6eebeab831f74ac1809a84cf6ed2a060",
+   "deps": [
+    "BccSharp.Cover.LeafFixFarDLeaves",
+    "BccSharp.Cover.LeafFixFarJLeaves"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixJLeaves": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixJLeaves.lean",
+   "lines": 1524,
+   "bytes": 153051,
+   "sha256": "5d4d6df36eaa78acc201d20ea3eedcf3d15d7c76f729f32938c1c956f52a62d2",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixCorner": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixCorner.lean",
+   "lines": 681,
+   "bytes": 61828,
+   "sha256": "142456ef774029a2a8ceb9f1a4bc26f80c6870ba0f81748e41f1da1231150855",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixCornerEnv": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixCornerEnv.lean",
+   "lines": 1153,
+   "bytes": 107198,
+   "sha256": "67f0619a97e3b9e8c59cb5df3a44882ce255ca66043eb6a172c2f316b3facccc",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixCornerPacked": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixCornerPacked.lean",
+   "lines": 128,
+   "bytes": 35267,
+   "sha256": "f41fd3aafe5157f1f43dfb3d07c8199692ce968d217a74c9dddbe6347391d764",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixPack",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixCornerSample": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixCornerSample.lean",
+   "lines": 3944,
+   "bytes": 380437,
+   "sha256": "46e59171fa0f3a6b773e3baf1b84431b1cb9ca625eea48dfc6e98f1b79c6b3ef",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixRound5": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixRound5.lean",
+   "lines": 1099,
+   "bytes": 113028,
+   "sha256": "20dc19f0a0b6f8627970984f487e0f6ca33cf69c6ee3609b2899ad99058257f3",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixRound6": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixRound6.lean",
+   "lines": 1302,
+   "bytes": 136403,
+   "sha256": "6c71ef948cf8bdc4cc48c82722cf1de58f0c8454d46265880b600adb5cfbb082",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.LeafFixSound",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.LeafFixControls": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/LeafFixControls.lean",
+   "lines": 53,
+   "bytes": 2636,
+   "sha256": "bb4f6056579ece80691141899bb506d8e86ff1098fe865041289f8bc84c7f50b",
+   "deps": [
+    "BccSharp.Cover.LeafFixDLeaves",
+    "BccSharp.Cover.LeafFixCorner",
+    "BccSharp.Cover.LeafFixRound6"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Round6ScreenedLeaf": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Round6ScreenedLeaf.lean",
+   "lines": 612,
+   "bytes": 88527,
+   "sha256": "5ef978e0b7d089f408a383e2235cebf0e3b618d6874460132280b3c3ebe95bf6",
+   "deps": [
+    "BccSharp.Cover.JLeafScreenedCheck",
+    "BccSharp.Cover.Round7Geometry"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.Cover.Round6ScreenedFixture": {
+   "lib": "BccSharp",
+   "path": "BccSharp/Cover/Round6ScreenedFixture.lean",
+   "lines": 104,
+   "bytes": 5116,
+   "sha256": "837fc9e95d1718025bd42bc268c88be8ffd7df0e1ea0015ed101f3ec0de6d530",
+   "deps": [
+    "BccSharp.TwoSite.GoodPoint",
+    "BccSharp.Cover.Round6ScreenedLeaf"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.ScreenedModes": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/ScreenedModes.lean",
+   "lines": 232,
+   "bytes": 12163,
+   "sha256": "3a6284a3b16d09816b2df264eb064b452e006c9bc31bed852fd0b7b8f7a22272",
+   "deps": [
+    "BccSharp.TwoSite.ScreenedSeries"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.Spec": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/Spec.lean",
+   "lines": 1339,
+   "bytes": 57557,
+   "sha256": "ce8edc6048a88262377fd9808dd7a536a9ee048c47088dad7a21b6bb052e9f47",
+   "deps": [
+    "BccSharp.TwoSite.DefectInvariance"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.TwoSite.StatementFull": {
+   "lib": "BccSharp",
+   "path": "BccSharp/TwoSite/StatementFull.lean",
+   "lines": 499,
+   "bytes": 27271,
+   "sha256": "fd38ac81032693a2dffee7683fba06d1ce56306a488978b9cbf762df36360368",
+   "deps": [
+    "BccSharp.Cover.OverlayCorpusPrefix",
+    "BccSharp.TwoSite.Spec"
+   ],
+   "external_imports": []
+  },
+  "BccSharp.FinalAssembly": {
+   "lib": "BccSharp",
+   "path": "BccSharp/FinalAssembly.lean",
+   "lines": 1028,
+   "bytes": 68355,
+   "sha256": "97d1b245f1d2b99b7119337b23c0c7b50b404f5d2821e585967b46eb118f8b75",
+   "deps": [
+    "BccSharp.Lattice.Atlas.LatticeCase",
+    "BccSharp.Cover.AdaptiveCheck",
+    "BccSharp.Cover.Stage3",
+    "BccSharp.Cover.Stage3Stage6Hybrid",
+    "BccSharp.Cover.Stage4Stage5a",
+    "BccSharp.Cover.Stage5aAnchored",
+    "BccSharp.Cover.Stage5bOptical",
+    "BccSharp.Cover.Stage6Deficit",
+    "BccSharp.Cover.LateChecker",
+    "BccSharp.Cover.PrefixFixGlue",
+    "BccSharp.Cover.ReplayCompose",
+    "BccSharp.TwoSite.StatementFull"
+   ],
+   "external_imports": []
+  }
+ }
+}

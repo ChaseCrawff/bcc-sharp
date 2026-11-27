@@ -1,0 +1,27 @@
+grid 100000 {'R': 21504, 'E1': 78496} 0 106 s
+grid 200000 {'R': 51520, 'E1': 148480} 0 200 s
+grid 300000 {'R': 90880, 'E1': 209120} 0 282 s
+grid 400000 {'R': 143232, 'E1': 256768} 0 346 s
+grid 500000 {'R': 200704, 'E1': 299296} 0 404 s
+grid 600000 {'R': 274624, 'E1': 322915} 4922 441 s
+grid 700000 {'R': 351848, 'E1': 338725} 18854 477 s
+grid 800000 {'R': 444928, 'E1': 340688} 28768 490 s
+grid 900000 {'R': 541575, 'E1': 340833} 35184 500 s
+grid 1000000 {'R': 641410, 'E1': 340833} 35514 501 s
+grid done 1048576 {'R': 689971, 'E1': 340833} to split 17772 502 s
+depth 1 processed 35544 split 24035 counts {'R': 691701, 'E1': 350599, 'SF': 13} 574 s
+depth 2 processed 48070 split 17800 counts {'R': 700722, 'E1': 371500, 'SF': 361} 664 s
+depth 3 processed 35600 split 26511 counts {'R': 701763, 'E1': 378834, 'SF': 927, 'SB': 148} 757 s
+depth 4 processed 53022 split 38515 counts {'R': 702182, 'E1': 390055, 'SF': 2172, 'SB': 1770} 898 s
+depth 5 processed 77030 split 45276 counts {'R': 706111, 'E1': 410480, 'SF': 4598, 'SB': 6744} 1070 s
+depth 6 processed 90552 split 17361 counts {'R': 719956, 'E1': 459929, 'SF': 9265, 'SB': 11974} 1248 s
+depth 7 processed 34722 split 6753 counts {'R': 725669, 'E1': 476887, 'SF': 11404, 'SB': 15133} 1316 s
+depth 8 processed 13506 split 6468 counts {'R': 726157, 'E1': 480713, 'SF': 12415, 'SB': 16846} 1348 s
+depth 9 processed 12936 split 5221 counts {'R': 726377, 'E1': 484520, 'SF': 13702, 'SB': 19247} 1380 s
+depth 10 processed 10442 split 1828 counts {'R': 726889, 'E1': 488323, 'SF': 15444, 'SB': 21804} 1404 s
+depth 11 processed 3656 split 0 counts {'R': 727455, 'E1': 490653, 'SF': 15444, 'SB': 22564} 1412 s
+wrote results/lattice_boxes.json 1412 s
+
+real	23m32.895s
+user	0m0.000s
+sys	0m0.000s

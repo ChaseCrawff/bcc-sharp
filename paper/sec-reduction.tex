@@ -1,0 +1,92 @@
+\section{Reduction to a compact box}\label{sec:reduction}
+
+The class $\Ctwo$ is not compact: the period lattice can degenerate and the two cosets can approach each other. Both degenerations
+cost energy, and this confines every possible violation of the main inequality to an explicit box.
+
+\begin{lemma}[Separation]\label{lem:separation}
+Let $Y=R\,\Z^3\cup(R\,\Z^3+Rf)$ be a normalized two-site configuration and $X=\ltwo Y$. If $|Rm|\le\frac58$ for some
+$m\in\Z^3\setminus\{0\}$, or $|R(m+f)|\le\frac12$ for some $m\in\Z^3$, then $e(X)>\eF$.
+\end{lemma}
+
+\begin{proof}
+By \eqref{eq:H2}, $e(X)>\eF$ is equivalent to $\Htwo(M,f)>4+2\ltwo\eF=0.36099256\ldots$. All terms of $\Htwo$ are nonnegative
+and $\Ga(\frac12,\cdot)$ is decreasing. In the first case the same-coset terms $\pm m$ give
+$\Htwo\ge2\,\Ga(\frac12,\frac{25\pi}{64})=0.37503436\ldots$, and in the second case one cross-coset term gives
+$\Htwo\ge\Ga(\frac12,\frac\pi4)=0.42018281\ldots$.
+\end{proof}
+
+\begin{lemma}[Reduced period matrix]\label{lem:reduced}
+Every lattice $L\subset\R^3$ of covolume one has, after an orthogonal change of coordinates, a basis matrix
+\begin{equation}\label{eq:Rchart}
+  R=\begin{pmatrix}r_1&r_1x&r_1y\\0&r_2&r_2z\\0&0&r_3\end{pmatrix},\qquad r_1,r_2>0,\quad r_3=\frac1{r_1r_2},\qquad
+  x,y\in[0,\tfrac12],\quad z\in[-\tfrac12,\tfrac12],
+\end{equation}
+such that
+\begin{align}
+  |Rm|^2&\ge r_1^2 &&\text{for all }m\in\Z^3\setminus\{0\},\label{eq:R1}\\
+  r_2^2(m_2+zm_3)^2+r_3^2m_3^2&\ge r_2^2 &&\text{for all }(m_2,m_3)\in\Z^2\setminus\{0\}.\label{eq:R2}
+\end{align}
+Consequently
+\begin{equation}\label{eq:R3}
+  r_2\ge\tfrac{\sqrt3}2\,r_1,\qquad r_3\ge\tfrac{\sqrt3}2\,r_2,\qquad r_1\le\tfrac2{\sqrt3},\qquad r_2\le\Bigl(\frac2{\sqrt3\,r_1}\Bigr)^{1/2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+This is the reduction of Hermite and of Korkine and Zolotarev \cite{KorkineZolotareff1873}. Let $b_1$ be a shortest nonzero vector of
+$L$; it is primitive. The orthogonal projection $\pi(L)$ of $L$ onto $b_1^\perp$ is a lattice of rank two. Let $p$ be a shortest nonzero
+vector of $\pi(L)$, complete it to a basis $(p,p')$ of $\pi(L)$, and choose $b_2,b_3\in L$ with $\pi(b_2)=p$, $\pi(b_3)=p'$. Then
+$(b_1,b_2,b_3)$ is a basis of $L$. Subtracting integer multiples of $b_1$ from $b_2$, then of $b_2$ and of $b_1$ from $b_3$, we obtain
+$|x|,|y|,|z|\le\frac12$ in the coordinates in which $b_1\parallel e_1$ and $b_2\in\operatorname{span}(e_1,e_2)$; this changes neither
+$b_1$ nor $\pi(b_2)$. Replacing $b_2$ by $-b_2$ and reflecting the second coordinate maps $(x,y,z)$ to $(-x,y,-z)$, and replacing $b_3$
+by $-b_3$ and reflecting the third coordinate maps it to $(x,-y,-z)$; so $x,y\ge0$ can be arranged. Now \eqref{eq:R1} says that $b_1$
+is shortest, and \eqref{eq:R2} that $\pi(b_2)$ is shortest in $\pi(L)$. Taking $m=e_2$ in \eqref{eq:R1} gives
+$r_2^2\ge(1-x^2)r_1^2\ge\frac34r_1^2$, and $(m_2,m_3)=(0,1)$ in \eqref{eq:R2} gives $r_3^2\ge\frac34r_2^2$. Then
+$1=r_1r_2r_3\ge\frac{3\sqrt3}8r_1^3$ and $r_2^2\le\frac2{\sqrt3}r_2r_3=2/(\sqrt3\,r_1)$.
+\end{proof}
+
+We combine the five shape parameters of \eqref{eq:Rchart} and the fractional offset into one point $\kappa=(r_1,r_2,x,y,z,f)$ of
+$\R^8$, and we write $R(\kappa)$, $Y(\kappa)=R(\kappa)\Z^3\cup(R(\kappa)\Z^3+R(\kappa)f)$ and $X(\kappa)=\ltwo Y(\kappa)$. Let
+\begin{equation}\label{eq:Kbox}
+  \Kbox:=\bigl[\tfrac58,\tfrac{37}{32}\bigr]\times\bigl[\tfrac12,\tfrac{11}8\bigr]\times\bigl[0,\tfrac12\bigr]^2
+      \times\bigl[-\tfrac12,\tfrac12\bigr]\times\bigl[-\tfrac12,\tfrac12\bigr]^3\subset\R^8 ,
+\end{equation}
+and let $\Kbox_{\mathrm{red}}$ be the set of $\kappa\in\Kbox$ with $f\ne0$ for which \eqref{eq:R1} and \eqref{eq:R2} hold. On
+$\Kbox_{\mathrm{red}}$ we regard $e$, $D$ and $\Def$ as functions of $\kappa$.
+
+\begin{proposition}[Compact reduction]\label{prop:compact}
+Let $X\in\Ctwo$ with $e(X)\le\eF$; in particular, let $X\in\Ctwo$ with $\Def(X)\le0$. Then there are $Q\in\Or(3)$, $v\in\R^3$ and
+$\kappa\in\Kbox_{\mathrm{red}}$ with $X=QX(\kappa)+v$. Moreover the normalized configuration $Y(\kappa)$ satisfies
+\begin{equation}\label{eq:sepstrict}
+  |R(\kappa)m|>\tfrac58\ \ (m\in\Z^3\setminus\{0\}),\qquad |R(\kappa)(m+f)|>\tfrac12\ \ (m\in\Z^3).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+If $\Def(X)\le0$ then $e(X)\le\eB+\gap D(X)\le\eF$. Translate one point of $X$ to the origin and apply Lemma~\ref{lem:reduced} to the
+normalized period lattice; the offset is transformed with the basis and then reduced modulo $\Z^3$ to $f\in[-\frac12,\frac12]^3$, which
+changes neither $Y$ nor, by Lemma~\ref{lem:Hsym}, the energy. Lemma~\ref{lem:separation} gives \eqref{eq:sepstrict}; in particular
+$r_1>\frac58$ and $f\ne0$. With \eqref{eq:R3},
+\[
+  r_1\le\tfrac2{\sqrt3}<\tfrac{37}{32},\qquad r_2\ge\tfrac{5\sqrt3}{16}>\tfrac12,\qquad r_2<\Bigl(\frac{16}{5\sqrt3}\Bigr)^{1/2}<\tfrac{11}8 .\qedhere
+\]
+\end{proof}
+
+Thus Theorem~\ref{thm:main} is equivalent to the statement that $\Def\ge0$ on $\Kbox_{\mathrm{red}}$, with equality only at the
+points that represent the body-centred and face-centred cubic lattices. Three remarks on the chart $\Kbox$ are in order.
+
+\emph{Redundancy.} The chart is far from injective: a configuration has many reduced representatives (ties in \eqref{eq:R1},
+\eqref{eq:R2}, and the different descriptions of a lattice as a two-site configuration), and $\Kbox$ also contains points that are not
+reduced. Volumes in $\Kbox$ therefore have no invariant meaning, and we never use them. What matters is that every configuration with
+$e\le\eF$ has \emph{at least one} representative in $\Kbox_{\mathrm{red}}$, so that it suffices to prove the inequality at every point
+of $\Kbox_{\mathrm{red}}$; a region of $\Kbox$ may be discarded as soon as it is shown to be disjoint from $\Kbox_{\mathrm{red}}$, that is,
+as soon as one of the inequalities \eqref{eq:R1}, \eqref{eq:R2} is strictly violated throughout it for a fixed integer vector.
+
+\emph{Reflection.} The exchange of the two cosets is $f\mapsto-f$ at fixed shape, and it preserves $e$ and $D$ (Lemmas~\ref{lem:Hsym}
+and~\ref{lem:Dbasic}). It is therefore enough to treat the half $\Kbox^+:=\Kbox\cap\{f_1\ge0\}$.
+
+\emph{The equality points.} Each of the lattices $\ltwo\Bz$ and $\ltwo\Fz$ has seven descriptions as a two-site configuration, one for
+each sublattice of index two, and each description has finitely many reduced representatives in $\Kbox$; all of them have
+$f\in\frac12\Z^3$. By Theorem~\ref{thm:main} these will turn out to be the only points of $\Kbox_{\mathrm{red}}$ where $\Def=0$; near
+them $\Def$ is small. The cover treats them by the anchor rules of Section~\ref{ssec:anchor} (Remark~\ref{rem:margins}), and
+Section~\ref{sec:local} gives explicit neighbourhoods of them in which \eqref{eq:main} holds.

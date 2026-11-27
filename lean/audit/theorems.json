@@ -1,0 +1,782 @@
+[
+ {
+  "item": "A",
+  "supports": "Fourier coefficients of the periodic Coulomb kernel",
+  "name": "BccSharp.Coulomb.periodicGreen_fourier_on_cell",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "regular limit of the kernel at the origin",
+  "name": "BccSharp.Coulomb.periodicGreen_regular_limit",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "the kernel does not depend on the splitting parameter",
+  "name": "BccSharp.Coulomb.periodicGreen_screening_independent",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "the self term does not depend on the splitting parameter",
+  "name": "BccSharp.Coulomb.ewaldRegularSelf_screening_independent",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "Ewald energy per particle at every splitting parameter",
+  "name": "BccSharp.Coulomb.Full.greenPerParticle_screening",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "two-site energy equals the Ewald energy at every splitting parameter",
+  "name": "BccSharp.Coulomb.Full.ewald_energy",
+  "statement_printed": true
+ },
+ {
+  "item": "A",
+  "supports": "positive series (two sites) equals the Ewald energy",
+  "name": "BccSharp.Coulomb.green_two_eq_energy",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "positive series (two sites) at any screening",
+  "name": "BccSharp.Coulomb.ScreenedSeries.h₂_screened",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "positive series (one site) equals the Ewald energy",
+  "name": "BccSharp.Coulomb.BravaisCover.oneSiteEnergy_from_normalized",
+  "statement_printed": true
+ },
+ {
+  "item": "A",
+  "supports": "energy unchanged by a sublattice of finite index",
+  "name": "BccSharp.Coulomb.greenPerParticle_repetition",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "energy depends only on the point set",
+  "name": "BccSharp.Coulomb.DefectInvariance.energy_of_points_eq",
+  "statement_printed": true
+ },
+ {
+  "item": "A",
+  "supports": "energy invariant under orthogonal maps and translations",
+  "name": "BccSharp.Coulomb.DefectInvariance.energy_of_isometric",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "energy invariant under distance-preserving bijections",
+  "name": "BccSharp.Coulomb.Full.energy_of_rigidImage",
+  "statement_printed": true
+ },
+ {
+  "item": "A",
+  "supports": "energy under dilation",
+  "name": "BccSharp.Coulomb.greenPerParticle_scale",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "energy under dilation, two sites",
+  "name": "BccSharp.Coulomb.Full.density_energy",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "independent definition of the defect equals the interface's",
+  "name": "BccSharp.Coulomb.SpecBridge.specDefect_one",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect invariant under orthogonal images",
+  "name": "BccSharp.Coulomb.DefectInvariance.cappedDefect_orthogonal_image",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect invariant under orthogonal maps and translations",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_of_isometric",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect invariant under distance-preserving bijections",
+  "name": "BccSharp.Coulomb.Full.defect_of_rigidImage",
+  "statement_printed": true
+ },
+ {
+  "item": "A",
+  "supports": "defect under change of basis",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_rebase",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect under integer shifts of the offset",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_wrap",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect under exchange of the cosets",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_swap",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect at the second site",
+  "name": "BccSharp.Coulomb.DefectInvariance.siteDefect_second_site",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect equal at all points",
+  "name": "BccSharp.Coulomb.DefectInvariance.siteDefect_of_mem",
+  "statement_printed": true
+ },
+ {
+  "item": "A",
+  "supports": "defect equal at all points, independent definition",
+  "name": "BccSharp.Coulomb.SpecBridge.spec_physical",
+  "statement_printed": true
+ },
+ {
+  "item": "A",
+  "supports": "defect under repetition of the cell",
+  "name": "BccSharp.Coulomb.DefectInvariance.repetition_siteDefect",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect under dilation",
+  "name": "BccSharp.Coulomb.SpecBridge.spec_dilated",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "defect is an attained minimum",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_eq_min",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "every valid pair is a two-coset configuration",
+  "name": "BccSharp.Coulomb.SpecBridge.twoCoset_of_valid",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "every two-coset configuration is represented",
+  "name": "BccSharp.Coulomb.SpecBridge.valid_of_twoCoset",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "unions of two translates",
+  "name": "BccSharp.Coulomb.SpecBridge.spec_translates",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "BCC as rigid image",
+  "name": "BccSharp.Coulomb.SpecBridge.isBCC_iff_physical",
+  "statement_printed": false
+ },
+ {
+  "item": "A",
+  "supports": "FCC as rigid image",
+  "name": "BccSharp.Coulomb.SpecBridge.isFCC_iff_physical",
+  "statement_printed": false
+ },
+ {
+  "item": "B",
+  "supports": "BCC primitive-cell energy in its bracket",
+  "name": "BccSharp.Coulomb.Constants.bcc_primitive_enclosed",
+  "statement_printed": false
+ },
+ {
+  "item": "B",
+  "supports": "FCC primitive-cell energy in its bracket",
+  "name": "BccSharp.Coulomb.Constants.fcc_primitive_enclosed",
+  "statement_printed": false
+ },
+ {
+  "item": "B",
+  "supports": "e_BCC and e_FCC in the fifty-digit brackets",
+  "name": "BccSharp.Coulomb.Constants.reference_bounds",
+  "statement_printed": true
+ },
+ {
+  "item": "B",
+  "supports": "gap in its bracket and positive",
+  "name": "BccSharp.Coulomb.Constants.reference_gap_checked",
+  "statement_printed": true
+ },
+ {
+  "item": "B",
+  "supports": "gap to twenty digits",
+  "name": "BccSharp.Coulomb.Full.gap_value",
+  "statement_printed": true
+ },
+ {
+  "item": "C",
+  "supports": "lattice inequality and its equality case",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_proved",
+  "statement_printed": true
+ },
+ {
+  "item": "C",
+  "supports": "local balls at BCC and FCC",
+  "name": "BccSharp.Coulomb.BravaisCover.localBalls",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "tangent tables",
+  "name": "BccSharp.Coulomb.BravaisCover.TangentCover.Tables.tables_valid",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "grid of the reduced domain",
+  "name": "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.grid_check",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "cover of the reduced domain (5,671 leaves)",
+  "name": "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.forest_checked",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "BCC strain chart",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.bccClosed",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "FCC strain chart",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.fccClosed",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "strain charts give the sharp inequality",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.strainAtlases_sharp",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "lattice theorem from forest and atlases",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_from_tangent_forest_atlases",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "half-period two-site configurations are lattices",
+  "name": "BccSharp.Coulomb.primitive_anchor_exists",
+  "statement_printed": false
+ },
+ {
+  "item": "C",
+  "supports": "energy and D = 0 on BCC",
+  "name": "BccSharp.Coulomb.GlobalInputs.bccValues_proof",
+  "statement_printed": true
+ },
+ {
+  "item": "C",
+  "supports": "energy and D = 1 on FCC",
+  "name": "BccSharp.Coulomb.GlobalInputs.fccValues_proof",
+  "statement_printed": true
+ },
+ {
+  "item": "C",
+  "supports": "D(FCC) = 1",
+  "name": "BccSharp.Coulomb.GlobalInputs.fccSaturated_proof",
+  "statement_printed": false
+ },
+ {
+  "item": "D",
+  "supports": "compact reduction",
+  "name": "BccSharp.Coulomb.GlobalInputs.compact_proof",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "separation below the FCC energy",
+  "name": "BccSharp.Coulomb.GlobalInputs.separated_of_energy",
+  "statement_printed": false
+ },
+ {
+  "item": "D",
+  "supports": "registration, existence, reduced frame",
+  "name": "BccSharp.Coulomb.GlobalInputs.register_proof",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "registration, existence, every frame",
+  "name": "BccSharp.Coulomb.Full.register_frame",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "all analytic inputs",
+  "name": "BccSharp.Coulomb.GlobalInputs.globalAnalyticInputs",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "defect bound from a registration, cost at most 1/2",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.defect_le_regCost",
+  "statement_printed": false
+ },
+ {
+  "item": "D",
+  "supports": "defect bound from a registration, up to the cutoff",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_regCost_cutoff",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "defect bound from a registration with annular terms",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_annulus",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "defect bound on a box, cutoff",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_cutoff",
+  "statement_printed": false
+ },
+ {
+  "item": "D",
+  "supports": "defect bound on a box, far",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_far",
+  "statement_printed": false
+ },
+ {
+  "item": "D",
+  "supports": "growth of the defect away from an anchor",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.defect_transport",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "growth of the defect, cutoff form",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.defect_transport_cutoff",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "growth of the defect, annular form",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.defect_transport_annulus",
+  "statement_printed": false
+ },
+ {
+  "item": "D",
+  "supports": "Montgomery's inequality for the planar theta function",
+  "name": "BccSharp.Coulomb.Montgomery.theorem1",
+  "statement_printed": true
+ },
+ {
+  "item": "D",
+  "supports": "Jacobi triple product",
+  "name": "BccSharp.Coulomb.Montgomery.jacobi_triple_product",
+  "statement_printed": false
+ },
+ {
+  "item": "D",
+  "supports": "planar expansion of the energy",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.chart_energy_planar",
+  "statement_printed": false
+ },
+ {
+  "item": "D",
+  "supports": "planar integral above the triangular value",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.planarRegularized_ge_triangle",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "direct leaves of stage 2 (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.DirectFix.directFix_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "initial witnesses (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.EarlyReplay.initialWitnessCheckFix_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "direct-moment leaves of stage 2 (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithDirectSidecarFix_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 2 bulk and phase (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2Fix_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 2 with the tangent table (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2FixT_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar check, numerator form",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.energy_fcc_lt_of_numeratorCheck",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar check",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.overlayCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar check, sharpened",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.overlaySharpCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar check, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.overlayFixCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar check over earlier checks",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.checkWithOverlay_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "prefix check",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "prefix check, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix_sound",
+  "statement_printed": true
+ },
+ {
+  "item": "E",
+  "supports": "adaptive support checks",
+  "name": "BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "adaptive support checks with optical kinds",
+  "name": "BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull_sound",
+  "statement_printed": true
+ },
+ {
+  "item": "E",
+  "supports": "radial gap saturation",
+  "name": "BccSharp.Coulomb.CompactCover.AdaptiveOptical.gapSatOk_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "Jensen leaf check",
+  "name": "BccSharp.Coulomb.CompactCover.Jensen.Fix.fLeafCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 5 phase check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage5bPhase.stage5bPhaseCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 3 leaf check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage3Check_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 5 hybrid check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage5bHybridCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 5 optical check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage5bOptical.stage5bOpticalCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stages 4 and 5 check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage4stage5aCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 5 anchored check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage5aCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 6 checker",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6Check_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 6 D evaluator",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6DEval_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 6 checker with D evaluator",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6FullCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "stage 6 hybrid checker",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "J leaf",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.jleaf_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "F leaf",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.fleaf_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "J leaf at any screening",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Screened.jleaf_sound_screened",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "J leaf, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.jleafFix_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "D leaf, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.dleafFix_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "F leaf, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.fleafFix_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "late leaf certificates",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.certCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "late leaf check",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.lateCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "late leaf check, far",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.lateCheckFar_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar-anchor relative check",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "half-shift relative check",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "far transport",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.farTransportOk_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "relative certificate, far",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCertOkFar_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar-anchor relative check, far",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheckFar_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "half-shift relative check, far",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckFar_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar-fibre relative check, far",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.planarFibreCheckFar_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "anchor catalogue",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.catalogueOk_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "half-shift relative check, catalogue",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckCat_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "centered check",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.centeredCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "planar-fibre triangular check",
+  "name": "BccSharp.Coulomb.CompactCover.PlanarFibreTri.planarFibreTriCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "late checker",
+  "name": "BccSharp.Coulomb.CompactCover.LatePackets.lateChecker_sound",
+  "statement_printed": true
+ },
+ {
+  "item": "E",
+  "supports": "lattice: tangent E1 leaf check",
+  "name": "BccSharp.Coulomb.BravaisCover.TangentE1.leafCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "E",
+  "supports": "lattice: strain atlas leaf check",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainTangent.zLeafCheck_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "interface statement from analytic inputs and a cover",
+  "name": "BccSharp.Coulomb.assemble",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "statement from a checked corpus",
+  "name": "BccSharp.Coulomb.GlobalInputs.assemble_from_cover_corpus_cover",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "full statement from the interface statement",
+  "name": "BccSharp.Coulomb.Full.statementFull_of_statement",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "full statement equivalent to the interface statement",
+  "name": "BccSharp.Coulomb.Full.statementFull_iff",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "full statement on point sets",
+  "name": "BccSharp.Coulomb.Full.StatementFull.physical",
+  "statement_printed": true
+ },
+ {
+  "item": "F",
+  "supports": "soundness of the later checks",
+  "name": "BccSharp.Coulomb.FinalAssembly.later_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "soundness of the prefix check",
+  "name": "BccSharp.Coulomb.FinalAssembly.prefix_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "soundness of the late checker",
+  "name": "BccSharp.Coulomb.FinalAssembly.late_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "soundness of the merged pending checks",
+  "name": "BccSharp.Coulomb.FinalAssembly.mergedPending_sound",
+  "statement_printed": false
+ },
+ {
+  "item": "F",
+  "supports": "reduction, first form",
+  "name": "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay",
+  "statement_printed": true
+ },
+ {
+  "item": "F",
+  "supports": "reduction, first form, nothing pending",
+  "name": "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs",
+  "statement_printed": true
+ },
+ {
+  "item": "F",
+  "supports": "reduction, merged form",
+  "name": "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay_merged",
+  "statement_printed": true
+ },
+ {
+  "item": "F",
+  "supports": "reduction, merged form, nothing pending",
+  "name": "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs_merged",
+  "statement_printed": true
+ }
+]

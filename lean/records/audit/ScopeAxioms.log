@@ -1,0 +1,567 @@
+scope modules listed: 405; present in the environment: 405
+axioms declared in modules of the scope: 0 []
+constants checked: 47462 (theorems 28390, internal names 16205); using an axiom outside propext, Classical.choice, Quot.sound: 0
+axiom set [Classical.choice, Quot.sound, propext]: 35402 constants
+axiom set []: 7797 constants
+axiom set [propext]: 3668 constants
+axiom set [Quot.sound, propext]: 592 constants
+axiom set [Quot.sound]: 3 constants
+BccSharp.Coulomb.Full.ewald_energy : ∀ (q : BccSharp.Coulomb.TwoSite),
+  q.Valid →
+    ∀ {α : ℝ},
+      0 < α →
+        BccSharp.Coulomb.greenPerParticle α (BccSharp.Coulomb.physicalBasis q)
+            (BccSharp.Coulomb.physicalTwoPositions q) =
+          BccSharp.Coulomb.energy q
+BccSharp.Coulomb.BravaisCover.oneSiteEnergy_from_normalized : ∀ (R : BccSharp.Coulomb.Mat),
+  Matrix.det R = 1 →
+    BccSharp.Coulomb.oneSiteEnergy (BccSharp.Coulomb.Constants.fccLength⁻¹ • R) =
+      (BccSharp.Coulomb.BravaisCover.positiveSeries R - 3) / (2 * BccSharp.Coulomb.BravaisCover.bravaisScale)
+@BccSharp.Coulomb.DefectInvariance.energy_of_points_eq : ∀ {q q' : BccSharp.Coulomb.TwoSite},
+  q.Valid → q'.Valid → q'.points = q.points → BccSharp.Coulomb.energy q' = BccSharp.Coulomb.energy q
+@BccSharp.Coulomb.Full.energy_of_rigidImage : ∀ {q q' : BccSharp.Coulomb.TwoSite},
+  q.Valid →
+    q'.Valid →
+      TwoSiteSpec.RigidImage (BccSharp.Coulomb.SpecBridge.specPoints q) (BccSharp.Coulomb.SpecBridge.specPoints q') →
+        BccSharp.Coulomb.energy q = BccSharp.Coulomb.energy q'
+@BccSharp.Coulomb.Full.defect_of_rigidImage : ∀ {q q' : BccSharp.Coulomb.TwoSite},
+  TwoSiteSpec.RigidImage (BccSharp.Coulomb.SpecBridge.specPoints q) (BccSharp.Coulomb.SpecBridge.specPoints q') →
+    BccSharp.Coulomb.defect q = BccSharp.Coulomb.defect q'
+BccSharp.Coulomb.DefectInvariance.siteDefect_of_mem : ∀ (q : BccSharp.Coulomb.TwoSite) {x : BccSharp.Coulomb.Vec},
+  x ∈ q.points → BccSharp.Coulomb.DefectInvariance.siteDefect q.points x = BccSharp.Coulomb.defect q
+BccSharp.Coulomb.SpecBridge.spec_physical : ∀ (q : BccSharp.Coulomb.TwoSite),
+  q.Valid →
+    ∀ {y : TwoSiteSpec.E3},
+      y ∈ BccSharp.Coulomb.SpecBridge.physPoints q →
+        TwoSiteSpec.specSiteDefect BccSharp.Coulomb.ac (BccSharp.Coulomb.SpecBridge.physPoints q) y =
+          BccSharp.Coulomb.defect q
+BccSharp.Coulomb.Constants.reference_bounds : ∀ (ref : BccSharp.Coulomb.Constants.Reference),
+  ref.bracket.contains ref.energy
+BccSharp.Coulomb.Constants.reference_gap_checked : BccSharp.Coulomb.Constants.gapBracket.contains BccSharp.Coulomb.gap ∧
+  0 < BccSharp.Coulomb.gap
+BccSharp.Coulomb.Full.gap_value : 55640486656829268757 / 10 ^ 24 ≤ BccSharp.Coulomb.gap ∧
+  BccSharp.Coulomb.gap ≤ 55640486656829268758 / 10 ^ 24
+BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_proved : BccSharp.Coulomb.LatticeCase
+BccSharp.Coulomb.GlobalInputs.bccValues_proof : ∀ (q : BccSharp.Coulomb.TwoSite),
+  q.Valid →
+    BccSharp.Coulomb.IsBCC q →
+      BccSharp.Coulomb.energy q = BccSharp.Coulomb.energy BccSharp.Coulomb.bcc ∧ BccSharp.Coulomb.defect q = 0
+BccSharp.Coulomb.GlobalInputs.fccValues_proof : ∀ (q : BccSharp.Coulomb.TwoSite),
+  q.Valid →
+    BccSharp.Coulomb.IsFCC q →
+      BccSharp.Coulomb.energy q = BccSharp.Coulomb.energy BccSharp.Coulomb.fcc ∧ BccSharp.Coulomb.defect q = 1
+BccSharp.Coulomb.GlobalInputs.compact_proof : ∀ (q : BccSharp.Coulomb.TwoSite),
+  q.Valid →
+    BccSharp.Coulomb.energy q ≤ BccSharp.Coulomb.energy BccSharp.Coulomb.fcc →
+      ∃ p, BccSharp.Coulomb.ReducedRepresentative q p
+BccSharp.Coulomb.GlobalInputs.register_proof : ∀ (q : BccSharp.Coulomb.TwoSite) (p : BccSharp.Coulomb.Chart),
+  BccSharp.Coulomb.ReducedRepresentative q p → BccSharp.Coulomb.defect q < 1 → BccSharp.Coulomb.Registration q
+BccSharp.Coulomb.Full.register_frame : ∀ (q : BccSharp.Coulomb.TwoSite),
+  q.Valid →
+    BccSharp.Coulomb.energy q ≤ BccSharp.Coulomb.energy BccSharp.Coulomb.fcc →
+      BccSharp.Coulomb.defect q < 1 → TwoSiteSpec.RegisteredBound q.basis q.offset (BccSharp.Coulomb.defect q)
+BccSharp.Coulomb.GlobalInputs.globalAnalyticInputs : BccSharp.Coulomb.GlobalAnalyticInputs
+BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_regCost_cutoff : ∀ (B N U : Fin 3 → Fin 3 → ℚ) (f0 : Fin 3 → ℚ)
+  (n : BccSharp.Coulomb.IntVec),
+  BccSharp.Coulomb.CompactCover.JLeaf.registrationCheck B N U f0 = Bool.true →
+    BccSharp.Coulomb.CompactCover.JLeaf.det3Q N = 1 →
+      ∀ (p : BccSharp.Coulomb.Chart),
+        (BccSharp.Coulomb.chartPoint p).Valid →
+          BccSharp.Coulomb.CompactCover.JLeaf.regCost N U (fun i => f0 i + ↑(n i)) p ≤
+              BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.dSharp →
+            BccSharp.Coulomb.defect (BccSharp.Coulomb.chartPoint p) ≤
+              BccSharp.Coulomb.CompactCover.JLeaf.regCost N U (fun i => f0 i + ↑(n i)) p
+BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_annulus : ∀ (B N U : Fin 3 → Fin 3 → ℚ) (f0 : Fin 3 → ℚ)
+  (n : BccSharp.Coulomb.IntVec),
+  BccSharp.Coulomb.CompactCover.JLeaf.registrationCheck B N U f0 = Bool.true →
+    ∀ (p : BccSharp.Coulomb.Chart),
+      BccSharp.Coulomb.defect (BccSharp.Coulomb.chartPoint p) ≤
+        BccSharp.Coulomb.CompactCover.JLeaf.regCost N U (fun i => f0 i + ↑(n i)) p +
+          BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.annPhi N (fun i => f0 i + ↑(n i)) p
+BccSharp.Coulomb.CompactCover.Layered.defect_transport : ∀ (q : BccSharp.Coulomb.TwoSite),
+  q.Valid →
+    (∀ (n : BccSharp.Coulomb.IntVec),
+        n ≠ 0 → (5 / 8) ^ 2 < BccSharp.Coulomb.sq (Matrix.mulVec q.basis (BccSharp.Coulomb.castVec n))) →
+      ∀ (f₀ : BccSharp.Coulomb.Vec),
+        BccSharp.Coulomb.HalfClass f₀ →
+          (∀ (n : BccSharp.Coulomb.IntVec),
+              (1 / 2) ^ 2 < BccSharp.Coulomb.sq (Matrix.mulVec q.basis (BccSharp.Coulomb.castVec n + f₀))) →
+            ∀ (n : BccSharp.Coulomb.IntVec),
+              BccSharp.Coulomb.defect (BccSharp.Coulomb.anchorOf q f₀) +
+                    200 * BccSharp.Coulomb.sq (Matrix.mulVec q.basis (q.offset - f₀ - BccSharp.Coulomb.castVec n)) ≤
+                  1 / 2 →
+                BccSharp.Coulomb.defect q ≤
+                  BccSharp.Coulomb.defect (BccSharp.Coulomb.anchorOf q f₀) +
+                    200 * BccSharp.Coulomb.sq (Matrix.mulVec q.basis (q.offset - f₀ - BccSharp.Coulomb.castVec n))
+BccSharp.Coulomb.CompactCover.Layered.defect_transport_cutoff : ∀ (q : BccSharp.Coulomb.TwoSite),
+  q.Valid →
+    (∀ (n : BccSharp.Coulomb.IntVec),
+        n ≠ 0 → (5 / 8) ^ 2 < BccSharp.Coulomb.sq (Matrix.mulVec q.basis (BccSharp.Coulomb.castVec n))) →
+      ∀ (f₀ : BccSharp.Coulomb.Vec),
+        BccSharp.Coulomb.HalfClass f₀ →
+          (∀ (n : BccSharp.Coulomb.IntVec),
+              (1 / 2) ^ 2 < BccSharp.Coulomb.sq (Matrix.mulVec q.basis (BccSharp.Coulomb.castVec n + f₀))) →
+            ∀ (n : BccSharp.Coulomb.IntVec),
+              BccSharp.Coulomb.defect (BccSharp.Coulomb.anchorOf q f₀) +
+                    200 * BccSharp.Coulomb.sq (Matrix.mulVec q.basis (q.offset - f₀ - BccSharp.Coulomb.castVec n)) ≤
+                  BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.dSharp →
+                BccSharp.Coulomb.defect q ≤
+                  BccSharp.Coulomb.defect (BccSharp.Coulomb.anchorOf q f₀) +
+                    200 * BccSharp.Coulomb.sq (Matrix.mulVec q.basis (q.offset - f₀ - BccSharp.Coulomb.castVec n))
+BccSharp.Coulomb.Montgomery.theorem1 : BccSharp.Coulomb.Montgomery.Theorem1
+BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix_sound : ∀
+  (geometric : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.NormalizedProposal)
+  (direct : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Cell)
+  (sidecar :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.DirectSidecarProposal)
+  (bulkT :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.Stage2TablePayload)
+  {later : BccSharp.Coulomb.CompactCover.WitnessRef → BccSharp.Coulomb.CompactCover.Cell → Bool},
+  BccSharp.Coulomb.CompactCover.SoundCheck later →
+    BccSharp.Coulomb.CompactCover.SoundCheck
+      (BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix geometric direct sidecar bulkT later)
+BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull_sound : BccSharp.Coulomb.LatticeCase →
+  ∀
+    (hint :
+      BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.AdaptiveSupport.AdaptiveHint),
+    BccSharp.Coulomb.CompactCover.SoundCheck (BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull hint)
+BccSharp.Coulomb.CompactCover.LatePackets.lateChecker_sound : BccSharp.Coulomb.LatticeCase →
+  ∀ (t : BccSharp.Coulomb.CompactCover.LatePackets.LateTables),
+    BccSharp.Coulomb.CompactCover.LatePackets.CheckerSound (BccSharp.Coulomb.CompactCover.LatePackets.lateChecker t)
+BccSharp.Coulomb.Full.StatementFull.physical : BccSharp.Coulomb.Full.StatementFull →
+  ∀ (X : Set TwoSiteSpec.E3),
+    TwoSiteSpec.TwoTranslates X →
+      ∃ q,
+        q.Valid ∧
+          (∃ v, X = (fun y => y + v) '' BccSharp.Coulomb.SpecBridge.physPoints q) ∧
+            (∀ (q' : BccSharp.Coulomb.TwoSite) (v' : TwoSiteSpec.E3),
+                q'.Valid →
+                  X = (fun y => y + v') '' BccSharp.Coulomb.SpecBridge.physPoints q' →
+                    BccSharp.Coulomb.energy q' = BccSharp.Coulomb.energy q ∧
+                      BccSharp.Coulomb.defect q' = BccSharp.Coulomb.defect q) ∧
+              (∀ y ∈ X, TwoSiteSpec.specSiteDefect BccSharp.Coulomb.ac X y = BccSharp.Coulomb.defect q) ∧
+                BccSharp.Coulomb.gap * BccSharp.Coulomb.defect q ≤
+                    BccSharp.Coulomb.energy q - BccSharp.Coulomb.energy BccSharp.Coulomb.bcc ∧
+                  (BccSharp.Coulomb.energy q - BccSharp.Coulomb.energy BccSharp.Coulomb.bcc =
+                        BccSharp.Coulomb.gap * BccSharp.Coulomb.defect q ↔
+                      TwoSiteSpec.RigidImage X (TwoSiteSpec.dilate BccSharp.Coulomb.ac TwoSiteSpec.bccUnit) ∨
+                        TwoSiteSpec.RigidImage X (TwoSiteSpec.dilate BccSharp.Coulomb.ac TwoSiteSpec.fccUnit)) ∧
+                    (BccSharp.Coulomb.energy q = BccSharp.Coulomb.energy BccSharp.Coulomb.bcc ↔
+                      TwoSiteSpec.RigidImage X (TwoSiteSpec.dilate BccSharp.Coulomb.ac TwoSiteSpec.bccUnit))
+BccSharp.Coulomb.FinalAssembly.statementFull_of_replay : ∀
+  (geometric : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.NormalizedProposal)
+  (direct : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Cell)
+  (sidecar :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.DirectSidecarProposal)
+  (bulkT :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.Stage2TablePayload)
+  (adaptiveHint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.AdaptiveSupport.AdaptiveHint)
+  (stage5bHint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.SupportHint)
+  (pending : BccSharp.Coulomb.CompactCover.WitnessRef → BccSharp.Coulomb.CompactCover.Cell → Bool),
+  BccSharp.Coulomb.CompactCover.SoundCheck pending →
+    ∀
+      (stage6Hint :
+        BccSharp.Coulomb.CompactCover.Stage6Request → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.SupportHint)
+      (dEval : BccSharp.Coulomb.CompactCover.Stage6Request → Bool),
+      BccSharp.Coulomb.CompactCover.Stage3Stage6.Stage6DSound dEval →
+        ∀ (t : BccSharp.Coulomb.CompactCover.LatePackets.LateTables)
+          (pre : BccSharp.Coulomb.CompactCover.EarlyReplay.CorpusPrefix)
+          (stage5b stage6 : List BccSharp.Coulomb.CompactCover.LatePackets.Atom)
+          (rows : List (BccSharp.Coulomb.CompactCover.LatePackets.Row BccSharp.Coulomb.CompactCover.Stage6Trace))
+          (corp : BccSharp.Coulomb.CompactCover.LatePackets.Corpus),
+          pre.run
+                (BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix geometric direct sidecar bulkT
+                  (BccSharp.Coulomb.CompactCover.OverlayCorpus.orCheck
+                    (BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull adaptiveHint)
+                    (BccSharp.Coulomb.CompactCover.Stage3Stage6.laterHybrid stage5bHint pending))) =
+              Option.some stage5b →
+            BccSharp.Coulomb.CompactCover.LatePackets.runRows
+                  (BccSharp.Coulomb.CompactCover.runStage6
+                    (BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck stage6Hint dEval))
+                  stage5b rows =
+                Option.some stage6 →
+              BccSharp.Coulomb.CompactCover.LatePackets.Corpus.run
+                    (BccSharp.Coulomb.CompactCover.LatePackets.lateChecker t) stage6 corp =
+                  Option.some [] →
+                BccSharp.Coulomb.Full.StatementFull
+BccSharp.Coulomb.FinalAssembly.statementFull_of_runs : ∀
+  (geometric : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.NormalizedProposal)
+  (direct : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Cell)
+  (sidecar :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.DirectSidecarProposal)
+  (bulkT :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.Stage2TablePayload)
+  (adaptiveHint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.AdaptiveSupport.AdaptiveHint)
+  (stage5bHint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.SupportHint)
+  (stage6Hint :
+    BccSharp.Coulomb.CompactCover.Stage6Request → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.SupportHint)
+  (t : BccSharp.Coulomb.CompactCover.LatePackets.LateTables)
+  (pre : BccSharp.Coulomb.CompactCover.EarlyReplay.CorpusPrefix)
+  (stage5b stage6 : List BccSharp.Coulomb.CompactCover.LatePackets.Atom)
+  (rows : List (BccSharp.Coulomb.CompactCover.LatePackets.Row BccSharp.Coulomb.CompactCover.Stage6Trace))
+  (corp : BccSharp.Coulomb.CompactCover.LatePackets.Corpus),
+  pre.run
+        (BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix geometric direct sidecar bulkT
+          (BccSharp.Coulomb.CompactCover.OverlayCorpus.orCheck
+            (BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull adaptiveHint)
+            (BccSharp.Coulomb.CompactCover.Stage3Stage6.laterHybrid stage5bHint fun x x_1 => Bool.false))) =
+      Option.some stage5b →
+    BccSharp.Coulomb.CompactCover.LatePackets.runRows
+          (BccSharp.Coulomb.CompactCover.runStage6
+            (BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck stage6Hint fun x => Bool.false))
+          stage5b rows =
+        Option.some stage6 →
+      BccSharp.Coulomb.CompactCover.LatePackets.Corpus.run (BccSharp.Coulomb.CompactCover.LatePackets.lateChecker t)
+            stage6 corp =
+          Option.some [] →
+        BccSharp.Coulomb.Full.StatementFull
+BccSharp.Coulomb.FinalAssembly.statementFull_of_replay_merged : ∀
+  (geometric : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.NormalizedProposal)
+  (direct : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Cell)
+  (sidecar :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.DirectSidecarProposal)
+  (bulkT :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.Stage2TablePayload)
+  (adaptiveHint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.AdaptiveSupport.AdaptiveHint)
+  (stage5bHint stage3Hint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.SupportHint)
+  (stage5bOptHint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Stage5bOptical.OpticalHint)
+  (kHint : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Stage4Stage5a.KHint)
+  (pending' : BccSharp.Coulomb.CompactCover.WitnessRef → BccSharp.Coulomb.CompactCover.Cell → Bool),
+  BccSharp.Coulomb.CompactCover.SoundCheck pending' →
+    ∀
+      (stage6Hint :
+        BccSharp.Coulomb.CompactCover.Stage6Request → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.SupportHint)
+      (dhint : BccSharp.Coulomb.CompactCover.Stage6Request → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.DHint)
+      (t : BccSharp.Coulomb.CompactCover.LatePackets.LateTables)
+      (latePending' : BccSharp.Coulomb.CompactCover.LatePackets.Checker),
+      BccSharp.Coulomb.CompactCover.LatePackets.CheckerSound latePending' →
+        ∀ (pre : BccSharp.Coulomb.CompactCover.EarlyReplay.CorpusPrefix)
+          (stage5b stage6 : List BccSharp.Coulomb.CompactCover.LatePackets.Atom)
+          (rows : List (BccSharp.Coulomb.CompactCover.LatePackets.Row BccSharp.Coulomb.CompactCover.Stage6Trace))
+          (corp : BccSharp.Coulomb.CompactCover.LatePackets.Corpus),
+          pre.run
+                (BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix geometric direct sidecar bulkT
+                  (BccSharp.Coulomb.CompactCover.OverlayCorpus.orCheck
+                    (BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull adaptiveHint)
+                    (BccSharp.Coulomb.CompactCover.Stage3Stage6.laterHybrid stage5bHint
+                      (BccSharp.Coulomb.CompactCover.OverlayCorpus.orCheck
+                        (BccSharp.Coulomb.FinalAssembly.mergedPending stage3Hint stage5bOptHint kHint) pending')))) =
+              Option.some stage5b →
+            BccSharp.Coulomb.CompactCover.LatePackets.runRows
+                  (BccSharp.Coulomb.CompactCover.runStage6
+                    (BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck stage6Hint
+                      (BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6DEval dhint)))
+                  stage5b rows =
+                Option.some stage6 →
+              BccSharp.Coulomb.CompactCover.LatePackets.Corpus.run
+                    (BccSharp.Coulomb.CompactCover.LatePackets.eitherCheck
+                      (BccSharp.Coulomb.CompactCover.LatePackets.lateChecker t) latePending')
+                    stage6 corp =
+                  Option.some [] →
+                BccSharp.Coulomb.Full.StatementFull
+BccSharp.Coulomb.FinalAssembly.statementFull_of_runs_merged : ∀
+  (geometric : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.NormalizedProposal)
+  (direct : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Cell)
+  (sidecar :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.DirectSidecarProposal)
+  (bulkT :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.EarlyReplay.Stage2TablePayload)
+  (adaptiveHint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.AdaptiveSupport.AdaptiveHint)
+  (stage5bHint stage3Hint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.SupportHint)
+  (stage5bOptHint :
+    BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Stage5bOptical.OpticalHint)
+  (kHint : BccSharp.Coulomb.CompactCover.WitnessRef → Option BccSharp.Coulomb.CompactCover.Stage4Stage5a.KHint)
+  (stage6Hint :
+    BccSharp.Coulomb.CompactCover.Stage6Request → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.SupportHint)
+  (dhint : BccSharp.Coulomb.CompactCover.Stage6Request → Option BccSharp.Coulomb.CompactCover.Stage3Stage6.DHint)
+  (t : BccSharp.Coulomb.CompactCover.LatePackets.LateTables)
+  (pre : BccSharp.Coulomb.CompactCover.EarlyReplay.CorpusPrefix)
+  (stage5b stage6 : List BccSharp.Coulomb.CompactCover.LatePackets.Atom)
+  (rows : List (BccSharp.Coulomb.CompactCover.LatePackets.Row BccSharp.Coulomb.CompactCover.Stage6Trace))
+  (corp : BccSharp.Coulomb.CompactCover.LatePackets.Corpus),
+  pre.run
+        (BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix geometric direct sidecar bulkT
+          (BccSharp.Coulomb.CompactCover.OverlayCorpus.orCheck
+            (BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull adaptiveHint)
+            (BccSharp.Coulomb.CompactCover.Stage3Stage6.laterHybrid stage5bHint
+              (BccSharp.Coulomb.CompactCover.OverlayCorpus.orCheck
+                (BccSharp.Coulomb.FinalAssembly.mergedPending stage3Hint stage5bOptHint kHint) fun x x_1 =>
+                Bool.false)))) =
+      Option.some stage5b →
+    BccSharp.Coulomb.CompactCover.LatePackets.runRows
+          (BccSharp.Coulomb.CompactCover.runStage6
+            (BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck stage6Hint
+              (BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6DEval dhint)))
+          stage5b rows =
+        Option.some stage6 →
+      BccSharp.Coulomb.CompactCover.LatePackets.Corpus.run (BccSharp.Coulomb.CompactCover.LatePackets.lateChecker t)
+            stage6 corp =
+          Option.some [] →
+        BccSharp.Coulomb.Full.StatementFull
+BccSharp.Coulomb.TwoSite.Valid : BccSharp.Coulomb.TwoSite → Prop
+BccSharp.Coulomb.energy : BccSharp.Coulomb.TwoSite → ℝ
+BccSharp.Coulomb.h₂ : BccSharp.Coulomb.TwoSite → ℝ
+BccSharp.Coulomb.gKernel : ℝ → ℝ → ℝ
+BccSharp.Coulomb.gap : ℝ
+BccSharp.Coulomb.defect : BccSharp.Coulomb.TwoSite → ℝ
+BccSharp.Coulomb.cappedDefect : Set BccSharp.Coulomb.Vec → ℝ
+@BccSharp.Coulomb.defectTrial : {Y : Set BccSharp.Coulomb.Vec} → BccSharp.Coulomb.Mat → (Fin 14 ↪ ↑Y) → ℝ
+BccSharp.Coulomb.deficit : BccSharp.Coulomb.TwoSite → ℝ
+BccSharp.Coulomb.Statement : Prop
+BccSharp.Coulomb.Full.StatementFull : Prop
+BccSharp.Coulomb.LatticeCase : Prop
+BccSharp.Coulomb.oneSiteEnergy : BccSharp.Coulomb.Mat → ℝ
+BccSharp.Coulomb.oneSiteDefect : BccSharp.Coulomb.Mat → ℝ
+BccSharp.Coulomb.oneSiteDeficit : BccSharp.Coulomb.Mat → ℝ
+BccSharp.Coulomb.GlobalAnalyticInputs : Prop
+BccSharp.Coulomb.Registration : BccSharp.Coulomb.TwoSite → Prop
+TwoSiteSpec.specDefect : ℝ → Set TwoSiteSpec.E3 → ℝ
+TwoSiteSpec.specSiteDefect : ℝ → Set TwoSiteSpec.E3 → TwoSiteSpec.E3 → ℝ
+TwoSiteSpec.TwoCosetConfig : Set TwoSiteSpec.E3 → Prop
+TwoSiteSpec.TwoTranslates : Set TwoSiteSpec.E3 → Prop
+TwoSiteSpec.RigidImage : Set TwoSiteSpec.E3 → Set TwoSiteSpec.E3 → Prop
+TwoSiteSpec.RegisteredBound : TwoSiteSpec.M3 → (Fin 3 → ℝ) → ℝ → Prop
+TwoSiteSpec.bccUnit : Set TwoSiteSpec.E3
+TwoSiteSpec.fccUnit : Set TwoSiteSpec.E3
+BccSharp.Coulomb.Constants.bccBracket : BccSharp.Coulomb.Constants.Interval
+BccSharp.Coulomb.Constants.fccBracket : BccSharp.Coulomb.Constants.Interval
+BccSharp.Coulomb.Constants.gapBracket : BccSharp.Coulomb.Constants.Interval
+'BccSharp.Coulomb.periodicGreen_fourier_on_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.periodicGreen_regular_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.periodicGreen_screening_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.ewaldRegularSelf_screening_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.greenPerParticle_screening' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.ewald_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.green_two_eq_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.ScreenedSeries.h₂_screened' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.BravaisCover.oneSiteEnergy_from_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.greenPerParticle_repetition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.energy_of_points_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.energy_of_isometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.energy_of_rigidImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.greenPerParticle_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.density_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.SpecBridge.specDefect_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.cappedDefect_orthogonal_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.defect_of_isometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.defect_of_rigidImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.defect_rebase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.defect_wrap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.defect_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.siteDefect_second_site' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.siteDefect_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.SpecBridge.spec_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.repetition_siteDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.SpecBridge.spec_dilated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.DefectInvariance.defect_eq_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.SpecBridge.twoCoset_of_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.SpecBridge.valid_of_twoCoset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.SpecBridge.spec_translates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.SpecBridge.isBCC_iff_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.SpecBridge.isFCC_iff_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Constants.bcc_primitive_enclosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Constants.fcc_primitive_enclosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Constants.reference_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Constants.reference_gap_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.gap_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_proved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.BravaisCover.localBalls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.BravaisCover.TangentCover.Tables.tables_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.BravaisCover.TangentCover.Forest.grid_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.BravaisCover.TangentCover.Forest.forest_checked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.BravaisCover.StrainAtlas.bccClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.BravaisCover.StrainAtlas.fccClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.BravaisCover.StrainAtlas.strainAtlases_sharp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_from_tangent_forest_atlases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.primitive_anchor_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.GlobalInputs.bccValues_proof' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.GlobalInputs.fccValues_proof' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.GlobalInputs.fccSaturated_proof' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.GlobalInputs.compact_proof' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.GlobalInputs.separated_of_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.GlobalInputs.register_proof' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.register_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.GlobalInputs.globalAnalyticInputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.JLeaf.defect_le_regCost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_regCost_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_annulus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_far' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.defect_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.defect_transport_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.defect_transport_annulus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.Montgomery.theorem1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Montgomery.jacobi_triple_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayPlanar.chart_energy_planar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayPlanar.planarRegularized_ge_triangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.DirectFix.directFix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.EarlyReplay.initialWitnessCheckFix_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithDirectSidecarFix_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2Fix_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2FixT_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayPlanar.energy_fcc_lt_of_numeratorCheck' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayPlanar.overlayCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayPlanar.overlaySharpCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.overlayFixCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.checkWithOverlay_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.AdaptiveOptical.gapSatOk_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Jensen.Fix.fLeafCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage5bPhase.stage5bPhaseCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage3Stage6.stage3Check_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage3Stage6.stage5bHybridCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage5bOptical.stage5bOpticalCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage4stage5aCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage5aCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6Check_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6DEval_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6FullCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.JLeaf.jleaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.JLeaf.fleaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.JLeaf.Screened.jleaf_sound_screened' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.LeafFix.jleafFix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.LeafFix.dleafFix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.LeafFix.fleafFix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.LeafFix.certCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.LeafFix.lateCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.LeafFix.lateCheckFar_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.halfShiftCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.farTransportOk_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.planarAnchorCertOkFar_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheckFar_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckFar_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.planarFibreCheckFar_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.catalogueOk_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckCat_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.Layered.centeredCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.CompactCover.PlanarFibreTri.planarFibreTriCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.CompactCover.LatePackets.lateChecker_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.BravaisCover.TangentE1.leafCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.BravaisCover.StrainTangent.zLeafCheck_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.assemble' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.GlobalInputs.assemble_from_cover_corpus_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.Full.statementFull_of_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.statementFull_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.Full.StatementFull.physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.FinalAssembly.later_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.FinalAssembly.prefix_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.FinalAssembly.late_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.FinalAssembly.mergedPending_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.FinalAssembly.statementFull_of_replay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.FinalAssembly.statementFull_of_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BccSharp.Coulomb.FinalAssembly.statementFull_of_replay_merged' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BccSharp.Coulomb.FinalAssembly.statementFull_of_runs_merged' depends on axioms: [propext, Classical.choice, Quot.sound]

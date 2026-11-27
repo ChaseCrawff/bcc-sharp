@@ -1,0 +1,22 @@
+\section{Proof of the main theorems}\label{sec:proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+The body-centred and face-centred cubic lattices satisfy $\Def=0$ by Lemma~\ref{lem:Dbasic}(iii),(iv) and the definition of $\gap$.
+Let $X\in\Ctwo$ with $\Def(X)\le0$. By Proposition~\ref{prop:compact}, $X$ is isometric to $X(\kappa)$ for some
+$\kappa\in\Kbox_{\mathrm{red}}$. The reflection $\iota$ exchanges the two cosets; it maps $\Kbox_{\mathrm{red}}$ to itself, and
+$X(\iota(\kappa))$ is a translate of $X(\kappa)$. By Theorem~\ref{thm:cover}, one of the points $\kappa$, $\iota(\kappa)$ lies in a
+discharged box, and Lemma~\ref{lem:discharged} gives $\Def(X)=\Def(X(\kappa))\ge0$, with equality only if $X(\kappa)$ is a BCC or an
+FCC lattice. Hence $\Def(X)=0$ and $X$ is a BCC or an FCC lattice.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:min} and Corollary~\ref{cor:fcc}]
+Since $\gap>0$ and $D\ge0$, Theorem~\ref{thm:main} gives $e(X)\ge\eB$. If $e(X)=\eB$ then $\Def(X)=0$ and $D(X)=0$, so $X$ is a BCC or
+an FCC lattice with $D=0$; as $D=1$ on FCC lattices, $X$ is a BCC lattice. If $D(X)=1$, then $e(X)\ge\eB+\gap=\eF$, and equality forces
+$\Def(X)=0$, so $X$ is an FCC lattice because $D=0$ on BCC lattices.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:basin}]
+Let $e(X)<\eF$. By Theorem~\ref{thm:main}, $D(X)\le(e(X)-\eB)/\gap<1$. Corollary~\ref{cor:registered}, applied to the normalized
+configuration $Y=\ltwo^{-1}(X-x)$ with $x\in X$, gives $L_0$, $w_0$, $A$ and $h$ with \eqref{eq:registered}, and
+$100\dist_\Fro(A,\SO(3))^2+200|h|^2\le D(X)$.
+\end{proof}

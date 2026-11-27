@@ -1,0 +1,1562 @@
+[
+ {
+  "item": "A",
+  "supports": "Fourier coefficients of the periodic Coulomb kernel",
+  "name": "BccSharp.Coulomb.periodicGreen_fourier_on_cell",
+  "module": "BccSharp.TwoSite.ScreeningIndependence",
+  "line": 128,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "regular limit of the kernel at the origin",
+  "name": "BccSharp.Coulomb.periodicGreen_regular_limit",
+  "module": "BccSharp.TwoSite.RegularLimit",
+  "line": 161,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "the kernel does not depend on the splitting parameter",
+  "name": "BccSharp.Coulomb.periodicGreen_screening_independent",
+  "module": "BccSharp.TwoSite.ScreeningIndependence",
+  "line": 318,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "the self term does not depend on the splitting parameter",
+  "name": "BccSharp.Coulomb.ewaldRegularSelf_screening_independent",
+  "module": "BccSharp.TwoSite.ScreeningIndependence",
+  "line": 283,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "Ewald energy per particle at every splitting parameter",
+  "name": "BccSharp.Coulomb.Full.greenPerParticle_screening",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 54,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "two-site energy equals the Ewald energy at every splitting parameter",
+  "name": "BccSharp.Coulomb.Full.ewald_energy",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 68,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "positive series (two sites) equals the Ewald energy",
+  "name": "BccSharp.Coulomb.green_two_eq_energy",
+  "module": "BccSharp.TwoSite.SeriesModes",
+  "line": 223,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "positive series (two sites) at any screening",
+  "name": "BccSharp.Coulomb.ScreenedSeries.h₂_screened",
+  "module": "BccSharp.TwoSite.ScreenedSeries",
+  "line": 350,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "positive series (one site) equals the Ewald energy",
+  "name": "BccSharp.Coulomb.BravaisCover.oneSiteEnergy_from_normalized",
+  "module": "BccSharp.Lattice.Energy",
+  "line": 133,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "energy unchanged by a sublattice of finite index",
+  "name": "BccSharp.Coulomb.greenPerParticle_repetition",
+  "module": "BccSharp.TwoSite.GeneralSummability",
+  "line": 166,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "energy depends only on the point set",
+  "name": "BccSharp.Coulomb.DefectInvariance.energy_of_points_eq",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 658,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "energy invariant under orthogonal maps and translations",
+  "name": "BccSharp.Coulomb.DefectInvariance.energy_of_isometric",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 718,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "energy invariant under distance-preserving bijections",
+  "name": "BccSharp.Coulomb.Full.energy_of_rigidImage",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 95,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "energy under dilation",
+  "name": "BccSharp.Coulomb.greenPerParticle_scale",
+  "module": "BccSharp.TwoSite.PhysicalScale",
+  "line": 122,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "energy under dilation, two sites",
+  "name": "BccSharp.Coulomb.Full.density_energy",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 303,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "independent definition of the defect equals the interface's",
+  "name": "BccSharp.Coulomb.SpecBridge.specDefect_one",
+  "module": "BccSharp.TwoSite.Spec",
+  "line": 826,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect invariant under orthogonal images",
+  "name": "BccSharp.Coulomb.DefectInvariance.cappedDefect_orthogonal_image",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 220,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect invariant under orthogonal maps and translations",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_of_isometric",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 451,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect invariant under distance-preserving bijections",
+  "name": "BccSharp.Coulomb.Full.defect_of_rigidImage",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 100,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect under change of basis",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_rebase",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 467,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect under integer shifts of the offset",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_wrap",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 464,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect under exchange of the cosets",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_swap",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 477,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect at the second site",
+  "name": "BccSharp.Coulomb.DefectInvariance.siteDefect_second_site",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 423,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect equal at all points",
+  "name": "BccSharp.Coulomb.DefectInvariance.siteDefect_of_mem",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 430,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect equal at all points, independent definition",
+  "name": "BccSharp.Coulomb.SpecBridge.spec_physical",
+  "module": "BccSharp.TwoSite.Spec",
+  "line": 1044,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect under repetition of the cell",
+  "name": "BccSharp.Coulomb.DefectInvariance.repetition_siteDefect",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 519,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect under dilation",
+  "name": "BccSharp.Coulomb.SpecBridge.spec_dilated",
+  "module": "BccSharp.TwoSite.Spec",
+  "line": 1050,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "defect is an attained minimum",
+  "name": "BccSharp.Coulomb.DefectInvariance.defect_eq_min",
+  "module": "BccSharp.TwoSite.DefectInvariance",
+  "line": 586,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "every valid pair is a two-coset configuration",
+  "name": "BccSharp.Coulomb.SpecBridge.twoCoset_of_valid",
+  "module": "BccSharp.TwoSite.Spec",
+  "line": 301,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "every two-coset configuration is represented",
+  "name": "BccSharp.Coulomb.SpecBridge.valid_of_twoCoset",
+  "module": "BccSharp.TwoSite.Spec",
+  "line": 343,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "unions of two translates",
+  "name": "BccSharp.Coulomb.SpecBridge.spec_translates",
+  "module": "BccSharp.TwoSite.Spec",
+  "line": 1112,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "BCC as rigid image",
+  "name": "BccSharp.Coulomb.SpecBridge.isBCC_iff_physical",
+  "module": "BccSharp.TwoSite.Spec",
+  "line": 1259,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "A",
+  "supports": "FCC as rigid image",
+  "name": "BccSharp.Coulomb.SpecBridge.isFCC_iff_physical",
+  "module": "BccSharp.TwoSite.Spec",
+  "line": 1263,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "B",
+  "supports": "BCC primitive-cell energy in its bracket",
+  "name": "BccSharp.Coulomb.Constants.bcc_primitive_enclosed",
+  "module": "BccSharp.TwoSite.ReferenceCert",
+  "line": 1141,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "B",
+  "supports": "FCC primitive-cell energy in its bracket",
+  "name": "BccSharp.Coulomb.Constants.fcc_primitive_enclosed",
+  "module": "BccSharp.TwoSite.ReferenceCert",
+  "line": 2113,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "B",
+  "supports": "e_BCC and e_FCC in the fifty-digit brackets",
+  "name": "BccSharp.Coulomb.Constants.reference_bounds",
+  "module": "BccSharp.TwoSite.ReferencePoints",
+  "line": 279,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "B",
+  "supports": "gap in its bracket and positive",
+  "name": "BccSharp.Coulomb.Constants.reference_gap_checked",
+  "module": "BccSharp.TwoSite.ReferencePoints",
+  "line": 299,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "B",
+  "supports": "gap to twenty digits",
+  "name": "BccSharp.Coulomb.Full.gap_value",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 273,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "lattice inequality and its equality case",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_proved",
+  "module": "BccSharp.Lattice.Atlas.LatticeCase",
+  "line": 27,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "local balls at BCC and FCC",
+  "name": "BccSharp.Coulomb.BravaisCover.localBalls",
+  "module": "BccSharp.Lattice.LocalBalls",
+  "line": 18,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "tangent tables",
+  "name": "BccSharp.Coulomb.BravaisCover.TangentCover.Tables.tables_valid",
+  "module": "BccSharp.Lattice.TangentTables",
+  "line": 35,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "grid of the reduced domain",
+  "name": "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.grid_check",
+  "module": "BccSharp.Lattice.ForestBase",
+  "line": 88,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "cover of the reduced domain (5,671 leaves)",
+  "name": "BccSharp.Coulomb.BravaisCover.TangentCover.Forest.forest_checked",
+  "module": "BccSharp.Lattice.Forest",
+  "line": 34,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "BCC strain chart",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.bccClosed",
+  "module": "BccSharp.Lattice.Atlas.Atlases",
+  "line": 31,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "FCC strain chart",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.fccClosed",
+  "module": "BccSharp.Lattice.Atlas.Atlases",
+  "line": 1530,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "strain charts give the sharp inequality",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.strainAtlases_sharp",
+  "module": "BccSharp.Lattice.Atlas.Atlases",
+  "line": 2403,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "lattice theorem from forest and atlases",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainAtlas.latticeCase_from_tangent_forest_atlases",
+  "module": "BccSharp.Lattice.Atlas.Atlases",
+  "line": 2407,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "half-period two-site configurations are lattices",
+  "name": "BccSharp.Coulomb.primitive_anchor_exists",
+  "module": "BccSharp.TwoSite.PrimitiveAnchor",
+  "line": 109,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "energy and D = 0 on BCC",
+  "name": "BccSharp.Coulomb.GlobalInputs.bccValues_proof",
+  "module": "BccSharp.TwoSite.GlobalValues",
+  "line": 191,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "energy and D = 1 on FCC",
+  "name": "BccSharp.Coulomb.GlobalInputs.fccValues_proof",
+  "module": "BccSharp.TwoSite.GlobalValues",
+  "line": 198,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "C",
+  "supports": "D(FCC) = 1",
+  "name": "BccSharp.Coulomb.GlobalInputs.fccSaturated_proof",
+  "module": "BccSharp.TwoSite.GlobalValues",
+  "line": 208,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "compact reduction",
+  "name": "BccSharp.Coulomb.GlobalInputs.compact_proof",
+  "module": "BccSharp.TwoSite.GlobalCompact",
+  "line": 402,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "separation below the FCC energy",
+  "name": "BccSharp.Coulomb.GlobalInputs.separated_of_energy",
+  "module": "BccSharp.TwoSite.GlobalCompact",
+  "line": 336,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "registration, existence, reduced frame",
+  "name": "BccSharp.Coulomb.GlobalInputs.register_proof",
+  "module": "BccSharp.TwoSite.GlobalRegister",
+  "line": 705,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "registration, existence, every frame",
+  "name": "BccSharp.Coulomb.Full.register_frame",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 110,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "all analytic inputs",
+  "name": "BccSharp.Coulomb.GlobalInputs.globalAnalyticInputs",
+  "module": "BccSharp.TwoSite.GlobalInputs",
+  "line": 21,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "defect bound from a registration, cost at most 1/2",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.defect_le_regCost",
+  "module": "BccSharp.Cover.JLeafDefect",
+  "line": 544,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "defect bound from a registration, up to the cutoff",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_regCost_cutoff",
+  "module": "BccSharp.TwoSite.DefectCutoff",
+  "line": 360,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "defect bound from a registration with annular terms",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_annulus",
+  "module": "BccSharp.TwoSite.DefectAnnulus",
+  "line": 220,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "defect bound on a box, cutoff",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_cutoff",
+  "module": "BccSharp.TwoSite.DefectCutoffBox",
+  "line": 293,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "defect bound on a box, far",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Cutoff.defect_le_box_far",
+  "module": "BccSharp.TwoSite.DefectCutoffBox",
+  "line": 336,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "growth of the defect away from an anchor",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.defect_transport",
+  "module": "BccSharp.Cover.LayeredDefect",
+  "line": 251,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "growth of the defect, cutoff form",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.defect_transport_cutoff",
+  "module": "BccSharp.Cover.LayeredDefectCutoff",
+  "line": 522,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "growth of the defect, annular form",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.defect_transport_annulus",
+  "module": "BccSharp.Cover.LayeredDefectCutoff",
+  "line": 936,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "Montgomery's inequality for the planar theta function",
+  "name": "BccSharp.Coulomb.Montgomery.theorem1",
+  "module": "BccSharp.TwoSite.Montgomery",
+  "line": 32,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "Jacobi triple product",
+  "name": "BccSharp.Coulomb.Montgomery.jacobi_triple_product",
+  "module": "BccSharp.TwoSite.JacobiTriple",
+  "line": 277,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "planar expansion of the energy",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.chart_energy_planar",
+  "module": "BccSharp.Cover.OverlayPhysicalIdentity",
+  "line": 17,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "D",
+  "supports": "planar integral above the triangular value",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.planarRegularized_ge_triangle",
+  "module": "BccSharp.Cover.OverlayMontgomery",
+  "line": 479,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "direct leaves of stage 2 (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.DirectFix.directFix_sound",
+  "module": "BccSharp.Cover.DirectFixSound",
+  "line": 446,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "initial witnesses (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.EarlyReplay.initialWitnessCheckFix_sound",
+  "module": "BccSharp.Cover.PrefixFixGlue",
+  "line": 63,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "direct-moment leaves of stage 2 (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithDirectSidecarFix_sound",
+  "module": "BccSharp.Cover.PrefixFixGlue",
+  "line": 92,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 2 bulk and phase (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2Fix_sound",
+  "module": "BccSharp.Cover.PrefixFixGlue",
+  "line": 115,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 2 with the tangent table (fixed point)",
+  "name": "BccSharp.Coulomb.CompactCover.EarlyReplay.checkWithStage2FixT_sound",
+  "module": "BccSharp.Cover.PrefixFixGlue",
+  "line": 183,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar check, numerator form",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.energy_fcc_lt_of_numeratorCheck",
+  "module": "BccSharp.Cover.OverlayMontgomery",
+  "line": 486,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar check",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.overlayCheck_sound",
+  "module": "BccSharp.Cover.OverlaySoundCheck",
+  "line": 34,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar check, sharpened",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.overlaySharpCheck_sound",
+  "module": "BccSharp.Cover.OverlaySoundCheck",
+  "line": 84,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar check, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.overlayFixCheck_sound",
+  "module": "BccSharp.Cover.OverlayFixSound",
+  "line": 1492,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar check over earlier checks",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayPlanar.Fix.checkWithOverlay_sound",
+  "module": "BccSharp.Cover.OverlayCorpusGlue",
+  "line": 39,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "prefix check",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheck_sound",
+  "module": "BccSharp.Cover.OverlayCorpusPrefix",
+  "line": 180,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "prefix check, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.OverlayCorpus.corpusCheckFix_sound",
+  "module": "BccSharp.FinalAssembly",
+  "line": 259,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "adaptive support checks",
+  "name": "BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveCheck_sound",
+  "module": "BccSharp.Cover.AdaptiveCheck",
+  "line": 131,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "adaptive support checks with optical kinds",
+  "name": "BccSharp.Coulomb.CompactCover.AdaptiveSupport.adaptiveFull_sound",
+  "module": "BccSharp.Cover.AdaptiveCheck",
+  "line": 201,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "radial gap saturation",
+  "name": "BccSharp.Coulomb.CompactCover.AdaptiveOptical.gapSatOk_sound",
+  "module": "BccSharp.Cover.AdaptiveOptical",
+  "line": 475,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "Jensen leaf check",
+  "name": "BccSharp.Coulomb.CompactCover.Jensen.Fix.fLeafCheck_sound",
+  "module": "BccSharp.Cover.JensenFixSound",
+  "line": 1047,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 5 phase check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage5bPhase.stage5bPhaseCheck_sound",
+  "module": "BccSharp.Cover.Stage5bPhase",
+  "line": 117,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 3 leaf check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage3Check_sound",
+  "module": "BccSharp.Cover.Stage3",
+  "line": 50,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 5 hybrid check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage5bHybridCheck_sound",
+  "module": "BccSharp.Cover.Stage3Stage6Hybrid",
+  "line": 111,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 5 optical check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage5bOptical.stage5bOpticalCheck_sound",
+  "module": "BccSharp.Cover.Stage5bOptical",
+  "line": 376,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stages 4 and 5 check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage4stage5aCheck_sound",
+  "module": "BccSharp.Cover.Stage4Stage5a",
+  "line": 439,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 5 anchored check",
+  "name": "BccSharp.Coulomb.CompactCover.Stage4Stage5a.stage5aCheck_sound",
+  "module": "BccSharp.Cover.Stage5aAnchored",
+  "line": 250,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 6 checker",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6Check_sound",
+  "module": "BccSharp.Cover.Stage3Stage6Compose",
+  "line": 126,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 6 D evaluator",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6DEval_sound",
+  "module": "BccSharp.Cover.Stage6Deficit",
+  "line": 262,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 6 checker with D evaluator",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6FullCheck_sound",
+  "module": "BccSharp.Cover.Stage6Deficit",
+  "line": 280,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "stage 6 hybrid checker",
+  "name": "BccSharp.Coulomb.CompactCover.Stage3Stage6.stage6HybridCheck_sound",
+  "module": "BccSharp.Cover.Stage3Stage6Hybrid",
+  "line": 187,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "J leaf",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.jleaf_sound",
+  "module": "BccSharp.Cover.JLeafCheck",
+  "line": 152,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "F leaf",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.fleaf_sound",
+  "module": "BccSharp.Cover.JLeafF",
+  "line": 33,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "J leaf at any screening",
+  "name": "BccSharp.Coulomb.CompactCover.JLeaf.Screened.jleaf_sound_screened",
+  "module": "BccSharp.Cover.JLeafScreenedCheck",
+  "line": 49,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "J leaf, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.jleafFix_sound",
+  "module": "BccSharp.Cover.LeafFixSound",
+  "line": 646,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "D leaf, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.dleafFix_sound",
+  "module": "BccSharp.Cover.LeafFixSound",
+  "line": 781,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "F leaf, fixed point",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.fleafFix_sound",
+  "module": "BccSharp.Cover.LeafFixSound",
+  "line": 871,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "late leaf certificates",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.certCheck_sound",
+  "module": "BccSharp.Cover.LeafFixSound",
+  "line": 1012,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "late leaf check",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.lateCheck_sound",
+  "module": "BccSharp.Cover.LeafFixSound",
+  "line": 1032,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "late leaf check, far",
+  "name": "BccSharp.Coulomb.CompactCover.LeafFix.lateCheckFar_sound",
+  "module": "BccSharp.Cover.LeafFixFar",
+  "line": 411,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar-anchor relative check",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheck_sound",
+  "module": "BccSharp.Cover.LayeredRoute",
+  "line": 411,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "half-shift relative check",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheck_sound",
+  "module": "BccSharp.Cover.LayeredHalfShift",
+  "line": 32,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "far transport",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.farTransportOk_sound",
+  "module": "BccSharp.Cover.LayeredFarRoute",
+  "line": 66,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "relative certificate, far",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCertOkFar_sound",
+  "module": "BccSharp.Cover.LayeredFarRoute",
+  "line": 142,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar-anchor relative check, far",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.planarAnchorCheckFar_sound",
+  "module": "BccSharp.Cover.LayeredFarRoute",
+  "line": 228,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "half-shift relative check, far",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckFar_sound",
+  "module": "BccSharp.Cover.LayeredFarRoute",
+  "line": 259,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar-fibre relative check, far",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.planarFibreCheckFar_sound",
+  "module": "BccSharp.Cover.LayeredFarRoute",
+  "line": 292,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "anchor catalogue",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.catalogueOk_sound",
+  "module": "BccSharp.Cover.AnchorCatalogue",
+  "line": 375,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "half-shift relative check, catalogue",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.halfShiftCheckCat_sound",
+  "module": "BccSharp.Cover.LayeredCatRoute",
+  "line": 129,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "centered check",
+  "name": "BccSharp.Coulomb.CompactCover.Layered.centeredCheck_sound",
+  "module": "BccSharp.Cover.CenteredRoute",
+  "line": 646,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "planar-fibre triangular check",
+  "name": "BccSharp.Coulomb.CompactCover.PlanarFibreTri.planarFibreTriCheck_sound",
+  "module": "BccSharp.Cover.PlanarFibreTri",
+  "line": 406,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "late checker",
+  "name": "BccSharp.Coulomb.CompactCover.LatePackets.lateChecker_sound",
+  "module": "BccSharp.Cover.LateChecker",
+  "line": 94,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "lattice: tangent E1 leaf check",
+  "name": "BccSharp.Coulomb.BravaisCover.TangentE1.leafCheck_sound",
+  "module": "BccSharp.Lattice.TangentE1",
+  "line": 542,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "E",
+  "supports": "lattice: strain atlas leaf check",
+  "name": "BccSharp.Coulomb.BravaisCover.StrainTangent.zLeafCheck_sound",
+  "module": "BccSharp.Lattice.StrainLeaf",
+  "line": 1161,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "interface statement from analytic inputs and a cover",
+  "name": "BccSharp.Coulomb.assemble",
+  "module": "BccSharp.TwoSite.Interface",
+  "line": 267,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "statement from a checked corpus",
+  "name": "BccSharp.Coulomb.GlobalInputs.assemble_from_cover_corpus_cover",
+  "module": "BccSharp.TwoSite.GlobalInputs",
+  "line": 44,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "full statement from the interface statement",
+  "name": "BccSharp.Coulomb.Full.statementFull_of_statement",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 312,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "full statement equivalent to the interface statement",
+  "name": "BccSharp.Coulomb.Full.statementFull_iff",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 383,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "full statement on point sets",
+  "name": "BccSharp.Coulomb.Full.StatementFull.physical",
+  "module": "BccSharp.TwoSite.StatementFull",
+  "line": 392,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "soundness of the later checks",
+  "name": "BccSharp.Coulomb.FinalAssembly.later_sound",
+  "module": "BccSharp.FinalAssembly",
+  "line": 370,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "soundness of the prefix check",
+  "name": "BccSharp.Coulomb.FinalAssembly.prefix_sound",
+  "module": "BccSharp.FinalAssembly",
+  "line": 379,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "soundness of the late checker",
+  "name": "BccSharp.Coulomb.FinalAssembly.late_sound",
+  "module": "BccSharp.FinalAssembly",
+  "line": 390,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "soundness of the merged pending checks",
+  "name": "BccSharp.Coulomb.FinalAssembly.mergedPending_sound",
+  "module": "BccSharp.FinalAssembly",
+  "line": 779,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "reduction, first form",
+  "name": "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay",
+  "module": "BccSharp.FinalAssembly",
+  "line": 523,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "reduction, first form, nothing pending",
+  "name": "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs",
+  "module": "BccSharp.FinalAssembly",
+  "line": 550,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "reduction, merged form",
+  "name": "BccSharp.Coulomb.FinalAssembly.statementFull_of_replay_merged",
+  "module": "BccSharp.FinalAssembly",
+  "line": 897,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ },
+ {
+  "item": "F",
+  "supports": "reduction, merged form, nothing pending",
+  "name": "BccSharp.Coulomb.FinalAssembly.statementFull_of_runs_merged",
+  "module": "BccSharp.FinalAssembly",
+  "line": 1004,
+  "axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ]
+ }
+]

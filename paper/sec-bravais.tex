@@ -1,0 +1,149 @@
+\section{The lattice case}\label{sec:bravais}
+
+The lattices form the five-dimensional subset $\{f\in\frac12\Z^3\}$ of the eight-dimensional chart, and the restriction of the main
+inequality to it is used as an input for the general case (Section~\ref{ssec:anchor}). We therefore prove it first. For a lattice
+$\Lambda\in\Cone$ we write $D(\Lambda)=D(\ltwo^{-1}\Lambda,0)$; this agrees with Definition~\ref{def:D} and
+Lemma~\ref{lem:Dbasic}(ii) for any description of $\Lambda$ as a two-site configuration.
+
+\begin{theorem}[Lattice case]\label{thm:bravais}
+For every lattice $\Lambda\subset\R^3$ of density $3/(4\pi)$,
+\begin{equation}\label{eq:bravais}
+  e(\Lambda)-\eB\ \ge\ \gap\,D(\Lambda),
+\end{equation}
+with equality if and only if $\Lambda$ is a BCC lattice or an FCC lattice.
+\end{theorem}
+
+In particular $e(\Lambda)\ge\eB$ with equality only for BCC lattices; this is the theorem of Muratov and Novaga
+\cite{MuratovNovaga2026}; see also \cite{LuoWei2026Yukawa}. The proof of
+Theorem~\ref{thm:bravais} given here does not use \cite{MuratovNovaga2026}; it works in different coordinates and with different
+bounds, apart from the elementary inequality \eqref{eq:T1}, which also occurs there. To our knowledge the refinement
+\eqref{eq:bravais}, and in particular the fact that the FCC lattice is its only equality case besides the BCC lattice, is new.
+
+\subsection{Reduction}
+
+Write $\Lambda=\lone L$ with $L=R\,\Z^3$ of covolume one and Gram matrix $M=R^\T R$. By \eqref{eq:H1}, with
+$H_\mathrm B:=3+2\lone\eB=0.11153849\ldots$ and $H_\mathrm F:=3+2\lone\eF=0.11171788\ldots$, inequality \eqref{eq:bravais} reads
+\begin{equation}\label{eq:lattice-ineq}
+  \Hone(M)-H_\mathrm B\ \ge\ 2\lone\gap\,D(\Lambda),\qquad 2\lone\gap=H_\mathrm F-H_\mathrm B=1.7938\ldots\times10^{-4}.
+\end{equation}
+Both sides are invariant under $R\mapsto QR\gamma$ with $Q\in\Or(3)$ and $\gamma\in\GL(3,\Z)$. By Lemma~\ref{lem:reduced} we may assume
+that $R$ has the form \eqref{eq:Rchart} and satisfies \eqref{eq:R1}--\eqref{eq:R3}; the coordinates are $\xi=(r_1,r_2,x,y,z)\in\R^5$.
+If $r_1\le\frac45$, the two terms $m=\pm e_1$ of $\Hone$ give
+$\Hone(M)\ge2\,\Ga(\frac12,\frac{16\pi}{25})=0.11232676\ldots>H_\mathrm F$, and \eqref{eq:lattice-ineq} holds strictly because $D\le1$. Otherwise
+$\xi$ lies in the box
+\begin{equation}\label{eq:root5}
+  \bigl[\tfrac45,\tfrac{231}{200}\bigr]\times\Bigl[\tfrac{2\sqrt3}5,\bigl(\tfrac5{2\sqrt3}\bigr)^{1/2}\Bigr]\times\bigl[0,\tfrac12\bigr]^2\times\bigl[-\tfrac12,\tfrac12\bigr].
+\end{equation}
+
+\subsection{Bounds on a box}\label{ssec:taylor}
+
+Let $P_n$ denote the partial sum of $\Hone$ over $\max_i|m_i|\le n$; then $\Hone\ge P_n$. Lower bounds for a $C^2$ function $\psi$ on a
+box $\prod_i[c_i-\rho_i,c_i+\rho_i]$ are obtained from enclosures of $\psi(c)$, $\nabla\psi(c)$ and of $\nabla\psi$, $\nabla^2\psi$ on the
+box, computed by automatic differentiation in ball arithmetic, in the following standard ways:
+\begin{align}
+  \inf\psi&\ge\psi(c)-\sum_i\rho_i\,\sup|\partial_i\psi|,\label{eq:T4}\\
+  \inf\psi&\ge\psi(c)+\sum_i\min_{|v|\le\rho_i}\bigl(-|\partial_i\psi(c)|\,|v|+\tfrac12\kappa_iv^2\bigr),\qquad
+      \kappa_i:=\inf\partial_{ii}\psi-\sum_{j\ne i}\sup|\partial_{ij}\psi|\,\frac{\rho_j}{\rho_i},\label{eq:T1}\\
+  \inf\psi&\ge\psi(c)-\sum_i\rho_i\,|\partial_i\psi(c)|+\tfrac12\min(0,\lambda)\sum_i\rho_i^2\qquad\text{if }\nabla^2\psi\succeq\lambda I,\label{eq:T2}\\
+  \inf\psi&\ge\psi(c)+\sum_i\min_{|v|\le\rho_i}\bigl(-g_i|v|+\tfrac\lambda2v^2\bigr)\qquad\text{if }\nabla^2\psi\succeq\lambda I\text{ with }\lambda>0,\ g_i\ge|\partial_i\psi(c)|.\label{eq:T5}
+\end{align}
+The first is the mean value theorem. The second is Taylor's formula with the inequality
+$|v_iv_j|\le\frac12(\frac{\rho_j}{\rho_i}v_i^2+\frac{\rho_i}{\rho_j}v_j^2)$, which reduces the quadratic remainder to a sum of
+one-variable quadratics; a weaker form of it replaces the $i$-th minimum by $-\rho_i|\partial_i\psi(c)|+\frac12\min(0,\kappa_i)\rho_i^2$.
+The third and fourth are Taylor's formula with a uniform lower bound for the Hessian.
+
+Such a lower bound, for the least eigenvalue of every symmetric matrix in an interval matrix, is certified as follows. Let $H_0$
+be the symmetric matrix of midpoints and $\epsilon_{ij}$ the radii. If the $LDL^\T$ factorization of $H_0-tI$, computed in ball
+arithmetic, has pivots that are certainly positive, then every symmetric matrix in the enclosure has least eigenvalue greater than
+$t-\max_i\sum_j\epsilon_{ij}$, by Sylvester's criterion and Weyl's inequality. A suitable $t$ is searched for (in the lattice case
+of this section among a few fixed multiples, none of them above it, of a floating-point approximation of the least eigenvalue of
+$H_0$, elsewhere by bisection); only successful positivity tests are used.
+
+The defect is bounded from above as in Lemma~\ref{lem:Dupper}(i) with $u=0$. Let $B_\ast$ be a basis matrix, of positive determinant,
+of the body-centred cubic lattice $2^{1/3}\Bz$ of covolume one, and $C:=(RB_\ast^{-1})^\T(RB_\ast^{-1})$. If the eigenvalues
+of $C$ lie in $[\mu_0,\frac{169}{100})$ with $\mu_0\ge\frac{169}{200}$, then
+\begin{equation}\label{eq:Q1}
+  D(\Lambda)\ \le\ \mathcal Q:=\frac{100}{(1+\sqrt{\mu_0})^2}\,\|C-I\|_\Fro^2 .
+\end{equation}
+The certificate uses $\mu_0=\frac9{10}$ and encloses the eigenvalues by Gershgorin discs.
+
+\subsection{The two strain charts}\label{ssec:strain}
+
+Let $\Lambda_0\in\{\Bz,\Fz\}$, in the orientation of \eqref{eq:B0F0}, so that its point group consists of the $48$ signed
+permutation matrices, and let $B_\ast$ be a basis matrix of the lattice $2^{1/3}\Lambda_0$ of covolume one (for $\Lambda_0=\Bz$ the
+matrix of \eqref{eq:Q1}). We parametrize the lattices near $2^{1/3}\Lambda_0$ by the traceless symmetric matrices $S$ with $I+S$
+positive definite: to $S$ corresponds the lattice with Gram matrix
+$B_\ast^\T C(S)B_\ast$, where $C(S):=\det(I+S)^{-1/3}(I+S)$. Thus $S$ parametrizes the positive definite matrices $C$ of
+determinant one, with inverse $S=3C/\tr C-I$. Write
+$S=S_E+S_T$ with $S_E$ diagonal and $S_T$ off-diagonal; conjugation by the point group preserves this splitting, the norm
+$\|S_E\|_\Fro$ and the largest modulus $\|S_T\|_{\max}$ of an entry of $S_T$. For $\rho_E,\rho_T>0$ let
+\[
+  \mathcal R(\rho_E,\rho_T):=\{S:\ \|S_E\|_\Fro\le\rho_E,\ \|S_T\|_{\max}\le\rho_T\},
+\]
+an invariant neighbourhood of $0$. By the symmetry it suffices to treat the fundamental domain in which the diagonal entries
+of $S$ are ordered and two off-diagonal entries are nonnegative. Let $\Psi:=\Hone-H_\mathrm B-2\lone\gap\,\mathcal Q$ for
+$\Lambda_0=\Bz$, with $\mathcal Q$ from \eqref{eq:Q1}, where $C=C(S)$, and $\Psi:=\Hone-H_\mathrm F$ for $\Lambda_0=\Fz$; here
+$\Hone$ is evaluated at $B_\ast^\T C(S)B_\ast$.
+
+\emph{Criticality.} $\Psi(0)=0$ and $\nabla\Psi(0)=0$. Indeed, $C(0)=I$, so that $\Hone=H_\mathrm B$, respectively $H_\mathrm F$,
+at $S=0$ by \eqref{eq:H1}, and $\mathcal Q$ vanishes to second order at $0$. For a signed permutation matrix $O$ we have
+$C(OSO^\T)=OC(S)O^\T$, and $O^\T B_\ast=B_\ast\gamma$ with $\gamma\in\GL(3,\Z)$ because $O^\T$ maps $2^{1/3}\Lambda_0$ onto
+itself; hence $S\mapsto\Hone(B_\ast^\T C(S)B_\ast)$ is invariant under $S\mapsto OSO^\T$. Its differential at $0$ is therefore
+$S\mapsto\tr(ZS)$ with a traceless symmetric matrix $Z$ that commutes with all signed permutation matrices. Such a matrix is
+diagonal with equal diagonal entries, so $Z=0$.
+
+\begin{proposition}\label{prop:strainregions}
+Inequality \eqref{eq:lattice-ineq} holds for all lattices with $S\in\mathcal R(\rho_E,\rho_T)$, where
+$(\rho_E,\rho_T)=(0.46166\ldots,\,0.21185\ldots)$ in the chart of $\Bz$ and $(0.35606\ldots,\,0.20700\ldots)$ in the chart of $\Fz$,
+with equality only at $S=0$. (The exact values are products of rational numbers, of fixed binary floating-point numbers recorded
+in the certificate and, for $\rho_T$, of $2^{-1/2}$.)
+\end{proposition}
+
+\begin{proof}[Structure of the proof]
+The part of the fundamental domain inside $\mathcal R$ is covered by a box that is bisected adaptively. A terminal box either
+\textup{(i)} misses the fundamental domain or $\mathcal R$; or \textup{(ii)} lies in a small invariant neighbourhood of $0$ on which
+$\nabla^2\Psi$ is certified positive definite, so that $\Psi>0$ there except at $0$, by convexity and criticality; or \textup{(iii)}
+carries a certified positive lower bound for $P_n-H_\mathrm F$, so that $\Hone>H_\mathrm F$; or \textup{(iv)}, in the chart of $\Bz$,
+satisfies the eigenvalue condition of \eqref{eq:Q1} and carries a certified positive lower bound for
+$P_n-H_\mathrm B-2\lone\gap\,\mathcal Q$. The lower bounds are the best of \eqref{eq:T4}--\eqref{eq:T5}, with the weaker form of
+\eqref{eq:T1}. In case \textup{(ii)} the Hessian includes the tails of Lemma~\ref{lem:tails}; the neighbourhood has radius just
+below $\frac1{4000}$ in rescaled coordinates in which the Hessian of $\Psi$ at the centre is close to the identity, and the
+positive definiteness is certified separately on $2500$ boxes that cover its part in the fundamental domain. The numbers of
+terminal boxes are given in Table~\ref{tab:bravais}; the $2500$ boxes just mentioned are not counted there.
+\end{proof}
+
+\subsection{The global cover}
+
+The program works on a box with binary floating-point endpoints that contains \eqref{eq:root5}: the endpoints of the intervals
+of $r_1$ and $r_2$ are enclosed in ball arithmetic and rounded outwards, which moves each of them by less than $10^{-15}$, and the
+other endpoints are exact. The certificate records this box together with a verification in ball arithmetic that it contains
+\eqref{eq:root5}. It is divided into $16^5$ cells, which are bisected adaptively. A terminal cell is of one of four types:
+\begin{itemize}
+\item[(R)] one of the inequalities \eqref{eq:R1}, \eqref{eq:R2} is violated on the whole cell for a fixed integer vector, so the cell
+contains no reduced $\xi$;
+\item[(E)] a certified lower bound for $P_n$ on the cell exceeds an upper enclosure of $H_\mathrm F$, so $\Hone>H_\mathrm F$ there;
+\item[(B), (F)] the cell is mapped into the region $\mathcal R$ of Proposition~\ref{prop:strainregions} for $\Bz$, respectively $\Fz$:
+with the matrix $\gamma\in\GL(3,\Z)$ that relates the reduced basis of the cell to the cubic basis $B_\ast$, the enclosure of
+$S=3C/\tr C-I$, $C=(R\gamma^{-1}B_\ast^{-1})^\T(R\gamma^{-1}B_\ast^{-1})$, over the cell lies in $\mathcal R$; since $\det C=1$, we
+have $C=C(S)$, so that for every $\xi$ in the cell the lattice $R\,\Z^3$ is, up to a rotation, the lattice that corresponds to
+$S$.
+\end{itemize}
+The truncation is $n=2$, raised to $3$ and $4$ near the reduced representatives of the cubic lattices. In cells of type (R) there is
+nothing to prove; in cells of type (E) inequality \eqref{eq:lattice-ineq} is strict; cells of types (B) and (F) are covered by
+Proposition~\ref{prop:strainregions}. The run terminates with no unresolved cell, which proves Theorem~\ref{thm:bravais}: equality
+holds only at the centres of the two strain charts, where $D=0$ and $D=1$ respectively.
+
+\begin{table}[h]
+\begin{tabular}{lrrrrrl}
+\toprule
+ & boxes & \multicolumn{4}{c}{terminal boxes by type} & smallest margin\\
+\midrule
+global cover & $1\,463\,656$ & (R) $727\,455$ & (E) $490\,653$ & (B) $22\,564$ & (F) $15\,444$ & $3.8\times10^{-9}$\\
+chart of $\Bz$ & $218\,153$ & (i) $12\,553$ & (ii) $2$ & (iii) $95\,223$ & (iv) $1\,299$ & $2.8\times10^{-9}$\\
+chart of $\Fz$ & $94\,011$ & (i) $3\,775$ & (ii) $2$ & (iii) $43\,229$ & & $1.3\times10^{-10}$\\
+\bottomrule
+\end{tabular}
+\caption{The certificate of Theorem~\ref{thm:bravais}. ``Boxes'' counts all boxes examined, including those that were subdivided.
+Margins are in units of $\Hone$; they are to be compared with $H_\mathrm F-H_\mathrm B=1.8\times10^{-4}$ and with enclosure radii below
+$10^{-15}$.}\label{tab:bravais}
+\end{table}

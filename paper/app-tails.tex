@@ -1,0 +1,70 @@
+\section{Tails of the series and of their derivatives}\label{app:tails}
+
+Lower bounds for the energy use partial sums of \eqref{eq:H1} and \eqref{eq:H2} and need no tail estimate. Upper bounds, and bounds
+for derivatives, need the following elementary majorants. They are deliberately crude; the truncation radii are chosen so that the
+tails are far below the margins of the certificates.
+
+\begin{lemma}\label{lem:Gbounds}
+For $a\in\{\frac12,1\}$, integers $0\le j\le4$ and $t\ge1$,
+\[
+  \Ga(a+j,t)\le c_j\,\frac{e^{-t}}t,\qquad (c_0,c_1,c_2,c_3,c_4)=(1,2,5,16,65).
+\]
+\end{lemma}
+
+\begin{proof}
+$\Ga(a,t)\le\int_1^\infty e^{-tu}\,du=e^{-t}/t$ for $a\le1$, and an integration by parts gives
+$\Ga(a+1,t)=\bigl(e^{-t}+a\,\Ga(a,t)\bigr)/t$. Hence, for $t\ge1$, one may take $c_{j+1}=1+(1+j)c_j$.
+\end{proof}
+
+\begin{lemma}[Shell majorants]\label{lem:tails}
+Let $P\subset\R^d$ be convex, let $p\mapsto\mathcal M(p)$ be a smooth family of positive definite $3\times3$ matrices on $P$ with
+$\mathcal M(p)\succeq\mu I$, and let $p\mapsto w(p)\in\R^3$ be smooth with $\max_i|w_i|\le W$ on $P$. Write
+$\mathcal M[m+w]=(m,1)^\T\mathcal M_{\mathrm c}\,(m,1)$ with the $4\times4$ matrix
+$\mathcal M_{\mathrm c}=\bigl(\begin{smallmatrix}\mathcal M&\mathcal Mw\\ w^\T\mathcal M&w^\T\mathcal Mw\end{smallmatrix}\bigr)$, and let
+$K_1$ and $K_2$ bound the Frobenius norms of all first and all second partial derivatives of $\mathcal M_{\mathrm c}$ on $P$. Fix
+$n_0\ge1$ with $\theta:=1-W/(n_0+1)>0$, put $c:=\pi\mu\theta^2$ and assume $c\,(n_0+1)^2\ge1$. For $a\in\{\frac12,1\}$ and $n>n_0$ let
+$\Sigma_n(p):=\sum_{\max_i|m_i|=n}\Ga\bigl(a,\pi\mathcal M[m+w]\bigr)$. Then on $P$
+\begin{align*}
+  0\le\Sigma_n&\le\frac{26}c\,e^{-cn^2},\\
+  |\partial_i\Sigma_n|&\le\frac{520\,\pi K_1}{c}\,n^2e^{-cn^2},\\
+  |\partial_{ik}\Sigma_n|&\le\frac{130}c\bigl(16\pi^2K_1^2n^4+4\pi K_2n^2\bigr)e^{-cn^2}.
+\end{align*}
+For derivatives of order $j=3,4$ along a ray $t\mapsto p+t\omega$ in $P$, let $K'_l$ ($1\le l\le j$) be such that
+$|\frac{d^l}{dt^l}\mathcal M[m+w]|\le K'_ln^2$ on the shell $\max_i|m_i|=n$; then
+\begin{align*}
+  \Bigl|\frac{d^3}{dt^3}\Sigma_n\Bigr|&\le\frac{26\cdot65}{c}\bigl(\pi^3K_1'^3n^6+3\pi^2K'_1K'_2n^4+\pi K'_3n^2\bigr)e^{-cn^2},\\
+  \Bigl|\frac{d^4}{dt^4}\Sigma_n\Bigr|&\le\frac{26\cdot65}{c}\bigl(\pi^4K_1'^4n^8+6\pi^3K_1'^2K'_2n^6+\pi^2(3K_2'^2+4K'_1K'_3)n^4+\pi K'_4n^2\bigr)e^{-cn^2}.
+\end{align*}
+For the reciprocal sum of \eqref{eq:H2} the factor $1+\cos(2\pi m\cdot f)$ is bounded by $2$, its derivatives of order $i\ge1$ are
+bounded by $(2\pi\sqrt3\,n\max\|\partial f\|)^i$ when $f$ is affine in $p$, and the bounds are combined by Leibniz's rule.
+\end{lemma}
+
+\begin{proof}
+The shell $\max_i|m_i|=n$ has $24n^2+2\le26n^2$ points, and on it $|m+w|\ge\max_i|m_i+w_i|\ge n-W\ge\theta n$, so
+$\pi\mathcal M[m+w]\ge cn^2\ge1$. The first bound follows from Lemma~\ref{lem:Gbounds} with $j=0$. For the derivatives, with
+$Q=\mathcal M[m+w]$,
+\[
+  \partial_i\Ga(a,\pi Q)=-\pi\,\Ga(a+1,\pi Q)\,\partial_iQ,\qquad
+  \partial_{ik}\Ga(a,\pi Q)=\pi^2\Ga(a+2,\pi Q)\,\partial_iQ\,\partial_kQ-\pi\,\Ga(a+1,\pi Q)\,\partial_{ik}Q .
+\]
+Here $|\partial_iQ|\le K_1|(m,1)|^2\le4K_1n^2$ and $|\partial_{ik}Q|\le4K_2n^2$, and $\Ga(a+j,\pi Q)\le5e^{-cn^2}/(cn^2)$ for $j=1,2$
+because $t\mapsto e^{-t}/t$ is decreasing. For the radial derivatives of order three and four, which only Section~\ref{sec:local}
+uses, Fa\`a di Bruno's formula with absolute values gives the expression \eqref{eq:faa4} and its analogue of order three, in
+which $\Ga(a+i,\pi Q)\le65\,e^{-cn^2}/(cn^2)$ for $i\le4$ by Lemma~\ref{lem:Gbounds}.
+\end{proof}
+
+\begin{lemma}[Summation]\label{lem:geom}
+Let $p$ be a polynomial of degree $d$ with nonnegative coefficients, $c>0$ and $N\ge1$ with
+$\rho:=\bigl(\frac{N+1}N\bigr)^de^{-c(2N+1)}<1$. Then $\sum_{n>N}p(n)e^{-cn^2}\le p(N)e^{-cN^2}\rho/(1-\rho)$.
+\end{lemma}
+
+\begin{proof}
+For $n\ge N$, $p(n+1)e^{-c(n+1)^2}\le\bigl(\frac{n+1}n\bigr)^de^{-c(2n+1)}p(n)e^{-cn^2}\le\rho\,p(n)e^{-cn^2}$.
+\end{proof}
+
+The certificates sum the shell majorants explicitly up to $N=n_0+24$ and bound the remainder by Lemma~\ref{lem:geom}. Because the
+majorants are summable uniformly on $P$, they also justify the termwise differentiation of the series. In the charts of
+Section~\ref{sec:local} we take $n_0=8$, and the parameter $W$ accounts for the fractional offset and for the displacement $u$. For
+the eight ellipsoids of Table~\ref{tab:atlas} the tail of the third derivative at the centre is below $2\times10^{-11}$ and the tail
+of the fourth radial derivative is below $2\times10^{-7}$; all tails are included in the enclosures and in the constants $\lambda$,
+$B_3$, $B_4$ of the table.

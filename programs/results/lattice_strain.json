@@ -1,0 +1,194 @@
+{
+ "provenance": {
+  "program": "lattice.py",
+  "program_sha256": "a1e1919dc4cd294d167982d9a1fd216f41621ee66157dcd4fa8c2ab9fb65f04d",
+  "source_sha256": {
+   "bccnum/__init__.py": "fc2600f811cef44754eb6f904a68f8b11cad308f89e4e22eb690771047e1b281",
+   "bccnum/chart_atlas.py": "39fa24f8d99b7999257eecd6da0111953cafa738d8fc15734dcbd7c43af3d2fc",
+   "bccnum/ewald_cert.py": "fb48a6db225211e3604ca0ff2f5319e4ebb5d91ba8b734af72a9fef59fe4b0de",
+   "bccnum/ewald_float.py": "2474f6ce03b1cf72ba4c14e0b335f8695e096824bd56937c2d41445000bab906",
+   "bccnum/exact.py": "8511d53d782d4475bb3f8aeec22d491a484a394fc3915e774fc9d57e49a6b789",
+   "bccnum/intervals.py": "cd8a6beab7d9b999d87fe4bfaa7fc2a001a06b00f9cd176f7c64d3c4f7b9023c",
+   "bccnum/lattice_cert.py": "1c0f2dcc590c46cb85e9a31ec0e88a705937a4874e5ba0b6d0752cff4099de74",
+   "bccnum/lattice_strain.py": "33c36b62421428cfba5061c09955d66c2ad3f3661521a27ddf51c46e8d2ed55c",
+   "bccnum/provenance.py": "ff6af7b6c3f64ab3c79c1e67f935df13ba289a6e74bff2c6babcf7ae73212fe9",
+   "bccnum/structures.py": "0eb179d42c6aa748b807548f1f18db5cb4ae651315f107c8624b64303c513bb3",
+   "bccnum/two_site.py": "c468b448f83cd2daf71fa8e1c4fac8fb430b3a370625ed751cb7858c82e9c092"
+  },
+  "inputs_sha256": {
+   "results/constants.json": "410932caeee78af4d05a8fa264b11e326bed7177c375460f6cb0da2ed7ce200b"
+  },
+  "unchanged_at_end": true,
+  "parameters": {
+   "prec_bits": 96,
+   "r1C": "4/5",
+   "r1max": "1155/1000",
+   "mu_lo": "9/10",
+   "mu_hi": "169/100",
+   "n_E_far": 2,
+   "n_E_mid": 3,
+   "n_E_near": 4,
+   "near_dist": 0.03,
+   "mid_dist": 0.1,
+   "grid": 16,
+   "strain": {
+    "bcc": {
+     "rho_E": "2/25",
+     "rho_T": "4/25",
+     "beta": "1/4000",
+     "ball_sub": 5
+    },
+    "fcc": {
+     "rho_E": "13/200",
+     "rho_T": "4/25",
+     "beta": "1/4000",
+     "ball_sub": 5
+    }
+   },
+   "handoff_dist": 0.15,
+   "strain_n": 3,
+   "strain_n_near": 5,
+   "strain_near": 0.002,
+   "strain_n_local": 6,
+   "strain_max_depth": 120,
+   "max_depth": 40,
+   "max_boxes": 5000000,
+   "inputs": {
+    "results/constants.json": "410932caeee78af4d05a8fa264b11e326bed7177c375460f6cb0da2ed7ce200b"
+   }
+  },
+  "seeds": null,
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+   "flint": "0.9.0",
+   "FLINT": "3.6.0",
+   "numpy": "2.5.4",
+   "scipy": "1.18.1"
+  },
+  "started_utc": "2026-11-26T19:55:09+00:00",
+  "wall_time_s": 8755.44,
+  "tier": "cert"
+ },
+ "results": {
+  "strain_balls": [
+   {
+    "name": "bcc",
+    "beta": "1/4000",
+    "sub": 5,
+    "subboxes_checked": 2500,
+    "all_pd": true,
+    "min_lambda_lower": "[0.9156939982 +/- 2.80e-11]",
+    "C_eig_range": [
+     "[0.99772799 +/- 4.95e-9]",
+     "[1.0022720 +/- 4.44e-9]"
+    ],
+    "C_range_ok": true
+   },
+   {
+    "name": "fcc",
+    "beta": "1/4000",
+    "sub": 5,
+    "subboxes_checked": 2500,
+    "all_pd": true,
+    "min_lambda_lower": "[0.9445886250 +/- 1.75e-11]"
+   }
+  ],
+  "strain_regions": [
+   {
+    "name": "bcc",
+    "rho_E": "2/25",
+    "rho_T": "4/25",
+    "sigma_floats": [
+     5.770845365292387,
+     5.770845365292387,
+     1.872595510847145,
+     1.872595510847145,
+     1.872595510847145
+    ],
+    "sigma_hex": [
+     "0x1.715587cc8d0dfp+2",
+     "0x1.715587cc8d0dfp+2",
+     "0x1.df626b5db9932p+0",
+     "0x1.df626b5db9932p+0",
+     "0x1.df626b5db9932p+0"
+    ],
+    "root": [
+     [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.16
+     ],
+     [
+      0.08,
+      0.08,
+      0.16,
+      0.16,
+      0.16
+     ]
+    ],
+    "terminal_counts": {
+     "O": 12553,
+     "E1": 95223,
+     "E2": 1299,
+     "BALL": 2
+    },
+    "smallest_margins": {
+     "E1": 2.0403132670894223e-08,
+     "E2": 2.8045425841674416e-09
+    },
+    "unresolved": 0,
+    "boxes_processed": 218153,
+    "depth_reached": 50
+   },
+   {
+    "name": "fcc",
+    "rho_E": "13/200",
+    "rho_T": "4/25",
+    "sigma_floats": [
+     5.477910701433413,
+     5.477910701433413,
+     1.8296995963545897,
+     1.8296995963545897,
+     1.8296995963545897
+    ],
+    "sigma_hex": [
+     "0x1.5e9616c44427dp+2",
+     "0x1.5e9616c44427dp+2",
+     "0x1.d4673157d8ecdp+0",
+     "0x1.d4673157d8ecdp+0",
+     "0x1.d4673157d8ecdp+0"
+    ],
+    "root": [
+     [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.16
+     ],
+     [
+      0.065,
+      0.065,
+      0.16,
+      0.16,
+      0.16
+     ]
+    ],
+    "terminal_counts": {
+     "E1": 43229,
+     "O": 3775,
+     "BALL": 2
+    },
+    "smallest_margins": {
+     "E1": 1.3325621483058264e-10
+    },
+    "unresolved": 0,
+    "boxes_processed": 94011,
+    "depth_reached": 50
+   }
+  ]
+ }
+}

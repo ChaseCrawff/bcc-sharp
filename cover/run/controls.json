@@ -1,0 +1,991 @@
+{
+ "provenance": {
+  "program": "record_controls.py",
+  "arguments": [
+   "certificate",
+   "--report",
+   "run/controls.json"
+  ],
+  "started": "2026-11-26T15:46:21-0700",
+  "elapsed_seconds": 160.43744683265686,
+  "environment": {
+   "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+   "python-flint": "0.9.0",
+   "flint": "3.6.0",
+   "platform": "Windows-11-10.0.26200-SP0",
+   "processors": 32
+  },
+  "before": {
+   "program_sha256": "b85efa95947a680041487c5a2626fe8e09fefa89acb21e01036c38afe5d3e4e2",
+   "verifier": {
+    "__init__.py": "ec381c0765fda4b844dfa80873125eb8ad54cb10629937b67d5606484a088004",
+    "anchor.py": "5649f55263bbf405f3f096e5c13ef46c2b2244e59361dec189fe9335a33c212c",
+    "balls.py": "dd5f8ad14f30129e2512adab190760b6c96038548a7aa35a9e5aaa30f507613a",
+    "boxes.py": "f60d440ea849e52ba9fa946dc78d91797407f7b1e8bf693954e9c13b4dbb5f6f",
+    "controls.py": "e451443bcc0a405b5f3279ed0a2a4d82b58941d835cd56079a4e42ee98d8fd90",
+    "defect.py": "f244456fc7d84ccf464ffc6752b5dad18ba878b88272e16eda0d09a8a355ecba",
+    "energy.py": "cbfb31d7a610080f58494aac55028e5990566bee095600b06768b39bc7467e67",
+    "gain.py": "86ec25f5ecff41a2475750b82ee785df76245509d82ea67261daba3633153e3a",
+    "jets.py": "9d4de7174532a10906719c41b3d0df6aa1778e77dd0331d44001fe60154f3a38",
+    "planar.py": "d09e2ee79cfd255c32827ea18867cc70609290f07a4bdff19bcfb05e5ef99dc6",
+    "refine.py": "076ac1e3017ada82531a457cc1275aedc2b844e1e92e32a8d18a54407e4a8fdd",
+    "rules.py": "754634934825fd39c09d29941da20174b44f8efaa85639f97082f86dcbfa9519",
+    "shape.py": "67c73aa68e489e3e8951af4ace4ada39fe481cbea6e1fb52c5214c7ce2e2300a",
+    "verify.py": "3e1bda6a40a7abd523b0fcd133593094a303a11502ee970699ba8455a79e7501"
+   },
+   "inputs": {
+    "stage01a.jsonl.gz": "55cfa426b0ef811fee499c82f6a86dbf76c3741fcf604d7e07c30cc80080ac2c",
+    "stage01b.jsonl.gz": "4e142753b0cf188572d0b1d70c7d925a45bf72c811e53887868d47d8ce737d6d",
+    "stage02.jsonl.gz": "2e028e446e2940d2d9c24fd9c79b946924e2601fc1fd8480f60b09cf134e4559",
+    "stage03a.jsonl.gz": "ce550d34f30ccc46f6646a64588c03b161e3e0da8d1cb621279002b974584743",
+    "stage03b.jsonl.gz": "b18cf2efce74fb0b7560e06a1ce7b3ef0b20827c1bcbc267afb29ad160b89c87",
+    "stage03c.jsonl.gz": "ce1d7ceadfc6d6f04e8f241b5915d8e4e14564d8fba381f3e682fbdaa76451b8",
+    "stage03d.jsonl.gz": "8d61364751584b39884ad4ed7553f9c63c4c43f010c26ed5614d8cc73f40e8a9",
+    "stage05.jsonl.gz": "44854e0d8909ad6d5f5e91752ace5f8111a3b887d03e8a16bc0c3c0ecceff3e3",
+    "stage06.jsonl.gz": "b1af8fcf5074ef1ac24774f1a0c558cfc5d2bfcc3c803fa67b93376cc0a64552",
+    "stage07.jsonl.gz": "9b4fc5fc5bc57ff18c0239d2cfe1fd9a5b68e9f9dc07f7dc3030325c68aa3d7b",
+    "stage08.jsonl.gz": "6fec4d83b1667272e675d91e064b2cf0f0165baf093563c12ffefd9cd54f1250",
+    "stage09.jsonl.gz": "b3dc5eaac5b593941417c9385574bfbc18d1a921a9dcf694a5a3ed4b289e7321",
+    "stage10.jsonl.gz": "779a1fe8c4484d2839f0f17ff166f291a28d273f53d4ccfae8f3c50fcf1025dc"
+   }
+  },
+  "after": {
+   "program_sha256": "b85efa95947a680041487c5a2626fe8e09fefa89acb21e01036c38afe5d3e4e2",
+   "verifier": {
+    "__init__.py": "ec381c0765fda4b844dfa80873125eb8ad54cb10629937b67d5606484a088004",
+    "anchor.py": "5649f55263bbf405f3f096e5c13ef46c2b2244e59361dec189fe9335a33c212c",
+    "balls.py": "dd5f8ad14f30129e2512adab190760b6c96038548a7aa35a9e5aaa30f507613a",
+    "boxes.py": "f60d440ea849e52ba9fa946dc78d91797407f7b1e8bf693954e9c13b4dbb5f6f",
+    "controls.py": "e451443bcc0a405b5f3279ed0a2a4d82b58941d835cd56079a4e42ee98d8fd90",
+    "defect.py": "f244456fc7d84ccf464ffc6752b5dad18ba878b88272e16eda0d09a8a355ecba",
+    "energy.py": "cbfb31d7a610080f58494aac55028e5990566bee095600b06768b39bc7467e67",
+    "gain.py": "86ec25f5ecff41a2475750b82ee785df76245509d82ea67261daba3633153e3a",
+    "jets.py": "9d4de7174532a10906719c41b3d0df6aa1778e77dd0331d44001fe60154f3a38",
+    "planar.py": "d09e2ee79cfd255c32827ea18867cc70609290f07a4bdff19bcfb05e5ef99dc6",
+    "refine.py": "076ac1e3017ada82531a457cc1275aedc2b844e1e92e32a8d18a54407e4a8fdd",
+    "rules.py": "754634934825fd39c09d29941da20174b44f8efaa85639f97082f86dcbfa9519",
+    "shape.py": "67c73aa68e489e3e8951af4ace4ada39fe481cbea6e1fb52c5214c7ce2e2300a",
+    "verify.py": "3e1bda6a40a7abd523b0fcd133593094a303a11502ee970699ba8455a79e7501"
+   },
+   "inputs": {
+    "stage01a.jsonl.gz": "55cfa426b0ef811fee499c82f6a86dbf76c3741fcf604d7e07c30cc80080ac2c",
+    "stage01b.jsonl.gz": "4e142753b0cf188572d0b1d70c7d925a45bf72c811e53887868d47d8ce737d6d",
+    "stage02.jsonl.gz": "2e028e446e2940d2d9c24fd9c79b946924e2601fc1fd8480f60b09cf134e4559",
+    "stage03a.jsonl.gz": "ce550d34f30ccc46f6646a64588c03b161e3e0da8d1cb621279002b974584743",
+    "stage03b.jsonl.gz": "b18cf2efce74fb0b7560e06a1ce7b3ef0b20827c1bcbc267afb29ad160b89c87",
+    "stage03c.jsonl.gz": "ce1d7ceadfc6d6f04e8f241b5915d8e4e14564d8fba381f3e682fbdaa76451b8",
+    "stage03d.jsonl.gz": "8d61364751584b39884ad4ed7553f9c63c4c43f010c26ed5614d8cc73f40e8a9",
+    "stage05.jsonl.gz": "44854e0d8909ad6d5f5e91752ace5f8111a3b887d03e8a16bc0c3c0ecceff3e3",
+    "stage06.jsonl.gz": "b1af8fcf5074ef1ac24774f1a0c558cfc5d2bfcc3c803fa67b93376cc0a64552",
+    "stage07.jsonl.gz": "9b4fc5fc5bc57ff18c0239d2cfe1fd9a5b68e9f9dc07f7dc3030325c68aa3d7b",
+    "stage08.jsonl.gz": "6fec4d83b1667272e675d91e064b2cf0f0165baf093563c12ffefd9cd54f1250",
+    "stage09.jsonl.gz": "b3dc5eaac5b593941417c9385574bfbc18d1a921a9dcf694a5a3ed4b289e7321",
+    "stage10.jsonl.gz": "779a1fe8c4484d2839f0f17ff166f291a28d273f53d4ccfae8f3c50fcf1025dc"
+   }
+  },
+  "unchanged": true
+ },
+ "bits": 128,
+ "baselines": [
+  {
+   "baseline": "the last two stage files, unchanged",
+   "outcome": "accepted",
+   "detail": ""
+  },
+  {
+   "baseline": "K bisected at f1 = 0, reflection step, the upper half replaced",
+   "outcome": "accepted",
+   "detail": ""
+  }
+ ],
+ "controls": [
+  {
+   "control": "every rule with conclusion (N), (E) or (D) on a box around the BCC point (229 leaves)",
+   "reason_it_must_fail": "the box contains a reduced point with e <= e_F and Def = 0",
+   "outcome": "rejected",
+   "detail": {
+    "rejections by rule (inequality not established / hypothesis violated)": {
+     "E1": {
+      "inequality": 9,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "E2": {
+      "inequality": 30,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "E3": {
+      "inequality": 22,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "E4": {
+      "inequality": 102,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "PL": {
+      "inequality": 1,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "PF": {
+      "inequality": 0,
+      "hypothesis": 3,
+      "accepted": 0
+     },
+     "D1": {
+      "inequality": 33,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "D3": {
+      "inequality": 20,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "AS": {
+      "inequality": 2,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "AC": {
+      "inequality": 2,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "N": {
+      "inequality": 4,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "SL": {
+      "inequality": 1,
+      "hypothesis": 0,
+      "accepted": 0
+     }
+    },
+    "accepted": []
+   }
+  },
+  {
+   "control": "anchor rule AG on the box around the BCC point: any condition other than (A)",
+   "reason_it_must_fail": "(D) and (E) are false on the box; (A) about the anchor is true",
+   "outcome": "rejected",
+   "detail": "accepted with (A), margin 4.980e-01"
+  },
+  {
+   "control": "anchor rule AP on the box around the BCC point: any condition other than (A)",
+   "reason_it_must_fail": "(D) and (E) are false on the box; (A) about the anchor is true",
+   "outcome": "rejected",
+   "detail": "Unproved: no test of the anchor rule with the planar gain succeeds"
+  },
+  {
+   "control": "every rule with conclusion (N), (E) or (D) on a box around the FCC point (229 leaves)",
+   "reason_it_must_fail": "the box contains a reduced point with e <= e_F and Def = 0",
+   "outcome": "rejected",
+   "detail": {
+    "rejections by rule (inequality not established / hypothesis violated)": {
+     "E1": {
+      "inequality": 9,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "E2": {
+      "inequality": 30,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "E3": {
+      "inequality": 22,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "E4": {
+      "inequality": 102,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "PL": {
+      "inequality": 1,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "PF": {
+      "inequality": 2,
+      "hypothesis": 1,
+      "accepted": 0
+     },
+     "D1": {
+      "inequality": 33,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "D3": {
+      "inequality": 20,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "AS": {
+      "inequality": 2,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "AC": {
+      "inequality": 2,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "N": {
+      "inequality": 4,
+      "hypothesis": 0,
+      "accepted": 0
+     },
+     "SL": {
+      "inequality": 0,
+      "hypothesis": 1,
+      "accepted": 0
+     }
+    },
+    "accepted": []
+   }
+  },
+  {
+   "control": "anchor rule AG on the box around the FCC point: any condition other than (A)",
+   "reason_it_must_fail": "(D) and (E) are false on the box; (A) about the anchor is true",
+   "outcome": "rejected",
+   "detail": "accepted with (A), margin 1.973e-01"
+  },
+  {
+   "control": "anchor rule AP on the box around the FCC point: any condition other than (A)",
+   "reason_it_must_fail": "(D) and (E) are false on the box; (A) about the anchor is true",
+   "outcome": "rejected",
+   "detail": "accepted with (A), margin 1.970e-01"
+  },
+  {
+   "control": "reduced variant with c_1 on a box with x up to 3/4",
+   "reason_it_must_fail": "c_1 >= c_2 needs x^2 <= 1/4 (proof of Lemma 7.5(iv))",
+   "outcome": "rejected",
+   "detail": "Rejected: c_1 >= c_2 needs x^2 <= 1/4 on the box (proof of Lemma 7.5(iv))"
+  },
+  {
+   "control": "alpha = 0 in energy rule (i)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = 0 in a tangent support",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = 0 in an exponential support",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = 0 in a support with phase reserve",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = 0 in deficit rule (i)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = 0 in anchor rule (ii)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -1 in energy rule (i)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -1 in a tangent support",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -1 in an exponential support",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -1 in a support with phase reserve",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -1 in deficit rule (i)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -1 in anchor rule (ii)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -10 in energy rule (i)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -10 in a tangent support",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -10 in an exponential support",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -10 in a support with phase reserve",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -10 in deficit rule (i)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "alpha = -10 in anchor rule (ii)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the screened series (7.2) needs alpha > 0"
+  },
+  {
+   "control": "a support with phase reserve built on a box that crosses r1 = 0",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: the box of a support needs eight ordered intervals with r1 > 0 and r2 > 0"
+  },
+  {
+   "control": "a support built on a box with reversed intervals",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: a box needs eight ordered rational intervals"
+  },
+  {
+   "control": "a support that is not defined",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "KeyError: 'missing'"
+  },
+  {
+   "control": "t = -1/4096 in the joint vertex rule",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: t must be k/4096 with 0 <= k <= 4096"
+  },
+  {
+   "control": "t = 4097/4096 in the joint vertex rule",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: t must be k/4096 with 0 <= k <= 4096"
+  },
+  {
+   "control": "t = 1.5/4096 in the joint vertex rule",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: t must be k/4096 with 0 <= k <= 4096"
+  },
+  {
+   "control": "t = '1'/4096 in the joint vertex rule",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: t must be k/4096 with 0 <= k <= 4096"
+  },
+  {
+   "control": "quaternion [0, 0, 0, 0]",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: zero quaternion"
+  },
+  {
+   "control": "quaternion [0, 0, 1.0, 1]",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: four integers required"
+  },
+  {
+   "control": "quaternion [0, 0, 1]",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: four integers required"
+  },
+  {
+   "control": "rho = -1/2 in the reduced variant",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid reduced variant"
+  },
+  {
+   "control": "rho = 2 in the reduced variant",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid reduced variant"
+  },
+  {
+   "control": "variant 3 of the reduced variant",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid reduced variant"
+  },
+  {
+   "control": "eta = -1/8 in planar rule (ii)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid band"
+  },
+  {
+   "control": "eta = 1/2 in planar rule (ii)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid band"
+  },
+  {
+   "control": "eta = 3/4 in planar rule (ii)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid band"
+  },
+  {
+   "control": "a non-integer translation in planar rule (ii)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid band"
+  },
+  {
+   "control": "a registration of determinant 2",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: B' is not a basis of determinant one of a sublattice of B_0"
+  },
+  {
+   "control": "a registration with a column outside the lattice",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: B' is not a basis of determinant one of a sublattice of B_0"
+  },
+  {
+   "control": "a registration with f0 in Z^3",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: f0 must lie in (1/2)Z^3 outside Z^3"
+  },
+  {
+   "control": "a registration with f0 outside (1/2)Z^3",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: f0 must lie in (1/2)Z^3 outside Z^3"
+  },
+  {
+   "control": "a registration with f0 not the half class of B'",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: f0 is not the half class of B'"
+  },
+  {
+   "control": "a registration with a non-integer n",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "ValueError: n must be an integer vector"
+  },
+  {
+   "control": "an anchor in Z^3 (AG)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+  },
+  {
+   "control": "an anchor in Z^3 (AP)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+  },
+  {
+   "control": "an anchor in Z^3 (AC)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+  },
+  {
+   "control": "an anchor outside (1/2)Z^3 (AG)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+  },
+  {
+   "control": "an anchor outside (1/2)Z^3 (AP)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+  },
+  {
+   "control": "an anchor outside (1/2)Z^3 (AC)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+  },
+  {
+   "control": "an anchor with a non-integer n (AG)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: n must be an integer vector"
+  },
+  {
+   "control": "an anchor with a non-integer n (AP)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: n must be an integer vector"
+  },
+  {
+   "control": "an anchor with a non-integer n (AC)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: n must be an integer vector"
+  },
+  {
+   "control": "the witness m = 0 of (N)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: m must not vanish"
+  },
+  {
+   "control": "a witness of (N) of unknown kind",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: unknown kind of reduction witness"
+  },
+  {
+   "control": "a non-integer witness of (N)",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: an integer vector is required"
+  },
+  {
+   "control": "a slab along an offset coordinate",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid slab"
+  },
+  {
+   "control": "a slab with side 2",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: invalid slab"
+  },
+  {
+   "control": "a rule that does not exist",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: unknown rule 'XX'"
+  },
+  {
+   "control": "a held leaf given to the inequality pass",
+   "reason_it_must_fail": "the parameter is outside the range that the rule requires",
+   "outcome": "rejected",
+   "detail": "Rejected: unknown rule 'H'"
+  },
+  {
+   "control": "energy rule on a box containing BCC",
+   "reason_it_must_fail": "e = e_B < e_F at a point of the box, so no lower bound can exceed e_F",
+   "outcome": "rejected",
+   "detail": "E_- - e_F^+ = -5.806e-05"
+  },
+  {
+   "control": "(N) with full (0, 1, 0) on a box containing BCC",
+   "reason_it_must_fail": "the shape (1,1,0,0,0) of the box is reduced",
+   "outcome": "rejected",
+   "detail": "the reduction inequality is not violated on the whole box"
+  },
+  {
+   "control": "(N) with full (0, 0, 1) on a box containing BCC",
+   "reason_it_must_fail": "the shape (1,1,0,0,0) of the box is reduced",
+   "outcome": "rejected",
+   "detail": "the reduction inequality is not violated on the whole box"
+  },
+  {
+   "control": "(N) with projected (0, 0, 1) on a box containing BCC",
+   "reason_it_must_fail": "the shape (1,1,0,0,0) of the box is reduced",
+   "outcome": "rejected",
+   "detail": "the reduction inequality is not violated on the whole box"
+  },
+  {
+   "control": "(N) with full (1, 0, 0) on a box containing BCC",
+   "reason_it_must_fail": "the shape (1,1,0,0,0) of the box is reduced",
+   "outcome": "rejected",
+   "detail": "the reduction inequality is not violated on the whole box"
+  },
+  {
+   "control": "trial rotation replaced by the identity (D3 leaf of stage08.jsonl.gz, 660665:133deeeebd9ac9306bd583:-1:, leaf 0)",
+   "reason_it_must_fail": "with a wrong rotation the trial cost 100|A - U|^2 is large and the joint inequality is false at a vertex",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     9.692315344603321e-07
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: joint vertex rule fails"
+   }
+  },
+  {
+   "control": "registration translated by e_1 (D3 leaf of stage08.jsonl.gz, 660665:133deeeebd9ac9306bd583:-1:, leaf 0)",
+   "reason_it_must_fail": "the displacement h = R(f - f0 - n) then has length about 1 and the cost exceeds every bound",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     9.692315344603321e-07
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: joint vertex rule fails"
+   }
+  },
+  {
+   "control": "registration translated by e_1 (D1 leaf of stage05.jsonl.gz, s5c:17:1110011, leaf -1)",
+   "reason_it_must_fail": "the defect bound is then not below one",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     4.880157088713718e-06
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: the registration gives no upper bound below one for the defect"
+   }
+  },
+  {
+   "control": "alpha replaced by -alpha (E3 leaf of stage03a.jsonl.gz, 66731:, leaf 0)",
+   "reason_it_must_fail": "the series (7.2) holds for alpha > 0 only; with a negative alpha the direct terms change sign and the constant grows",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.02115351593026463
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "ValueError: the screened series (7.2) needs alpha > 0"
+   }
+  },
+  {
+   "control": "alpha replaced by -alpha (E1 leaf of stage01b.jsonl.gz, 02468ace0, leaf 0)",
+   "reason_it_must_fail": "the series (7.2) holds for alpha > 0 only",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.0019305888341504683
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "ValueError: the screened series (7.2) needs alpha > 0"
+   }
+  },
+  {
+   "control": "box enlarged eight times about its centre (E2 leaf of stage02.jsonl.gz, 66727, leaf 0)",
+   "reason_it_must_fail": "the support is valid only inside the box on which it was built",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.003729542285862911
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Rejected: a support is valid only inside the box on which it was built"
+   }
+  },
+  {
+   "control": "box enlarged sixteen times about its centre (E3 leaf of stage03a.jsonl.gz, 66731:, leaf 0)",
+   "reason_it_must_fail": "the support is valid only inside the box on which it was built (term set and phase chords are those of that box)",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.02115351593026463
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: support not above the FCC energy"
+   }
+  },
+  {
+   "control": "the support rebuilt on the box enlarged four times (E3 leaf of stage03a.jsonl.gz, 66731:, leaf 0)",
+   "reason_it_must_fail": "base points at the centre of a box four times as wide: the lower bound at the far vertices is below e_F",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.02115351593026463
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: support not above the FCC energy"
+   }
+  },
+  {
+   "control": "box enlarged twice about its centre (E1 leaf of stage01b.jsonl.gz, 02468ace0, leaf 0)",
+   "reason_it_must_fail": "the partial sum with interval bounds over the larger box is below e_F",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.0019305888341504683
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: partial sum not above the FCC energy"
+   }
+  },
+  {
+   "control": "rho replaced by 2 (E4 leaf of stage03a.jsonl.gz, 247263:, leaf 6)",
+   "reason_it_must_fail": "Lemma 7.5(iv) needs 0 <= rho <= 1 (the coefficient of r1^2 must stay nonnegative)",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.00011869312490282117
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Rejected: invalid reduced variant"
+   }
+  },
+  {
+   "control": "the reduced term dropped (rule (iii) with the same support) (E4 leaf of stage03a.jsonl.gz, 247263:, leaf 6)",
+   "reason_it_must_fail": "without the term lambda c of Lemma 7.5(iv) the support is not above e_F on this box",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.00011869312490282117
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: support not above the FCC energy"
+   }
+  },
+  {
+   "control": "the witness of the first slab replaced by m = (1, 1, 1) (SL leaf of stage03b.jsonl.gz, 92614:bdf3bd, leaf 0)",
+   "reason_it_must_fail": "the inequality (4.2) for m = (1,1,1) is not violated on the slab, so the slab does not satisfy (N)",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.0021283028170939067
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: the reduction inequality is not violated on the whole box"
+   }
+  },
+  {
+   "control": "the first slab moved outside the box (SL leaf of stage03b.jsonl.gz, 92614:bdf3bd, leaf 0)",
+   "reason_it_must_fail": "a slab must be cut off by a plane through the interior of the box",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.0021283028170939067
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Rejected: invalid slab"
+   }
+  },
+  {
+   "control": "integer vector replaced by (1, 1, 1) (N leaf of stage01b.jsonl.gz, 02468ace0, leaf 2)",
+   "reason_it_must_fail": "the inequality (4.2) for m = (1,1,1) is not violated on the box",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.1607117207698937
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: the reduction inequality is not violated on the whole box"
+   }
+  },
+  {
+   "control": "box moved by 1/4 in f_3 (PF leaf of stage08.jsonl.gz, 661884:23ceeeebd91ac9316bc59:-1:, leaf 0)",
+   "reason_it_must_fail": "the box leaves the band |f_3 - 1/2| <= eta of the fibre bound",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     4.287740951868972e-05
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Rejected: the box leaves the band |f_3 - 1/2| <= eta"
+   }
+  },
+  {
+   "control": "box enlarged sixteen times about its centre (PL leaf of stage02.jsonl.gz, 81845, leaf 0)",
+   "reason_it_must_fail": "the enlarged box contains planes f_3 in Z, where the two cosets share their layers: no band eta <= f_3 <= 1 - eta",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.0075280952223141335
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Rejected: the box does not lie in a band eta <= f_3 <= 1 - eta"
+   }
+  },
+  {
+   "control": "anchor translated by e_3 (AP leaf of stage03d.jsonl.gz, 308216:023aaddffff, leaf 157)",
+   "reason_it_must_fail": "|delta_3| >= 1/2: outside the hypotheses of the planar gain",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     1.047567954817298e-05
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Rejected: the planar gain needs |delta_3| < 1/2"
+   }
+  },
+  {
+   "control": "anchor replaced by a neighbouring point of (1/2)Z^3 (AG leaf of stage03d.jsonl.gz, 302923:00329aacceeeee, leaf 471)",
+   "reason_it_must_fail": "about a point of (1/2)Z^3 at distance 1/2 from the right one the quadratic form is not positive on the box",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.0411328606606486
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: no test of the anchor rule with the energy-gain form succeeds"
+   }
+  },
+  {
+   "control": "anchor replaced by a point of Z^3 (AG leaf of stage03d.jsonl.gz, 302923:00329aacceeeee, leaf 471)",
+   "reason_it_must_fail": "an anchor must lie in (1/2)Z^3 outside Z^3 (the energy is infinite on Z^3)",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.0411328606606486
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+   }
+  },
+  {
+   "control": "box moved by 1/2 in f_1 (AS leaf of stage03d.jsonl.gz, 666295:33dfffff, leaf 5175)",
+   "reason_it_must_fail": "at this distance from the anchor the loss of the quadratic form exceeds the deficit of the anchor",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     2.3995801239977076e-05
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: anchor rule (ii) with the energy-gain form fails"
+   }
+  },
+  {
+   "control": "anchor translated by e_3 (AC leaf of stage03d.jsonl.gz, 660673:1323bddeeeee, leaf 2630)",
+   "reason_it_must_fail": "|delta_3| >= 1/2: outside the hypotheses of the planar gain",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     4.41253387272537e-05
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Rejected: the planar gain needs |delta_3| < 1/2"
+   }
+  },
+  {
+   "control": "box moved by 1/2 in f_1 (AG leaf of stage03d.jsonl.gz, 302923:00329aacceeeee, leaf 471)",
+   "reason_it_must_fail": "at this distance from the anchor the quadratic form of Lemma C.3 is not positive (its fourth-order losses grow with the box)",
+   "outcome": "rejected",
+   "detail": {
+    "unchanged_leaf": [
+     "accepted",
+     0.0411328606606486
+    ],
+    "changed_outcome": "rejected",
+    "changed_leaf": "Unproved: no test of the anchor rule with the energy-gain form succeeds"
+   }
+  },
+  {
+   "control": "a second reflection step",
+   "reason_it_must_fail": "after a reflection step only the weaker covering property holds, from which a second step does not follow",
+   "outcome": "rejected",
+   "detail": "the reflection step needs the held set and can be used only once"
+  },
+  {
+   "control": "reflection step with a held box that crosses f1 = 0",
+   "reason_it_must_fail": "the step pairs boxes of {f1 >= 0} with boxes of {f1 <= 0}",
+   "outcome": "rejected",
+   "detail": "a held box crosses the hyperplane f1 = 0"
+  },
+  {
+   "control": "after the reflection step a piece whose box does not contain the held box it replaces",
+   "reason_it_must_fail": "a held box may be replaced only by a tree on a box that contains it",
+   "outcome": "rejected",
+   "detail": "stage03.jsonl: piece half does not replace held boxes"
+  },
+  {
+   "control": "the reflection step left out",
+   "reason_it_must_fail": "the two halves of K are then held and are not received by the last file",
+   "outcome": "rejected",
+   "detail": "stage02.jsonl: 1 held boxes are not received by this stage"
+  },
+  {
+   "control": "one piece removed from the last file",
+   "reason_it_must_fail": "a held box of the preceding file is then discharged by nothing",
+   "outcome": "rejected",
+   "detail": "stage10.jsonl.gz: 1 held boxes are not received by this stage"
+  },
+  {
+   "control": "a discharged leaf of the last file declared held",
+   "reason_it_must_fail": "the last file then holds a box",
+   "outcome": "rejected",
+   "detail": "the last stage holds 1 pieces"
+  },
+  {
+   "control": "a piece of the last file replaced by its lower half in r1",
+   "reason_it_must_fail": "the box is not one of the held boxes",
+   "outcome": "rejected",
+   "detail": "stage10.jsonl.gz: piece 666291:33bddfffff919306bd:295:5fc42a62a8 does not replace held boxes"
+  },
+  {
+   "control": "the last leaf of a bisection tree removed",
+   "reason_it_must_fail": "a bisection must keep both closed halves",
+   "outcome": "rejected",
+   "detail": "incomplete bisection tree"
+  },
+  {
+   "control": "one held part removed from an exact cut",
+   "reason_it_must_fail": "the remaining parts do not cover the box",
+   "outcome": "rejected",
+   "detail": "one_held_part_removed_from_an_exact_cut.jsonl: cut 249807:3bbcceee920b9206c49306bce48206ace49206: the parts do not cover the box"
+  },
+  {
+   "control": "a region moved by 3 in f_1",
+   "reason_it_must_fail": "the clip is not contained in the image of the region",
+   "outcome": "rejected",
+   "detail": "a_region_moved_by_3_in_f_1.jsonl: cut 249807:3bbcceee920b9206c49306bce48206ace49206: leaf outside region s4:quartic1149"
+  }
+ ]
+}

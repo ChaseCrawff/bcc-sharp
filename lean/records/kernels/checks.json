@@ -1,0 +1,130 @@
+{
+ "exports": {
+  "table.ndjson": {
+   "sha256": "12d95762c8c355948f429a6bcf879ccef51f90f6461d7d576b23fe5c8983ee39",
+   "bytes": 874780365,
+   "lines": 16293615,
+   "record": "table-export/kernels.jsonl"
+  },
+  "free.ndjson": {
+   "sha256": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "bytes": 608174018,
+   "lines": 11377515,
+   "record": "free-export/kernels.jsonl"
+  }
+ },
+ "checks": [
+  {
+   "export": "free.ndjson",
+   "checker": "lean",
+   "record": "free/kernels.jsonl",
+   "start": "2026-11-26T12:27:32-07:00",
+   "end": "2026-11-26T12:29:28-07:00",
+   "exit": 0,
+   "wall_s": 116.6,
+   "cpu_s": 115.9,
+   "peak_commit_gib": 0.89,
+   "export_sha256_before": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "export_sha256_after": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "result_line": "Lean default kernel accepts the solution"
+  },
+  {
+   "export": "free.ndjson",
+   "checker": "paranoid",
+   "record": "free/kernels.jsonl",
+   "start": "2026-11-26T12:29:30-07:00",
+   "end": "2026-11-26T12:31:50-07:00",
+   "exit": 0,
+   "wall_s": 140.1,
+   "cpu_s": 139.6,
+   "peak_commit_gib": 1.06,
+   "export_sha256_before": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "export_sha256_after": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "result_line": "Lean default kernel accepts the solution"
+  },
+  {
+   "export": "free.ndjson",
+   "checker": "nanoda",
+   "record": "free/kernels.jsonl",
+   "start": "2026-11-26T12:31:52-07:00",
+   "end": "2026-11-26T12:32:16-07:00",
+   "exit": 0,
+   "wall_s": 24.0,
+   "cpu_s": 73.7,
+   "peak_commit_gib": 0.99,
+   "export_sha256_before": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "export_sha256_after": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "result_line": "Checked 69348 declarations with no typechecker errors, 1 pretty printer errors: ["
+  },
+  {
+   "export": "free.ndjson",
+   "checker": "lean4lean",
+   "record": "free/kernels.jsonl",
+   "start": "2026-11-26T12:32:17-07:00",
+   "end": "2026-11-26T12:34:46-07:00",
+   "exit": 0,
+   "wall_s": 148.6,
+   "cpu_s": 147.8,
+   "peak_commit_gib": 0.88,
+   "export_sha256_before": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "export_sha256_after": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "result_line": "checked 67035 declarations"
+  },
+  {
+   "export": "free.ndjson",
+   "checker": "con-leche",
+   "record": "free/kernels.jsonl",
+   "start": "2026-11-26T12:34:48-07:00",
+   "end": "2026-11-26T12:35:15-07:00",
+   "exit": 0,
+   "wall_s": 27.0,
+   "cpu_s": 82.2,
+   "peak_commit_gib": 0.74,
+   "export_sha256_before": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "export_sha256_after": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "result_line": "con-leche: accepted 67038 declarations (--verified)"
+  },
+  {
+   "export": "free.ndjson",
+   "checker": "con-ron",
+   "record": "free/kernels.jsonl",
+   "start": "2026-11-26T12:35:16-07:00",
+   "end": "2026-11-26T12:35:33-07:00",
+   "exit": 0,
+   "wall_s": 17.0,
+   "cpu_s": 47.0,
+   "peak_commit_gib": 1.17,
+   "export_sha256_before": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "export_sha256_after": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+   "result_line": "con-ron: accepted 67038 declarations (--verified)"
+  },
+  {
+   "export": "table.ndjson",
+   "checker": "lean",
+   "record": "table-lean/kernels.jsonl",
+   "start": "2026-11-26T12:26:25-07:00",
+   "end": "2026-11-26T20:08:15-07:00",
+   "exit": 0,
+   "wall_s": 27710.0,
+   "cpu_s": 27673.2,
+   "peak_commit_gib": 7.07,
+   "export_sha256_before": "12d95762c8c355948f429a6bcf879ccef51f90f6461d7d576b23fe5c8983ee39",
+   "export_sha256_after": "12d95762c8c355948f429a6bcf879ccef51f90f6461d7d576b23fe5c8983ee39",
+   "result_line": "Lean default kernel accepts the solution"
+  },
+  {
+   "export": "table.ndjson",
+   "checker": "lean4lean",
+   "record": "table-lean4lean/kernels.jsonl",
+   "start": "2026-11-26T12:26:47-07:00",
+   "end": "2026-11-26T21:31:48-07:00",
+   "exit": 0,
+   "wall_s": 32700.9,
+   "cpu_s": 32659.2,
+   "peak_commit_gib": 7.15,
+   "export_sha256_before": "12d95762c8c355948f429a6bcf879ccef51f90f6461d7d576b23fe5c8983ee39",
+   "export_sha256_after": "12d95762c8c355948f429a6bcf879ccef51f90f6461d7d576b23fe5c8983ee39",
+   "result_line": "checked 86921 declarations"
+  }
+ ]
+}

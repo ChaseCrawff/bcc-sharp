@@ -1,0 +1,46 @@
+{
+ "program": "export_stats.py",
+ "program_sha256": "8835c1e84054cada20eda7666a90ca979d909bdccb7bd90f6a07363bc63c7cbb",
+ "start": "2026-11-26T12:49:39-07:00",
+ "end": "2026-11-26T12:49:44-07:00",
+ "file": ".lake/exports/free.ndjson",
+ "bytes": 608174018,
+ "sha256": "dcba89afbcd0d9897e28f439761d511b5e9a2e2a60e56068e78a5d9cdc83f202",
+ "header": {
+  "meta": {
+   "exporter": {
+    "name": "lean4export",
+    "version": "3.1.0"
+   },
+   "format": {
+    "version": "3.1.0"
+   },
+   "lean": {
+    "githash": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "version": "4.35.0"
+   }
+  }
+ },
+ "lines": 11377515,
+ "declarations": {
+  "inductive": 1100,
+  "def": 12968,
+  "thm": 52915,
+  "axiom": 3,
+  "quot": 4,
+  "opaque": 48
+ },
+ "declarations_total": 67038,
+ "axioms": [
+  "Classical.choice",
+  "Quot.sound",
+  "propext"
+ ],
+ "names_in_table": 446559,
+ "find": {
+  "file": "audit/free-names.txt",
+  "sha256": "be1db737aa36e6afe904c595dfc42756ff322e747f0132d119c39f9b0eee8149"
+ },
+ "requested": 54,
+ "requested_not_theorems": {}
+}

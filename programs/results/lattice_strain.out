@@ -1,0 +1,107 @@
+strain ball {'name': 'bcc', 'beta': '1/4000', 'sub': 5, 'subboxes_checked': 2500, 'all_pd': True, 'min_lambda_lower': '[0.9156939982 +/- 2.80e-11]', 'C_eig_range': ['[0.99772799 +/- 4.95e-9]', '[1.0022720 +/- 4.44e-9]'], 'C_range_ok': True}
+strain ball {'name': 'fcc', 'beta': '1/4000', 'sub': 5, 'subboxes_checked': 2500, 'all_pd': True, 'min_lambda_lower': '[0.9445886250 +/- 1.75e-11]'}
+strain bcc depth 0 processed 1 split 1 {} 1 s
+strain bcc depth 1 processed 2 split 2 {} 1 s
+strain bcc depth 2 processed 4 split 4 {} 1 s
+strain bcc depth 3 processed 8 split 8 {} 1 s
+strain bcc depth 4 processed 16 split 16 {} 1 s
+strain bcc depth 5 processed 32 split 32 {} 2 s
+strain bcc depth 6 processed 64 split 64 {} 3 s
+strain bcc depth 7 processed 128 split 128 {} 6 s
+strain bcc depth 8 processed 256 split 256 {} 13 s
+strain bcc depth 9 processed 512 split 512 {} 27 s
+strain bcc depth 10 processed 1024 split 1024 {} 54 s
+strain bcc depth 11 processed 2048 split 1886 {'O': 162} 104 s
+strain bcc depth 12 processed 3772 split 3448 {'O': 486} 198 s
+strain bcc depth 13 processed 6896 split 6621 {'O': 702, 'E1': 59} 377 s
+strain bcc depth 14 processed 13242 split 12291 {'O': 750, 'E1': 962} 728 s
+strain bcc depth 15 processed 24582 split 18108 {'O': 1436, 'E1': 6750} 1386 s
+strain bcc depth 16 processed 36216 split 21008 {'O': 2480, 'E1': 20914} 2327 s
+strain bcc depth 17 processed 42016 split 18635 {'O': 4415, 'E1': 42360} 3390 s
+strain bcc depth 18 processed 37270 split 12146 {'O': 7232, 'E1': 64667} 4317 s
+strain bcc depth 19 processed 24292 split 4463 {'O': 9397, 'E1': 82331} 4899 s
+strain bcc depth 20 processed 8926 split 2482 {'O': 11104, 'E1': 87068} 5088 s
+strain bcc depth 21 processed 4964 split 1741 {'O': 11748, 'E1': 89539, 'E2': 108} 5203 s
+strain bcc depth 22 processed 3482 split 1787 {'O': 11978, 'E1': 90920, 'E2': 192} 5290 s
+strain bcc depth 23 processed 3574 split 1419 {'O': 12351, 'E1': 92571, 'E2': 323} 5376 s
+strain bcc depth 24 processed 2838 split 305 {'O': 12517, 'E1': 94751, 'E2': 510} 5447 s
+strain bcc depth 25 processed 610 split 177 {'O': 12539, 'E1': 95008, 'E2': 664} 5463 s
+strain bcc depth 26 processed 354 split 155 {'O': 12549, 'E1': 95076, 'E2': 785} 5472 s
+strain bcc depth 27 processed 310 split 132 {'O': 12549, 'E1': 95142, 'E2': 897} 5480 s
+strain bcc depth 28 processed 264 split 30 {'O': 12549, 'E1': 95223, 'E2': 1050} 5488 s
+strain bcc depth 29 processed 60 split 32 {'O': 12549, 'E1': 95223, 'E2': 1078} 5489 s
+strain bcc depth 30 processed 64 split 22 {'O': 12549, 'E1': 95223, 'E2': 1120} 5491 s
+strain bcc depth 31 processed 44 split 11 {'O': 12551, 'E1': 95223, 'E2': 1151} 5492 s
+strain bcc depth 32 processed 22 split 16 {'O': 12551, 'E1': 95223, 'E2': 1157} 5493 s
+strain bcc depth 33 processed 32 split 22 {'O': 12551, 'E1': 95223, 'E2': 1167} 5494 s
+strain bcc depth 34 processed 44 split 12 {'O': 12551, 'E1': 95223, 'E2': 1199} 5495 s
+strain bcc depth 35 processed 24 split 14 {'O': 12551, 'E1': 95223, 'E2': 1209} 5496 s
+strain bcc depth 36 processed 28 split 8 {'O': 12553, 'E1': 95223, 'E2': 1227} 5498 s
+strain bcc depth 37 processed 16 split 14 {'O': 12553, 'E1': 95223, 'E2': 1229} 5500 s
+strain bcc depth 38 processed 28 split 10 {'O': 12553, 'E1': 95223, 'E2': 1247} 5502 s
+strain bcc depth 39 processed 20 split 2 {'O': 12553, 'E1': 95223, 'E2': 1265} 5504 s
+strain bcc depth 40 processed 4 split 4 {'O': 12553, 'E1': 95223, 'E2': 1265} 5505 s
+strain bcc depth 41 processed 8 split 6 {'O': 12553, 'E1': 95223, 'E2': 1267} 5506 s
+strain bcc depth 42 processed 12 split 8 {'O': 12553, 'E1': 95223, 'E2': 1271} 5507 s
+strain bcc depth 43 processed 16 split 2 {'O': 12553, 'E1': 95223, 'E2': 1285} 5509 s
+strain bcc depth 44 processed 4 split 2 {'O': 12553, 'E1': 95223, 'E2': 1287} 5509 s
+strain bcc depth 45 processed 4 split 4 {'O': 12553, 'E1': 95223, 'E2': 1287} 5509 s
+strain bcc depth 46 processed 8 split 2 {'O': 12553, 'E1': 95223, 'E2': 1293} 5510 s
+strain bcc depth 47 processed 4 split 2 {'O': 12553, 'E1': 95223, 'E2': 1295} 5511 s
+strain bcc depth 48 processed 4 split 2 {'O': 12553, 'E1': 95223, 'E2': 1297} 5511 s
+strain bcc depth 49 processed 4 split 0 {'O': 12553, 'E1': 95223, 'E2': 1299, 'BALL': 2} 5511 s
+strain fcc depth 0 processed 1 split 1 {} 1 s
+strain fcc depth 1 processed 2 split 2 {} 1 s
+strain fcc depth 2 processed 4 split 4 {} 1 s
+strain fcc depth 3 processed 8 split 8 {} 1 s
+strain fcc depth 4 processed 16 split 16 {} 1 s
+strain fcc depth 5 processed 32 split 32 {} 2 s
+strain fcc depth 6 processed 64 split 64 {} 3 s
+strain fcc depth 7 processed 128 split 128 {} 6 s
+strain fcc depth 8 processed 256 split 256 {} 13 s
+strain fcc depth 9 processed 512 split 512 {} 27 s
+strain fcc depth 10 processed 1024 split 1024 {} 54 s
+strain fcc depth 11 processed 2048 split 2048 {} 107 s
+strain fcc depth 12 processed 4096 split 4096 {} 215 s
+strain fcc depth 13 processed 8192 split 8179 {'E1': 13} 431 s
+strain fcc depth 14 processed 16358 split 4578 {'E1': 8721, 'O': 3072} 782 s
+strain fcc depth 15 processed 9156 split 5528 {'E1': 12349, 'O': 3072} 1023 s
+strain fcc depth 16 processed 11056 split 7001 {'E1': 16404, 'O': 3072} 1319 s
+strain fcc depth 17 processed 14002 split 8415 {'E1': 21991, 'O': 3072} 1692 s
+strain fcc depth 18 processed 16830 split 2529 {'E1': 35838, 'O': 3526} 2131 s
+strain fcc depth 19 processed 5058 split 423 {'E1': 40254, 'O': 3745} 2262 s
+strain fcc depth 20 processed 846 split 516 {'E1': 40584, 'O': 3745} 2285 s
+strain fcc depth 21 processed 1032 split 534 {'E1': 41082, 'O': 3745} 2312 s
+strain fcc depth 22 processed 1068 split 551 {'E1': 41599, 'O': 3745} 2340 s
+strain fcc depth 23 processed 1102 split 170 {'E1': 42531, 'O': 3745} 2370 s
+strain fcc depth 24 processed 340 split 40 {'E1': 42803, 'O': 3773} 2378 s
+strain fcc depth 25 processed 80 split 46 {'E1': 42837, 'O': 3773} 2380 s
+strain fcc depth 26 processed 92 split 57 {'E1': 42872, 'O': 3773} 2383 s
+strain fcc depth 27 processed 114 split 66 {'E1': 42920, 'O': 3773} 2386 s
+strain fcc depth 28 processed 132 split 32 {'E1': 43020, 'O': 3773} 2389 s
+strain fcc depth 29 processed 64 split 14 {'E1': 43068, 'O': 3775} 2391 s
+strain fcc depth 30 processed 28 split 18 {'E1': 43078, 'O': 3775} 2392 s
+strain fcc depth 31 processed 36 split 20 {'E1': 43094, 'O': 3775} 2393 s
+strain fcc depth 32 processed 40 split 18 {'E1': 43116, 'O': 3775} 2394 s
+strain fcc depth 33 processed 36 split 16 {'E1': 43136, 'O': 3775} 2395 s
+strain fcc depth 34 processed 32 split 6 {'E1': 43162, 'O': 3775} 2396 s
+strain fcc depth 35 processed 12 split 8 {'E1': 43166, 'O': 3775} 2396 s
+strain fcc depth 36 processed 16 split 8 {'E1': 43174, 'O': 3775} 2397 s
+strain fcc depth 37 processed 16 split 8 {'E1': 43182, 'O': 3775} 2399 s
+strain fcc depth 38 processed 16 split 7 {'E1': 43191, 'O': 3775} 2401 s
+strain fcc depth 39 processed 14 split 2 {'E1': 43203, 'O': 3775} 2402 s
+strain fcc depth 40 processed 4 split 4 {'E1': 43203, 'O': 3775} 2403 s
+strain fcc depth 41 processed 8 split 6 {'E1': 43205, 'O': 3775} 2403 s
+strain fcc depth 42 processed 12 split 2 {'E1': 43215, 'O': 3775} 2405 s
+strain fcc depth 43 processed 4 split 2 {'E1': 43217, 'O': 3775} 2405 s
+strain fcc depth 44 processed 4 split 2 {'E1': 43219, 'O': 3775} 2406 s
+strain fcc depth 45 processed 4 split 2 {'E1': 43221, 'O': 3775} 2406 s
+strain fcc depth 46 processed 4 split 2 {'E1': 43223, 'O': 3775} 2406 s
+strain fcc depth 47 processed 4 split 2 {'E1': 43225, 'O': 3775} 2407 s
+strain fcc depth 48 processed 4 split 2 {'E1': 43227, 'O': 3775} 2407 s
+strain fcc depth 49 processed 4 split 0 {'E1': 43229, 'O': 3775, 'BALL': 2} 2408 s
+wrote results/lattice_strain.json 8755 s
+
+real	145m55.790s
+user	0m0.000s
+sys	0m0.015s

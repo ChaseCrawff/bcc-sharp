@@ -1,0 +1,32 @@
+{
+ "results_file": "records/build/results.jsonl",
+ "scope_modules": 405,
+ "attempts": 405,
+ "modules_ok": 405,
+ "modules_ok_twice": 0,
+ "failed_attempts": [],
+ "missing": [],
+ "first_start": "2026-11-25T10:14:43-07:00",
+ "last_end": "2026-11-25T14:05:23-07:00",
+ "elapsed_s": 13840,
+ "sum_wall_s": 39771.2,
+ "sum_cpu_s": 45228.7,
+ "sum_cpu_hours": 12.56,
+ "sum_lean_cpu_sampled_s": 37517.2,
+ "max_lean_peak_ws_gib": 9.76,
+ "max_peak_commit_proc_gib": 14.68,
+ "max_peak_commit_job_gib": 15.8,
+ "module_of_max_ws": "BccSharp.Cover.PrefixSidecarItems",
+ "module_of_max_commit": "BccSharp.Cover.PrefixSidecarItems",
+ "max_committed_at_start_gib": 65.56,
+ "min_avail_at_start_mb": 23912,
+ "max_running_at_start": 3,
+ "by_library": {
+  "BccSharp": {
+   "modules": 405,
+   "wall_s": 39771.2,
+   "cpu_s": 45228.7,
+   "lines": 178127
+  }
+ }
+}

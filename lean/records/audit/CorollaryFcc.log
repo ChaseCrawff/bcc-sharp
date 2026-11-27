@@ -1,0 +1,9 @@
+corollaryFcc_of_statementFull : BccSharp.Coulomb.Full.StatementFull →
+  ∀ (q : BccSharp.Coulomb.TwoSite),
+    q.Valid →
+      BccSharp.Coulomb.defect q = 1 →
+        BccSharp.Coulomb.energy BccSharp.Coulomb.fcc ≤ BccSharp.Coulomb.energy q ∧
+          (BccSharp.Coulomb.energy q = BccSharp.Coulomb.energy BccSharp.Coulomb.fcc ↔
+            TwoSiteSpec.RigidImage (BccSharp.Coulomb.SpecBridge.physPoints q)
+              (TwoSiteSpec.dilate BccSharp.Coulomb.ac TwoSiteSpec.fccUnit))
+'corollaryFcc_of_statementFull' depends on axioms: [propext, Classical.choice, Quot.sound]

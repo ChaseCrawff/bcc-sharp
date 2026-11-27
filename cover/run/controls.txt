@@ -1,0 +1,307 @@
+ok   baseline: the last two stage files, unchanged: accepted 
+ok   baseline: K bisected at f1 = 0, reflection step, the upper half replaced: accepted 
+ok   every rule with conclusion (N), (E) or (D) on a box around the BCC point (229 leaves): rejected
+       reason: the box contains a reduced point with e <= e_F and Def = 0
+       detail: {"rejections by rule (inequality not established / hypothesis violated)": {"E1": {"inequality": 9, "hypothesis": 0, "accepted": 0}, "E2": {"inequality": 30, "hypothesis": 0, "accepted": 0}, "E3": {"inequality": 22, "hypothesis": 0, "accepted": 0}, "E4": {"inequality": 102, "hypothesis": 0, "accepted": 0}, "PL": {"inequality": 1, "hypothesis": 0, "accepted": 0}, "PF": {"inequality": 0, "hypothesis": 3, "accepted": 0}, "D1": {"inequality": 33, "hypothesis": 0, "accepted": 0}, "D3": {"inequality": 20, "hypothesis": 0, "accepted": 0}, "AS": {"inequality": 2, "hypothesis": 0, "accepted": 0}, "AC": {"inequality": 2, "hypothesis": 0, "accepted": 0}, "N": {"inequality": 4, "hypothesis": 0, "accepted": 0}, "SL": {"inequality": 1, "hypothesis": 0, "accepted": 0}}, "accepted": []}
+ok   anchor rule AG on the box around the BCC point: any condition other than (A): rejected
+       reason: (D) and (E) are false on the box; (A) about the anchor is true
+       detail: "accepted with (A), margin 4.980e-01"
+ok   anchor rule AP on the box around the BCC point: any condition other than (A): rejected
+       reason: (D) and (E) are false on the box; (A) about the anchor is true
+       detail: "Unproved: no test of the anchor rule with the planar gain succeeds"
+ok   every rule with conclusion (N), (E) or (D) on a box around the FCC point (229 leaves): rejected
+       reason: the box contains a reduced point with e <= e_F and Def = 0
+       detail: {"rejections by rule (inequality not established / hypothesis violated)": {"E1": {"inequality": 9, "hypothesis": 0, "accepted": 0}, "E2": {"inequality": 30, "hypothesis": 0, "accepted": 0}, "E3": {"inequality": 22, "hypothesis": 0, "accepted": 0}, "E4": {"inequality": 102, "hypothesis": 0, "accepted": 0}, "PL": {"inequality": 1, "hypothesis": 0, "accepted": 0}, "PF": {"inequality": 2, "hypothesis": 1, "accepted": 0}, "D1": {"inequality": 33, "hypothesis": 0, "accepted": 0}, "D3": {"inequality": 20, "hypothesis": 0, "accepted": 0}, "AS": {"inequality": 2, "hypothesis": 0, "accepted": 0}, "AC": {"inequality": 2, "hypothesis": 0, "accepted": 0}, "N": {"inequality": 4, "hypothesis": 0, "accepted": 0}, "SL": {"inequality": 0, "hypothesis": 1, "accepted": 0}}, "accepted": []}
+ok   anchor rule AG on the box around the FCC point: any condition other than (A): rejected
+       reason: (D) and (E) are false on the box; (A) about the anchor is true
+       detail: "accepted with (A), margin 1.973e-01"
+ok   anchor rule AP on the box around the FCC point: any condition other than (A): rejected
+       reason: (D) and (E) are false on the box; (A) about the anchor is true
+       detail: "accepted with (A), margin 1.970e-01"
+ok   reduced variant with c_1 on a box with x up to 3/4: rejected
+       reason: c_1 >= c_2 needs x^2 <= 1/4 (proof of Lemma 7.5(iv))
+       detail: "Rejected: c_1 >= c_2 needs x^2 <= 1/4 on the box (proof of Lemma 7.5(iv))"
+ok   alpha = 0 in energy rule (i): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = 0 in a tangent support: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = 0 in an exponential support: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = 0 in a support with phase reserve: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = 0 in deficit rule (i): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = 0 in anchor rule (ii): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -1 in energy rule (i): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -1 in a tangent support: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -1 in an exponential support: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -1 in a support with phase reserve: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -1 in deficit rule (i): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -1 in anchor rule (ii): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -10 in energy rule (i): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -10 in a tangent support: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -10 in an exponential support: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -10 in a support with phase reserve: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -10 in deficit rule (i): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   alpha = -10 in anchor rule (ii): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the screened series (7.2) needs alpha > 0"
+ok   a support with phase reserve built on a box that crosses r1 = 0: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: the box of a support needs eight ordered intervals with r1 > 0 and r2 > 0"
+ok   a support built on a box with reversed intervals: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: a box needs eight ordered rational intervals"
+ok   a support that is not defined: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "KeyError: 'missing'"
+ok   t = -1/4096 in the joint vertex rule: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: t must be k/4096 with 0 <= k <= 4096"
+ok   t = 4097/4096 in the joint vertex rule: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: t must be k/4096 with 0 <= k <= 4096"
+ok   t = 1.5/4096 in the joint vertex rule: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: t must be k/4096 with 0 <= k <= 4096"
+ok   t = '1'/4096 in the joint vertex rule: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: t must be k/4096 with 0 <= k <= 4096"
+ok   quaternion [0, 0, 0, 0]: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: zero quaternion"
+ok   quaternion [0, 0, 1.0, 1]: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: four integers required"
+ok   quaternion [0, 0, 1]: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: four integers required"
+ok   rho = -1/2 in the reduced variant: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid reduced variant"
+ok   rho = 2 in the reduced variant: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid reduced variant"
+ok   variant 3 of the reduced variant: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid reduced variant"
+ok   eta = -1/8 in planar rule (ii): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid band"
+ok   eta = 1/2 in planar rule (ii): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid band"
+ok   eta = 3/4 in planar rule (ii): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid band"
+ok   a non-integer translation in planar rule (ii): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid band"
+ok   a registration of determinant 2: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: B' is not a basis of determinant one of a sublattice of B_0"
+ok   a registration with a column outside the lattice: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: B' is not a basis of determinant one of a sublattice of B_0"
+ok   a registration with f0 in Z^3: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: f0 must lie in (1/2)Z^3 outside Z^3"
+ok   a registration with f0 outside (1/2)Z^3: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: f0 must lie in (1/2)Z^3 outside Z^3"
+ok   a registration with f0 not the half class of B': rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: f0 is not the half class of B'"
+ok   a registration with a non-integer n: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "ValueError: n must be an integer vector"
+ok   an anchor in Z^3 (AG): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+ok   an anchor in Z^3 (AP): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+ok   an anchor in Z^3 (AC): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+ok   an anchor outside (1/2)Z^3 (AG): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+ok   an anchor outside (1/2)Z^3 (AP): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+ok   an anchor outside (1/2)Z^3 (AC): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"
+ok   an anchor with a non-integer n (AG): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: n must be an integer vector"
+ok   an anchor with a non-integer n (AP): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: n must be an integer vector"
+ok   an anchor with a non-integer n (AC): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: n must be an integer vector"
+ok   the witness m = 0 of (N): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: m must not vanish"
+ok   a witness of (N) of unknown kind: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: unknown kind of reduction witness"
+ok   a non-integer witness of (N): rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: an integer vector is required"
+ok   a slab along an offset coordinate: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid slab"
+ok   a slab with side 2: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: invalid slab"
+ok   a rule that does not exist: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: unknown rule 'XX'"
+ok   a held leaf given to the inequality pass: rejected
+       reason: the parameter is outside the range that the rule requires
+       detail: "Rejected: unknown rule 'H'"
+ok   energy rule on a box containing BCC: rejected
+       reason: e = e_B < e_F at a point of the box, so no lower bound can exceed e_F
+       detail: "E_- - e_F^+ = -5.806e-05"
+ok   (N) with full (0, 1, 0) on a box containing BCC: rejected
+       reason: the shape (1,1,0,0,0) of the box is reduced
+       detail: "the reduction inequality is not violated on the whole box"
+ok   (N) with full (0, 0, 1) on a box containing BCC: rejected
+       reason: the shape (1,1,0,0,0) of the box is reduced
+       detail: "the reduction inequality is not violated on the whole box"
+ok   (N) with projected (0, 0, 1) on a box containing BCC: rejected
+       reason: the shape (1,1,0,0,0) of the box is reduced
+       detail: "the reduction inequality is not violated on the whole box"
+ok   (N) with full (1, 0, 0) on a box containing BCC: rejected
+       reason: the shape (1,1,0,0,0) of the box is reduced
+       detail: "the reduction inequality is not violated on the whole box"
+ok   trial rotation replaced by the identity (D3 leaf of stage08.jsonl.gz, 660665:133deeeebd9ac9306bd583:-1:, leaf 0): rejected
+       reason: with a wrong rotation the trial cost 100|A - U|^2 is large and the joint inequality is false at a vertex
+       detail: {"unchanged_leaf": ["accepted", 9.692315344603321e-07], "changed_outcome": "rejected", "changed_leaf": "Unproved: joint vertex rule fails"}
+ok   registration translated by e_1 (D3 leaf of stage08.jsonl.gz, 660665:133deeeebd9ac9306bd583:-1:, leaf 0): rejected
+       reason: the displacement h = R(f - f0 - n) then has length about 1 and the cost exceeds every bound
+       detail: {"unchanged_leaf": ["accepted", 9.692315344603321e-07], "changed_outcome": "rejected", "changed_leaf": "Unproved: joint vertex rule fails"}
+ok   registration translated by e_1 (D1 leaf of stage05.jsonl.gz, s5c:17:1110011, leaf -1): rejected
+       reason: the defect bound is then not below one
+       detail: {"unchanged_leaf": ["accepted", 4.880157088713718e-06], "changed_outcome": "rejected", "changed_leaf": "Unproved: the registration gives no upper bound below one for the defect"}
+ok   alpha replaced by -alpha (E3 leaf of stage03a.jsonl.gz, 66731:, leaf 0): rejected
+       reason: the series (7.2) holds for alpha > 0 only; with a negative alpha the direct terms change sign and the constant grows
+       detail: {"unchanged_leaf": ["accepted", 0.02115351593026463], "changed_outcome": "rejected", "changed_leaf": "ValueError: the screened series (7.2) needs alpha > 0"}
+ok   alpha replaced by -alpha (E1 leaf of stage01b.jsonl.gz, 02468ace0, leaf 0): rejected
+       reason: the series (7.2) holds for alpha > 0 only
+       detail: {"unchanged_leaf": ["accepted", 0.0019305888341504683], "changed_outcome": "rejected", "changed_leaf": "ValueError: the screened series (7.2) needs alpha > 0"}
+ok   box enlarged eight times about its centre (E2 leaf of stage02.jsonl.gz, 66727, leaf 0): rejected
+       reason: the support is valid only inside the box on which it was built
+       detail: {"unchanged_leaf": ["accepted", 0.003729542285862911], "changed_outcome": "rejected", "changed_leaf": "Rejected: a support is valid only inside the box on which it was built"}
+ok   box enlarged sixteen times about its centre (E3 leaf of stage03a.jsonl.gz, 66731:, leaf 0): rejected
+       reason: the support is valid only inside the box on which it was built (term set and phase chords are those of that box)
+       detail: {"unchanged_leaf": ["accepted", 0.02115351593026463], "changed_outcome": "rejected", "changed_leaf": "Unproved: support not above the FCC energy"}
+ok   the support rebuilt on the box enlarged four times (E3 leaf of stage03a.jsonl.gz, 66731:, leaf 0): rejected
+       reason: base points at the centre of a box four times as wide: the lower bound at the far vertices is below e_F
+       detail: {"unchanged_leaf": ["accepted", 0.02115351593026463], "changed_outcome": "rejected", "changed_leaf": "Unproved: support not above the FCC energy"}
+ok   box enlarged twice about its centre (E1 leaf of stage01b.jsonl.gz, 02468ace0, leaf 0): rejected
+       reason: the partial sum with interval bounds over the larger box is below e_F
+       detail: {"unchanged_leaf": ["accepted", 0.0019305888341504683], "changed_outcome": "rejected", "changed_leaf": "Unproved: partial sum not above the FCC energy"}
+ok   rho replaced by 2 (E4 leaf of stage03a.jsonl.gz, 247263:, leaf 6): rejected
+       reason: Lemma 7.5(iv) needs 0 <= rho <= 1 (the coefficient of r1^2 must stay nonnegative)
+       detail: {"unchanged_leaf": ["accepted", 0.00011869312490282117], "changed_outcome": "rejected", "changed_leaf": "Rejected: invalid reduced variant"}
+ok   the reduced term dropped (rule (iii) with the same support) (E4 leaf of stage03a.jsonl.gz, 247263:, leaf 6): rejected
+       reason: without the term lambda c of Lemma 7.5(iv) the support is not above e_F on this box
+       detail: {"unchanged_leaf": ["accepted", 0.00011869312490282117], "changed_outcome": "rejected", "changed_leaf": "Unproved: support not above the FCC energy"}
+ok   the witness of the first slab replaced by m = (1, 1, 1) (SL leaf of stage03b.jsonl.gz, 92614:bdf3bd, leaf 0): rejected
+       reason: the inequality (4.2) for m = (1,1,1) is not violated on the slab, so the slab does not satisfy (N)
+       detail: {"unchanged_leaf": ["accepted", 0.0021283028170939067], "changed_outcome": "rejected", "changed_leaf": "Unproved: the reduction inequality is not violated on the whole box"}
+ok   the first slab moved outside the box (SL leaf of stage03b.jsonl.gz, 92614:bdf3bd, leaf 0): rejected
+       reason: a slab must be cut off by a plane through the interior of the box
+       detail: {"unchanged_leaf": ["accepted", 0.0021283028170939067], "changed_outcome": "rejected", "changed_leaf": "Rejected: invalid slab"}
+ok   integer vector replaced by (1, 1, 1) (N leaf of stage01b.jsonl.gz, 02468ace0, leaf 2): rejected
+       reason: the inequality (4.2) for m = (1,1,1) is not violated on the box
+       detail: {"unchanged_leaf": ["accepted", 0.1607117207698937], "changed_outcome": "rejected", "changed_leaf": "Unproved: the reduction inequality is not violated on the whole box"}
+ok   box moved by 1/4 in f_3 (PF leaf of stage08.jsonl.gz, 661884:23ceeeebd91ac9316bc59:-1:, leaf 0): rejected
+       reason: the box leaves the band |f_3 - 1/2| <= eta of the fibre bound
+       detail: {"unchanged_leaf": ["accepted", 4.287740951868972e-05], "changed_outcome": "rejected", "changed_leaf": "Rejected: the box leaves the band |f_3 - 1/2| <= eta"}
+ok   box enlarged sixteen times about its centre (PL leaf of stage02.jsonl.gz, 81845, leaf 0): rejected
+       reason: the enlarged box contains planes f_3 in Z, where the two cosets share their layers: no band eta <= f_3 <= 1 - eta
+       detail: {"unchanged_leaf": ["accepted", 0.0075280952223141335], "changed_outcome": "rejected", "changed_leaf": "Rejected: the box does not lie in a band eta <= f_3 <= 1 - eta"}
+ok   anchor translated by e_3 (AP leaf of stage03d.jsonl.gz, 308216:023aaddffff, leaf 157): rejected
+       reason: |delta_3| >= 1/2: outside the hypotheses of the planar gain
+       detail: {"unchanged_leaf": ["accepted", 1.047567954817298e-05], "changed_outcome": "rejected", "changed_leaf": "Rejected: the planar gain needs |delta_3| < 1/2"}
+ok   anchor replaced by a neighbouring point of (1/2)Z^3 (AG leaf of stage03d.jsonl.gz, 302923:00329aacceeeee, leaf 471): rejected
+       reason: about a point of (1/2)Z^3 at distance 1/2 from the right one the quadratic form is not positive on the box
+       detail: {"unchanged_leaf": ["accepted", 0.0411328606606486], "changed_outcome": "rejected", "changed_leaf": "Unproved: no test of the anchor rule with the energy-gain form succeeds"}
+ok   anchor replaced by a point of Z^3 (AG leaf of stage03d.jsonl.gz, 302923:00329aacceeeee, leaf 471): rejected
+       reason: an anchor must lie in (1/2)Z^3 outside Z^3 (the energy is infinite on Z^3)
+       detail: {"unchanged_leaf": ["accepted", 0.0411328606606486], "changed_outcome": "rejected", "changed_leaf": "Rejected: f0 must lie in (1/2)Z^3 outside Z^3"}
+ok   box moved by 1/2 in f_1 (AS leaf of stage03d.jsonl.gz, 666295:33dfffff, leaf 5175): rejected
+       reason: at this distance from the anchor the loss of the quadratic form exceeds the deficit of the anchor
+       detail: {"unchanged_leaf": ["accepted", 2.3995801239977076e-05], "changed_outcome": "rejected", "changed_leaf": "Unproved: anchor rule (ii) with the energy-gain form fails"}
+ok   anchor translated by e_3 (AC leaf of stage03d.jsonl.gz, 660673:1323bddeeeee, leaf 2630): rejected
+       reason: |delta_3| >= 1/2: outside the hypotheses of the planar gain
+       detail: {"unchanged_leaf": ["accepted", 4.41253387272537e-05], "changed_outcome": "rejected", "changed_leaf": "Rejected: the planar gain needs |delta_3| < 1/2"}
+ok   box moved by 1/2 in f_1 (AG leaf of stage03d.jsonl.gz, 302923:00329aacceeeee, leaf 471): rejected
+       reason: at this distance from the anchor the quadratic form of Lemma C.3 is not positive (its fourth-order losses grow with the box)
+       detail: {"unchanged_leaf": ["accepted", 0.0411328606606486], "changed_outcome": "rejected", "changed_leaf": "Unproved: no test of the anchor rule with the energy-gain form succeeds"}
+ok   a second reflection step: rejected
+       reason: after a reflection step only the weaker covering property holds, from which a second step does not follow
+       detail: "the reflection step needs the held set and can be used only once"
+ok   reflection step with a held box that crosses f1 = 0: rejected
+       reason: the step pairs boxes of {f1 >= 0} with boxes of {f1 <= 0}
+       detail: "a held box crosses the hyperplane f1 = 0"
+ok   after the reflection step a piece whose box does not contain the held box it replaces: rejected
+       reason: a held box may be replaced only by a tree on a box that contains it
+       detail: "stage03.jsonl: piece half does not replace held boxes"
+ok   the reflection step left out: rejected
+       reason: the two halves of K are then held and are not received by the last file
+       detail: "stage02.jsonl: 1 held boxes are not received by this stage"
+ok   one piece removed from the last file: rejected
+       reason: a held box of the preceding file is then discharged by nothing
+       detail: "stage10.jsonl.gz: 1 held boxes are not received by this stage"
+ok   a discharged leaf of the last file declared held: rejected
+       reason: the last file then holds a box
+       detail: "the last stage holds 1 pieces"
+ok   a piece of the last file replaced by its lower half in r1: rejected
+       reason: the box is not one of the held boxes
+       detail: "stage10.jsonl.gz: piece 666291:33bddfffff919306bd:295:5fc42a62a8 does not replace held boxes"
+ok   the last leaf of a bisection tree removed: rejected
+       reason: a bisection must keep both closed halves
+       detail: "incomplete bisection tree"
+ok   one held part removed from an exact cut: rejected
+       reason: the remaining parts do not cover the box
+       detail: "one_held_part_removed_from_an_exact_cut.jsonl: cut 249807:3bbcceee920b9206c49306bce48206ace49206: the parts do not cover the box"
+ok   a region moved by 3 in f_1: rejected
+       reason: the clip is not contained in the image of the region
+       detail: "a_region_moved_by_3_in_f_1.jsonl: cut 249807:3bbcceee920b9206c49306bce48206ace49206: leaf outside region s4:quartic1149"
+101 controls run, 101 rejected as required; 0 not run; 2 baselines, 2 accepted
+provenance: program, 14 verifier modules and 13 certificate files unchanged during the run

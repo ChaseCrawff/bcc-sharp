@@ -1,0 +1,154 @@
+\section{Computations}\label{sec:computation}
+
+\subsection{Arithmetic}\label{ssec:arith}
+
+All inequalities that enter the proofs are verified in \emph{ball arithmetic}: every real number is represented by a midpoint and a
+radius, and every operation returns a ball that contains the exact result. We use the Arb library \cite{Johansson2017Arb}, which is
+part of FLINT \cite{flint} (version~3.6.0), through its Python interface \cite{pythonflint} (version~0.9.0, with CPython~3.14.2). The
+endpoints of all boxes, the base points and weights of the supports and the integer data are exact rational numbers; in the lattice
+case of Section~\ref{sec:bravais} some of them are binary floating-point numbers that are used as exact dyadic data. The kernels are
+evaluated from
+\[
+  \Ga(\tfrac12,t)=\sqrt{\pi/t}\,\erfc\sqrt t,\qquad \Ga(1,t)=e^{-t}/t,\qquad \Ga(a+1,t)=\bigl(e^{-t}+a\,\Ga(a,t)\bigr)/t .
+\]
+An inequality is accepted only if it holds for the whole ball, and a computation that produces a non-finite ball is rejected.
+Floating-point arithmetic occurs only in the programs that \emph{search} for certificates (to propose base points, weights,
+rotations, the trial values $t$ of Section~\ref{ssec:taylor}, the coordinate to bisect and the order in which rules are tried)
+and, in the verifying program of the cover, to order the triples of Lemma~\ref{lem:energy}(iii$'$); no inequality is accepted on
+the basis of a floating-point computation.
+
+The working precision is $128$ bits for the whole cover of Section~\ref{sec:cover}, $160$ bits in the local charts of
+Section~\ref{sec:local}, $96$ bits in Section~\ref{sec:bravais} and $384$ bits for the constants. The precision affects
+only whether an inequality can be accepted, never the validity of an accepted one. The smallest accepted margins are
+about $10^{-12}$ in the cover and $10^{-10}$ in the lattice case. A program that checks the certificate must also check that its
+parameters lie in the ranges that the lemmas require, for instance a positive splitting parameter $\alpha$ and supports built on
+boxes with $r_1,r_2>0$: outside these ranges the bounds of Section~\ref{sec:cover} need not hold.
+
+The proofs therefore depend on the following being correct: the ball operations of Arb used here (the arithmetic operations,
+integer powers and roots, the exponential and the logarithm, the sine and cosine and their hyperbolic counterparts, the
+complementary error function, the integer part, the constant $\pi$, and comparisons); exact integer and rational arithmetic in
+Python; the programs that implement the rules of Sections~\ref{sec:bravais} and~\ref{sec:local}; and the program that verifies
+the certificate of the cover (Section~\ref{ssec:certs}). The measures taken to limit this dependence are described in
+Sections~\ref{ssec:checks} and~\ref{ssec:lean}.
+
+\subsection{The constants}\label{ssec:constcert}
+
+The energies of Proposition~\ref{prop:constants} are computed from \eqref{eq:ewald} for the primitive cells of the two cubic lattices,
+with exact rational Gram matrices, for two different values of the splitting parameter ($\alpha=0.9$ and $\alpha=1.4$ in units of the
+inverse Wigner--Seitz radius). The sums are extended until the exponents of the Gaussian factors exceed $160$, and the remainders are
+bounded by the following elementary estimate: if the points of $P\subset\R^3$ have mutual distances at least $2\rho$, then the number
+of points of $P$ in the ball of radius $r$ is at most $(1+r/\rho)^3$, and summation by parts bounds $\sum_{p\in P,|p|>r}\psi(|p|)$ for
+decreasing $\psi$. At $384$ bits of precision the two computations give overlapping enclosures of width below $10^{-45}$, with
+intersection $[\eB^-,\eB^+]$ and $[\eF^-,\eF^+]$, where
+\begin{align*}
+  \eB^-&=-0.89592925568176528916624546293829460538061046722070, & \eB^+&=\eB^-+4\times10^{-50},\\
+  \eF^-&=-0.89587361519510845989748779611028534450181510608894, & \eF^+&=\eF^-+4\times10^{-50}.
+\end{align*}
+These are the numbers used in Section~\ref{sec:cover}, and $\gap^+=\eF^+-\eB^-$. They agree with the twelve-decimal values in the
+literature \cite{BaikoPotekhinYakovlev2001} and are contained in the enclosures obtained in \cite{MuratovNovaga2026} by a different
+method and in a different arithmetic: for $\eB$ in \cite[Lemma~2]{MuratovNovaga2026} and for $\eF$ in the remark after its proof,
+where they are stated for the dual lattices (see \cite[(7), (17), (18)]{MuratovNovaga2026} for the conversion).
+
+\subsection{The certificates}\label{ssec:certs}
+
+\emph{The lattice case.} The program for Theorem~\ref{thm:bravais} is deterministic. It examines the $1.78$ million boxes of
+Table~\ref{tab:bravais} in about three hours on four processor cores and records the number of boxes of each type and the smallest
+margins; the boxes themselves are not stored, and the verification consists in running the program.
+
+\emph{The local charts.} For each of the eight ellipsoids of Table~\ref{tab:atlas} the certificate records the enclosures of the
+Hessian at the centre, the certified shift $\lambda$, the coefficients of the cubic polynomial, the bounds $B_3$, $B_4$ with their
+tails, and the geometric conditions of Section~\ref{sec:local}; it is recomputed in three minutes.
+
+\emph{The cover.} The certificate consists of thirteen files in a documented text format, $187$~MB in compressed
+form. It contains, for every box received by a stage, its subdivision and, for every part that is not held, the rule
+and the exact data that determine its parameters (Section~\ref{ssec:stages}). The certificate is verified as it stands, by a
+single program, in two passes.
+\begin{itemize}
+\item[(a)] \emph{Completeness}, in exact rational arithmetic: every bisection has both halves; every other subdivision
+is tested to be a cover by an exact recursive procedure; the boxes replaced by a file are exactly the boxes held by the
+preceding one; the reflection step is carried out; every containment of type (c) is tested; the first file starts from
+$\Kbox$ and the last one holds nothing. No volume is computed.
+\item[(b)] \emph{Inequalities}, in ball arithmetic: for every part that carries a rule and for every box that a file lists
+with a rule (type (c) of Section~\ref{ssec:stages}), the hypothesis of the rule is recomputed on that box from its parameters.
+\end{itemize}
+The recorded run of this program over the whole certificate, at $128$ bits, took $18.6$ processor-hours ($3.3$ hours on $6$
+processes) on the workstation described below and accepted all $17\,092\,214$ parts and boxes with a rule
+(Table~\ref{tab:stages}).
+
+The recorded runs of the programs and of the verifier, which accompany the paper (Section~\ref{ssec:avail}), were made on one
+workstation with $32$ logical processors and $62$~GiB of memory.
+
+\subsection{Checks}\label{ssec:checks}
+
+The program that verifies the cover implements the statements of Sections~\ref{sec:setting} to~\ref{sec:cover} and of
+Appendices~\ref{app:tails} and~\ref{app:details} that the certificate needs. It consists of fourteen Python modules (about
+$4\,300$ lines) and uses only the standard library and Arb; it imports no other code. What it takes
+as given is Theorem~\ref{thm:bravais}, the enclosures of $\eB$ and $\eF$, Montgomery's theorem and the lemmas of this paper;
+it checks every inequality of the certificate and the coverage of $\Kbox$ as described in Section~\ref{ssec:certs}. The program is accompanied by negative
+controls: every rule is applied, through the same entry point, to boxes around a body-centred and a face-centred cubic
+point, where (N), (E) and (D) are false, with parameters throughout and outside their ranges; parts of the certificate are
+changed in one parameter or moved outside the hypotheses of their rule; and boxes are removed from the certificate, covers
+and containments falsified, and the reflection step misused. All controls are rejected, and in every control that changes
+a part of the certificate the unchanged part is accepted.
+
+The constants agree with the independent computation of \cite{MuratovNovaga2026} (Section~\ref{ssec:constcert}). The verifier
+of the cover and the programs for the lattice case, the constants and the local charts use the same ball arithmetic library,
+so these checks reduce the risk of programming errors but are not independent of the trust assumptions of
+Section~\ref{ssec:arith}.
+
+\subsection{Formal verification}\label{ssec:lean}
+
+A formalization in Lean~4 (version 4.35.0) with Mathlib accompanies the paper; the part described here consists of $405$
+modules. No axioms are used beyond the three standard axioms of Lean's logic with classical choice (propositional
+extensionality, quotient soundness and choice), and no proof relies on compiled evaluation: all finite computations are
+evaluated by the kernel. The following is proved in it without hypotheses.
+\begin{itemize}
+\item \emph{Definitions and invariances.} The periodic Coulomb kernel and its Fourier coefficients; the equality of the energy
+\eqref{eq:edef} with Ewald's expression for every splitting parameter and with the positive series \eqref{eq:H1}, \eqref{eq:H2}; its
+independence of the period lattice and its invariance under isometries; the definition of the defect, its invariances, and its
+equality at all points of a two-site configuration.
+\item \emph{Constants.} Enclosures of $\eB$, $\eF$ and $\gap$ to fifty digits, consistent with Section~\ref{ssec:constcert}.
+\item \emph{The lattice case.} For every lattice of density $3/(4\pi)$, inequality \eqref{eq:bravais} holds, and equality implies
+that the lattice is BCC or FCC; moreover $D=0$ on BCC and $D=1$ on FCC. This is Theorem~\ref{thm:bravais}. The formal proof does not
+replay the certificate of Section~\ref{sec:bravais}; it uses a second, smaller certificate designed for evaluation in the kernel,
+with tangent-line bounds in fixed-point rational arithmetic: a cover of the reduced domain by $5\,671$ boxes and covers of two
+strain charts by about $8\,700$ boxes. Theorem~\ref{thm:bravais} thus has two computer-assisted proofs with different certificates
+and different arithmetic, one of them checked by a proof assistant.
+\item \emph{Analytic part of the two-site theorem.} The compact reduction (Proposition~\ref{prop:compact}); the existence of a
+registration with the inequality \eqref{eq:registered} for $D<1$ and $e\le\eF$ (but not the uniqueness statements of
+Theorem~\ref{thm:registration}); upper bounds for the defect in terms of a given registration, as in Lemmas~\ref{lem:Dupper}
+and~\ref{lem:Dbox}, and bounds for its growth away from an anchor, as in Lemma~\ref{lem:growth}; and Montgomery's inequality for the
+planar theta function \cite{Montgomery1988}. The local inequality of Section~\ref{sec:local} is not formalized.
+\item \emph{Checking functions.} For most kinds of sufficient conditions used in the cover, a function with a proof of soundness:
+if the function accepts a box with its data, then the box is discharged. These functions were written for the formalization; several
+of them use bounds different from those of Section~\ref{sec:cover}.
+\item \emph{Reduction of the theorem.} A theorem that derives, from the hypothesis that the checking functions accept the data of
+the cover, the conjunction of Theorems~\ref{thm:min}, \ref{thm:main} and~\ref{thm:basin} (the last with $\|A-U\|_{\mathrm F}$ for some
+rotation $U$ in place of $\dist(A,\SO(3))$, which it bounds from above, so that this form implies Theorem~\ref{thm:basin});
+Corollary~\ref{cor:fcc} follows from it in a few lines.
+\end{itemize}
+What is \emph{not} done is to establish this hypothesis, that is, to evaluate checking functions on the certificate of the cover
+inside the kernel; the modules evaluate checking functions in the kernel only on samples of boxes of several stages. For
+some kinds of anchor and deficit comparisons no formal checking function is written, and some of the existing ones are not
+strong enough to accept the data of the certificate, so that the missing step needs more than computing time. Consequently Theorem~\ref{thm:cover}, and with it Theorems~\ref{thm:min}--\ref{thm:basin} beyond the
+lattice case, are not formally verified: they rest on the ball-arithmetic verification described above.
+
+The $405$ modules of the package are compiled in a single clean build, each by its own call of Lake in an order in which every
+module comes after its imports, from one set of sources, identified by their SHA-256 in the records, and with Mathlib at one
+revision; the recorded build takes
+$3.8$ hours of elapsed time and $12.6$ processor-hours, and Lean's kernel checks every theorem of the modules in it. The
+compiled modules are then replayed with the checking program distributed with Lean (\texttt{leanchecker}), which reads each
+compiled module and checks every declaration of it with the kernel; it accepts all of them. The $130$ theorems that represent
+the items above are exported with all the declarations they depend on, Mathlib included, and checked from the export by
+Lean's kernel and by Lean4Lean, a re-implementation of the kernel in Lean, both of which accept all of them; the $54$ of them
+that depend on no kernel-evaluated certificate are checked in addition by nanoda and by con-leche and its Rust counterpart
+con-ron. The export declares exactly the three axioms named above, and an audit of all $47\,462$ constants of the $405$
+modules finds no other. The Lean sources and the records of the build and of these checks are part of the package described
+in Section~\ref{ssec:avail}.
+
+\subsection{Availability}\label{ssec:avail}
+
+The certificates, the verifying program of the cover, the programs for the lattice case, the constants and the local charts,
+and the Lean sources described in Section~\ref{ssec:lean} (Lean~4.35.0, Mathlib at revision \texttt{56a00585}), with
+instructions for reproducing every computation, form a package that accompanies this paper. It is available at
+\url{https://github.com/ChaseCrawff/bcc-sharp}.

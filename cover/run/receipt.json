@@ -1,0 +1,756 @@
+{
+ "arguments": [
+  "certificate",
+  "--workers",
+  "6",
+  "--bits",
+  "128",
+  "--receipt",
+  "run/receipt.json",
+  "--log",
+  "run/run.log"
+ ],
+ "batch": 64,
+ "bits": 128,
+ "completeness": {
+  "stage01a.jsonl.gz": {
+   "contained": 0,
+   "held": 512,
+   "leaves": 512,
+   "pieces": 1
+  },
+  "stage01b.jsonl.gz": {
+   "contained": 0,
+   "held": 966547,
+   "leaves": 1033274,
+   "pieces": 512
+  },
+  "stage02.jsonl.gz": {
+   "contained": 0,
+   "held": 675174,
+   "leaves": 1012251,
+   "pieces": 966547
+  },
+  "stage03a.jsonl.gz": {
+   "contained": 0,
+   "held": 597330,
+   "leaves": 11151358,
+   "pieces": 675174
+  },
+  "stage03b.jsonl.gz": {
+   "contained": 0,
+   "held": 494192,
+   "leaves": 1143218,
+   "pieces": 597330
+  },
+  "stage03c.jsonl.gz": {
+   "held": 250647,
+   "held_before": 494192,
+   "reflection": true
+  },
+  "stage03d.jsonl.gz": {
+   "contained": 0,
+   "held": 1129620,
+   "leaves": 5407595,
+   "pieces": 44983
+  },
+  "stage05.jsonl.gz": {
+   "contained": 82143,
+   "held": 1271350,
+   "leaves": 1353493,
+   "pieces": 1129620
+  },
+  "stage06.jsonl.gz": {
+   "contained": 561950,
+   "held": 709400,
+   "leaves": 1271350,
+   "pieces": 1271350
+  },
+  "stage07.jsonl.gz": {
+   "contained": 0,
+   "held": 30258,
+   "leaves": 709454,
+   "pieces": 709400
+  },
+  "stage08.jsonl.gz": {
+   "contained": 0,
+   "held": 5721,
+   "leaves": 81386,
+   "pieces": 30258
+  },
+  "stage09.jsonl.gz": {
+   "contained": 0,
+   "held": 6346,
+   "leaves": 64483,
+   "pieces": 5721
+  },
+  "stage10.jsonl.gz": {
+   "contained": 0,
+   "held": 0,
+   "leaves": 6346,
+   "pieces": 6346
+  }
+ },
+ "completeness_cpu_seconds": 570.265625,
+ "counts": {
+  "stage01a.jsonl.gz": {},
+  "stage01b.jsonl.gz": {
+   "E1:E": 28765,
+   "N:N": 37962
+  },
+  "stage02.jsonl.gz": {
+   "E2:E": 243486,
+   "N:N": 49840,
+   "PL:E": 43751
+  },
+  "stage03a.jsonl.gz": {
+   "E2:E": 979538,
+   "E3:E": 9227312,
+   "E4:E": 34079,
+   "N:N": 285457,
+   "PL:E": 27642
+  },
+  "stage03b.jsonl.gz": {
+   "E2:E": 196207,
+   "E3:E": 353752,
+   "E4:E": 9456,
+   "N:N": 26607,
+   "PL:E": 1752,
+   "SL+E2:E": 23820,
+   "SL+E3:E": 34635,
+   "SL+E4:E": 2791,
+   "SL+N:N": 6
+  },
+  "stage03c.jsonl.gz": {},
+  "stage03d.jsonl.gz": {
+   "AC:D": 109,
+   "AC:E": 20,
+   "AG:A": 1736,
+   "AG:D": 67,
+   "AP:A": 46,
+   "AP:D": 7,
+   "AS:D": 289,
+   "E2:E": 2020259,
+   "E3:E": 1737530,
+   "E4:E": 22911,
+   "N:N": 100882,
+   "PL:E": 3751,
+   "SL+AG:A": 566,
+   "SL+E2:E": 170182,
+   "SL+E3:E": 188865,
+   "SL+E4:E": 30739,
+   "SL+N:N": 16
+  },
+  "stage05.jsonl.gz": {
+   "AG:A": 4369,
+   "AG:D": 3,
+   "AS:D": 557,
+   "D1:D": 64,
+   "E3:E": 18755
+  },
+  "stage06.jsonl.gz": {
+   "D1:D": 242631,
+   "E3:E": 121658
+  },
+  "stage07.jsonl.gz": {
+   "AG:A": 82872,
+   "AG:D": 701,
+   "AG:E": 1,
+   "AP:A": 1549,
+   "AP:D": 230,
+   "D1:D": 202119,
+   "E2:E": 391724
+  },
+  "stage08.jsonl.gz": {
+   "AP:A": 369,
+   "D1:D": 11194,
+   "D3:D": 51908,
+   "E2:E": 11435,
+   "PF:E": 759
+  },
+  "stage09.jsonl.gz": {
+   "D1:D": 14217,
+   "D3:D": 42897,
+   "E2:E": 1023
+  },
+  "stage10.jsonl.gz": {
+   "AC:D": 22,
+   "AP:A": 6324
+  }
+ },
+ "cpu_seconds": 67065.6875,
+ "elapsed_seconds": 11862.956513404846,
+ "environment": {
+  "flint": "3.6.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processors": 32,
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "python-flint": "0.9.0"
+ },
+ "format": "cover-certificate-1",
+ "inputs": {
+  "stage01a.jsonl.gz": "55cfa426b0ef811fee499c82f6a86dbf76c3741fcf604d7e07c30cc80080ac2c",
+  "stage01b.jsonl.gz": "4e142753b0cf188572d0b1d70c7d925a45bf72c811e53887868d47d8ce737d6d",
+  "stage02.jsonl.gz": "2e028e446e2940d2d9c24fd9c79b946924e2601fc1fd8480f60b09cf134e4559",
+  "stage03a.jsonl.gz": "ce550d34f30ccc46f6646a64588c03b161e3e0da8d1cb621279002b974584743",
+  "stage03b.jsonl.gz": "b18cf2efce74fb0b7560e06a1ce7b3ef0b20827c1bcbc267afb29ad160b89c87",
+  "stage03c.jsonl.gz": "ce1d7ceadfc6d6f04e8f241b5915d8e4e14564d8fba381f3e682fbdaa76451b8",
+  "stage03d.jsonl.gz": "8d61364751584b39884ad4ed7553f9c63c4c43f010c26ed5614d8cc73f40e8a9",
+  "stage05.jsonl.gz": "44854e0d8909ad6d5f5e91752ace5f8111a3b887d03e8a16bc0c3c0ecceff3e3",
+  "stage06.jsonl.gz": "b1af8fcf5074ef1ac24774f1a0c558cfc5d2bfcc3c803fa67b93376cc0a64552",
+  "stage07.jsonl.gz": "9b4fc5fc5bc57ff18c0239d2cfe1fd9a5b68e9f9dc07f7dc3030325c68aa3d7b",
+  "stage08.jsonl.gz": "6fec4d83b1667272e675d91e064b2cf0f0165baf093563c12ffefd9cd54f1250",
+  "stage09.jsonl.gz": "b3dc5eaac5b593941417c9385574bfbc18d1a921a9dcf694a5a3ed4b289e7321",
+  "stage10.jsonl.gz": "779a1fe8c4484d2839f0f17ff166f291a28d273f53d4ccfae8f3c50fcf1025dc"
+ },
+ "inputs_at_end": {
+  "stage01a.jsonl.gz": "55cfa426b0ef811fee499c82f6a86dbf76c3741fcf604d7e07c30cc80080ac2c",
+  "stage01b.jsonl.gz": "4e142753b0cf188572d0b1d70c7d925a45bf72c811e53887868d47d8ce737d6d",
+  "stage02.jsonl.gz": "2e028e446e2940d2d9c24fd9c79b946924e2601fc1fd8480f60b09cf134e4559",
+  "stage03a.jsonl.gz": "ce550d34f30ccc46f6646a64588c03b161e3e0da8d1cb621279002b974584743",
+  "stage03b.jsonl.gz": "b18cf2efce74fb0b7560e06a1ce7b3ef0b20827c1bcbc267afb29ad160b89c87",
+  "stage03c.jsonl.gz": "ce1d7ceadfc6d6f04e8f241b5915d8e4e14564d8fba381f3e682fbdaa76451b8",
+  "stage03d.jsonl.gz": "8d61364751584b39884ad4ed7553f9c63c4c43f010c26ed5614d8cc73f40e8a9",
+  "stage05.jsonl.gz": "44854e0d8909ad6d5f5e91752ace5f8111a3b887d03e8a16bc0c3c0ecceff3e3",
+  "stage06.jsonl.gz": "b1af8fcf5074ef1ac24774f1a0c558cfc5d2bfcc3c803fa67b93376cc0a64552",
+  "stage07.jsonl.gz": "9b4fc5fc5bc57ff18c0239d2cfe1fd9a5b68e9f9dc07f7dc3030325c68aa3d7b",
+  "stage08.jsonl.gz": "6fec4d83b1667272e675d91e064b2cf0f0165baf093563c12ffefd9cd54f1250",
+  "stage09.jsonl.gz": "b3dc5eaac5b593941417c9385574bfbc18d1a921a9dcf694a5a3ed4b289e7321",
+  "stage10.jsonl.gz": "779a1fe8c4484d2839f0f17ff166f291a28d273f53d4ccfae8f3c50fcf1025dc"
+ },
+ "partial": false,
+ "program": "cover_verifier.verify",
+ "rejected": {
+  "stage01a.jsonl.gz": [],
+  "stage01b.jsonl.gz": [],
+  "stage02.jsonl.gz": [],
+  "stage03a.jsonl.gz": [],
+  "stage03b.jsonl.gz": [],
+  "stage03c.jsonl.gz": [],
+  "stage03d.jsonl.gz": [],
+  "stage05.jsonl.gz": [],
+  "stage06.jsonl.gz": [],
+  "stage07.jsonl.gz": [],
+  "stage08.jsonl.gz": [],
+  "stage09.jsonl.gz": [],
+  "stage10.jsonl.gz": []
+ },
+ "result": "PASS",
+ "rules": {
+  "AC:D": {
+   "boxes": 131,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 28766,
+   "piece": "711363:33bddfffff",
+   "smallest_margin": 8.120366966394372e-09
+  },
+  "AC:E": {
+   "boxes": 20,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 3000,
+   "piece": "666291:1329dfffff",
+   "smallest_margin": 5.187214737757624e-07
+  },
+  "AG:A": {
+   "boxes": 88977,
+   "file": "stage07.jsonl.gz",
+   "leaf": 0,
+   "piece": "704559:133bddeeeee89b207dad5830649307:-1:",
+   "smallest_margin": 1.1888425307592388e-05
+  },
+  "AG:D": {
+   "boxes": 771,
+   "file": "stage07.jsonl.gz",
+   "leaf": 0,
+   "piece": "704563:133bddeeeee0db2e897bc59317bc:-1:",
+   "smallest_margin": 5.220982769208107e-09
+  },
+  "AG:E": {
+   "boxes": 1,
+   "file": "stage07.jsonl.gz",
+   "leaf": 0,
+   "piece": "700747:3cffffbc821bc8307bd5:-1:",
+   "smallest_margin": 9.021891152654283e-07
+  },
+  "AP:A": {
+   "boxes": 8288,
+   "file": "stage08.jsonl.gz",
+   "leaf": 1,
+   "piece": "710155:338bddfffff18206bd58316bd48207:-1:",
+   "smallest_margin": 1.9702376785107006e-05
+  },
+  "AP:D": {
+   "boxes": 237,
+   "file": "stage07.jsonl.gz",
+   "leaf": 0,
+   "piece": "710159:33bddfffff81bd9206ad58317ad59:-1:",
+   "smallest_margin": 4.891022183782831e-10
+  },
+  "AS:D": {
+   "boxes": 846,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 45996,
+   "piece": "710159:33bddfffff",
+   "smallest_margin": 1.90690117253199e-08
+  },
+  "D1:D": {
+   "boxes": 470225,
+   "file": "stage09.jsonl.gz",
+   "leaf": 50,
+   "piece": "666291:33bddfffff919306bd:734:4d6fb94",
+   "smallest_margin": 1.7125277726623959e-09
+  },
+  "D3:D": {
+   "boxes": 94805,
+   "file": "stage08.jsonl.gz",
+   "leaf": 6,
+   "piece": "666291:33bddfffff919207bd58316a:-1:",
+   "smallest_margin": 8.441389232212984e-12
+  },
+  "E1:E": {
+   "boxes": 28765,
+   "file": "stage01b.jsonl.gz",
+   "leaf": 286,
+   "piece": "12568acf0",
+   "smallest_margin": 2.7866023688626927e-08
+  },
+  "E2:E": {
+   "boxes": 3843672,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 7838,
+   "piece": "302923:0235aacceeeee",
+   "smallest_margin": 8.550171460143343e-13
+  },
+  "E3:E": {
+   "boxes": 11459007,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 4853,
+   "piece": "649607:01339bbccceeeee",
+   "smallest_margin": 7.1624950437072415e-12
+  },
+  "E4:E": {
+   "boxes": 66446,
+   "file": "stage03b.jsonl.gz",
+   "leaf": 6,
+   "piece": "290759:bcf3bcf8",
+   "smallest_margin": 3.0014421440978974e-09
+  },
+  "N:N": {
+   "boxes": 500748,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 1243,
+   "piece": "547733:138bdddeeee",
+   "smallest_margin": 1.4201935230155146e-06
+  },
+  "PF:E": {
+   "boxes": 759,
+   "file": "stage08.jsonl.gz",
+   "leaf": 137,
+   "piece": "661884:23ceeeebd91ac9316bc59:-1:",
+   "smallest_margin": 8.696368473615294e-07
+  },
+  "PL:E": {
+   "boxes": 76896,
+   "file": "stage03a.jsonl.gz",
+   "leaf": 15,
+   "piece": "491168:",
+   "smallest_margin": 2.263629233519522e-08
+  },
+  "SL+AG:A": {
+   "boxes": 566,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 52868,
+   "piece": "693593:3ceee",
+   "smallest_margin": 0.023675846956738317
+  },
+  "SL+E2:E": {
+   "boxes": 194002,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 3916,
+   "piece": "302923:0235aacceeeee",
+   "smallest_margin": 1.1442794274612135e-10
+  },
+  "SL+E3:E": {
+   "boxes": 223500,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 18956,
+   "piece": "711370:1328dcffff",
+   "smallest_margin": 1.1319968130315747e-10
+  },
+  "SL+E4:E": {
+   "boxes": 33530,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 98685,
+   "piece": "704559:133bddeeeee",
+   "smallest_margin": 3.2613270329563916e-10
+  },
+  "SL+N:N": {
+   "boxes": 22,
+   "file": "stage03d.jsonl.gz",
+   "leaf": 21640,
+   "piece": "350392:bbccceee",
+   "smallest_margin": 0.021292227739177702
+  }
+ },
+ "scope": "complete",
+ "smallest_margins": {
+  "stage01a.jsonl.gz": {},
+  "stage01b.jsonl.gz": {
+   "E1:E": [
+    2.7866023688626927e-08,
+    "12568acf0",
+    286
+   ],
+   "N:N": [
+    0.006634077354842834,
+    "13478ace1",
+    151
+   ]
+  },
+  "stage02.jsonl.gz": {
+   "E2:E": [
+    9.185427846960024e-09,
+    "893158",
+    0
+   ],
+   "N:N": [
+    0.001245314452311537,
+    "269302",
+    0
+   ],
+   "PL:E": [
+    2.9022973685344247e-07,
+    "532440",
+    320
+   ]
+  },
+  "stage03a.jsonl.gz": {
+   "E2:E": [
+    0.00011749568631943087,
+    "282011:",
+    2
+   ],
+   "E3:E": [
+    2.627901195896076e-09,
+    "801028:",
+    27
+   ],
+   "E4:E": [
+    5.53248728446912e-09,
+    "640107:",
+    33
+   ],
+   "N:N": [
+    0.00017192790089258234,
+    "269286:",
+    4
+   ],
+   "PL:E": [
+    2.263629233519522e-08,
+    "491168:",
+    15
+   ]
+  },
+  "stage03b.jsonl.gz": {
+   "E2:E": [
+    2.3697847468690487e-06,
+    "801653:df2bdf92",
+    3
+   ],
+   "E3:E": [
+    3.1049950529694787e-09,
+    "650980:ce3bce920",
+    0
+   ],
+   "E4:E": [
+    3.0014421440978974e-09,
+    "290759:bcf3bcf8",
+    6
+   ],
+   "N:N": [
+    0.00017192790089258234,
+    "275955:bce3ace92",
+    0
+   ],
+   "PL:E": [
+    1.3255561124878652e-07,
+    "711599:cf2bcf",
+    5
+   ],
+   "SL+E2:E": [
+    8.278864489127074e-05,
+    "649615:ce3bce831bde9",
+    4
+   ],
+   "SL+E3:E": [
+    1.4867425349893685e-08,
+    "289752:bde3bde9",
+    0
+   ],
+   "SL+E4:E": [
+    2.235881647097201e-09,
+    "700546:df2bdf92",
+    0
+   ],
+   "SL+N:N": [
+    0.03336705282825378,
+    "358865:bdf3bd",
+    0
+   ]
+  },
+  "stage03c.jsonl.gz": {},
+  "stage03d.jsonl.gz": {
+   "AC:D": [
+    8.120366966394372e-09,
+    "711363:33bddfffff",
+    28766
+   ],
+   "AC:E": [
+    5.187214737757624e-07,
+    "666291:1329dfffff",
+    3000
+   ],
+   "AG:A": [
+    0.0005154958803356184,
+    "710155:339bddffff",
+    26805
+   ],
+   "AG:D": [
+    8.659889026313551e-08,
+    "666295:33dfffff",
+    6574
+   ],
+   "AP:A": [
+    0.00043448417413272593,
+    "710159:33bddfffff",
+    38126
+   ],
+   "AP:D": [
+    3.1965188692723087e-07,
+    "705727:13bddeeeee",
+    14245
+   ],
+   "AS:D": [
+    1.90690117253199e-08,
+    "710159:33bddfffff",
+    45996
+   ],
+   "E2:E": [
+    8.550171460143343e-13,
+    "302923:0235aacceeeee",
+    7838
+   ],
+   "E3:E": [
+    7.1624950437072415e-12,
+    "649607:01339bbccceeeee",
+    4853
+   ],
+   "E4:E": [
+    5.862979705717004e-09,
+    "705723:123bddeeee",
+    24
+   ],
+   "N:N": [
+    1.4201935230155146e-06,
+    "547733:138bdddeeee",
+    1243
+   ],
+   "PL:E": [
+    2.2223644280210335e-07,
+    "801341:023addffff",
+    18
+   ],
+   "SL+AG:A": [
+    0.023675846956738317,
+    "693593:3ceee",
+    52868
+   ],
+   "SL+E2:E": [
+    1.1442794274612135e-10,
+    "302923:0235aacceeeee",
+    3916
+   ],
+   "SL+E3:E": [
+    1.1319968130315747e-10,
+    "711370:1328dcffff",
+    18956
+   ],
+   "SL+E4:E": [
+    3.2613270329563916e-10,
+    "704559:133bddeeeee",
+    98685
+   ],
+   "SL+N:N": [
+    0.021292227739177702,
+    "350392:bbccceee",
+    21640
+   ]
+  },
+  "stage05.jsonl.gz": {
+   "AG:A": [
+    0.00018884700964780086,
+    "s5c:32:0101100",
+    -1
+   ],
+   "AG:D": [
+    0.00014325908246724244,
+    "s5c:73:10010",
+    -1
+   ],
+   "AS:D": [
+    6.1092794678463785e-06,
+    "s5c:27:0010101",
+    -1
+   ],
+   "D1:D": [
+    1.707838907735764e-07,
+    "s5c:18:111100",
+    -1
+   ],
+   "E3:E": [
+    4.5639960607206877e-10,
+    "s5b:265:1110100",
+    -1
+   ]
+  },
+  "stage06.jsonl.gz": {
+   "D1:D": [
+    4.169737618116053e-09,
+    "334371|819",
+    -1
+   ],
+   "E3:E": [
+    8.245711692078614e-11,
+    "693593|107",
+    -1
+   ]
+  },
+  "stage07.jsonl.gz": {
+   "AG:A": [
+    1.1888425307592388e-05,
+    "704559:133bddeeeee89b207dad5830649307:-1:",
+    0
+   ],
+   "AG:D": [
+    5.220982769208107e-09,
+    "704563:133bddeeeee0db2e897bc59317bc:-1:",
+    0
+   ],
+   "AG:E": [
+    9.021891152654283e-07,
+    "700747:3cffffbc821bc8307bd5:-1:",
+    0
+   ],
+   "AP:A": [
+    2.9606761084750917e-05,
+    "704559:133bddeeeee89b307db5c8207ac492:-1:",
+    0
+   ],
+   "AP:D": [
+    4.891022183782831e-10,
+    "710159:33bddfffff81bd9206ad58317ad59:-1:",
+    0
+   ],
+   "D1:D": [
+    2.2504324022193736e-09,
+    "710155:338bddfffff18306bd48216bd49307:503:",
+    0
+   ],
+   "E2:E": [
+    5.125283755568341e-12,
+    "699121:3cffffbc831bc9316bc49206:26:",
+    0
+   ]
+  },
+  "stage08.jsonl.gz": {
+   "AP:A": [
+    1.9702376785107006e-05,
+    "710155:338bddfffff18206bd58316bd48207:-1:",
+    1
+   ],
+   "D1:D": [
+    2.166838565631606e-08,
+    "666291:33bddfffff919306bd:737:",
+    14
+   ],
+   "D3:D": [
+    8.441389232212984e-12,
+    "666291:33bddfffff919207bd58316a:-1:",
+    6
+   ],
+   "E2:E": [
+    3.35075320771951e-09,
+    "704559:133bddeeeee88206bc58317ad58216a:-1:",
+    0
+   ],
+   "PF:E": [
+    8.696368473615294e-07,
+    "661884:23ceeeebd91ac9316bc59:-1:",
+    137
+   ]
+  },
+  "stage09.jsonl.gz": {
+   "D1:D": [
+    1.7125277726623959e-09,
+    "666291:33bddfffff919306bd:734:4d6fb94",
+    50
+   ],
+   "D3:D": [
+    1.4241136385259717e-11,
+    "666291:33bddfffff919306bd:733:4d6fb84",
+    11
+   ],
+   "E2:E": [
+    2.4462102764301093e-09,
+    "661877:139ddeeeeeb3ac9206:0:ed4216b",
+    19
+   ]
+  },
+  "stage10.jsonl.gz": {
+   "AC:D": [
+    1.1042451009925003e-06,
+    "710155:338bddfffff18206bd5830:0:fd5bd7fd12d4",
+    0
+   ],
+   "AP:A": [
+    0.0006771192395876087,
+    "710155:338bddfffff18206bd5830:1:fd5b643b6f49",
+    0
+   ]
+  }
+ },
+ "started": "2026-11-26T12:28:37-0700",
+ "verifier": {
+  "__init__.py": "ec381c0765fda4b844dfa80873125eb8ad54cb10629937b67d5606484a088004",
+  "anchor.py": "5649f55263bbf405f3f096e5c13ef46c2b2244e59361dec189fe9335a33c212c",
+  "balls.py": "dd5f8ad14f30129e2512adab190760b6c96038548a7aa35a9e5aaa30f507613a",
+  "boxes.py": "f60d440ea849e52ba9fa946dc78d91797407f7b1e8bf693954e9c13b4dbb5f6f",
+  "controls.py": "e451443bcc0a405b5f3279ed0a2a4d82b58941d835cd56079a4e42ee98d8fd90",
+  "defect.py": "f244456fc7d84ccf464ffc6752b5dad18ba878b88272e16eda0d09a8a355ecba",
+  "energy.py": "cbfb31d7a610080f58494aac55028e5990566bee095600b06768b39bc7467e67",
+  "gain.py": "86ec25f5ecff41a2475750b82ee785df76245509d82ea67261daba3633153e3a",
+  "jets.py": "9d4de7174532a10906719c41b3d0df6aa1778e77dd0331d44001fe60154f3a38",
+  "planar.py": "d09e2ee79cfd255c32827ea18867cc70609290f07a4bdff19bcfb05e5ef99dc6",
+  "refine.py": "076ac1e3017ada82531a457cc1275aedc2b844e1e92e32a8d18a54407e4a8fdd",
+  "rules.py": "754634934825fd39c09d29941da20174b44f8efaa85639f97082f86dcbfa9519",
+  "shape.py": "67c73aa68e489e3e8951af4ace4ada39fe481cbea6e1fb52c5214c7ce2e2300a",
+  "verify.py": "3e1bda6a40a7abd523b0fcd133593094a303a11502ee970699ba8455a79e7501"
+ },
+ "verifier_at_end": {
+  "__init__.py": "ec381c0765fda4b844dfa80873125eb8ad54cb10629937b67d5606484a088004",
+  "anchor.py": "5649f55263bbf405f3f096e5c13ef46c2b2244e59361dec189fe9335a33c212c",
+  "balls.py": "dd5f8ad14f30129e2512adab190760b6c96038548a7aa35a9e5aaa30f507613a",
+  "boxes.py": "f60d440ea849e52ba9fa946dc78d91797407f7b1e8bf693954e9c13b4dbb5f6f",
+  "controls.py": "e451443bcc0a405b5f3279ed0a2a4d82b58941d835cd56079a4e42ee98d8fd90",
+  "defect.py": "f244456fc7d84ccf464ffc6752b5dad18ba878b88272e16eda0d09a8a355ecba",
+  "energy.py": "cbfb31d7a610080f58494aac55028e5990566bee095600b06768b39bc7467e67",
+  "gain.py": "86ec25f5ecff41a2475750b82ee785df76245509d82ea67261daba3633153e3a",
+  "jets.py": "9d4de7174532a10906719c41b3d0df6aa1778e77dd0331d44001fe60154f3a38",
+  "planar.py": "d09e2ee79cfd255c32827ea18867cc70609290f07a4bdff19bcfb05e5ef99dc6",
+  "refine.py": "076ac1e3017ada82531a457cc1275aedc2b844e1e92e32a8d18a54407e4a8fdd",
+  "rules.py": "754634934825fd39c09d29941da20174b44f8efaa85639f97082f86dcbfa9519",
+  "shape.py": "67c73aa68e489e3e8951af4ace4ada39fe481cbea6e1fb52c5214c7ce2e2300a",
+  "verify.py": "3e1bda6a40a7abd523b0fcd133593094a303a11502ee970699ba8455a79e7501"
+ },
+ "workers": 6
+}

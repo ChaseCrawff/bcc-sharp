@@ -1,0 +1,243 @@
+\section{The body-centred cubic defect functional}\label{sec:defect}
+
+\subsection{Definition}\label{ssec:Ddef}
+
+The fourteen shortest nonzero vectors of $\Bz$ form the \emph{star}
+\[
+  \Star:=\bigl\{\tfrac12(\pm1,\pm1,\pm1)\bigr\}\cup\{\pm e_1,\pm e_2,\pm e_3\},
+\]
+eight vectors of length $\frac{\sqrt3}2$ and six of length $1$; they point to the faces of the Voronoi cell of $\Bz$. All other nonzero
+vectors of $\Bz$ have length at least $\sqrt2$. Note that $\Star=-\Star$ and
+\begin{equation}\label{eq:starmoment}
+  \sum_{e\in\Star}e\,e^\T=4I ,
+\end{equation}
+since each of the two shells contributes $2I$. Let
+\begin{equation}\label{eq:phi}
+  \phi(t):=\min\{1,\,13-10t\}\qquad(0\le t<\tfrac{13}{10}),
+\end{equation}
+so that $\phi=1$ on $[0,\frac65]$ and $\phi$ decreases linearly to $0$ at $\frac{13}{10}$.
+
+\begin{definition}[Defect]\label{def:D}
+Let $Y\subset\R^3$ be a locally finite set and $y_0\in Y$. The \emph{neighbour vectors} of $y_0$ are
+$\mathcal N=\mathcal N(Y,y_0):=\{y-y_0:\ y\in Y\setminus\{y_0\},\ |y-y_0|<\frac{13}{10}\}$. A \emph{trial} is a pair $(\sigma,O)$ of an
+injective map $\sigma:\Star\to\mathcal N$ and a rotation $O\in\SO(3)$; its \emph{cost} is
+\begin{equation}\label{eq:cost}
+  q(\sigma,O):=25\sum_{e\in\Star}\bigl|\sigma(e)-Oe\bigr|^2+\sum_{y\in\mathcal N\setminus\sigma(\Star)}\phi(|y|).
+\end{equation}
+The \emph{defect} of $Y$ at $y_0$ is $D(Y,y_0):=\min\{1,\ \min_{(\sigma,O)}q(\sigma,O)\}$, and $D(Y,y_0):=1$ if $\mathcal N$ has fewer
+than fourteen elements. For a configuration $X$ of density $3/(4\pi)$ and $x\in X$ we put
+$D(X,x):=D(\ltwo^{-1}X,\ltwo^{-1}x)$.
+\end{definition}
+
+The minimum exists because there are finitely many injections and $\SO(3)$ is compact. The first term of \eqref{eq:cost} is the squared
+distance of the matched neighbours from a rotated star, in units in which a root-sum-square deviation of one fifth of the cube side
+costs $1$; for a homogeneous deformation $\nabla u$ it equals $100\,|\sym\nabla u|^2$ to leading order, so $D=1$ corresponds to a
+root-mean-square strain of about six per cent. The second term penalizes neighbours that are not part of the star: an unmatched
+neighbour closer than $\frac65$ costs $1$. The rotation is chosen separately at each point, so $D$ vanishes on every rotated
+body-centred cubic lattice, and $D$ depends only on the points within distance $\frac{13}{10}\ltwo$ of $x$.
+
+\begin{lemma}[Elementary properties]\label{lem:Dbasic}
+\textup{(i)} $0\le D\le1$, and $D(QY+v,Qy_0+v)=D(Y,y_0)$ for all $Q\in\Or(3)$ and $v\in\R^3$.
+\textup{(ii)} If $Y=L\cup(L+\tau)$ is a two-site configuration, then $D(Y,y)$ is the same for all $y\in Y$.
+\textup{(iii)} $D(\Bz,0)=0$.
+\textup{(iv)} If $\mathcal N(Y,y_0)$ contains at least eighteen vectors of length at most $\frac{51}{40}$, then $D(Y,y_0)=1$. In
+particular $D(\Fz,0)=1$, and $D=1$ at every point of the ideal hexagonal close-packed structure.
+\end{lemma}
+
+\begin{proof}
+(i) For a rotation $Q$ replace $O$ by $QO$. For $Q=-I$, associate with a trial $(\sigma,O)$ for $Y$ the trial $(\sigma',O)$ for $-Y$
+with $\sigma'(e):=-\sigma(-e)$; it has the same cost because $\Star=-\Star$ and $\phi$ depends on lengths only. Every element of
+$\Or(3)$ is a rotation or $-I$ times a rotation.
+(ii) Translations by $L$ preserve $Y$. The point reflection $y\mapsto\tau-y$ preserves $Y$ and exchanges $0$ and $\tau$; apply (i).
+(iii) $\mathcal N(\Bz,0)=\Star$, and the trial $(\mathrm{id},I)$ has cost $0$.
+(iv) Every injection leaves at least four of the eighteen vectors unmatched, and each of them contributes at least
+$\phi(\frac{51}{40})=\frac14$. In $\Fz$, and in the ideal hexagonal close-packed structure of the same density, every point has twelve
+neighbours at distance $2^{-1/6}$ and six at distance $2^{1/3}<\frac{51}{40}$.
+\end{proof}
+
+\begin{remark}[Further examples with $D=1$]\label{rem:examples}
+All lengths refer to two points per unit volume. \textup{(a)} In the hexagonal close-packed structure of axial ratio $\gamma=c/a$ the
+distance between neighbours in a layer is $a=(2/(\sqrt3\gamma))^{1/3}$, and every point has six neighbours at distance $a$, six at
+distance $a(\frac13+\frac14\gamma^2)^{1/2}$ and six at distance $a(\frac43+\frac14\gamma^2)^{1/2}$. The last distance is the largest;
+it is minimal at the ideal ratio $\gamma=\sqrt{8/3}$, where it equals $2^{1/3}$, and it is at most $\frac{51}{40}$ for
+$1.29\le\gamma\le2.04$. For these axial ratios $D=1$ by Lemma~\ref{lem:Dbasic}(iv). \textup{(b)} In the simple cubic lattice every
+point has six neighbours at distance $2^{-1/3}$ and twelve at distance $2^{1/6}$, so $D=1$ by the same lemma. \textup{(c)} In the
+diamond structure every point has four neighbours at distance $\sqrt3\,2^{-4/3}=0.687\ldots$ and twelve at distance
+$2^{1/6}=1.122\ldots$, and no others within $\frac{13}{10}$. Every trial leaves two of these sixteen vectors unmatched, at cost
+$\phi=1$ each, so $D=1$.
+\end{remark}
+
+By Lemma~\ref{lem:Dbasic}(ii) we may write $D(Y)$, and $D(X)=D(\ltwo^{-1}X)$ for $X\in\Ctwo$. With this notation the main inequality
+of the paper reads $\Def(X)\ge0$, where
+\begin{equation}\label{eq:deficit}
+  \Def(X):=e(X)-\eB-\gap\,D(X)\qquad(X\in\Ctwo)
+\end{equation}
+is the \emph{deficit}. By Lemma~\ref{lem:Dbasic}, $\Def=0$ on BCC and on FCC lattices.
+
+\subsection{Exact description of the unsaturated defect}\label{ssec:registration}
+
+For a two-site configuration with $D<1$ the minimization in Definition~\ref{def:D} can be carried out exactly. The result identifies
+the configuration as a deformed body-centred cubic lattice in a canonical way; we call this a \emph{registration}.
+
+\begin{theorem}[Registration]\label{thm:registration}
+Let $Y=L\cup(L+\tau)$ with $L$ a lattice of covolume one and $\tau\notin L$, and suppose $D(Y)<1$. Then:
+\begin{enumerate}
+\item[\textup{(a)}] Every nonzero $y\in Y$ has $|y|>\frac{\sqrt3}2-\frac15$, and for every trial $(\sigma,O)$ of cost less than $1$ at the
+point $0$, the matched vectors $\sigma(\Star)$ are exactly the nonzero elements of $Y$ of length at most $\frac65$.
+\item[\textup{(b)}] There is a unique $\tau_0\in\frac12L\setminus L$ with $|\tau-\tau_0|<1/(5\sqrt8)$. Put $h:=\tau-\tau_0$ and
+$\Lambda:=L\cup(L+\tau_0)$, a lattice of covolume $\frac12$. Then $|h|^2\le D(Y)/200$.
+\item[\textup{(c)}] There is $A\in\SL(3,\R)$ with $A\Bz=\Lambda$ such that the fourteen vectors of \textup{(a)} are
+$Ae+\chi(e)h$, $e\in\Star$, where $\chi(b)=0$ if $Ab\in L$ and $\chi(b)=1$ if $Ab\in L+\tau_0$. Exactly eight elements of $\Star$ have
+$\chi=1$. The matrix $A$ is unique up to $A\mapsto AW$ with $W$ a rotation that preserves $\Bz$.
+\item[\textup{(d)}] With $\mathcal N=\mathcal N(Y,0)$,
+\begin{equation}\label{eq:Dformula}
+  D(Y)=100\,\bigl\|(A^\T A)^{1/2}-I\bigr\|_\Fro^2+200\,|h|^2+\sum_{y\in\mathcal N,\ |y|>6/5}\phi(|y|).
+\end{equation}
+\item[\textup{(e)}] If $D(Y)\le d_*:=40\,(\sqrt2-\frac{13}{10})^2=0.5217\ldots$, then the last sum in \eqref{eq:Dformula} is empty.
+\end{enumerate}
+\end{theorem}
+
+Since $\det A=1$, the first term of \eqref{eq:Dformula} is $100\dist_\Fro(A,\SO(3))^2$. Thus, below the threshold $d_*$, the defect is
+exactly a weighted sum of the squared distance of the deformation $A$ from the rotations and of the squared displacement $h$ of the
+second sublattice from the position that would make $Y$ a lattice. In the language of lattice dynamics, $A$ is a homogeneous strain
+and $h$ the amplitude of a frozen zone-boundary phonon.
+
+\begin{proof}
+Fix a trial $(\sigma,O)$ at $0$ with cost $q<1$, write $y_e=\sigma(e)$ and $\eta_e=y_e-Oe$. Then
+\begin{equation}\label{eq:etasum}
+  \sum_{e\in\Star}|\eta_e|^2\le\frac q{25}<\frac1{25}.
+\end{equation}
+
+\emph{Step 0: the matched set.} Since $|e|\le1$ and $|\eta_e|<\frac15$, every matched vector has length less than $\frac65$. An
+unmatched element of $\mathcal N$ of length at most $\frac65$ would contribute $1$ to the cost. Hence $\sigma(\Star)$ is the set of
+all nonzero elements of $Y$ of length at most $\frac65$, and each of them has length greater than $\frac{\sqrt3}2-\frac15>\frac58$. This
+proves (a). In particular
+\begin{equation}\label{eq:sep}
+  |\ell|>\tfrac58\quad\text{for }\ell\in L\setminus\{0\},\qquad |\ell+\tau|>\tfrac58\quad\text{for }\ell\in L .
+\end{equation}
+
+\emph{Step 1: opposite labels.} Call $y\in Y$ \emph{even} if $y\in L$ and \emph{odd} if $y\in L+\tau$. For $e\in\Star$,
+\[
+  |y_e+y_{-e}|=|\eta_e+\eta_{-e}|\le\sqrt2\,\bigl(|\eta_e|^2+|\eta_{-e}|^2\bigr)^{1/2}<\frac{\sqrt2}5 .
+\]
+If $y_e$ and $y_{-e}$ had different parities, their sum would be an element of $L+\tau$ shorter than $\frac58$, contradicting
+\eqref{eq:sep}. If both are even, their sum is an element of $L$ shorter than $\frac58$, hence $0$. If both are odd, their sum is
+$\ell+2\tau$ with $\ell\in L$, and this $\ell$ is the same for all odd pairs, because two such sums differ by an element of $L$ of
+length less than $\frac{2\sqrt2}5<\frac58$. If there is an odd pair, put $\tau_0:=-\ell/2$ and $h:=\tau-\tau_0$, so that
+$y_e+y_{-e}=2h$ for odd pairs; otherwise put $h:=0$. Define $y^0_e:=y_e-h$ for odd $y_e$ and $y^0_e:=y_e$ for even $y_e$. Then
+$y^0_{-e}=-y^0_e$ for all $e$. For an odd pair, $\eta_e+\eta_{-e}=2h$ gives
+$|\eta_e-h|^2+|\eta_{-e}-h|^2=|\eta_e|^2+|\eta_{-e}|^2-2|h|^2$. Therefore, if $k_{\mathrm o}$ denotes the number of odd labels,
+\begin{equation}\label{eq:centered}
+  \sum_{e\in\Star}|y^0_e-Oe|^2=\sum_{e\in\Star}|\eta_e|^2-k_{\mathrm o}|h|^2<\frac1{25}.
+\end{equation}
+
+\emph{Step 2: a basis of the corrected lattice.} Let $p_1=\frac12(-1,1,1)$, $p_2=\frac12(1,-1,1)$, $p_3=\frac12(1,1,-1)$ and
+$B=(p_1,p_2,p_3)=\frac12\one\one^\T-I$. Then $B^{-1}=\one\one^\T-I$, $\det B=\frac12$, the singular values of $B$ are $1,1,\frac12$, and
+the columns of $B$ form a basis of $\Bz$. Let $V:=(y^0_{p_1},y^0_{p_2},y^0_{p_3})=OB+U$. By \eqref{eq:centered}, $\|U\|_\Fro<\frac15$,
+which is less than the smallest singular value of $OB$; hence $OB+tU$ is invertible for $t\in[0,1]$ and $\det V>0$. In the singular
+bases of $OB$, the rows of $V$ have norms at most $1+b_1$, $1+b_2$, $\frac12+b_3$ with $b_1^2+b_2^2+b_3^2<\frac1{25}$, so Hadamard's
+inequality and the inequality of arithmetic and geometric means give
+\begin{equation}\label{eq:detM}
+  0<\det V\le\Bigl(\frac{5/2+b_1+b_2+b_3}3\Bigr)^3<\Bigl(\frac{5/2+\sqrt3/5}3\Bigr)^3<1 .
+\end{equation}
+If there were no odd pair, or if $\tau_0\in L$, the columns of $V$ would lie in $L$, which has covolume one, and $\det V$ would be a
+positive integer. Hence there is an odd pair and $\tau_0\in\frac12L\setminus L$. Then $\Lambda=L\cup(L+\tau_0)$ is a lattice of
+covolume $\frac12$ that contains the columns of $V$, so $\det V$ is a positive multiple of $\frac12$, and \eqref{eq:detM} forces
+$\det V=\frac12$: the columns of $V$ form a basis of $\Lambda$. Put $A:=VB^{-1}$. Then $\det A=1$ and $A\Bz=\Lambda$.
+
+\emph{Step 3: all labels.} Every nonzero vector of $\Lambda$ is $Vk$ with $k\in\Z^3\setminus\{0\}$. If $|k|\ge\sqrt2$ then
+$|Vk|>(\frac12-\frac15)|k|>\frac25$, and if $|k|=1$ then $|Vk|>\frac{\sqrt3}2-\frac15>\frac25$. So the shortest nonzero vector of
+$\Lambda$ is longer than $\frac25$. Let $e\in\Star$ and $k=B^{-1}e$; its entries are sums of two coordinates of $e$ and lie in
+$\{-1,0,1\}$. If $e=\pm p_i$ then $y^0_e=Vk$ by definition. Otherwise $e,p_1,p_2,p_3$ are distinct labels, and by the
+Cauchy--Schwarz inequality and \eqref{eq:centered}
+\[
+  \Bigl|y^0_e-\sum_ik_iy^0_{p_i}\Bigr|=\Bigl|(y^0_e-Oe)-\sum_ik_i(y^0_{p_i}-Op_i)\Bigr|<\frac{\sqrt{1+|k|^2}}5\le\frac25 .
+\]
+The left side is the length of an element of $\Lambda$, hence $0$. Thus $y^0_e=Ae$, that is $y_e=Ae+\chi(e)h$, for all $e\in\Star$.
+
+\emph{Step 4: eight odd labels.} The sublattice $V^{-1}L\subset\Z^3$ has index two, so it is the kernel of
+$k\mapsto\varsigma\cdot k\bmod2$ for some nonzero $\varsigma\in\{0,1\}^3$. In the coordinates $k=B^{-1}e$ the star consists of
+$\pm e_i$ and $\pm\one$ (the short vectors) and $\pm(e_i+e_j)$, $i<j$ (the long ones). If $\varsigma$ has $w$ nonzero entries, the
+number of odd short vectors is $2w+2(w\bmod2)$ and the number of odd long vectors is $2w(3-w)$; the total is $8$ for $w=1,2,3$. Hence
+$k_{\mathrm o}=8$, and \eqref{eq:etasum}, \eqref{eq:centered} give $8|h|^2\le q/25$. Two distinct points of $\frac12L$ are more than
+$\frac5{16}$ apart by \eqref{eq:sep}, and $2/(5\sqrt8)<\frac5{16}$, so $\tau_0$ is the only point of $\frac12L$ in the open ball of
+radius $1/(5\sqrt8)$ about $\tau$; in particular it does not depend on the trial.
+
+\emph{Step 5: the cost.} Since $\chi(-e)=\chi(e)$, we have $\sum_e\chi(e)e=0$. With \eqref{eq:starmoment}, for every $Q\in\SO(3)$,
+\[
+  \sum_{e\in\Star}\bigl|Ae+\chi(e)h-Qe\bigr|^2=4\,\|A-Q\|_\Fro^2+8\,|h|^2 .
+\]
+Write $A=Q_0P$ with $P=(A^\T A)^{1/2}$ and $Q_0\in\SO(3)$. Then $\min_{Q\in\SO(3)}\|A-Q\|_\Fro=\|P-I\|_\Fro$, attained at $Q=Q_0$:
+in an eigenbasis of $P$ the diagonal entries of $Q_0^\T Q$ are at most $1$, so $\tr(PQ_0^\T Q)\le\tr P$. The sum over unmatched
+neighbours does not depend on the rotation. Consequently the least cost of a trial with the injection $\sigma$ is the right side of
+\eqref{eq:Dformula}; the unmatched neighbours are those of length greater than $\frac65$ by Step~0.
+Let $A'\in\SL(3,\R)$ be another matrix with the properties stated in (c); for instance the matrix obtained from another trial
+$(\sigma',O')$ of cost less than $1$, which by Steps 0 and 4 uses the same fourteen vectors and the same $\tau_0$. The vectors $A'e$,
+$e\in\Star$, are the fourteen vectors of (a) with $h$ subtracted from those in $L+\tau$, as are the vectors $Ae$. So
+$W:=A^{-1}A'$ maps $\Star$ onto itself. By \eqref{eq:starmoment}, $4WW^\T=4I$; thus $W$ is orthogonal, it preserves the six vectors
+$\pm e_i$, and $\det W=1$: it is a rotation preserving $\Bz$. Then $(A'^\T A')^{1/2}=W^\T PW$, and the least costs obtained from $A$
+and from $A'$ coincide. Since $D(Y)$ is the least cost over all trials of cost less than $1$, \eqref{eq:Dformula} follows. This
+proves (b), (c) and (d).
+
+\emph{Step 6: no further neighbours below $d_*$.} Every nonzero element of $Y$ is $Ab+\chi(b)h$ for some $b\in\Bz\setminus\{0\}$. If
+$b\notin\Star$ then $t:=|b|\ge\sqrt2$. With $a=\|P-I\|_\Fro$ and $\beta=|h|$, \eqref{eq:Dformula} gives $100a^2+200\beta^2\le D:=D(Y)$,
+and
+\[
+  |Ab+\chi(b)h|\ \ge\ t-at-\beta\ \ge\ t-\sqrt D\,\sqrt{\frac{t^2}{100}+\frac1{200}} .
+\]
+The right side is increasing in $t$, and at $t=\sqrt2$ it equals $\sqrt2-\sqrt{D/40}$, which is at least $\frac{13}{10}$ if
+$D\le d_*$. Such a vector is not in $\mathcal N$. This proves (e).
+\end{proof}
+
+\begin{corollary}\label{cor:registered}
+Let $Y$ be as in Theorem~\ref{thm:registration}, with $D(Y)<1$. Then there are a sublattice $L_0\subset\Bz$ of index two, a vector
+$w_0\in\Bz\setminus L_0$, a matrix $A\in\SL(3,\R)$ and $h\in\R^3$ such that
+\begin{equation}\label{eq:registered}
+  Y=AL_0\ \cup\ \bigl(AL_0+Aw_0+h\bigr)\qquad\text{and}\qquad 100\,\dist_\Fro\bigl(A,\SO(3)\bigr)^2+200\,|h|^2\le D(Y).
+\end{equation}
+Moreover:
+\begin{enumerate}
+\item[\textup{(i)}] $D(Y)\ge\min\bigl\{1,\,200\dist(\tau,\tfrac12L\setminus L)^2\bigr\}$ for every two-site configuration
+$Y=L\cup(L+\tau)$ with $L$ of covolume one.
+\item[\textup{(ii)}] $D(Y)=0$ if and only if $Y=Q\Bz$ for some $Q\in\SO(3)$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+Take $L_0=A^{-1}L$ and $w_0\in\Bz$ with $Aw_0\in L+\tau_0$; then $AL_0+Aw_0+h=L+\tau$. The inequality is \eqref{eq:Dformula} without its
+last term. (i) is trivial if $D(Y)=1$ and follows from (b) otherwise. (ii): if $D(Y)=0$ then $h=0$ and $(A^\T A)^{1/2}=I$, so
+$A\in\SO(3)$ and $Y=\Lambda=A\Bz$; the converse is Lemma~\ref{lem:Dbasic}.
+\end{proof}
+
+\subsection{Upper bounds for the defect}\label{ssec:Dupper}
+
+In the proof of the main inequality we never need to compute $D$ exactly: since $\gap>0$, an upper bound for $D$ suffices, and any
+single trial gives one. We record the two bounds that are used.
+
+\begin{lemma}\label{lem:Dupper}
+Let $\Lambda_0\in\{\Bz,\Fz\}$, let $L_0\subset\Lambda_0$ be a sublattice of index two and $w_0\in\Lambda_0\setminus L_0$. Let
+$A\in\SL(3,\R)$ have singular values in $[a_-,a_+]$, let $u\in\R^3$, and let $Y=A\bigl(L_0\cup(L_0+w_0+u)\bigr)$.
+\begin{enumerate}
+\item[\textup{(i)}] If $\Lambda_0=\Bz$, $a_+(1+|u|)<\frac{13}{10}$ and $a_-\sqrt2-a_+|u|\ge\frac{13}{10}$, then
+\begin{equation}\label{eq:Dq}
+  D(Y)\le100\,\bigl\|(A^\T A)^{1/2}-I\bigr\|_\Fro^2+200\,|Au|^2 .
+\end{equation}
+\item[\textup{(ii)}] If $\Lambda_0=\Fz$ and $a_+(2^{1/3}+|u|)\le\frac{51}{40}$, then $D(Y)=1$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Let $\chi$ be the indicator function of $\Lambda_0\setminus L_0$, so that $Y=\{A(b+\chi(b)u):b\in\Lambda_0\}$. Note that
+$a_-\le1\le a_+$ because $\det A=1$.
+
+(i) The hypotheses give $|u|\le\sqrt2-\frac{13}{10}<\frac{\sqrt3}2$, so the vectors $e+\chi(e)u$, $e\in\Star$, are distinct and
+nonzero. Their images under $A$ have length less than $\frac{13}{10}$, and every other nonzero element of $Y$ has length at least
+$a_-\sqrt2-a_+|u|\ge\frac{13}{10}$, so it is not a neighbour vector. Hence $\mathcal N(Y,0)$ consists of the fourteen vectors
+$\sigma(e):=A(e+\chi(e)u)$. As in Steps 4 and 5 of the proof of Theorem~\ref{thm:registration}, exactly eight elements of $\Star$ have
+$\chi=1$ and $\sum_e\chi(e)e=0$, so the trial $(\sigma,Q_0)$, with $Q_0$ the rotation in the polar decomposition of $A$, has cost
+$25\bigl(4\|A-Q_0\|_\Fro^2+8|Au|^2\bigr)$, which is the right side of \eqref{eq:Dq}.
+
+(ii) The hypothesis gives $|u|\le\frac{51}{40}-2^{1/3}<2^{-1/6}$. The eighteen nonzero vectors $b\in\Fz$ with $|b|\le2^{1/3}$ give
+eighteen elements $A(b+\chi(b)u)$ of $Y$ of length at most $a_+(2^{1/3}+|u|)\le\frac{51}{40}$; they are distinct and nonzero because
+distinct elements of $\Fz$ differ by at least $2^{-1/6}>|u|$. Apply Lemma~\ref{lem:Dbasic}(iv).
+\end{proof}

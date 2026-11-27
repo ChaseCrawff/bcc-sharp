@@ -1,0 +1,49 @@
+\section{Open problems}\label{sec:outlook}
+
+\emph{More points per cell.} The defect of Definition~\ref{def:D} is defined at every point of every locally finite configuration. For
+a periodic configuration $X$ with $N$ points $x_1,\dots,x_N$ per cell let $\overline D(X):=\frac1N\sum_iD(X,x_i)$.
+
+\begin{conjecture}\label{conj:all}
+There is a constant $c>0$ such that $e(X)-\eB\ge c\,\overline D(X)$ for every periodic configuration $X\subset\R^3$ of density
+$3/(4\pi)$.
+\end{conjecture}
+
+This would imply that the BCC lattice is the unique periodic minimizer of the Coulomb energy at fixed density. Indeed, if
+$\overline D(X)=0$, then the neighbours of every point of $X$ within $\frac{13}{10}\ltwo$ form a rotated copy of the star
+$\ltwo\Star$; if $y$ is one of the eight nearest neighbours of $x$, then $x$ and three of the six second neighbours of $x$ are
+nearest neighbours of $y$, which forces the star at $y$ to coincide with the star at $x$; since the nearest-neighbour vectors
+of the star generate the BCC lattice, $X$ contains a BCC lattice $\Lambda$ of the same density; and every point of $X$ lies within
+the covering radius $\frac{\sqrt5}4\ltwo<\frac{13}{10}\ltwo$ of $\Lambda$ from a point of $\Lambda$, hence is a neighbour of that
+point and belongs to $\Lambda$. The conjecture is also the form
+of the statement that is useful for the analysis of low-energy configurations that are not periodic. Theorem~\ref{thm:main} proves the conjecture for $N\le2$ with $c=\gap$, and the FCC lattice shows that
+$c\le\gap$ in general. We do not know whether $c=\gap$ is admissible for all $N$. The methods of this paper extend in principle to
+any fixed $N$: the positive series \eqref{eq:seriesN}, the compactness argument and the vertex principle are available, and the
+anchor mechanism of Section~\ref{ssec:anchor} applies to a neighbourhood of the configurations with fewer points per cell. The
+dimension of the configuration space, $5+3(N-1)$, makes an exhaustive cover expensive already for $N=3$, and a proof for all $N$
+needs a different idea.
+
+\emph{Other interactions.} The representation by a series with nonnegative terms holds for the Epstein zeta function at all
+exponents below the pole \cite{SarnakStrombergsson2006}, where the optimal lattice is expected to change from BCC to FCC, and a
+similar transition has been established among lattices, with computer assistance, for Yukawa interactions \cite{LuoWei2026Yukawa}. It would be interesting to know whether the
+two-site analogue of Theorem~\ref{thm:min} holds throughout these families, with the minimizer among lattices also minimizing among
+two-site configurations, or whether there are parameters at which a genuinely two-site structure wins.
+
+\emph{Formal verification.} A certificate of the two-site cover with fewer and larger boxes, built on sharper bounds near the
+set of lattices and designed for evaluation in the Lean kernel, as was done for the lattice case, together with formal checking
+functions for the remaining kinds of rules (Section~\ref{ssec:lean}), would make Theorem~\ref{thm:main} a formally verified
+theorem.
+
+\emph{A conceptual proof.} For lattices in two dimensions the optimality of the triangular lattice follows from Montgomery's theorem
+on theta functions, by an argument that covers all completely monotone interactions at once. In three dimensions the optimal
+lattice depends on the interaction, and the Coulomb energy of the FCC lattice exceeds that of the BCC lattice by six parts in
+$10^5$; we do not expect an argument that avoids quantitative information of this precision, but it would be very desirable to
+replace the cover by a structural argument, at least in the neighbourhood of the set of lattices where the anchor rules are used.
+
+\section*{Declaration on the use of AI systems}
+The mathematical arguments, the programs, the certificates, the formalization and the text of this paper were produced with
+extensive use of AI systems, namely large language models of Anthropic (Claude, including Claude Opus~5.5 and Claude Fable~5.2) and
+of OpenAI (used through Codex and recorded as Astra and Sol~6.1--6.2), working under the direction of the author. The checks
+described in Section~\ref{ssec:checks}, and the corresponding checks of the formal development, were likewise performed by
+instances of these systems, in sessions separate from those that produced the material checked. The validity of the results does not rest on these checks: it
+rests on the proofs given in this paper, on the certificates and the verifying programs, and, for the parts stated in
+Section~\ref{ssec:lean}, on the Lean kernel.

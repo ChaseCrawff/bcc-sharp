@@ -1,0 +1,93 @@
+% Optimality and sharp stability of the body-centred cubic lattice for the Coulomb energy
+% among periodic configurations with two points per cell.
+% Compile with: tectonic main.tex   (or pdflatex main && bibtex main && pdflatex main && pdflatex main).
+% ASCII only. Section files define no macros; all macros are in macros.tex.
+\documentclass[11pt]{amsart}
+\setlength{\textwidth}{6.5in}\setlength{\oddsidemargin}{0pt}\setlength{\evensidemargin}{0pt}
+\setlength{\textheight}{9in}\setlength{\topmargin}{-0.25in}\calclayout
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{mathrsfs}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,hypertexnames=false]{hyperref}
+
+\raggedbottom
+\setlength{\emergencystretch}{1.5em}
+
+% ---------------------------------------------------------------- environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{rulex}[theorem]{Rule}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
+
+\input{macros}
+
+\begin{document}
+
+\title[BCC optimality for two-point periodic Coulomb configurations]{Optimality and sharp stability\\ of the body-centred cubic lattice for the Coulomb energy\\
+among periodic configurations with two points per cell}
+% Authorship, affiliation and contact details are to be confirmed by the author before circulation.
+% The empty short form keeps the name out of the running heads; both of them show the short title.
+\author[]{Chase Crawford}
+\date{24 November 2026}
+
+\begin{abstract}
+We consider point charges in $\R^3$ in a uniform neutralizing background, with the Coulomb energy per particle $e(X)$ defined by Ewald
+summation. Let $X$ be any periodic configuration with at most two points per period cell, that is, a lattice or a union $L\cup(L+\tau)$
+of two translates of a lattice; this eight-parameter family contains the hexagonal close-packed and diamond structures. We prove that
+the body-centred cubic lattice is the unique minimizer of $e$ in this class at fixed density. More precisely we prove the sharp
+stability inequality
+\[
+   e(X)-e_{\mathrm{BCC}}\;\ge\;\bigl(e_{\mathrm{FCC}}-e_{\mathrm{BCC}}\bigr)\,D(X),
+\]
+where $D(X)\in[0,1]$ is an explicit local functional that measures the distance of the fourteen nearest neighbours of a point from a
+rotated body-centred cubic star, and we show that equality holds only for the body-centred and the face-centred cubic lattices. Hence
+the face-centred cubic lattice is the unique minimizer among all configurations of the class that are not small deformations of the
+body-centred cubic lattice, and every configuration with energy below $e_{\mathrm{FCC}}$ is an explicitly controlled deformation of it:
+its strain and the relative displacement of its two sublattices are bounded by the square root of the energy excess, with explicit
+constants. This settles the case of a two-point basis in the problem of extending the recent optimality theorem of Muratov and Novaga
+for Bravais lattices to periodic configurations with several points per cell. The proof is computer-assisted. A compactness argument
+and lattice reduction confine the inequality to a rational box in $\R^8$, which is covered by finitely many boxes, each with a
+rigorous ball-arithmetic certificate; an exact description of $D$ for $D<1$ supplies the bounds near the lattices. The lattice case
+of the theorem is, in addition, formally verified in Lean~4, with a separate certificate, and the reduction of the two-site theorem
+to its finite certificate is formalized in part.
+\end{abstract}
+
+\subjclass[2020]{Primary 82D25; Secondary 11H55, 52C07, 11E45, 65G30, 74G65, 68V20}
+\keywords{Coulomb energy, jellium, Wigner crystal, body-centred cubic lattice, crystallization, lattice energy, Ewald summation,
+computer-assisted proof, interval arithmetic, formal verification}
+
+\maketitle
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\input{sec-intro}
+\input{sec-setting}
+\input{sec-defect}
+\input{sec-reduction}
+\input{sec-bravais}
+\input{sec-local}
+\input{sec-cover}
+\input{sec-proof}
+\input{sec-computation}
+\input{sec-outlook}
+
+\appendix
+\input{app-ewald}
+\input{app-tails}
+\input{app-details}
+
+\bibliographystyle{amsplain}
+\bibliography{refs}
+
+\end{document}
