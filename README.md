@@ -131,3 +131,14 @@ main.tex`; the build writes `main.pdf`. A build with Tectonic 0.17.0 gives 49 pa
 
 `SHA256SUMS` lists the SHA-256 of every file of the repository except itself. To check it, in the root directory:
 `sha256sum -c SHA256SUMS` (on Windows, for example, in Git Bash).
+
+## Known issues
+
+Known issues are tracked as [GitHub issues](https://github.com/ChaseCrawff/bcc-sharp/issues) of this repository; check
+them before reproducing or reviewing. Neither of the open ones changes a recorded result:
+
+- [#2](https://github.com/ChaseCrawff/bcc-sharp/issues/2): the docstring of `check_shape_part` in
+  `cover/cover_verifier/boxes.py` misstates Section 7.1 of the paper; the code agrees with the paper.
+- [#3](https://github.com/ChaseCrawff/bcc-sharp/issues/3): with `BCC_RESULTS_DIR` set, `programs/local_charts.py` and
+  `programs/lattice.py` read the shipped `programs/results/constants.json`, not constants regenerated into that
+  directory; to regenerate the constants, work in a fresh clone with the variable unset.
